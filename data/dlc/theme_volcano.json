@@ -1,0 +1,18 @@
+{
+  "file": "arena_volcano.glb",
+  "sun": "#ff9a60",
+  "sun_e": 1.25,
+  "sun_rot": [-52, -25, 0],
+  "sky_top": "#1c0a08",
+  "sky_hor": "#b4481e",
+  "ambient": "#8a4a38",
+  "ambient_e": 0.62,
+  "fog": "#6a2a18",
+  "fog_d": 0.0075,
+  "torch": "#ff6a24",
+  "ember": "#ff9a3a",
+  "ground_a": "#2e2624",
+  "ground_b": "#1c1716",
+  "line": "#ff6a2a",
+  "name": "Cratère de Lave"
+}

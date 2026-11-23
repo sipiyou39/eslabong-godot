@@ -1,0 +1,362 @@
+[
+ {
+  "id": "Merc_Greek_Zeus",
+  "name": "Zeus",
+  "species": "human",
+  "role": "mage",
+  "element": "lightning",
+  "weapon_main": "thunderbolt",
+  "weapon_off": "",
+  "head": "hair_beard_long",
+  "torso": "toga",
+  "shoulder": "laurel",
+  "back": "cape_royal",
+  "palette": [
+   "#f0ece0",
+   "#7a3a9a",
+   "#f0c840",
+   "#e8c4a0"
+  ],
+  "scale": 1.15,
+  "kit": [
+   "greek_zeus_eclair",
+   "greek_zeus_course_des_nuees",
+   "greek_zeus_foudre_en_chaine",
+   "greek_zeus_tempete_divine",
+   "greek_zeus_colere_de_zeus",
+   "greek_zeus_jugement"
+  ],
+  "mods": {},
+  "note": "Dieux grecs",
+  "base": {
+   "hp": 471.4,
+   "mana": 180.0,
+   "stamina": 90.0,
+   "power": 44.32,
+   "defense": 8.0,
+   "mres": 22.0,
+   "speed": 5.79
+  },
+  "ai": {
+   "aggression": 0.3,
+   "preferred_range": 12.0
+  },
+  "pack": "olympe",
+  "path": "res://Data/DLC/Merc_Greek_Zeus.tres"
+ },
+ {
+  "id": "Merc_Greek_Athena",
+  "name": "Athéna",
+  "species": "human",
+  "role": "tank",
+  "element": "holy",
+  "weapon_main": "spear_greek",
+  "weapon_off": "shield_aegis",
+  "head": "helm_corinthian",
+  "torso": "cuirass_greek",
+  "shoulder": "gorget",
+  "back": "aegis",
+  "palette": [
+   "#c8a050",
+   "#3a5a8a",
+   "#f0e090",
+   "#e8c4a0"
+  ],
+  "scale": 1.05,
+  "kit": [
+   "greek_athena_lance_de_sagesse",
+   "greek_athena_charge_sacree",
+   "greek_athena_egide",
+   "greek_athena_cri_de_guerre",
+   "greek_athena_chouette_dathena",
+   "greek_athena_strategie_divine"
+  ],
+  "mods": {},
+  "note": "Dieux grecs",
+  "base": {
+   "hp": 1064.25,
+   "mana": 80.0,
+   "stamina": 130.0,
+   "power": 24.32,
+   "defense": 38.0,
+   "mres": 22.0,
+   "speed": 5.27
+  },
+  "ai": {
+   "aggression": 0.7,
+   "preferred_range": 2.6
+  },
+  "pack": "olympe",
+  "path": "res://Data/DLC/Merc_Greek_Athena.tres"
+ },
+ {
+  "id": "Merc_Greek_Poseidon",
+  "name": "Poséidon",
+  "species": "human",
+  "role": "bruiser",
+  "element": "ice",
+  "weapon_main": "trident",
+  "weapon_off": "",
+  "head": "hair_beard_long",
+  "torso": "chiton",
+  "shoulder": "pteruges",
+  "back": "none",
+  "palette": [
+   "#3a8aa8",
+   "#2a5a7a",
+   "#e0d070",
+   "#8ac0d0"
+  ],
+  "scale": 1.15,
+  "kit": [
+   "greek_poseidon_coup_de_trident",
+   "greek_poseidon_vague",
+   "greek_poseidon_razdemaree",
+   "greek_poseidon_tentacule",
+   "greek_poseidon_tremblement",
+   "greek_poseidon_jet_des_abysses"
+  ],
+  "mods": {},
+  "note": "Dieux grecs",
+  "base": {
+   "hp": 868.2,
+   "mana": 80.0,
+   "stamina": 120.0,
+   "power": 34.0,
+   "defense": 26.0,
+   "mres": 14.0,
+   "speed": 5.92
+  },
+  "ai": {
+   "aggression": 0.75,
+   "preferred_range": 3.0
+  },
+  "pack": "olympe",
+  "path": "res://Data/DLC/Merc_Greek_Poseidon.tres"
+ },
+ {
+  "id": "Merc_Greek_Hades",
+  "name": "Hadès",
+  "species": "human",
+  "role": "summoner",
+  "element": "shadow",
+  "weapon_main": "bident",
+  "weapon_off": "",
+  "head": "helm_hades",
+  "torso": "cult_robe",
+  "shoulder": "none",
+  "back": "cape_royal",
+  "palette": [
+   "#2a2a3a",
+   "#6a2a5a",
+   "#58e090",
+   "#a8b0b0"
+  ],
+  "scale": 1.1,
+  "kit": [
+   "greek_hades_flamme_spectrale",
+   "greek_hades_pas_dombre",
+   "greek_hades_ames_damnees",
+   "greek_hades_malediction_des_enfers",
+   "greek_hades_aspiration_dame",
+   "greek_hades_porte_des_enfers"
+  ],
+  "mods": {},
+  "note": "Dieux grecs",
+  "base": {
+   "hp": 484.5,
+   "mana": 190.0,
+   "stamina": 90.0,
+   "power": 35.55,
+   "defense": 8.0,
+   "mres": 20.0,
+   "speed": 5.72
+  },
+  "ai": {
+   "aggression": 0.3,
+   "preferred_range": 11.0
+  },
+  "pack": "olympe",
+  "path": "res://Data/DLC/Merc_Greek_Hades.tres"
+ },
+ {
+  "id": "Merc_Greek_Artemis",
+  "name": "Artémis",
+  "species": "human",
+  "role": "ranged",
+  "element": "nature",
+  "weapon_main": "bow_golden",
+  "weapon_off": "",
+  "head": "crown_moon",
+  "torso": "chiton",
+  "shoulder": "none",
+  "back": "quiver_gold",
+  "palette": [
+   "#e8e4d0",
+   "#3a7a4a",
+   "#d8e0f0",
+   "#e8c4a0"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "greek_artemis_fleche_dargent",
+   "greek_artemis_bond_de_chasseuse",
+   "greek_artemis_pluie_de_fleches",
+   "greek_artemis_piege_sylvestre",
+   "greek_artemis_camouflage_lunaire",
+   "greek_artemis_fleche_de_lune"
+  ],
+  "mods": {},
+  "note": "Dieux grecs",
+  "base": {
+   "hp": 525.5,
+   "mana": 110.0,
+   "stamina": 100.0,
+   "power": 38.5,
+   "defense": 10.0,
+   "mres": 10.0,
+   "speed": 6.12
+  },
+  "ai": {
+   "aggression": 0.35,
+   "preferred_range": 13.0
+  },
+  "pack": "olympe",
+  "path": "res://Data/DLC/Merc_Greek_Artemis.tres"
+ },
+ {
+  "id": "Merc_Greek_Apollo",
+  "name": "Apollon",
+  "species": "human",
+  "role": "healer",
+  "element": "holy",
+  "weapon_main": "bow_golden",
+  "weapon_off": "lyre",
+  "head": "crown_sun",
+  "torso": "toga",
+  "shoulder": "laurel",
+  "back": "sun_disk",
+  "palette": [
+   "#f0e8c0",
+   "#d8a030",
+   "#fff0a0",
+   "#e8c4a0"
+  ],
+  "scale": 1.05,
+  "kit": [
+   "greek_apollo_rayon_solaire",
+   "greek_apollo_course_du_soleil",
+   "greek_apollo_chant_guerisseur",
+   "greek_apollo_hymne",
+   "greek_apollo_inspiration",
+   "greek_apollo_renaissance_solaire"
+  ],
+  "mods": {},
+  "note": "Dieux grecs",
+  "base": {
+   "hp": 509.33,
+   "mana": 200.0,
+   "stamina": 90.0,
+   "power": 29.97,
+   "defense": 8.0,
+   "mres": 26.0,
+   "speed": 5.77
+  },
+  "ai": {
+   "aggression": 0.2,
+   "preferred_range": 11.0
+  },
+  "pack": "olympe",
+  "path": "res://Data/DLC/Merc_Greek_Apollo.tres"
+ },
+ {
+  "id": "Merc_Greek_Ares",
+  "name": "Arès",
+  "species": "human",
+  "role": "bruiser",
+  "element": "blood",
+  "weapon_main": "kopis",
+  "weapon_off": "shield_hoplon",
+  "head": "helm_ares",
+  "torso": "cuirass_greek",
+  "shoulder": "spiked",
+  "back": "none",
+  "palette": [
+   "#a83030",
+   "#3a2a2a",
+   "#d8a030",
+   "#e0b090"
+  ],
+  "scale": 1.15,
+  "kit": [
+   "greek_ares_coup_de_kopis",
+   "greek_ares_charge_guerriere",
+   "greek_ares_tourbillon_sanglant",
+   "greek_ares_fureur",
+   "greek_ares_mise_a_mort",
+   "greek_ares_cri_de_guerre"
+  ],
+  "mods": {},
+  "note": "Dieux grecs",
+  "base": {
+   "hp": 868.2,
+   "mana": 80.0,
+   "stamina": 120.0,
+   "power": 34.0,
+   "defense": 26.0,
+   "mres": 14.0,
+   "speed": 5.92
+  },
+  "ai": {
+   "aggression": 0.75,
+   "preferred_range": 3.0
+  },
+  "pack": "olympe",
+  "path": "res://Data/DLC/Merc_Greek_Ares.tres"
+ },
+ {
+  "id": "Merc_Greek_Medusa",
+  "name": "Méduse",
+  "species": "human",
+  "role": "assassin",
+  "element": "nature",
+  "weapon_main": "caduceus",
+  "weapon_off": "",
+  "head": "hair_snakes",
+  "torso": "chiton",
+  "shoulder": "none",
+  "back": "tail_snake",
+  "palette": [
+   "#4a8a5a",
+   "#2a4a3a",
+   "#e8d060",
+   "#a8c890"
+  ],
+  "scale": 1.05,
+  "kit": [
+   "greek_medusa_crachat_de_venin",
+   "greek_medusa_glissade",
+   "greek_medusa_regard_petrifiant",
+   "greek_medusa_souffle_de_serpents",
+   "greek_medusa_nid_de_serpents",
+   "greek_medusa_petrification"
+  ],
+  "mods": {},
+  "note": "Dieux grecs",
+  "base": {
+   "hp": 554.11,
+   "mana": 90.0,
+   "stamina": 140.0,
+   "power": 39.64,
+   "defense": 14.0,
+   "mres": 10.0,
+   "speed": 7.34
+  },
+  "ai": {
+   "aggression": 0.85,
+   "preferred_range": 2.6
+  },
+  "pack": "olympe",
+  "path": "res://Data/DLC/Merc_Greek_Medusa.tres"
+ }
+]

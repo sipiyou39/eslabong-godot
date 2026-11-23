@@ -1,0 +1,11 @@
+# Mission ARÈNES de base : 4 nouvelles arènes (volcan, glacier, nuages, jungle)
+
+Lis d'abord `COMMON3.md`. Dossiers à toi : `assets/models/arenas/arena_volcano.glb|arena_glacier.glb|arena_sky.glb|arena_jungle.glb`, `assets/textures/arena/` (SEULEMENT les fichiers préfixés par tes ids d'arène), `assets/models/arenas/preview/<id>.png`, `data/dlc/theme_<id>.json`, `tools/blender_arenas_2/` (copie et étend les scripts de `tools/blender_arenas/` sans les modifier).
+
+Ces arènes doivent être du MÊME style que `arena_colosseum.glb`, `arena_forge.glb` (volcanique), `arena_frost.glb`, `arena_irongate.glb`, `arena_thunder.glb` (même qualité, mêmes matières PBR peintes, mêmes torches/braseros, même gabarit 26×16 m et mêmes obstacles `data/arena_layout.json`), mais clairement DIFFÉRENTES des existantes (autre décor, autre silhouette, autre ambiance) :
+1. `volcano` « Cratère de Lave » : arène taillée dans la caldeira d'un volcan actif, rivières de lave lumineuses (émissif doux) autour de la zone de jeu, roche basaltique, ponts de pierre, fumée, cendres ; distinct de la Forge (qui est une forge intérieure).
+2. `glacier` « Glacier des Géants » : plateau de glace bleutée au milieu de falaises glaciaires, crevasses, stalagmites de glace, aurore boréale douce en fond, neige ; distinct de la Forteresse de Glace.
+3. `sky` « Îles des Nuages » : îlots de pierre flottants, ponts de cordes/bois, voiles et drapeaux, mer de nuages dorés sous les pieds, soleil couchant chaud ; zone de jeu = grande plate-forme de pierre claire avec rebords, vide autour (jamais de trou DANS la zone de jeu).
+4. `jungle` « Temple de la Jungle » : cour d'un temple ancien envahi par la végétation, pierre moussue, lianes, statues, racines, rayons de soleil dans le feuillage, cascade au fond.
+Pour chacune : `assets/models/arenas/arena_<id>.glb`, aperçu `assets/models/arenas/preview/<id>.png` (≤ 960×540), et `data/dlc/theme_<id>.json` avec EXACTEMENT les clés de `Arena.THEMES` (voir `src/battle/Arena.gd`) : {"file": "arena_<id>.glb", "sun": "#hex", "sun_e": n, "sun_rot": [x,y,z], "sky_top", "sky_hor", "ambient", "ambient_e", "fog", "fog_d", "torch", "ember", "ground_a", "ground_b", "line", "name": "nom FR"} (valeurs cohérentes avec celles des thèmes existants).
+Livre arène par arène (GLB valide dès qu'une est finie), dans l'ordre : volcano, glacier, sky, jungle.

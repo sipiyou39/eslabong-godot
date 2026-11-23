@@ -20,12 +20,14 @@ var DEFAULTS := {
 		"controller_aim_speed": 600.0, "controller_aim_deadzone": 0.1, "controller_move_deadzone": 0.17, "controller_aim_assist_strength": 0.3,
 		"controller_aim_style": 0, "controller_target_nearest_priority": 0, "next_campaign_difficulty": 1, "ability_cast_mode": 0,
 		"channel_input_mode": 0, "colorblind_mode": false, "classic_stat_colors": false, "reduce_screen_shake": false,
-		"unit_outlines_enabled": true, "hold_to_attack_enabled": false,
+		"unit_outlines_enabled": true, "aim_assist": 0, "control_scheme": 0, "haptics": true, "hold_to_attack_enabled": false,
 		"health_bar_team_1_color": Color(0.18, 0.74, 0.28), "health_bar_team_2_color": Color(0.89, 0.28, 0.31),
 		"health_bar_team_3_color": Color(0.62, 0.32, 0.95), "health_bar_team_4_color": Color(0.95, 0.8, 0.28)},
+	"Tips": {"touch_tip_seen": false},
+	"Packs": {"pack_cosmos": false, "pack_olympe": false},
 	"Controls": {"player_3_remote_enabled": true, "player_4_remote_enabled": true},
 	"Video": {"postfx_enabled": true, "impact_flash_enabled": true, "battle_lighting_level": 2, "battle_lighting_enabled": true, "vfx_style": 0,
-		"ssao": true, "volumetric_fog": true, "shadows_quality": 2, "msaa": 2, "dof": true},
+		"ssao": true, "volumetric_fog": true, "shadows_quality": 2, "msaa": 2, "dof": true, "gfx_quality": 2},
 	"Camera": {"aim_lookahead_far": 0.15, "aim_lookahead_close": 0.2, "aim_lookahead_vertical": 0.45, "zoom_scroll_speed_mode": 1},
 	"Audio": {"master_volume": 1.0, "ui_volume": 1.0, "combat_volume": 1.0, "music_volume": 0.5, "combat_music_volume": 0.7,
 		"chest_opening_music_enabled": true, "mute_when_unfocused": true},
@@ -42,7 +44,11 @@ func _ready() -> void:
 		for k in DEFAULTS[sec]:
 			_values[sec + "/" + k] = DEFAULTS[sec][k]
 			_section_of[k] = sec
+	var first_run := not FileAccess.file_exists(PATH)
 	_load()
+	if first_run and OS.has_feature("mobile"):
+		_apply_mobile_defaults()
+	Data.rebuild_class_list()
 	_setup_input_map()
 	apply_display()
 	apply_audio()
@@ -55,6 +61,37 @@ func _load() -> void:
 		for k in cfg.get_section_keys(sec):
 			_values[sec + "/" + k] = cfg.get_value(sec, k)
 			_section_of[k] = sec
+
+## Réglages d'un premier lancement sur téléphone : rendu allégé, interface plus grande
+func apply_quality(q: int) -> void:
+	s("gfx_quality", q)
+	match q:
+		0:
+			s("shadows_quality", 0)
+			s("msaa", 0)
+			s("postfx_enabled", false)
+			s("ssao", false)
+			s("volumetric_fog", false)
+			s("dof", false)
+		1:
+			s("shadows_quality", 1)
+			s("msaa", 1)
+			s("postfx_enabled", true)
+			s("ssao", false)
+			s("volumetric_fog", false)
+			s("dof", false)
+		_:
+			s("shadows_quality", 2)
+			s("msaa", 2)
+			s("postfx_enabled", true)
+			s("ssao", true)
+			s("volumetric_fog", true)
+			s("dof", true)
+
+func _apply_mobile_defaults() -> void:
+	apply_quality(1)
+	s("ui_scale", 1.35)
+	s("fps_cap", 60)
 
 func save() -> void:
 	var cfg := ConfigFile.new()

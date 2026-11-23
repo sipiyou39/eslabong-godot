@@ -43,6 +43,23 @@ var slowmo_t: float = 0.0
 var allow_control: bool = true
 var _count_last: int = -1
 var fighter_cycle_idx: int = 0
+# --- commandes tactiles / visée assistée
+var use_touch: bool = false
+var touch: TouchControls
+var pending_touch: Dictionary = {}
+var sticky_target: Fighter = null
+var _sticky_t: float = 0.0
+var aim_slot: int = -1
+var aim_dir: Vector3 = Vector3.ZERO
+var aim_mag: float = 0.0
+var ind_line: MeshInstance3D
+var ind_line_mat: StandardMaterial3D
+var ind_circle: MeshInstance3D
+var ind_circle_mat: ShaderMaterial
+var ind_cone: MeshInstance3D
+var ind_cone_mat: ShaderMaterial
+var lock_ring: MeshInstance3D
+var lock_mat: StandardMaterial3D
 
 func _ready() -> void:
 	name = "Battle"
@@ -73,9 +90,18 @@ func _ready() -> void:
 	arena.setup(String(config.get("arena", "colosseum")), vfx)
 	_apply_camera_attributes()
 	_spawn_all()
+	use_touch = _decide_touch()
 	hud = BattleHUD.new()
 	hud.battle = self
 	add_child(hud)
+	if use_touch:
+		touch = hud.touch
+		touch.cast.connect(_on_touch_cast)
+		touch.aim_changed.connect(_on_aim_changed)
+	var cf0 := controlled_fighter()
+	if cf0:
+		hud.on_control_changed(cf0)
+	_build_indicators()
 	speed_mode = Settings.gi("battle_speed_mode")
 	_apply_speed()
 	Audio.music(String(config.get("music", "music_battle_1")))
@@ -90,7 +116,7 @@ func _exit_tree() -> void:
 	Engine.time_scale = 1.0
 
 func _apply_camera_attributes() -> void:
-	if not Settings.gb("postfx_enabled") or not Settings.gb("dof"):
+	if not Settings.gb("postfx_enabled") or not Settings.gb("dof") or RenderingServer.get_current_rendering_method() != "forward_plus":
 		return
 	var attrs := CameraAttributesPractical.new()
 	attrs.dof_blur_far_enabled = true
@@ -444,6 +470,8 @@ func deal_damage(src: Fighter, dst: Fighter, amount: float, o: Dictionary) -> fl
 		if src._m("second_wind") > 0.0 and false:
 			pass
 	dst.st["taken"] += amt
+	if dst.player_index >= 0 and amt > 0.0:
+		haptic(12)
 	# réaction visuelle
 	if not is_dot:
 		dst.take_hit_visual(crit)
@@ -555,6 +583,180 @@ func cycle_speed() -> void:
 	hud.show_speed(speed_mode)
 
 # ----------------------------------------------------------------------------------------------
+# Commandes tactiles
+# ----------------------------------------------------------------------------------------------
+func _decide_touch() -> bool:
+	match Settings.gi("control_scheme"):
+		1: return true
+		2: return false
+	return OS.has_feature("mobile") or DisplayServer.is_touchscreen_available() or Game.args.has("touch")
+
+func haptic(ms: int) -> void:
+	if Settings.gb("haptics") and OS.has_feature("mobile"):
+		Input.vibrate_handheld(ms)
+
+func _on_touch_cast(slot: int, manual: bool, dir: Vector3, mag: float) -> void:
+	pending_touch = {"slot": slot, "manual": manual, "dir": dir, "mag": mag, "t": 0.45}
+
+func _on_aim_changed(slot: int, active: bool, dir: Vector3, mag: float) -> void:
+	if active:
+		aim_slot = slot
+		aim_dir = dir
+		aim_mag = mag
+	elif aim_slot == slot:
+		aim_slot = -1
+
+func _touch_input(f: Fighter, dt: float) -> void:
+	f.move_input = Vector3(touch.move_vec.x, 0.0, touch.move_vec.y)
+	_sticky_t -= dt
+	if _sticky_t <= 0.0 and not f.kit.is_empty():
+		_sticky_t = 0.12
+		var ab0: Dictionary = f.kit[0]
+		sticky_target = AimAssist.best_target(f, float(ab0.get("range", 8.0)) * 1.1, String(ab0.get("arch", "")) in AimAssist.PROJ_ARCH, sticky_target)
+	if not pending_touch.is_empty():
+		pending_touch["t"] -= dt
+		if pending_touch["t"] <= 0.0:
+			pending_touch = {}
+		else:
+			var slot: int = pending_touch["slot"]
+			if slot < f.kit.size():
+				var res: Dictionary
+				if pending_touch["manual"]:
+					res = AimAssist.resolve_manual(f, slot, pending_touch["dir"], pending_touch["mag"], sticky_target)
+				else:
+					res = AimAssist.resolve_quick(f, slot, sticky_target)
+				if not res["ok"]:
+					pending_touch = {}
+				elif f.ability_ready(slot) and f.try_cast(slot, res["aim"], res["target"]):
+					pending_touch = {}
+					haptic(14)
+				elif slot > 0 and f.cds[slot] > 0.35:
+					pending_touch = {}
+	if touch.attack_held and pending_touch.is_empty() and f.ability_ready(0) and f.cast.is_empty():
+		var rq := AimAssist.resolve_quick(f, 0, sticky_target)
+		if rq["ok"] and rq.get("target") != null:
+			f.try_cast(0, rq["aim"], rq["target"])
+	player_aim_pt = f.global_position + (f.facing_dir if f.facing_dir.length() > 0.01 else Vector3.RIGHT) * 6.0
+	_update_indicators(f)
+
+func _build_indicators() -> void:
+	ind_line_mat = StandardMaterial3D.new()
+	ind_line_mat.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	ind_line_mat.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+	ind_line_mat.blend_mode = BaseMaterial3D.BLEND_MODE_ADD
+	ind_line_mat.albedo_color = Color(1, 1, 1, 0.5)
+	ind_line = MeshInstance3D.new()
+	var bm := BoxMesh.new()
+	bm.size = Vector3(1, 0.04, 1)
+	ind_line.mesh = bm
+	ind_line.material_override = ind_line_mat
+	ind_line.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	ind_line.visible = false
+	fx_root.add_child(ind_line)
+	ind_circle_mat = ShaderMaterial.new()
+	ind_circle_mat.shader = load("res://src/shaders/telegraph.gdshader")
+	ind_circle_mat.set_shader_parameter("shape", 0)
+	ind_circle_mat.set_shader_parameter("progress", 1.0)
+	ind_circle = MeshInstance3D.new()
+	var qc := QuadMesh.new()
+	qc.size = Vector2(1, 1)
+	qc.orientation = PlaneMesh.FACE_Y
+	ind_circle.mesh = qc
+	ind_circle.material_override = ind_circle_mat
+	ind_circle.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	ind_circle.visible = false
+	fx_root.add_child(ind_circle)
+	ind_cone_mat = ShaderMaterial.new()
+	ind_cone_mat.shader = load("res://src/shaders/telegraph.gdshader")
+	ind_cone_mat.set_shader_parameter("shape", 2)
+	ind_cone_mat.set_shader_parameter("progress", 1.0)
+	ind_cone = MeshInstance3D.new()
+	ind_cone.mesh = qc
+	ind_cone.material_override = ind_cone_mat
+	ind_cone.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	ind_cone.visible = false
+	fx_root.add_child(ind_cone)
+	lock_mat = vfx.additive_mat("glow_ring", Color(1.0, 0.35, 0.3, 0.95), false).duplicate()
+	lock_ring = MeshInstance3D.new()
+	var ql := QuadMesh.new()
+	ql.size = Vector2(1, 1)
+	ql.orientation = PlaneMesh.FACE_Y
+	lock_ring.mesh = ql
+	lock_ring.material_override = lock_mat
+	lock_ring.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	lock_ring.visible = false
+	fx_root.add_child(lock_ring)
+
+func _update_indicators(f: Fighter) -> void:
+	# anneau de verrouillage sous la cible automatique
+	if sticky_target != null and is_instance_valid(sticky_target) and sticky_target.alive and f.alive and state == State.FIGHTING and not sticky_target.is_hidden_from(f.team):
+		lock_ring.visible = true
+		lock_ring.global_position = Vector3(sticky_target.global_position.x, 0.12, sticky_target.global_position.z)
+		var s := sticky_target.radius * 3.6 * (1.0 + 0.06 * sin(time * 9.0))
+		lock_ring.scale = Vector3(s, 1, s)
+	else:
+		lock_ring.visible = false
+	# indicateur de visée manuelle
+	ind_line.visible = false
+	ind_circle.visible = false
+	ind_cone.visible = false
+	if aim_slot < 0 or aim_slot >= f.kit.size() or not f.alive:
+		return
+	var ab: Dictionary = f.kit[aim_slot]
+	var arch := String(ab.get("arch", ""))
+	var col := Data.elem_color(String(ab.get("element", "physical"))).lightened(0.25)
+	var res := AimAssist.resolve_manual(f, aim_slot, aim_dir, aim_mag, sticky_target)
+	var aim: Vector3 = res["aim"]
+	var rng := float(ab.get("range", 6.0))
+	var dir := Abilities.dir_to(f.global_position, aim)
+	if dir == Vector3.ZERO:
+		dir = aim_dir
+	var from := Vector3(f.global_position.x, 0.1, f.global_position.z)
+	if arch in AimAssist.GROUND_ARCH or arch == "field":
+		ind_circle.visible = true
+		var r := float(ab.get("radius", 3.5))
+		ind_circle.global_position = Vector3(aim.x, 0.1, aim.z)
+		ind_circle.scale = Vector3(r * 2.1, 1, r * 2.1)
+		ind_circle_mat.set_shader_parameter("color", col)
+		ind_circle_mat.set_shader_parameter("intensity", 1.2)
+		ind_circle_mat.set_shader_parameter("progress", 1.0)
+		ind_line.visible = true
+		_place_line(from, Vector3(aim.x, 0.1, aim.z), 0.18, col, 0.3)
+	elif arch in ["cone"] or arch == "melee_arc" or arch == "execute":
+		ind_cone.visible = true
+		var rr := rng if arch == "cone" else maxf(rng, 3.0) * 1.6
+		var ang := deg_to_rad(float(ab.get("angle", 90.0)))
+		ind_cone.global_position = from + dir * rr * 0.5
+		ind_cone.rotation.y = atan2(dir.x, dir.z) + PI
+		ind_cone.scale = Vector3(rr * 2.0 * sin(minf(ang * 0.5, 1.2)) * 1.2 + 1.0, 1, rr)
+		ind_cone_mat.set_shader_parameter("color", col)
+		ind_cone_mat.set_shader_parameter("cone_angle", ang)
+		ind_cone_mat.set_shader_parameter("intensity", 1.0)
+		ind_cone_mat.set_shader_parameter("progress", 1.0)
+	elif arch in AimAssist.SELF_ARCH:
+		ind_circle.visible = true
+		var r2 := maxf(float(ab.get("radius", 4.0)), 2.0)
+		ind_circle.global_position = Vector3(f.global_position.x, 0.1, f.global_position.z)
+		ind_circle.scale = Vector3(r2 * 2.1, 1, r2 * 2.1)
+		ind_circle_mat.set_shader_parameter("color", col)
+		ind_circle_mat.set_shader_parameter("intensity", 1.0)
+	else:
+		ind_line.visible = true
+		var len := minf(Abilities.flat(aim - f.global_position).length(), rng if rng > 0.0 else 12.0)
+		if res.get("target") == null:
+			len = rng if rng > 0.0 else 12.0
+		var w := maxf(float(ab.get("radius", 0.6)) * 2.0, 0.7)
+		_place_line(from, from + dir * len, w, col, 0.5)
+
+func _place_line(a: Vector3, b: Vector3, w: float, col: Color, alpha: float) -> void:
+	var d := b - a
+	var l := maxf(d.length(), 0.1)
+	ind_line.global_position = (a + b) * 0.5
+	ind_line.rotation.y = atan2(d.x, d.z)
+	ind_line.scale = Vector3(w, 1.0, l)
+	ind_line_mat.albedo_color = Color(col.r, col.g, col.b, alpha)
+
+# ----------------------------------------------------------------------------------------------
 # Entrées joueur
 # ----------------------------------------------------------------------------------------------
 func _mouse_ground_point() -> Vector3:
@@ -570,6 +772,9 @@ func player_aim(f: Fighter) -> Vector3:
 	return player_aim_pt
 
 func player_input(f: Fighter, dt: float) -> void:
+	if use_touch and touch != null:
+		_touch_input(f, dt)
+		return
 	var mv := Vector2(Input.get_axis("move_left", "move_right"), Input.get_axis("move_up", "move_down"))
 	if mv.length() > 0.12:
 		f.move_input = Vector3(mv.x, 0, mv.y).limit_length(1.0)
@@ -718,10 +923,20 @@ func _update_camera(dt: float) -> void:
 		spread = maxf(mx, 8.0)
 	var cf := controlled_fighter()
 	var fit_h := 24.0
-	if not pts.is_empty():
+	var follow := use_touch and cf != null and state == State.FIGHTING
+	var set_pts: Array[Vector3] = pts
+	if follow:
+		set_pts = [cf.global_position]
+		for o in fighters:
+			if not o.alive or o == cf or o.is_summon:
+				continue
+			var dd := Abilities.flat(o.global_position - cf.global_position).length()
+			if (o.team != cf.team and dd < 15.0 and not o.is_hidden_from(cf.team)) or (o.team == cf.team and dd < 11.0):
+				set_pts.append(o.global_position)
+	if not set_pts.is_empty():
 		var minp := Vector3(1e9, 0, 1e9)
 		var maxp := Vector3(-1e9, 0, -1e9)
-		for p in pts:
+		for p in set_pts:
 			minp.x = minf(minp.x, p.x)
 			minp.z = minf(minp.z, p.z)
 			maxp.x = maxf(maxp.x, p.x)
@@ -732,17 +947,21 @@ func _update_camera(dt: float) -> void:
 		var tv := tan(vfov * 0.5)
 		var th := tv * aspect
 		center = (minp + maxp) * 0.5
-		var hx := (maxp.x - minp.x) * 0.5 + 5.5
-		var hz := (maxp.z - minp.z) * 0.5 + 5.0
+		var hx := (maxp.x - minp.x) * 0.5 + (5.0 if follow else 5.5)
+		var hz := (maxp.z - minp.z) * 0.5 + (4.5 if follow else 5.0)
 		var dist_need := maxf(hx / th, hz * sin(cam_pitch) / tv)
-		fit_h = clampf(dist_need * sin(cam_pitch), 15.5, 38.0)
-		if cf and state == State.FIGHTING:
+		fit_h = clampf(dist_need * sin(cam_pitch), 15.0 if follow else 15.5, 21.5 if follow else 38.0)
+		if cf and state == State.FIGHTING and not follow:
 			fit_h = minf(fit_h, 26.0)
 	if cf and state == State.FIGHTING:
-		center = center.lerp(cf.global_position, 0.4)
-		var ahead := (player_aim_pt - cf.global_position)
-		ahead.y = 0
-		center += ahead.limit_length(8.0) * Settings.gf("aim_lookahead_close") * 0.8
+		if follow:
+			center = center.lerp(cf.global_position, 0.55)
+			center += cf.move_input.limit_length(1.0) * 2.4
+		else:
+			center = center.lerp(cf.global_position, 0.4)
+			var ahead := (player_aim_pt - cf.global_position)
+			ahead.y = 0
+			center += ahead.limit_length(8.0) * Settings.gf("aim_lookahead_close") * 0.8
 	if arena.is_club:
 		fit_h = 30.0
 	var target_h := fit_h * zoom_mult

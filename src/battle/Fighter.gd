@@ -158,6 +158,12 @@ func _build_visuals() -> void:
 func is_enemy_of(o: Fighter) -> bool:
 	return o.team != team
 
+func is_hidden_from(t: int) -> bool:
+	return team != t and has_status("invisible")
+
+func role() -> String:
+	return String(tpl.get("role", "bruiser"))
+
 func hp_pct() -> float:
 	return hp / maxf(max_hp, 1.0)
 

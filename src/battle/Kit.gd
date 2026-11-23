@@ -5,6 +5,7 @@ extends RefCounted
 const FILES := [
 	"res://assets/models/kit/kit_bodies.glb", "res://assets/models/kit/kit_gear.glb",
 	"res://assets/models/kit/kit_weapons.glb", "res://assets/models/kit/kit_props.glb",
+	"res://assets/models/kit/kit_scifi.glb", "res://assets/models/kit/kit_greek.glb",
 ]
 static var _loaded := false
 static var _index: Dictionary = {}     # nom -> {node, xform (vers racine)}

@@ -1,0 +1,46 @@
+[
+ {
+  "id": "cosmos",
+  "name": "Pack Cosmos",
+  "tagline": "Science-fiction",
+  "desc": "Marines, androïdes et aliens : 8 nouvelles classes et 3 arènes spatiales.",
+  "color": "#4aa8d8",
+  "arenas": [
+   "station",
+   "alien",
+   "reactor"
+  ],
+  "classes": [
+   "Merc_Sci_Marine",
+   "Merc_Sci_Titan",
+   "Merc_Sci_Plasma",
+   "Merc_Sci_Spectre",
+   "Merc_Sci_Sniper",
+   "Merc_Sci_Psion",
+   "Merc_Sci_Medic",
+   "Merc_Sci_Drone"
+  ]
+ },
+ {
+  "id": "olympe",
+  "name": "Pack Olympe",
+  "tagline": "Dieux grecs",
+  "desc": "Zeus, Athéna, Poséidon et leurs compagnons : 8 divinités et 3 arènes mythologiques.",
+  "color": "#e0b84a",
+  "arenas": [
+   "olympus",
+   "underworld",
+   "atlantis"
+  ],
+  "classes": [
+   "Merc_Greek_Zeus",
+   "Merc_Greek_Athena",
+   "Merc_Greek_Poseidon",
+   "Merc_Greek_Hades",
+   "Merc_Greek_Artemis",
+   "Merc_Greek_Apollo",
+   "Merc_Greek_Ares",
+   "Merc_Greek_Medusa"
+  ]
+ }
+]

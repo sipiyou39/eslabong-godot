@@ -2,6 +2,13 @@ extends Node
 ## Point d'entrée : menu principal, ou harnais de test (--test-battle).
 
 func _ready() -> void:
+	if Game.args.has("packs"):
+		Settings.s("pack_cosmos", true)
+		Settings.s("pack_olympe", true)
+		Data.rebuild_class_list()
+	if Game.args.has("mobile"):
+		Settings._apply_mobile_defaults()
+		Settings.apply_display()
 	if Game.args.has("nopostfx"):
 		Settings.s("postfx_enabled", false)
 	if Game.args.has("novfog"):
@@ -223,6 +230,7 @@ func _test_screen() -> void:
 	var node: Control = null
 	match which:
 		"settings": node = SettingsScreen.new()
+		"packs": node = PacksScreen.new()
 		"new": node = NewCampaignScreen.new()
 		"custom": node = CustomMatchScreen.new()
 		"hall": node = HallScreen.new()

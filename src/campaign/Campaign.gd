@@ -2,7 +2,7 @@ class_name Campaign
 extends RefCounted
 ## État complet d'une campagne : club, effectif, monde (équipes IA, divisions, calendrier), événements de la semaine, sauvegarde.
 
-static var save_path: String = "user://eslabong_campaign_1.json"
+static var save_path: String = "user://arenabattler_campaign_1.json"
 const WEEKS := 29
 const DIVISION_COUNT := 4
 const TEAMS_PER_DIV := 13

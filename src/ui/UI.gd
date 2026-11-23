@@ -172,8 +172,39 @@ static func theme() -> Theme:
 	t.set_stylebox("slider", "HSlider", style_flat(Color("0c0a14"), Color("3a3358"), 4, 1, 0, 2))
 	t.set_stylebox("grabber_area", "HSlider", style_flat(GOLD_DIM, Color.TRANSPARENT, 4, 0, 0, 2))
 	t.set_stylebox("grabber_area_highlight", "HSlider", style_flat(GOLD, Color.TRANSPARENT, 4, 0, 0, 2))
+	# curseurs et menus déroulants plus faciles à toucher
+	var gi := _grabber_icon(false)
+	var gh := _grabber_icon(true)
+	for nm in ["grabber", "grabber_disabled"]:
+		t.set_icon(nm, "HSlider", gi)
+	t.set_icon("grabber_highlight", "HSlider", gh)
+	t.set_stylebox("slider", "HSlider", style_flat(Color("0c0a14"), Color("3a3358"), 6, 1, 0, 2))
+	t.set_font_size("font_size", "PopupMenu", 22 if touch_ui() else 18)
+	t.set_constant("v_separation", "PopupMenu", 14 if touch_ui() else 6)
 	_theme = t
 	return t
+
+static func _grabber_icon(hi: bool) -> Texture2D:
+	var key := "grabber_%s" % hi
+	if _icon_cache.has(key):
+		return _icon_cache[key]
+	var n := 44
+	var img := Image.create(n, n, false, Image.FORMAT_RGBA8)
+	for y in n:
+		for x in n:
+			var dx := (x - (n - 1) * 0.5) / (n * 0.5)
+			var dy := (y - (n - 1) * 0.5) / (n * 0.5)
+			var r := sqrt(dx * dx + dy * dy)
+			if r > 0.98:
+				continue
+			var c := Color("0e0c16")
+			if r < 0.84:
+				var t := clampf(1.0 - r - dy * 0.35, 0.0, 1.0)
+				c = Color("9a7a3a").lerp(Color("ffe08a") if hi else Color("e8b848"), t)
+			img.set_pixel(x, y, c)
+	var tex := ImageTexture.create_from_image(img)
+	_icon_cache[key] = tex
+	return tex
 
 # ----------------------------------------------------------------------------------------------
 # Composants
@@ -195,9 +226,15 @@ static func shadowed(l: Label, col: Color = Color(0, 0, 0, 0.8), size: int = 4) 
 	l.add_theme_constant_override("outline_size", size)
 	return l
 
+## Interface tactile (téléphone / tablette, ou --mobile pour tester sur PC) : cibles plus grandes
+static func touch_ui() -> bool:
+	return OS.has_feature("mobile") or Game.args.has("mobile") or Game.args.has("touch") or Settings.gi("control_scheme") == 1
+
 static func btn(text: String, kind: String = "secondary", min_size: Vector2 = Vector2(0, 44)) -> Button:
 	var b := Button.new()
 	b.text = text
+	if touch_ui():
+		min_size.y = maxf(min_size.y, 58.0)
 	b.custom_minimum_size = min_size
 	b.focus_mode = Control.FOCUS_NONE
 	b.add_theme_stylebox_override("normal", btn_style(kind, "normal"))
@@ -205,7 +242,7 @@ static func btn(text: String, kind: String = "secondary", min_size: Vector2 = Ve
 	b.add_theme_stylebox_override("pressed", btn_style(kind, "pressed"))
 	b.add_theme_stylebox_override("disabled", btn_style(kind, "disabled"))
 	b.add_theme_font_override("font", Game.font_bold())
-	b.add_theme_font_size_override("font_size", 20)
+	b.add_theme_font_size_override("font_size", 22 if touch_ui() else 20)
 	if kind == "primary":
 		b.add_theme_color_override("font_color", Color("1a1208"))
 		b.add_theme_color_override("font_hover_color", Color("000000"))

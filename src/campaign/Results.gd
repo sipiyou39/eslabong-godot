@@ -5,7 +5,11 @@ extends RefCounted
 const ARENAS := ["colosseum", "frost", "forge", "irongate"]
 
 static func _arena_for(c: Campaign, key: String) -> String:
-	return ARENAS[absi(hash(key + str(c.season))) % ARENAS.size()]
+	var pool: Array = Data.arena_ids()
+	pool.erase("thunder")
+	if pool.is_empty():
+		pool = ARENAS
+	return String(pool[absi(hash(key + str(c.season))) % pool.size()])
 
 static func player_team(c: Campaign, n: int = 5, uids: Array = []) -> Dictionary:
 	var mercs: Array = []

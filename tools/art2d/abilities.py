@@ -261,7 +261,10 @@ def _job(a):
 
 def run(ids=None, procs=10):
     from multiprocessing import Pool
+    import glob
     ab = json.load(open(ROOT + '/data/abilities.json'))
+    for f in sorted(glob.glob(ROOT + '/data/dlc/abilities_*.json')):
+        ab += json.load(open(f))
     seen, jobs = set(), []
     for a in ab:
         if a['id'] in seen or (ids and a['id'] not in ids):

@@ -19,6 +19,15 @@ const ROWS := {
 		["confirm_relic_replacement", "Confirmer le remplacement de relique", "bool"], ["double_click_relic_equip", "Double-clic pour équiper", "bool"],
 		["relic_compatibility_highlights", "Surbrillance de compatibilité", "bool"],
 	],
+	"Mobile": [
+		["gfx_quality", "Qualité graphique", "opt", ["Économie (batterie)", "Équilibrée", "Maximale"]],
+		["control_scheme", "Type de commandes", "opt", ["Automatique", "Tactile", "Clavier / souris"]],
+		["aim_assist", "Aide à la visée", "opt", ["Complète (recommandée)", "Aimantation seule", "Aucune"]],
+		["haptics", "Vibrations", "bool"], ["ui_scale", "Échelle de l'interface", "slider", 0.75, 1.75, 0.05],
+		["battle_speed_mode", "Vitesse de combat par défaut", "opt", ["Normale ×1", "Rapide ×2", "Très rapide ×3"]],
+		["fps_cap", "Limite de FPS (0 = illimité)", "slider", 0.0, 120.0, 30.0], ["shadows_quality", "Ombres", "opt", ["Désactivées", "Moyennes", "Élevées"]],
+		["postfx_enabled", "Effets d'écran", "bool"],
+	],
 	"Contrôles": [
 		["controller_aim_speed", "Vitesse de visée manette", "slider", 200.0, 1200.0, 25.0], ["controller_aim_deadzone", "Zone morte visée", "slider", 0.0, 0.4, 0.01],
 		["controller_move_deadzone", "Zone morte déplacement", "slider", 0.0, 0.4, 0.01], ["controller_aim_assist_strength", "Assistance à la visée", "slider", 0.0, 1.0, 0.05],
@@ -100,7 +109,7 @@ func _make_tab(tab_name: String) -> Control:
 func _make_row(row: Array) -> Control:
 	var key: String = row[0]
 	var h := UI.hbox(10)
-	h.custom_minimum_size = Vector2(0, 38)
+	h.custom_minimum_size = Vector2(0, 54 if UI.touch_ui() else 38)
 	var l := UI.lbl(row[1], 19)
 	l.custom_minimum_size = Vector2(420, 0)
 	h.add_child(l)
@@ -119,7 +128,7 @@ func _make_row(row: Array) -> Control:
 			sl.max_value = row[4]
 			sl.step = row[5]
 			sl.value = float(Settings.g(key))
-			sl.custom_minimum_size = Vector2(300, 28)
+			sl.custom_minimum_size = Vector2(420, 44) if UI.touch_ui() else Vector2(300, 28)
 			sl.size_flags_vertical = Control.SIZE_SHRINK_CENTER
 			var val := UI.lbl(str(snappedf(sl.value, 0.01)), 18, UI.TEXT_DIM)
 			sl.value_changed.connect(func(v: float):
@@ -139,6 +148,8 @@ func _make_row(row: Array) -> Control:
 			ob.selected = opts.find(cur2) if row[2] == "opt_str" else clampi(int(cur2), 0, opts.size() - 1)
 			ob.item_selected.connect(func(i: int):
 				Settings.s(key, opts[i] if row[2] == "opt_str" else i)
+				if key == "gfx_quality":
+					Settings.apply_quality(i)
 				Settings.apply_display())
 			h.add_child(ob)
 	return h

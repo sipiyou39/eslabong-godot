@@ -5,7 +5,7 @@ import numpy as np
 from PIL import Image, ImageDraw
 from scipy import ndimage as ndi
 
-ROOT = '/path/to/elsasko'
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 ASSETS = ROOT + '/assets'
 F32 = np.float32
 

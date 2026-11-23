@@ -1,0 +1,362 @@
+[
+ {
+  "id": "Merc_Sci_Marine",
+  "name": "Marine Orbital",
+  "species": "human",
+  "role": "ranged",
+  "element": "physical",
+  "weapon_main": "blaster",
+  "weapon_off": "",
+  "head": "helm_astronaut",
+  "torso": "spacesuit",
+  "shoulder": "tech",
+  "back": "jetpack",
+  "palette": [
+   "#d8dce6",
+   "#3a5a8a",
+   "#e8a030",
+   "#e0b48f"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "sci_marine_tir_de_blaster",
+   "sci_marine_propulsion",
+   "sci_marine_rafale",
+   "sci_marine_grenade_flash",
+   "sci_marine_bouclier_orbital",
+   "sci_marine_frappe_orbitale"
+  ],
+  "mods": {},
+  "note": "Science-fiction",
+  "base": {
+   "hp": 525.5,
+   "mana": 110.0,
+   "stamina": 100.0,
+   "power": 38.5,
+   "defense": 10.0,
+   "mres": 10.0,
+   "speed": 6.12
+  },
+  "ai": {
+   "aggression": 0.35,
+   "preferred_range": 13.0
+  },
+  "pack": "cosmos",
+  "path": "res://Data/DLC/Merc_Sci_Marine.tres"
+ },
+ {
+  "id": "Merc_Sci_Titan",
+  "name": "Titan Mécanique",
+  "species": "robot",
+  "role": "tank",
+  "element": "physical",
+  "weapon_main": "gauntlet",
+  "weapon_off": "energy_shield",
+  "head": "none",
+  "torso": "mech",
+  "shoulder": "dome",
+  "back": "reactor",
+  "palette": [
+   "#6a7a8c",
+   "#2a3240",
+   "#e8a030",
+   "#9aa8b8"
+  ],
+  "scale": 1.2,
+  "kit": [
+   "sci_titan_poing_hydraulique",
+   "sci_titan_charge_turbo",
+   "sci_titan_bouclier_denergie",
+   "sci_titan_onde_de_choc",
+   "sci_titan_alarme_de_combat",
+   "sci_titan_surcharge_du_reacteur"
+  ],
+  "mods": {},
+  "note": "Science-fiction",
+  "base": {
+   "hp": 1149.4,
+   "mana": 80.0,
+   "stamina": 130.0,
+   "power": 24.32,
+   "defense": 38.0,
+   "mres": 22.0,
+   "speed": 5.27
+  },
+  "ai": {
+   "aggression": 0.7,
+   "preferred_range": 2.6
+  },
+  "pack": "cosmos",
+  "path": "res://Data/DLC/Merc_Sci_Titan.tres"
+ },
+ {
+  "id": "Merc_Sci_Plasma",
+  "name": "Sergent Plasma",
+  "species": "human",
+  "role": "bruiser",
+  "element": "arcane",
+  "weapon_main": "energy_blade",
+  "weapon_off": "",
+  "head": "helm_pilot",
+  "torso": "exo",
+  "shoulder": "jet",
+  "back": "none",
+  "palette": [
+   "#3a4a6a",
+   "#9a3a2a",
+   "#4ad0e8",
+   "#e0b48f"
+  ],
+  "scale": 1.05,
+  "kit": [
+   "sci_plasma_lame_plasma",
+   "sci_plasma_bond_propulse",
+   "sci_plasma_estoc_ionique",
+   "sci_plasma_tourbillon_plasma",
+   "sci_plasma_coup_fatal",
+   "sci_plasma_mode_berserk"
+  ],
+  "mods": {},
+  "note": "Science-fiction",
+  "base": {
+   "hp": 868.2,
+   "mana": 80.0,
+   "stamina": 120.0,
+   "power": 34.0,
+   "defense": 26.0,
+   "mres": 14.0,
+   "speed": 5.92
+  },
+  "ai": {
+   "aggression": 0.75,
+   "preferred_range": 3.0
+  },
+  "pack": "cosmos",
+  "path": "res://Data/DLC/Merc_Sci_Plasma.tres"
+ },
+ {
+  "id": "Merc_Sci_Spectre",
+  "name": "Spectre",
+  "species": "alien",
+  "role": "assassin",
+  "element": "void",
+  "weapon_main": "energy_dagger",
+  "weapon_off": "",
+  "head": "none",
+  "torso": "jacket_tech",
+  "shoulder": "none",
+  "back": "none",
+  "palette": [
+   "#3a2a5a",
+   "#6a3a8a",
+   "#d060e8",
+   "#7a8a9a"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "sci_spectre_entaille_denergie",
+   "sci_spectre_saut_dimensionnel",
+   "sci_spectre_camouflage_optique",
+   "sci_spectre_frappe_dans_le_dos",
+   "sci_spectre_mine_spectrale",
+   "sci_spectre_execution"
+  ],
+  "mods": {},
+  "note": "Science-fiction",
+  "base": {
+   "hp": 554.11,
+   "mana": 90.0,
+   "stamina": 140.0,
+   "power": 39.64,
+   "defense": 14.0,
+   "mres": 10.0,
+   "speed": 7.34
+  },
+  "ai": {
+   "aggression": 0.85,
+   "preferred_range": 2.6
+  },
+  "pack": "cosmos",
+  "path": "res://Data/DLC/Merc_Sci_Spectre.tres"
+ },
+ {
+  "id": "Merc_Sci_Sniper",
+  "name": "Sniper Rail",
+  "species": "human",
+  "role": "ranged",
+  "element": "lightning",
+  "weapon_main": "railgun",
+  "weapon_off": "",
+  "head": "helm_visor",
+  "torso": "jacket_tech",
+  "shoulder": "tech",
+  "back": "none",
+  "palette": [
+   "#4a5a3a",
+   "#2a2a30",
+   "#e8d040",
+   "#d8b48f"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "sci_sniper_tir_rail",
+   "sci_sniper_roulade_tactique",
+   "sci_sniper_rayon_de_precision",
+   "sci_sniper_marque_cible",
+   "sci_sniper_salve_perforante",
+   "sci_sniper_tir_de_la_mort"
+  ],
+  "mods": {},
+  "note": "Science-fiction",
+  "base": {
+   "hp": 525.5,
+   "mana": 110.0,
+   "stamina": 100.0,
+   "power": 38.5,
+   "defense": 10.0,
+   "mres": 10.0,
+   "speed": 6.12
+  },
+  "ai": {
+   "aggression": 0.35,
+   "preferred_range": 13.0
+  },
+  "pack": "cosmos",
+  "path": "res://Data/DLC/Merc_Sci_Sniper.tres"
+ },
+ {
+  "id": "Merc_Sci_Psion",
+  "name": "Psion",
+  "species": "alien",
+  "role": "mage",
+  "element": "arcane",
+  "weapon_main": "plasma_staff",
+  "weapon_off": "",
+  "head": "none",
+  "torso": "psi_robe",
+  "shoulder": "none",
+  "back": "none",
+  "palette": [
+   "#5a3a9a",
+   "#2a1a4a",
+   "#58e0e8",
+   "#8ab0a8"
+  ],
+  "scale": 1.05,
+  "kit": [
+   "sci_psion_eclat_psychique",
+   "sci_psion_teleportation",
+   "sci_psion_implosion",
+   "sci_psion_onde_mentale",
+   "sci_psion_distorsion",
+   "sci_psion_foudre_psi"
+  ],
+  "mods": {},
+  "note": "Science-fiction",
+  "base": {
+   "hp": 471.4,
+   "mana": 180.0,
+   "stamina": 90.0,
+   "power": 44.32,
+   "defense": 8.0,
+   "mres": 22.0,
+   "speed": 5.79
+  },
+  "ai": {
+   "aggression": 0.3,
+   "preferred_range": 12.0
+  },
+  "pack": "cosmos",
+  "path": "res://Data/DLC/Merc_Sci_Psion.tres"
+ },
+ {
+  "id": "Merc_Sci_Medic",
+  "name": "Docteur Nano",
+  "species": "robot",
+  "role": "healer",
+  "element": "nature",
+  "weapon_main": "med_gun",
+  "weapon_off": "",
+  "head": "none",
+  "torso": "medic",
+  "shoulder": "none",
+  "back": "drone",
+  "palette": [
+   "#e8ecf0",
+   "#3aa860",
+   "#e84a4a",
+   "#a8b4c0"
+  ],
+  "scale": 0.95,
+  "kit": [
+   "sci_medic_seringue_laser",
+   "sci_medic_glissade",
+   "sci_medic_nanosoin",
+   "sci_medic_brume_reparatrice",
+   "sci_medic_bouclier_nano",
+   "sci_medic_reanimation"
+  ],
+  "mods": {},
+  "note": "Science-fiction",
+  "base": {
+   "hp": 550.1,
+   "mana": 200.0,
+   "stamina": 90.0,
+   "power": 29.97,
+   "defense": 8.0,
+   "mres": 26.0,
+   "speed": 5.77
+  },
+  "ai": {
+   "aggression": 0.2,
+   "preferred_range": 11.0
+  },
+  "pack": "cosmos",
+  "path": "res://Data/DLC/Merc_Sci_Medic.tres"
+ },
+ {
+  "id": "Merc_Sci_Drone",
+  "name": "Pilote de Drones",
+  "species": "human",
+  "role": "summoner",
+  "element": "lightning",
+  "weapon_main": "plasma_staff",
+  "weapon_off": "controller",
+  "head": "helm_pilot",
+  "torso": "jacket_tech",
+  "shoulder": "none",
+  "back": "drone",
+  "palette": [
+   "#3a6a8a",
+   "#8a5a2a",
+   "#58e8d8",
+   "#e0b48f"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "sci_drone_decharge_de_drone",
+   "sci_drone_pas_de_cote",
+   "sci_drone_tourelle_laser",
+   "sci_drone_essaim_de_drones",
+   "sci_drone_surcharge",
+   "sci_drone_bombardement"
+  ],
+  "mods": {},
+  "note": "Science-fiction",
+  "base": {
+   "hp": 484.5,
+   "mana": 190.0,
+   "stamina": 90.0,
+   "power": 35.55,
+   "defense": 8.0,
+   "mres": 20.0,
+   "speed": 5.72
+  },
+  "ai": {
+   "aggression": 0.3,
+   "preferred_range": 11.0
+  },
+  "pack": "cosmos",
+  "path": "res://Data/DLC/Merc_Sci_Drone.tres"
+ }
+]

@@ -14,9 +14,10 @@ var format_opt: OptionButton
 var ids: Array = []
 var names: Array = []
 const FORMATS := [["1v1", [1, 1]], ["2v2", [2, 2]], ["3v3", [3, 3]], ["4v4", [4, 4]], ["5v5", [5, 5]], ["3v3v3v3 (4 équipes)", [3, 3, 3, 3]], ["Chaos Thunder (8 combattants, chacun pour soi)", [1, 1, 1, 1, 1, 1, 1, 1]]]
-const ARENAS := [["colosseum", "Colisée de Sable"], ["frost", "Forteresse de Glace"], ["forge", "Forge Volcanique"], ["irongate", "Porte de Fer"], ["thunder", "Arène Chaos Thunder"]]
+var ARENAS: Array = []
 
 func _ready() -> void:
+	ARENAS = Data.arena_choices()
 	theme = UI.theme()
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	ids = ["__random"]

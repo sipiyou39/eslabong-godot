@@ -34,6 +34,11 @@ def role_icon(P, role, x, y, s):
         sh_wing(g.L('a', 'white', outline=0.1), 0.15, -0.1, 1.2)
 
 
+WEAPON_ALIAS = {'blaster': 'crossbow', 'railgun': 'crossbow_heavy', 'energy_blade': 'sword_long', 'energy_dagger': 'dagger', 'gauntlet': 'fists', 'plasma_staff': 'staff_crystal',
+                'med_gun': 'wand', 'thunderbolt': 'staff_storm', 'trident': 'spear', 'bident': 'spear', 'bow_golden': 'bow_long', 'kopis': 'sword_short', 'spear_greek': 'spear',
+                'caduceus': 'staff_wood', 'lyre': 'wand'}
+
+
 def render_class(c):
     pal = [hexc(x) for x in c['palette']]
     role = c['role']
@@ -60,7 +65,7 @@ def render_class(c):
     ch = P.L('chev', (lighten(pal[2], 0.1), darken(pal[2], 0.4)), outline=0.0, bevel=0.04, clip=im)
     ch.poly([(-1, 0.72), (0, 0.42), (1, 0.72), (1, 0.62), (0, 0.32), (-1, 0.62)])
     # arme
-    kind = c['weapon_main']
+    kind = WEAPON_ALIAS.get(c['weapon_main'], c['weapon_main'])
     if kind in WP:
         WP[kind](SubParts(P, -0.66, 0.66, 1.0, -45, prefix='wp_'))
     off = c.get('weapon_off')
@@ -74,7 +79,10 @@ def render_class(c):
 
 
 def run():
+    import glob
     cl = json.load(open(ROOT + '/data/classes.json'))
+    for f in sorted(glob.glob(ROOT + '/data/dlc/classes_*.json')):
+        cl += json.load(open(f))
     for c in cl:
         save(render_class(c), f'{OUT}/{c["id"]}.png')
     return len(cl)

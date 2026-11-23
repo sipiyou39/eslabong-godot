@@ -63,6 +63,12 @@ var medals: Array = []
 var staff_defs: Array = []
 var facility_defs: Array = []
 var arena_layout: Dictionary = {}
+# --- packs (DLC) : classes et arènes supplémentaires, activés dans « Packs »
+var base_class_list: Array = []
+var pack_list: Array = []                   # [{id, name, tagline, desc, color, arenas, classes}]
+var pack_by_id: Dictionary = {}
+var extra_arena_themes: Dictionary = {}     # id -> thème (comme Arena.THEMES)
+var arena_pack: Dictionary = {}             # id d'arène -> id de pack ("" = jeu de base)
 
 func _ready() -> void:
 	_load_all()
@@ -111,7 +117,85 @@ func _load_all() -> void:
 	var lay: Variant = _read_json("res://data/arena_layout.json")
 	if lay is Dictionary:
 		arena_layout = lay
+	base_class_list = class_list.duplicate()
+	_load_dlc()
+	rebuild_class_list()
 	print("[Data] ", abilities.size(), " compétences, ", classes.size(), " classes, ", named.size(), " nommés, ", relics.size(), " reliques, ", teams.size(), " équipes")
+
+func _load_dlc() -> void:
+	var pk: Variant = _read_json("res://data/dlc/packs.json")
+	if pk is Array:
+		pack_list = pk
+	for p in pack_list:
+		pack_by_id[String(p["id"])] = p
+		var pid := String(p["id"])
+		var cls: Variant = _read_json("res://data/dlc/classes_%s.json" % pid)
+		if cls is Array:
+			for c in cls:
+				classes[c["id"]] = c
+		var abs_: Variant = _read_json("res://data/dlc/abilities_%s.json" % pid)
+		if abs_ is Array:
+			for a in abs_:
+				abilities[a["id"]] = a
+		for aid in p.get("arenas", []):
+			arena_pack[String(aid)] = pid
+	# thèmes d'arènes supplémentaires (nouvelles arènes de base + arènes des packs)
+	var dir := DirAccess.open("res://data/dlc")
+	if dir:
+		for fn in dir.get_files():
+			var name := fn.trim_suffix(".remap")
+			if name.begins_with("theme_") and name.ends_with(".json"):
+				var t: Variant = _read_json("res://data/dlc/" + name)
+				if t is Dictionary:
+					var id := name.trim_prefix("theme_").trim_suffix(".json")
+					extra_arena_themes[id] = _theme_from_json(t)
+
+func _theme_from_json(t: Dictionary) -> Dictionary:
+	var out := {}
+	for k in t:
+		var v: Variant = t[k]
+		if k == "sun_rot" and v is Array:
+			out[k] = Vector3(float(v[0]), float(v[1]), float(v[2]))
+		elif v is String and String(v).begins_with("#"):
+			out[k] = Color(String(v))
+		else:
+			out[k] = v
+	return out
+
+func pack_enabled(pid: String) -> bool:
+	if pid == "":
+		return true
+	if not has_node("/root/Settings"):
+		return false
+	var v: Variant = Settings.g("pack_" + pid)
+	return v != null and bool(v)
+
+## Classes jouables : jeu de base + packs activés
+func rebuild_class_list() -> void:
+	var out: Array = base_class_list.duplicate()
+	for p in pack_list:
+		if pack_enabled(String(p["id"])):
+			for cid in p.get("classes", []):
+				if classes.has(cid):
+					out.append(classes[cid])
+	class_list = out
+
+## Arènes sélectionnables : [[id, nom], ...] (5 d'origine + nouvelles + arènes des packs activés)
+func arena_choices() -> Array:
+	var out: Array = []
+	for id in Arena.THEMES:
+		if id != "club":
+			out.append([id, String(Arena.THEMES[id]["name"])])
+	for id in extra_arena_themes:
+		if pack_enabled(String(arena_pack.get(id, ""))):
+			out.append([id, String(extra_arena_themes[id].get("name", id))])
+	return out
+
+func arena_ids() -> Array:
+	var out: Array = []
+	for a in arena_choices():
+		out.append(a[0])
+	return out
 
 func ability(id: String) -> Dictionary:
 	return abilities.get(id, {})

@@ -25,6 +25,9 @@ var _banner_tw: Tween
 var _hint_t: float = 9.0
 var _ctrl: Fighter = null
 var _team_panels: Array[VBoxContainer] = []
+var touch: TouchControls
+var pause_btn: Button
+var _unit_k: float = 1.0
 
 const SLOT_KEYS := ["LMB", "ESPACE", "RMB", "Q", "E", "R"]
 
@@ -44,6 +47,61 @@ func _ready() -> void:
 	for f in battle.fighters:
 		_make_unit_ui(f)
 	_build_speed_hint()
+	if battle.use_touch:
+		_build_touch()
+
+func _build_touch() -> void:
+	touch = TouchControls.new()
+	root.add_child(touch)
+	var k := clampf(get_viewport().get_visible_rect().size.y / 720.0, 0.8, 2.4)
+	ability_bar.visible = false
+	hint_label.visible = false
+	# jauges du combattant : au centre bas, entre le joystick et les boutons
+	var vs := get_viewport().get_visible_rect().size
+	var sc := k * 0.8
+	self_panel.set_anchors_preset(Control.PRESET_TOP_LEFT)
+	self_panel.custom_minimum_size = Vector2(430, 0)
+	self_panel.scale = Vector2.ONE * sc
+	self_panel.grow_vertical = Control.GROW_DIRECTION_END
+	self_panel.position = Vector2((vs.x - 430.0 * sc) * 0.5, vs.y - 118.0 * k)
+	_unit_k = k * 0.85
+	var rows := 0
+	for f in battle.fighters:
+		if f.team == 1 and not f.is_summon:
+			rows += 1
+	feed_box.set_anchors_preset(Control.PRESET_TOP_LEFT)
+	feed_box.scale = Vector2.ONE * k * 0.8
+	feed_box.position = Vector2(vs.x - 110.0 * k - 316.0 * k * 0.8, (14.0 + rows * 38.0 * 0.9) * k + 10.0 * k)
+	pause_btn = UI.btn("II", "secondary", Vector2(64, 64))
+	pause_btn.set_anchors_preset(Control.PRESET_TOP_RIGHT)
+	pause_btn.offset_left = -84.0 * k
+	pause_btn.offset_right = -20.0 * k
+	pause_btn.offset_top = 14.0 * k
+	pause_btn.offset_bottom = 78.0 * k
+	pause_btn.pressed.connect(toggle_pause)
+	root.add_child(pause_btn)
+	if not Settings.gb("touch_tip_seen"):
+		get_tree().create_timer(4.5, true, false, true).timeout.connect(func():
+			if is_instance_valid(self) and not Settings.gb("touch_tip_seen"):
+				add_event("Appuie pour lancer • Glisse pour viser • Ramène au centre pour annuler", UI.GOLD)
+				add_event("Touche un allié dans la liste pour le contrôler", UI.TEXT)
+				Settings.s("touch_tip_seen", true)
+				Settings.save())
+	var psc := k * 0.9
+	for i in _team_panels.size():
+		var p: VBoxContainer = _team_panels[i]
+		p.set_anchors_preset(Control.PRESET_TOP_LEFT)
+		p.scale = Vector2.ONE * psc
+		p.position = Vector2(14.0 * k, 12.0 * k) if i == 0 else Vector2(vs.x - 110.0 * k - 240.0 * psc, 12.0 * k)
+	# toucher un allié dans la liste = prendre son contrôle
+	for f in team_rows.keys():
+		if f.team == int(battle.config.get("player_team", 0)):
+			var row: Control = team_rows[f]["root"]
+			row.mouse_filter = Control.MOUSE_FILTER_STOP
+			row.gui_input.connect(func(ev: InputEvent):
+				if ev is InputEventMouseButton and (ev as InputEventMouseButton).pressed and f.alive and battle.allow_control and battle.state == Battle.State.FIGHTING:
+					battle.take_control(f, 0)
+					Audio.ui("ui_click"))
 
 func _unhandled_input(ev: InputEvent) -> void:
 	# la scène de combat est en pause : seul le HUD (process ALWAYS) peut reprendre
@@ -53,6 +111,10 @@ func _unhandled_input(ev: InputEvent) -> void:
 
 func on_control_changed(f: Fighter) -> void:
 	_ctrl = f
+	if touch:
+		touch.set_fighter(f)
+		self_panel.visible = f != null
+		return
 	_rebuild_slots()
 
 # ----------------------------------------------------------------------------------------------
@@ -301,7 +363,7 @@ func _process(dt: float) -> void:
 	var cam := battle.camera
 	var real_dt := dt / maxf(Engine.time_scale, 0.01)
 	_hint_t -= real_dt
-	hint_label.visible = _hint_t > 0.0 and battle.state != Battle.State.MATCH_END
+	hint_label.visible = touch == null and _hint_t > 0.0 and battle.state != Battle.State.MATCH_END
 	hint_label.modulate.a = clampf(_hint_t / 2.0, 0.0, 1.0)
 	# spectateur : invite
 	if battle.controlled_fighter() == null and battle.allow_control and battle.state == Battle.State.FIGHTING:
@@ -355,7 +417,7 @@ func _process(dt: float) -> void:
 				c.queue_free()
 			for s in f.statuses.keys():
 				sb.add_child(UI.tex_rect(UI.status_icon(s), Vector2(14, 14)))
-		r.scale = Vector2.ONE * (1.25 if f == _ctrl else 1.0)
+		r.scale = Vector2.ONE * _unit_k * (1.25 if f == _ctrl else 1.0)
 	for f in team_rows.keys():
 		if not is_instance_valid(f):
 			continue

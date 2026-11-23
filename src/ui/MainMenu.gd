@@ -56,36 +56,41 @@ func _build() -> void:
 	band.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	root.add_child(band)
 	var col := UI.vbox(10)
-	col.position = Vector2(90, 70)
-	col.custom_minimum_size = Vector2(440, 0)
+	col.position = Vector2(70, 40)
+	col.custom_minimum_size = Vector2(640, 0)
 	root.add_child(col)
 	var logo := UI.skin_tex("logo_emblem")
 	if logo:
-		var tr := UI.tex_rect(logo, Vector2(150, 150))
+		var tr := UI.tex_rect(logo, Vector2(120, 120))
 		col.add_child(tr)
-	var title := UI.lbl("ESLABONG", 84, UI.GOLD, false, true)
+	var title := UI.lbl("ARENABATTLER", 76, UI.GOLD, false, true)
 	UI.shadowed(title, Color(0, 0, 0, 0.9), 14)
 	col.add_child(title)
 	var sub := UI.lbl("CLUB DE MERCENAIRES • ARÈNE TACTIQUE", 20, UI.TEXT_DIM, true)
 	col.add_child(sub)
-	col.add_child(UI.spacer(26))
+	col.add_child(UI.spacer(14))
 	menu_box = UI.vbox(10)
 	col.add_child(menu_box)
 	var has_save := FileAccess.file_exists(Campaign.save_path)
 	if has_save:
 		var s := Campaign.summary_of()
-		var cont := UI.btn("Continuer  —  %s  (S%d, sem. %d)" % [s.get("team_name", "?"), int(s.get("season", 1)), int(s.get("week", 1))], "primary", Vector2(440, 56))
+		var cont := UI.btn("Continuer  —  %s  (S%d, sem. %d)" % [s.get("team_name", "?"), int(s.get("season", 1)), int(s.get("week", 1))], "primary", Vector2(640, 64))
 		cont.pressed.connect(_continue)
 		menu_box.add_child(cont)
 	var items: Array = [
 		["Nouvelle campagne", _new_campaign], ["Match rapide / personnalisé", _custom_match], ["Entraînement", _training],
-		["Hall des légendes", _hall], ["Succès", _achievements], ["Réglages", _settings], ["Quitter", func(): get_tree().quit()],
+		["Packs (DLC)", _packs], ["Hall des légendes", _hall], ["Succès", _achievements], ["Réglages", _settings], ["Quitter", func(): get_tree().quit()],
 	]
+	var grid := GridContainer.new()
+	grid.columns = 2
+	grid.add_theme_constant_override("h_separation", 12)
+	grid.add_theme_constant_override("v_separation", 10)
+	menu_box.add_child(grid)
 	for it in items:
-		var b := UI.btn(it[0], "secondary", Vector2(440, 50))
+		var b := UI.btn(it[0], "secondary", Vector2(314, 56))
 		b.pressed.connect(it[1])
-		menu_box.add_child(b)
-	var ver := UI.lbl("v0.1 — reproduction Godot 4.7 • Build de référence 26856521", 14, UI.TEXT_DIM)
+		grid.add_child(b)
+	var ver := UI.lbl("ArenaBattler v0.2 • Godot 4.7", 14, UI.TEXT_DIM)
 	ver.set_anchors_preset(Control.PRESET_BOTTOM_LEFT)
 	ver.position = Vector2(20, -34)
 	root.add_child(ver)
@@ -117,6 +122,10 @@ func _custom_match() -> void:
 func _training() -> void:
 	var s := CustomMatchScreen.new()
 	s.training = true
+	_set_overlay(s)
+
+func _packs() -> void:
+	var s := PacksScreen.new()
 	_set_overlay(s)
 
 func _hall() -> void:

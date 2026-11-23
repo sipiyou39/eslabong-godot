@@ -44,8 +44,8 @@ var lightning_timer: float = 4.0
 var is_club: bool = false
 
 func setup(id: String, v: Vfx, with_lighting: bool = true) -> void:
-	theme_id = id if THEMES.has(id) else "colosseum"
-	theme = THEMES[theme_id]
+	theme_id = id if (THEMES.has(id) or Data.extra_arena_themes.has(id)) else "colosseum"
+	theme = THEMES[theme_id] if THEMES.has(theme_id) else Data.extra_arena_themes[theme_id]
 	vfx = v
 	is_club = theme_id == "club"
 	var lay: Dictionary = Data.arena_layout
@@ -190,7 +190,7 @@ func _build_lighting() -> void:
 	env.set("glow_levels/2", 1.0)
 	env.set("glow_levels/3", 1.0)
 	env.set("glow_levels/4", 0.6)
-	env.ssao_enabled = post and Settings.gb("ssao")
+	env.ssao_enabled = post and Settings.gb("ssao") and RenderingServer.get_current_rendering_method() == "forward_plus"
 	env.ssao_radius = 1.8
 	env.ssao_intensity = 2.2
 	env.ssao_power = 1.6
@@ -200,7 +200,7 @@ func _build_lighting() -> void:
 	env.fog_density = theme["fog_d"]
 	env.fog_sky_affect = 0.4
 	env.fog_aerial_perspective = 0.3
-	if Settings.gb("volumetric_fog") and post:
+	if Settings.gb("volumetric_fog") and post and RenderingServer.get_current_rendering_method() == "forward_plus":
 		env.volumetric_fog_enabled = true
 		env.volumetric_fog_density = 0.012
 		env.volumetric_fog_albedo = Color(theme["fog"]).lightened(0.2)
@@ -209,7 +209,7 @@ func _build_lighting() -> void:
 		env.volumetric_fog_anisotropy = 0.55
 		env.volumetric_fog_length = 90.0
 		env.volumetric_fog_detail_spread = 2.0
-		env.volumetric_fog_temporal_reprojection_amount = 0.6
+		env.volumetric_fog_temporal_reprojection_enabled = false
 		env.volumetric_fog_ambient_inject = 0.3
 	env.adjustment_enabled = true
 	env.adjustment_brightness = 1.0
@@ -230,7 +230,9 @@ func _build_lighting() -> void:
 	sun.light_volumetric_fog_energy = 1.0
 	add_child(sun)
 	# torches
+	var lit := 0
 	for t in torches:
+		lit += 1
 		var l := OmniLight3D.new()
 		l.light_color = theme["torch"]
 		l.light_energy = 2.2
@@ -238,6 +240,7 @@ func _build_lighting() -> void:
 		l.omni_attenuation = 1.4
 		l.shadow_enabled = false
 		l.light_volumetric_fog_energy = 1.5
+		l.visible = lit <= (6 if RenderingServer.get_current_rendering_method() != "forward_plus" else 99)
 		add_child(l)
 		l.global_position = t["pos"] + Vector3(0, 0.4, 0)
 		_torch_lights.append(l)
