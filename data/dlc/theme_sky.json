@@ -1,0 +1,18 @@
+{
+  "file": "arena_sky.glb",
+  "sun": "#ffc47a",
+  "sun_e": 1.6,
+  "sun_rot": [-30, -50, 0],
+  "sky_top": "#3a4a8a",
+  "sky_hor": "#ffb060",
+  "ambient": "#c0a0b0",
+  "ambient_e": 0.74,
+  "fog": "#f0b890",
+  "fog_d": 0.0028,
+  "torch": "#ffb050",
+  "ember": "#ffd890",
+  "ground_a": "#e8dcc4",
+  "ground_b": "#cfc0a0",
+  "line": "#fff0c0",
+  "name": "Îles des Nuages"
+}

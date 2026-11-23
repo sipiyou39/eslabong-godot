@@ -79,16 +79,18 @@ static func _hue_shift(c: Color, amt: float) -> Color:
 	h = h - floor(h)
 	return Color.from_hsv(h, c.s, c.v)
 
+const GUNS := ["blaster", "rifle_plasma", "railgun", "med_gun"]
+
 static func _style_of(w: String) -> String:
-	if w.begins_with("bow") or w.begins_with("crossbow"):
+	if w.begins_with("bow") or w.begins_with("crossbow") or w in GUNS:
 		return "shoot"
-	if w.begins_with("staff") or w in ["wand", "orb", "tome", "censer", "paddles", "lantern"]:
+	if w.begins_with("staff") or w in ["wand", "orb", "tome", "censer", "paddles", "lantern", "plasma_staff", "thunderbolt", "caduceus", "lyre", "controller"]:
 		return "cast"
-	if w in ["spear", "halberd", "rapier"]:
+	if w in ["spear", "halberd", "rapier", "trident", "bident", "spear_greek"]:
 		return "thrust"
-	if w in ["fists", "claws", "whip"]:
+	if w in ["fists", "claws", "whip", "gauntlet"]:
 		return "punch"
-	if w in ["hammer_great", "axe_great", "axe_double", "sword_great", "pick"]:
+	if w in ["hammer_great", "axe_great", "axe_double", "sword_great", "pick", "wrench"]:
 		return "smash"
 	return "slash"
 
@@ -151,7 +153,9 @@ func _build_kit(cols: Array[Color]) -> void:
 	# équipement
 	var head: String = tpl.get("head", "none")
 	if head != "none" and head != "":
-		_add_part(head, j_head, mat)
+		var hmi := _add_part(head, j_head, mat)
+		if hmi != null and sp == "alien":
+			hmi.scale = Vector3(1.12, 1.18, 1.12)       # couvre-chefs modélisés pour un crâne humain
 	var torso: String = tpl.get("torso", "none")
 	if torso != "none" and torso != "":
 		_add_part("armor_" + torso, j_torso, mat)
@@ -180,7 +184,7 @@ func _attach_weapons(mat: ShaderMaterial) -> void:
 	weapon_r = _spawn_weapon(main, true, mat)
 	if off != "":
 		weapon_l = _spawn_weapon(off, false, mat)
-	elif main in ["claws", "fists", "paddles"]:
+	elif main in ["claws", "fists", "paddles", "energy_dagger", "gauntlet"]:
 		weapon_l = _spawn_weapon(main, false, mat)
 
 func _spawn_weapon(wname: String, right: bool, mat: ShaderMaterial) -> Node3D:
@@ -202,7 +206,7 @@ func _spawn_weapon(wname: String, right: bool, mat: ShaderMaterial) -> Node3D:
 		mi.material_override = mat
 	holder.add_child(mi)
 	sock.add_child(holder)
-	var is_shield := wname.begins_with("shield")
+	var is_shield := wname.find("shield") >= 0
 	if not right:
 		weapon_l_is_shield = is_shield
 	_apply_grip(holder, wname, right, is_shield)
@@ -217,9 +221,7 @@ func _apply_grip(holder: Node3D, wname: String, right: bool, is_shield: bool) ->
 		holder.position = Vector3(0.1 if not right else -0.1, 0.0, 0.08)
 	elif style == "cast":
 		deg = Vector3(30, 0, 0)
-	elif wname.begins_with("bow"):
-		deg = Vector3(90, 0, 0)
-	elif wname.begins_with("crossbow"):
+	elif wname.begins_with("bow") or wname.begins_with("crossbow") or wname in GUNS:
 		deg = Vector3(90, 0, 0)
 	elif wname in ["tome", "orb", "lantern"]:
 		deg = Vector3(70, 0, 0)

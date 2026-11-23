@@ -1,0 +1,22 @@
+{
+ "file": "arena_station.glb",
+ "sun": "#ffe2c8",
+ "sun_e": 1.35,
+ "sun_rot": [
+  -52,
+  28,
+  0
+ ],
+ "sky_top": "#04060f",
+ "sky_hor": "#1c2c48",
+ "ambient": "#7080a0",
+ "ambient_e": 0.72,
+ "fog": "#18222f",
+ "fog_d": 0.003,
+ "torch": "#ff9a40",
+ "ember": "#5ad8ca",
+ "ground_a": "#6c7078",
+ "ground_b": "#454850",
+ "line": "#e8a24a",
+ "name": "Station Orbitale"
+}

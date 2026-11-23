@@ -15,7 +15,7 @@ def pleat(g, folds=14, amp=0.007, cz=0.0, y0=0.75, y1=1.16, grow=0.0):
 def armor_cuirass_greek():
     p = T_("armor_cuirass_greek")
     kw = dict(gx=0.032, gz=0.03)
-    sh = torso_shell(0.755, 1.16, n=22, k=10, chest=0.03, **kw)
+    sh = torso_shell(0.755, 1.16, n=20, k=9, chest=0.03, **kw)
     stamp(sh, (0.0, 0.99, 0.21), (0.012, 0.19, 0.05), -0.012)
     stamp(sh, (0.0, 0.97, -0.2), (0.012, 0.2, 0.05), -0.012)                          # colonne
     stamp(sh, (0.1, 1.0, -0.185), (0.075, 0.1, 0.05), 0.014, mirror=True)             # omoplates

@@ -1,0 +1,22 @@
+{
+ "file": "arena_olympus.glb",
+ "sun": "#ffe6b8",
+ "sun_e": 1.5,
+ "sun_rot": [
+  -48,
+  -30,
+  0
+ ],
+ "sky_top": "#2a4a9a",
+ "sky_hor": "#ffd890",
+ "ambient": "#a8b4dc",
+ "ambient_e": 0.7,
+ "fog": "#f0d8b0",
+ "fog_d": 0.0022,
+ "torch": "#ffc860",
+ "ember": "#ffe0a0",
+ "ground_a": "#e8dcc4",
+ "ground_b": "#c8b890",
+ "line": "#d8aa40",
+ "name": "Mont Olympe"
+}

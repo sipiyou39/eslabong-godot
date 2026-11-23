@@ -1,0 +1,22 @@
+{
+ "file": "arena_underworld.glb",
+ "sun": "#8affd0",
+ "sun_e": 1.0,
+ "sun_rot": [
+  -55,
+  25,
+  0
+ ],
+ "sky_top": "#0a0410",
+ "sky_hor": "#4a1810",
+ "ambient": "#5a4a6a",
+ "ambient_e": 0.62,
+ "fog": "#2a1218",
+ "fog_d": 0.009,
+ "torch": "#4affc0",
+ "ember": "#a0ffd8",
+ "ground_a": "#2c2833",
+ "ground_b": "#1a171f",
+ "line": "#4affc0",
+ "name": "Les Enfers"
+}

@@ -58,6 +58,7 @@ def back_wings_hermes():
     left = [merge(main), merge(cov), merge(small), tube(arm, [0.022 * (1 - 0.5 * k / 11) for k in range(12)], n=5, cap0='ngon', cap1='ngon')]
     cols = [B, R, B, G]
     for g, c in zip(left, cols):
+        g.V = (g.V - root) * 0.82 + root
         p.add(g, c, angle=80)
         p.add(g.mir(), c, angle=80)
     return p
@@ -140,17 +141,17 @@ def back_quiver_gold():
 
 def back_aegis():
     p = B_("back_aegis")
-    rows = [(1.225, 0.14, 0.11, -0.008), (1.195, 0.26, 0.17, -0.01), (1.15, 0.38, 0.215, -0.01), (1.07, 0.445, 0.235, -0.01), (0.97, 0.45, 0.24, -0.005), (0.89, 0.44, 0.235, -0.005)]
+    rows = [(1.225, 0.14, 0.11, -0.008), (1.195, 0.22, 0.15, -0.01), (1.145, 0.31, 0.19, -0.01), (1.08, 0.395, 0.225, -0.01), (0.99, 0.425, 0.235, -0.005), (0.9, 0.42, 0.235, -0.005)]
     g = rows_loft(rows, n=22, e=2.9, k=8, cap0='ngon', cap1='ngon')
     p.add(g, R, angle=60)
     # écailles de l'égide (anneaux) + frange de serpents
-    for y, r in ((1.1, 0.4), (1.0, 0.448), (0.92, 0.445)):
+    for y, r in ((1.12, 0.33), (1.04, 0.405), (0.95, 0.425)):
         p.add(torus(r, 0.014, 22, 4).sc(1.0, 1.0, 0.54).t(0, y, -0.008), G)
     sn = []
     for i in range(22):
         a = 2 * math.pi * i / 22
         c, s = math.cos(a), math.sin(a)
-        base = np.array([0.44 * c, 0.9, 0.235 * s])
+        base = np.array([0.42 * c, 0.9, 0.235 * s])
         d = np.array([c * 0.45, -1.0, s * 0.45])
         d /= np.linalg.norm(d)
         sn.append(spike(base, base + d * (0.16 + 0.04 * math.sin(i * 2.1)), r=0.034, n=4, bulge=0.75))

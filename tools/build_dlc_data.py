@@ -83,7 +83,7 @@ PACKS = {
         "arenas": ["olympus", "underworld", "atlantis"],
         "classes": [
             {"key": "Greek_Zeus", "name": "Zeus", "role": "mage", "element": "lightning", "species": "human", "head": "hair_beard_long", "torso": "toga", "shoulder": "laurel", "back": "cape_royal",
-             "weapon_main": "thunderbolt", "weapon_off": "", "palette": ["#f0ece0", "#7a3a9a", "#f0c840", "#e8c4a0"], "scale": 1.15,
+             "weapon_main": "thunderbolt", "weapon_off": "", "palette": ["#f0ece0", "#dcd8d0", "#f0c840", "#e8c4a0"], "scale": 1.15,
              "kit": [("Éclair", "projectile", "lightning", {}), ("Course des nuées", "blink", "lightning", {}), ("Foudre en chaîne", "chain", "lightning", {}), ("Tempête divine", "ground_aoe", "lightning", {"status": ["stun"]}),
                      ("Colère de Zeus", "nova", "lightning", {}), ("Jugement", "beam", "lightning", {"dmgk": 1.3})]},
             {"key": "Greek_Athena", "name": "Athéna", "role": "tank", "element": "holy", "species": "human", "head": "helm_corinthian", "torso": "cuirass_greek", "shoulder": "gorget", "back": "aegis",

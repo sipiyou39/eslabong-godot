@@ -1,0 +1,18 @@
+{
+  "file": "arena_glacier.glb",
+  "sun": "#ffdcb0",
+  "sun_e": 1.55,
+  "sun_rot": [-34, 42, 0],
+  "sky_top": "#0e1a44",
+  "sky_hor": "#e0a68c",
+  "ambient": "#6f8cc4",
+  "ambient_e": 0.78,
+  "fog": "#a8b8d8",
+  "fog_d": 0.0055,
+  "torch": "#ffb04a",
+  "ember": "#e8f6ff",
+  "ground_a": "#9cc4e4",
+  "ground_b": "#6a9cc8",
+  "line": "#bff4ff",
+  "name": "Glacier des Géants"
+}

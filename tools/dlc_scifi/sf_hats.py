@@ -167,7 +167,7 @@ def helm_cyborg():
         if d > 100:
             base = 1.57
         if abs(d) > 120:
-            base = 1.45
+            base = 1.50
         return base + (1.265 - base) * w
     p.add(head_cap(yb, g_out=0.03, g_in=0.004, n=30, k=8, front=0.0), R, angle=55)
     # arête de plaque (liseré G le long du bord de visage)

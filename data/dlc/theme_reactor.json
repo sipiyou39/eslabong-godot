@@ -1,0 +1,22 @@
+{
+ "file": "arena_reactor.glb",
+ "sun": "#ffc890",
+ "sun_e": 1.05,
+ "sun_rot": [
+  -55,
+  14,
+  0
+ ],
+ "sky_top": "#10151b",
+ "sky_hor": "#2c343c",
+ "ambient": "#7a838e",
+ "ambient_e": 0.68,
+ "fog": "#222b31",
+ "fog_d": 0.006,
+ "torch": "#ff9040",
+ "ember": "#42dac8",
+ "ground_a": "#5a5e62",
+ "ground_b": "#3c4044",
+ "line": "#ff9a3a",
+ "name": "Cœur de Réacteur"
+}

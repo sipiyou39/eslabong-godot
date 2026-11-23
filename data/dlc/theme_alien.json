@@ -1,0 +1,22 @@
+{
+ "file": "arena_alien.glb",
+ "sun": "#ffd2a4",
+ "sun_e": 1.55,
+ "sun_rot": [
+  -46,
+  -36,
+  0
+ ],
+ "sky_top": "#7a3a2c",
+ "sky_hor": "#e8975c",
+ "ambient": "#b47a5e",
+ "ambient_e": 0.72,
+ "fog": "#c8825c",
+ "fog_d": 0.0045,
+ "torch": "#ffb264",
+ "ember": "#5ee2d2",
+ "ground_a": "#a8563c",
+ "ground_b": "#7a3b29",
+ "line": "#f2c890",
+ "name": "Planète Rouge"
+}

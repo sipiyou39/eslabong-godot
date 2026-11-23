@@ -11,5 +11,5 @@ if [ "$1" = "norebuild" ]; then shift; else
 fi
 for V in "$@"; do
   SAFE=$(echo $V | tr ',:' '__')
-  $B -b --python $D/render.py -- $ROOT/assets/models/arenas/arena_$N.glb $S/${N}_$SAFE.png $N $V 960x540 2>&1 | grep -E "Traceback|RuntimeError|Error"
+  $B -b --python $D/render.py -- $ROOT/assets/models/arenas/arena_$N.glb $S/${N}_$SAFE.png $N $V 960x540 2>&1 | grep -E "Traceback|RuntimeError" | grep -v "Shadow buffer"
 done

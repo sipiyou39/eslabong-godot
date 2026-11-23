@@ -87,27 +87,40 @@ def outline_sdf(x, z):
 
 
 # ------------------------------------------------------------------ terrain en anneaux
-def ring_terrain(mb, rr, ds, hfun, mat, tintfun=None, tint=(1, 1, 1), skip=None, hide=None, uv=None, flip=False):
+def ring_terrain(mb, rr, ds, hfun, mat, tintfun=None, tint=(1, 1, 1), skip=None, hide=None, uv=None, flip=False, split=None):
     """maille en anneaux concentriques (offsets ds par rapport au bord du terrain) ; la hauteur vient de hfun(x, z, d) -> y.
-    tintfun(V, D) -> (n,3) linéaire ; hide(x, z, d) -> bool : retire les faces (centre) à masquer."""
+    tintfun(V, D) -> (n,3) linéaire. hide(cx, cy, cz, d) -> bool retire des faces.
+    mat : nom de matériau ou liste de noms ; split(cx, cy, cz, ny, d) -> indice dans la liste (ny = composante Y de la normale)."""
     rows = [(float(d), 0.0) for d in ds]
     V, F, UV = ring_strip(rr, rows, ref='up', skip=skip, uvsize=4.0)
     V = V.copy()
     W = len(V) // len(ds)
     D = np.repeat(np.array(ds, float), W)
     V[:, 1] = hfun(V[:, 0], V[:, 2], D)
-    if hide is not None:
-        keep = []
-        for f in F:
-            c = np.mean([V[i] for i in f], 0)
-            Dm = np.mean([D[i] for i in f])
-            if not hide(c[0], c[2], Dm):
-                keep.append(f)
-        F = keep
-    if flip:
-        F = [tuple(reversed(f)) for f in F]
+    mats = mat if isinstance(mat, (list, tuple)) else [mat]
+    groups = [[] for _ in mats]
+    for f in F:
+        pts = V[list(f)]
+        c = pts.mean(0)
+        Dm = float(np.mean([D[i] for i in f]))
+        if hide is not None and hide(c[0], c[1], c[2], Dm):
+            continue
+        k = 0
+        if split is not None:
+            nrm = np.cross(pts[1] - pts[0], pts[-1] - pts[0])
+            ny = abs(nrm[1]) / max(np.linalg.norm(nrm), 1e-9)
+            k = int(split(c[0], c[1], c[2], ny, Dm))
+        groups[k].append(tuple(reversed(f)) if flip else f)
     t = tintfun(V, D) if tintfun is not None else tint
-    mb.add((V, F), mat, tint=t, uv=uv)
+    for m_, g in zip(mats, groups):
+        if not g:
+            continue
+        used = np.unique(np.array([i for f in g for i in f]))
+        remap = -np.ones(len(V), np.int64)
+        remap[used] = np.arange(len(used))
+        g2 = [tuple(int(remap[i]) for i in f) for f in g]
+        t2 = t[used] if isinstance(t, np.ndarray) and t.ndim == 2 else t
+        mb.add((V[used], g2), m_, tint=t2, uv=None if uv is None else uv[used])
     return V, F
 
 
@@ -354,7 +367,7 @@ def stone_bridge(mb, p0, p1, width, y0, y1, rise, mat_deck='M_stone', tint=(1, 1
         mb.add(p_box(width * 0.78, h, 1.0, top=(width * 0.7, 0.8)), pm, pos=(x, pier_bottom, z), yaw=yaw, tint=tint, jit=0.05)
         mb.add(p_box(width * 0.9, 0.22, 1.2), pm, pos=(x, yt - 0.22, z), yaw=yaw, tint=tint)
     # potelets sur les parapets
-    for k in range(0, n + 1, post_every):
+    for k in range(post_every, n, post_every):
         pt = path[k]
         side = np.array([math.cos(yaw), -math.sin(yaw)])
         for sg in (-1, 1):

@@ -313,7 +313,7 @@ def spire_obstacle(mb, x, z, r, h, seed):
         t = k / (n - 1)
         rad = r * (1.0 - 0.52 * t)
         hh = h * (0.28 - 0.04 * t)
-        V_, F_ = p_rock(2 * rad / 1.3, hh * 1.5, 2 * rad / 1.3, int(seed * 10 + k), 1, 0.12, 0.22)
+        V_, F_ = p_rock(2 * rad / 1.06, hh * 1.5, 2 * rad / 1.06, int(seed * 10 + k), 1, 0.12, 0.22)
         mb.add((V_, F_), 'M_basalt' if k % 2 == 0 else 'M_rock', pos=(x + rg.uniform(-0.08, 0.08), y - 0.05, z + rg.uniform(-0.08, 0.08)), yaw=rg.uniform(0, 3),
                tint=(0.58 + 0.12 * t, 0.5 + 0.08 * t, 0.46), jit=0.1)
         # veine de lave dans la jointure

@@ -63,7 +63,7 @@ def summon_turret_laser():
         p.add(box_at((sx * 0.185, 0.72, 0.02), (0.025, 0.14, 0.2), r=0.006), G, angle=55)
         p.add(box_at((sx * 0.195, 0.72, 0.02), (0.01, 0.1, 0.14), r=0.003), B, ao=1.0)
     # capteur en dôme + antenne + évents arrière
-    p.add(sphere(0.07, 0.05, 0.07, n=12, m=6).t(0, 0.94, 0.0), G, angle=55)
+    p.add(sphere(0.07, 0.05, 0.07, n=10, m=5).t(0, 0.94, 0.0), G, angle=55)
     p.add(sphere(0.035, 0.035, 0.03, n=8, m=5).t(0, 0.955, 0.05), B, ao=1.0)
     p.add(cyl_between((-0.1, 0.92, -0.14), (-0.12, 1.12, -0.16), 0.008, n=5), G)
     p.add(sphere(0.018, 0.018, 0.018, n=6, m=4).t(-0.12, 1.125, -0.16), B, ao=1.0)
