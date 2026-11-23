@@ -1,0 +1,17 @@
+# Godot
+.godot/
+*.translation
+export_presets.cfg.bak
+# Builds locaux (app Mac, pck)
+build/
+# Environnement Python des outils
+tools/.venv/
+__pycache__/
+*.pyc
+# Documents sources de la version commerciale (non redistribués)
+tools/eslabong-specifications.md
+tools/eslabong-annexe-competences.md
+tools/eslabong_dump.json
+# Divers
+.DS_Store
+*.tmp

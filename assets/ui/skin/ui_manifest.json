@@ -1,0 +1,769 @@
+{
+ "banner_ribbon.png": {
+  "margins": [
+   44,
+   0,
+   44,
+   0
+  ],
+  "size": [
+   256,
+   64
+  ],
+  "note": "ruban rouge à queues"
+ },
+ "bar_bg.png": {
+  "margins": [
+   12,
+   12,
+   12,
+   12
+  ],
+  "size": [
+   256,
+   32
+  ],
+  "note": "fond de barre"
+ },
+ "bar_fill_gold.png": {
+  "margins": [
+   12,
+   12,
+   12,
+   12
+  ],
+  "size": [
+   256,
+   32
+  ],
+  "note": "remplissage"
+ },
+ "bar_fill_hp.png": {
+  "margins": [
+   12,
+   12,
+   12,
+   12
+  ],
+  "size": [
+   256,
+   32
+  ],
+  "note": "remplissage"
+ },
+ "bar_fill_mana.png": {
+  "margins": [
+   12,
+   12,
+   12,
+   12
+  ],
+  "size": [
+   256,
+   32
+  ],
+  "note": "remplissage"
+ },
+ "bar_fill_stamina.png": {
+  "margins": [
+   12,
+   12,
+   12,
+   12
+  ],
+  "size": [
+   256,
+   32
+  ],
+  "note": "remplissage"
+ },
+ "bar_fill_xp.png": {
+  "margins": [
+   12,
+   12,
+   12,
+   12
+  ],
+  "size": [
+   256,
+   32
+  ],
+  "note": "remplissage"
+ },
+ "bar_frame.png": {
+  "margins": [
+   12,
+   12,
+   12,
+   12
+  ],
+  "size": [
+   256,
+   32
+  ],
+  "note": "cadre de barre (centre transparent)"
+ },
+ "bg_stonewall.png": {
+  "margins": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "size": [
+   1024,
+   1024
+  ],
+  "note": "mur de pierre tileable"
+ },
+ "btn_danger_disabled.png": {
+  "margins": [
+   18,
+   16,
+   18,
+   18
+  ],
+  "size": [
+   160,
+   56
+  ],
+  "note": "bouton danger disabled"
+ },
+ "btn_danger_hover.png": {
+  "margins": [
+   18,
+   16,
+   18,
+   18
+  ],
+  "size": [
+   160,
+   56
+  ],
+  "note": "bouton danger hover"
+ },
+ "btn_danger_normal.png": {
+  "margins": [
+   18,
+   16,
+   18,
+   18
+  ],
+  "size": [
+   160,
+   56
+  ],
+  "note": "bouton danger normal"
+ },
+ "btn_danger_pressed.png": {
+  "margins": [
+   18,
+   16,
+   18,
+   18
+  ],
+  "size": [
+   160,
+   56
+  ],
+  "note": "bouton danger pressed"
+ },
+ "btn_icon_hover.png": {
+  "margins": [
+   16,
+   16,
+   16,
+   16
+  ],
+  "size": [
+   56,
+   56
+  ],
+  "note": "bouton icône"
+ },
+ "btn_icon_normal.png": {
+  "margins": [
+   16,
+   16,
+   16,
+   16
+  ],
+  "size": [
+   56,
+   56
+  ],
+  "note": "bouton icône"
+ },
+ "btn_icon_pressed.png": {
+  "margins": [
+   16,
+   16,
+   16,
+   16
+  ],
+  "size": [
+   56,
+   56
+  ],
+  "note": "bouton icône"
+ },
+ "btn_primary_disabled.png": {
+  "margins": [
+   18,
+   16,
+   18,
+   18
+  ],
+  "size": [
+   160,
+   56
+  ],
+  "note": "bouton primary disabled"
+ },
+ "btn_primary_hover.png": {
+  "margins": [
+   18,
+   16,
+   18,
+   18
+  ],
+  "size": [
+   160,
+   56
+  ],
+  "note": "bouton primary hover"
+ },
+ "btn_primary_normal.png": {
+  "margins": [
+   18,
+   16,
+   18,
+   18
+  ],
+  "size": [
+   160,
+   56
+  ],
+  "note": "bouton primary normal"
+ },
+ "btn_primary_pressed.png": {
+  "margins": [
+   18,
+   16,
+   18,
+   18
+  ],
+  "size": [
+   160,
+   56
+  ],
+  "note": "bouton primary pressed"
+ },
+ "btn_secondary_disabled.png": {
+  "margins": [
+   18,
+   16,
+   18,
+   18
+  ],
+  "size": [
+   160,
+   56
+  ],
+  "note": "bouton secondary disabled"
+ },
+ "btn_secondary_hover.png": {
+  "margins": [
+   18,
+   16,
+   18,
+   18
+  ],
+  "size": [
+   160,
+   56
+  ],
+  "note": "bouton secondary hover"
+ },
+ "btn_secondary_normal.png": {
+  "margins": [
+   18,
+   16,
+   18,
+   18
+  ],
+  "size": [
+   160,
+   56
+  ],
+  "note": "bouton secondary normal"
+ },
+ "btn_secondary_pressed.png": {
+  "margins": [
+   18,
+   16,
+   18,
+   18
+  ],
+  "size": [
+   160,
+   56
+  ],
+  "note": "bouton secondary pressed"
+ },
+ "btn_tab_active.png": {
+  "margins": [
+   14,
+   14,
+   14,
+   4
+  ],
+  "size": [
+   128,
+   44
+  ],
+  "note": "onglet actif"
+ },
+ "btn_tab_normal.png": {
+  "margins": [
+   14,
+   14,
+   14,
+   4
+  ],
+  "size": [
+   128,
+   44
+  ],
+  "note": "onglet"
+ },
+ "card_frame.png": {
+  "margins": [
+   28,
+   28,
+   28,
+   28
+  ],
+  "size": [
+   192,
+   256
+  ],
+  "note": "carte ornée (centre opaque sombre)"
+ },
+ "checkbox_off.png": {
+  "margins": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "size": [
+   32,
+   32
+  ],
+  "note": "case"
+ },
+ "checkbox_on.png": {
+  "margins": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "size": [
+   32,
+   32
+  ],
+  "note": "case cochée"
+ },
+ "corner_ornament.png": {
+  "margins": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "size": [
+   64,
+   64
+  ],
+  "note": "ornement d'angle haut-gauche (pivoter pour les autres)"
+ },
+ "divider_gold.png": {
+  "margins": [
+   64,
+   0,
+   64,
+   0
+  ],
+  "size": [
+   512,
+   8
+  ],
+  "note": "séparateur horizontal doré"
+ },
+ "hex_slot.png": {
+  "margins": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "size": [
+   96,
+   96
+  ],
+  "note": "emplacement hexagonal (pointe en haut)"
+ },
+ "logo_emblem.png": {
+  "margins": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "size": [
+   512,
+   512
+  ],
+  "note": "logo du jeu 512x512"
+ },
+ "menu_bg_gradient.png": {
+  "margins": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "size": [
+   1920,
+   1080
+  ],
+  "note": "fond de menu (dégradé + braises)"
+ },
+ "panel_dark.png": {
+  "margins": [
+   20,
+   20,
+   20,
+   20
+  ],
+  "size": [
+   128,
+   128
+  ],
+  "note": "9-patch sombre acier"
+ },
+ "panel_dark_gold.png": {
+  "margins": [
+   24,
+   24,
+   24,
+   24
+  ],
+  "size": [
+   128,
+   128
+  ],
+  "note": "liseré or + coins"
+ },
+ "panel_glass.png": {
+  "margins": [
+   20,
+   20,
+   20,
+   20
+  ],
+  "size": [
+   128,
+   128
+  ],
+  "note": "verre translucide"
+ },
+ "panel_header.png": {
+  "margins": [
+   30,
+   16,
+   30,
+   16
+  ],
+  "size": [
+   256,
+   64
+  ],
+  "note": "bandeau titre"
+ },
+ "panel_inset.png": {
+  "margins": [
+   12,
+   12,
+   12,
+   12
+  ],
+  "size": [
+   96,
+   96
+  ],
+  "note": "zone en creux"
+ },
+ "panel_parchment.png": {
+  "margins": [
+   22,
+   22,
+   22,
+   22
+  ],
+  "size": [
+   128,
+   128
+  ],
+  "note": "parchemin"
+ },
+ "rarity_card_common.png": {
+  "margins": [
+   28,
+   28,
+   28,
+   28
+  ],
+  "size": [
+   192,
+   256
+  ],
+  "note": "carte rareté common"
+ },
+ "rarity_card_epic.png": {
+  "margins": [
+   28,
+   28,
+   28,
+   28
+  ],
+  "size": [
+   192,
+   256
+  ],
+  "note": "carte rareté epic"
+ },
+ "rarity_card_legendary.png": {
+  "margins": [
+   28,
+   28,
+   28,
+   28
+  ],
+  "size": [
+   192,
+   256
+  ],
+  "note": "carte rareté legendary"
+ },
+ "rarity_card_rare.png": {
+  "margins": [
+   28,
+   28,
+   28,
+   28
+  ],
+  "size": [
+   192,
+   256
+  ],
+  "note": "carte rareté rare"
+ },
+ "rarity_card_uncommon.png": {
+  "margins": [
+   28,
+   28,
+   28,
+   28
+  ],
+  "size": [
+   192,
+   256
+  ],
+  "note": "carte rareté uncommon"
+ },
+ "rarity_common.png": {
+  "margins": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "size": [
+   96,
+   96
+  ],
+  "note": "cadre de rareté common pour icône de relique (centre transparent)"
+ },
+ "rarity_epic.png": {
+  "margins": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "size": [
+   96,
+   96
+  ],
+  "note": "cadre de rareté epic pour icône de relique (centre transparent)"
+ },
+ "rarity_legendary.png": {
+  "margins": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "size": [
+   96,
+   96
+  ],
+  "note": "cadre de rareté legendary pour icône de relique (centre transparent)"
+ },
+ "rarity_rare.png": {
+  "margins": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "size": [
+   96,
+   96
+  ],
+  "note": "cadre de rareté rare pour icône de relique (centre transparent)"
+ },
+ "rarity_uncommon.png": {
+  "margins": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "size": [
+   96,
+   96
+  ],
+  "note": "cadre de rareté uncommon pour icône de relique (centre transparent)"
+ },
+ "scroll_grabber.png": {
+  "margins": [
+   6,
+   8,
+   6,
+   8
+  ],
+  "size": [
+   14,
+   64
+  ],
+  "note": "ascenseur"
+ },
+ "scroll_track.png": {
+  "margins": [
+   6,
+   6,
+   6,
+   6
+  ],
+  "size": [
+   14,
+   64
+  ],
+  "note": "piste"
+ },
+ "slider_grabber.png": {
+  "margins": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "size": [
+   28,
+   28
+  ],
+  "note": "poignée"
+ },
+ "slider_track.png": {
+  "margins": [
+   6,
+   6,
+   6,
+   6
+  ],
+  "size": [
+   128,
+   12
+  ],
+  "note": "piste"
+ },
+ "slot_square.png": {
+  "margins": [
+   14,
+   14,
+   14,
+   14
+  ],
+  "size": [
+   80,
+   80
+  ],
+  "note": "emplacement carré"
+ },
+ "slot_square_hover.png": {
+  "margins": [
+   14,
+   14,
+   14,
+   14
+  ],
+  "size": [
+   80,
+   80
+  ],
+  "note": "emplacement carré survolé"
+ },
+ "title_plate.png": {
+  "margins": [
+   140,
+   60,
+   140,
+   60
+  ],
+  "size": [
+   1024,
+   256
+  ],
+  "note": "plaque de titre (zone centrale vide pour le texte)"
+ },
+ "toast_bg.png": {
+  "margins": [
+   18,
+   14,
+   18,
+   14
+  ],
+  "size": [
+   256,
+   64
+  ],
+  "note": "notification"
+ },
+ "tooltip.png": {
+  "margins": [
+   12,
+   12,
+   12,
+   12
+  ],
+  "size": [
+   96,
+   96
+  ],
+  "note": "infobulle"
+ }
+}

@@ -1,0 +1,2258 @@
+{
+ "ui_click_1.wav": {
+  "name": "ui_click",
+  "variant": 1,
+  "dur": 0.093,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -17.57
+ },
+ "ui_click_2.wav": {
+  "name": "ui_click",
+  "variant": 2,
+  "dur": 0.093,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -17.8
+ },
+ "ui_click_3.wav": {
+  "name": "ui_click",
+  "variant": 3,
+  "dur": 0.093,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -17.86
+ },
+ "ui_hover_1.wav": {
+  "name": "ui_hover",
+  "variant": 1,
+  "dur": 0.086,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -15.72
+ },
+ "ui_hover_2.wav": {
+  "name": "ui_hover",
+  "variant": 2,
+  "dur": 0.086,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -15.86
+ },
+ "ui_hover_3.wav": {
+  "name": "ui_hover",
+  "variant": 3,
+  "dur": 0.086,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -15.66
+ },
+ "ui_confirm_1.wav": {
+  "name": "ui_confirm",
+  "variant": 1,
+  "dur": 0.857,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -16.88
+ },
+ "ui_confirm_2.wav": {
+  "name": "ui_confirm",
+  "variant": 2,
+  "dur": 0.8,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -16.5
+ },
+ "ui_confirm_3.wav": {
+  "name": "ui_confirm",
+  "variant": 3,
+  "dur": 0.81,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -16.09
+ },
+ "ui_back_1.wav": {
+  "name": "ui_back",
+  "variant": 1,
+  "dur": 0.554,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -15.26
+ },
+ "ui_back_2.wav": {
+  "name": "ui_back",
+  "variant": 2,
+  "dur": 0.573,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -16.38
+ },
+ "ui_back_3.wav": {
+  "name": "ui_back",
+  "variant": 3,
+  "dur": 0.551,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -16.57
+ },
+ "ui_error_1.wav": {
+  "name": "ui_error",
+  "variant": 1,
+  "dur": 0.256,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -14.24
+ },
+ "ui_error_2.wav": {
+  "name": "ui_error",
+  "variant": 2,
+  "dur": 0.256,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -14.17
+ },
+ "ui_error_3.wav": {
+  "name": "ui_error",
+  "variant": 3,
+  "dur": 0.255,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -14.28
+ },
+ "ui_tab_1.wav": {
+  "name": "ui_tab",
+  "variant": 1,
+  "dur": 0.08,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.95
+ },
+ "ui_tab_2.wav": {
+  "name": "ui_tab",
+  "variant": 2,
+  "dur": 0.08,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.97
+ },
+ "ui_tab_3.wav": {
+  "name": "ui_tab",
+  "variant": 3,
+  "dur": 0.08,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.43
+ },
+ "ui_coin_1.wav": {
+  "name": "ui_coin",
+  "variant": 1,
+  "dur": 0.729,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -17.52
+ },
+ "ui_coin_2.wav": {
+  "name": "ui_coin",
+  "variant": 2,
+  "dur": 0.747,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -16.9
+ },
+ "ui_coin_3.wav": {
+  "name": "ui_coin",
+  "variant": 3,
+  "dur": 0.757,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -17.69
+ },
+ "ui_levelup_1.wav": {
+  "name": "ui_levelup",
+  "variant": 1,
+  "dur": 2.551,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.53
+ },
+ "ui_levelup_2.wav": {
+  "name": "ui_levelup",
+  "variant": 2,
+  "dur": 2.616,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.07
+ },
+ "ui_levelup_3.wav": {
+  "name": "ui_levelup",
+  "variant": 3,
+  "dur": 2.6,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.53
+ },
+ "ui_open_panel_1.wav": {
+  "name": "ui_open_panel",
+  "variant": 1,
+  "dur": 0.295,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -16.36
+ },
+ "ui_open_panel_2.wav": {
+  "name": "ui_open_panel",
+  "variant": 2,
+  "dur": 0.297,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -15.96
+ },
+ "ui_open_panel_3.wav": {
+  "name": "ui_open_panel",
+  "variant": 3,
+  "dur": 0.297,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -17.94
+ },
+ "ui_close_panel_1.wav": {
+  "name": "ui_close_panel",
+  "variant": 1,
+  "dur": 0.252,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -15.14
+ },
+ "ui_close_panel_2.wav": {
+  "name": "ui_close_panel",
+  "variant": 2,
+  "dur": 0.252,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -16.95
+ },
+ "ui_close_panel_3.wav": {
+  "name": "ui_close_panel",
+  "variant": 3,
+  "dur": 0.251,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -16.4
+ },
+ "ui_sell_1.wav": {
+  "name": "ui_sell",
+  "variant": 1,
+  "dur": 1.019,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.65
+ },
+ "ui_sell_2.wav": {
+  "name": "ui_sell",
+  "variant": 2,
+  "dur": 1.038,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.61
+ },
+ "ui_sell_3.wav": {
+  "name": "ui_sell",
+  "variant": 3,
+  "dur": 1.067,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.14
+ },
+ "ui_achievement_1.wav": {
+  "name": "ui_achievement",
+  "variant": 1,
+  "dur": 3.218,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.36
+ },
+ "ui_achievement_2.wav": {
+  "name": "ui_achievement",
+  "variant": 2,
+  "dur": 3.21,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.04
+ },
+ "ui_achievement_3.wav": {
+  "name": "ui_achievement",
+  "variant": 3,
+  "dur": 3.096,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.05
+ },
+ "ui_notification_1.wav": {
+  "name": "ui_notification",
+  "variant": 1,
+  "dur": 0.806,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -16.24
+ },
+ "ui_notification_2.wav": {
+  "name": "ui_notification",
+  "variant": 2,
+  "dur": 0.785,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -15.56
+ },
+ "ui_notification_3.wav": {
+  "name": "ui_notification",
+  "variant": 3,
+  "dur": 0.859,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -15.9
+ },
+ "ui_page_1.wav": {
+  "name": "ui_page",
+  "variant": 1,
+  "dur": 0.315,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.45
+ },
+ "ui_page_2.wav": {
+  "name": "ui_page",
+  "variant": 2,
+  "dur": 0.316,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.41
+ },
+ "ui_page_3.wav": {
+  "name": "ui_page",
+  "variant": 3,
+  "dur": 0.317,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -17.82
+ },
+ "ui_unlock_1.wav": {
+  "name": "ui_unlock",
+  "variant": 1,
+  "dur": 1.418,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.61
+ },
+ "ui_unlock_2.wav": {
+  "name": "ui_unlock",
+  "variant": 2,
+  "dur": 1.427,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.49
+ },
+ "ui_unlock_3.wav": {
+  "name": "ui_unlock",
+  "variant": 3,
+  "dur": 1.41,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.49
+ },
+ "ui_chest_open_1.wav": {
+  "name": "ui_chest_open",
+  "variant": 1,
+  "dur": 3.416,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.43
+ },
+ "ui_chest_open_2.wav": {
+  "name": "ui_chest_open",
+  "variant": 2,
+  "dur": 3.184,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.13
+ },
+ "ui_chest_open_3.wav": {
+  "name": "ui_chest_open",
+  "variant": 3,
+  "dur": 3.269,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.37
+ },
+ "ui_chest_rare_1.wav": {
+  "name": "ui_chest_rare",
+  "variant": 1,
+  "dur": 3.807,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.98
+ },
+ "ui_chest_rare_2.wav": {
+  "name": "ui_chest_rare",
+  "variant": 2,
+  "dur": 3.858,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.89
+ },
+ "ui_chest_rare_3.wav": {
+  "name": "ui_chest_rare",
+  "variant": 3,
+  "dur": 3.894,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.88
+ },
+ "ui_buy_1.wav": {
+  "name": "ui_buy",
+  "variant": 1,
+  "dur": 1.057,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.06
+ },
+ "ui_buy_2.wav": {
+  "name": "ui_buy",
+  "variant": 2,
+  "dur": 1.058,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.58
+ },
+ "ui_buy_3.wav": {
+  "name": "ui_buy",
+  "variant": 3,
+  "dur": 1.019,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.35
+ },
+ "swing_light_1.wav": {
+  "name": "swing_light",
+  "variant": 1,
+  "dur": 0.247,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.37
+ },
+ "swing_light_2.wav": {
+  "name": "swing_light",
+  "variant": 2,
+  "dur": 0.226,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.31
+ },
+ "swing_light_3.wav": {
+  "name": "swing_light",
+  "variant": 3,
+  "dur": 0.262,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.2
+ },
+ "swing_light_4.wav": {
+  "name": "swing_light",
+  "variant": 4,
+  "dur": 0.254,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.25
+ },
+ "swing_heavy_1.wav": {
+  "name": "swing_heavy",
+  "variant": 1,
+  "dur": 0.433,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -17.52
+ },
+ "swing_heavy_2.wav": {
+  "name": "swing_heavy",
+  "variant": 2,
+  "dur": 0.402,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -17.91
+ },
+ "swing_heavy_3.wav": {
+  "name": "swing_heavy",
+  "variant": 3,
+  "dur": 0.465,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -17.51
+ },
+ "swing_heavy_4.wav": {
+  "name": "swing_heavy",
+  "variant": 4,
+  "dur": 0.448,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -17.44
+ },
+ "hit_slash_1.wav": {
+  "name": "hit_slash",
+  "variant": 1,
+  "dur": 0.34,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -22.45
+ },
+ "hit_slash_2.wav": {
+  "name": "hit_slash",
+  "variant": 2,
+  "dur": 0.379,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -23.22
+ },
+ "hit_slash_3.wav": {
+  "name": "hit_slash",
+  "variant": 3,
+  "dur": 0.346,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -22.02
+ },
+ "hit_slash_4.wav": {
+  "name": "hit_slash",
+  "variant": 4,
+  "dur": 0.386,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -22.98
+ },
+ "hit_blunt_1.wav": {
+  "name": "hit_blunt",
+  "variant": 1,
+  "dur": 0.519,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -16.36
+ },
+ "hit_blunt_2.wav": {
+  "name": "hit_blunt",
+  "variant": 2,
+  "dur": 0.515,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -16.35
+ },
+ "hit_blunt_3.wav": {
+  "name": "hit_blunt",
+  "variant": 3,
+  "dur": 0.506,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -17.04
+ },
+ "hit_blunt_4.wav": {
+  "name": "hit_blunt",
+  "variant": 4,
+  "dur": 0.515,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -16.57
+ },
+ "hit_pierce_1.wav": {
+  "name": "hit_pierce",
+  "variant": 1,
+  "dur": 0.252,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -22.68
+ },
+ "hit_pierce_2.wav": {
+  "name": "hit_pierce",
+  "variant": 2,
+  "dur": 0.26,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -22.71
+ },
+ "hit_pierce_3.wav": {
+  "name": "hit_pierce",
+  "variant": 3,
+  "dur": 0.262,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -22.46
+ },
+ "hit_pierce_4.wav": {
+  "name": "hit_pierce",
+  "variant": 4,
+  "dur": 0.256,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -23.27
+ },
+ "hit_magic_1.wav": {
+  "name": "hit_magic",
+  "variant": 1,
+  "dur": 0.624,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.64
+ },
+ "hit_magic_2.wav": {
+  "name": "hit_magic",
+  "variant": 2,
+  "dur": 0.636,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.3
+ },
+ "hit_magic_3.wav": {
+  "name": "hit_magic",
+  "variant": 3,
+  "dur": 0.695,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.35
+ },
+ "hit_magic_4.wav": {
+  "name": "hit_magic",
+  "variant": 4,
+  "dur": 0.694,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.71
+ },
+ "hit_crit_1.wav": {
+  "name": "hit_crit",
+  "variant": 1,
+  "dur": 1.242,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.03
+ },
+ "hit_crit_2.wav": {
+  "name": "hit_crit",
+  "variant": 2,
+  "dur": 1.26,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.29
+ },
+ "hit_crit_3.wav": {
+  "name": "hit_crit",
+  "variant": 3,
+  "dur": 1.259,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.77
+ },
+ "hit_shield_block_1.wav": {
+  "name": "hit_shield_block",
+  "variant": 1,
+  "dur": 0.889,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.85
+ },
+ "hit_shield_block_2.wav": {
+  "name": "hit_shield_block",
+  "variant": 2,
+  "dur": 0.847,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.89
+ },
+ "hit_shield_block_3.wav": {
+  "name": "hit_shield_block",
+  "variant": 3,
+  "dur": 0.877,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.35
+ },
+ "hit_shield_block_4.wav": {
+  "name": "hit_shield_block",
+  "variant": 4,
+  "dur": 0.891,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.41
+ },
+ "hit_player_hurt_1.wav": {
+  "name": "hit_player_hurt",
+  "variant": 1,
+  "dur": 0.417,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.06
+ },
+ "hit_player_hurt_2.wav": {
+  "name": "hit_player_hurt",
+  "variant": 2,
+  "dur": 0.432,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.71
+ },
+ "hit_player_hurt_3.wav": {
+  "name": "hit_player_hurt",
+  "variant": 3,
+  "dur": 0.405,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.95
+ },
+ "hit_player_hurt_4.wav": {
+  "name": "hit_player_hurt",
+  "variant": 4,
+  "dur": 0.402,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.37
+ },
+ "arrow_shoot_1.wav": {
+  "name": "arrow_shoot",
+  "variant": 1,
+  "dur": 0.227,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.43
+ },
+ "arrow_shoot_2.wav": {
+  "name": "arrow_shoot",
+  "variant": 2,
+  "dur": 0.227,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.46
+ },
+ "arrow_shoot_3.wav": {
+  "name": "arrow_shoot",
+  "variant": 3,
+  "dur": 0.228,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.43
+ },
+ "arrow_shoot_4.wav": {
+  "name": "arrow_shoot",
+  "variant": 4,
+  "dur": 0.221,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.61
+ },
+ "arrow_hit_1.wav": {
+  "name": "arrow_hit",
+  "variant": 1,
+  "dur": 0.343,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.61
+ },
+ "arrow_hit_2.wav": {
+  "name": "arrow_hit",
+  "variant": 2,
+  "dur": 0.347,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -22.71
+ },
+ "arrow_hit_3.wav": {
+  "name": "arrow_hit",
+  "variant": 3,
+  "dur": 0.335,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.96
+ },
+ "arrow_hit_4.wav": {
+  "name": "arrow_hit",
+  "variant": 4,
+  "dur": 0.329,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -23.37
+ },
+ "crossbow_shoot_1.wav": {
+  "name": "crossbow_shoot",
+  "variant": 1,
+  "dur": 0.298,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.28
+ },
+ "crossbow_shoot_2.wav": {
+  "name": "crossbow_shoot",
+  "variant": 2,
+  "dur": 0.319,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.67
+ },
+ "crossbow_shoot_3.wav": {
+  "name": "crossbow_shoot",
+  "variant": 3,
+  "dur": 0.301,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.15
+ },
+ "bow_draw_1.wav": {
+  "name": "bow_draw",
+  "variant": 1,
+  "dur": 0.918,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.55
+ },
+ "bow_draw_2.wav": {
+  "name": "bow_draw",
+  "variant": 2,
+  "dur": 0.918,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.56
+ },
+ "bow_draw_3.wav": {
+  "name": "bow_draw",
+  "variant": 3,
+  "dur": 0.919,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.43
+ },
+ "dash_whoosh_1.wav": {
+  "name": "dash_whoosh",
+  "variant": 1,
+  "dur": 0.298,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.57
+ },
+ "dash_whoosh_2.wav": {
+  "name": "dash_whoosh",
+  "variant": 2,
+  "dur": 0.298,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.03
+ },
+ "dash_whoosh_3.wav": {
+  "name": "dash_whoosh",
+  "variant": 3,
+  "dur": 0.298,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.17
+ },
+ "dash_whoosh_4.wav": {
+  "name": "dash_whoosh",
+  "variant": 4,
+  "dur": 0.298,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.63
+ },
+ "leap_land_1.wav": {
+  "name": "leap_land",
+  "variant": 1,
+  "dur": 0.994,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.13
+ },
+ "leap_land_2.wav": {
+  "name": "leap_land",
+  "variant": 2,
+  "dur": 0.993,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.46
+ },
+ "leap_land_3.wav": {
+  "name": "leap_land",
+  "variant": 3,
+  "dur": 0.992,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.67
+ },
+ "footstep_sand_1.wav": {
+  "name": "footstep_sand",
+  "variant": 1,
+  "dur": 0.24,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.19
+ },
+ "footstep_sand_2.wav": {
+  "name": "footstep_sand",
+  "variant": 2,
+  "dur": 0.24,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.28
+ },
+ "footstep_sand_3.wav": {
+  "name": "footstep_sand",
+  "variant": 3,
+  "dur": 0.24,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.84
+ },
+ "footstep_sand_4.wav": {
+  "name": "footstep_sand",
+  "variant": 4,
+  "dur": 0.24,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.18
+ },
+ "footstep_stone_1.wav": {
+  "name": "footstep_stone",
+  "variant": 1,
+  "dur": 0.232,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -23.36
+ },
+ "footstep_stone_2.wav": {
+  "name": "footstep_stone",
+  "variant": 2,
+  "dur": 0.229,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -23.07
+ },
+ "footstep_stone_3.wav": {
+  "name": "footstep_stone",
+  "variant": 3,
+  "dur": 0.238,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -23.18
+ },
+ "footstep_stone_4.wav": {
+  "name": "footstep_stone",
+  "variant": 4,
+  "dur": 0.234,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -23.89
+ },
+ "explosion_small_1.wav": {
+  "name": "explosion_small",
+  "variant": 1,
+  "dur": 1.306,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.94
+ },
+ "explosion_small_2.wav": {
+  "name": "explosion_small",
+  "variant": 2,
+  "dur": 1.296,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.01
+ },
+ "explosion_small_3.wav": {
+  "name": "explosion_small",
+  "variant": 3,
+  "dur": 1.297,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.39
+ },
+ "explosion_big_1.wav": {
+  "name": "explosion_big",
+  "variant": 1,
+  "dur": 3.991,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.44
+ },
+ "explosion_big_2.wav": {
+  "name": "explosion_big",
+  "variant": 2,
+  "dur": 4.017,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.65
+ },
+ "explosion_big_3.wav": {
+  "name": "explosion_big",
+  "variant": 3,
+  "dur": 3.927,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.38
+ },
+ "beam_loop_1.wav": {
+  "name": "beam_loop",
+  "variant": 1,
+  "dur": 2.0,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -11.27
+ },
+ "beam_loop_2.wav": {
+  "name": "beam_loop",
+  "variant": 2,
+  "dur": 2.0,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -11.14
+ },
+ "fire_loop_1.wav": {
+  "name": "fire_loop",
+  "variant": 1,
+  "dur": 3.0,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -15.54
+ },
+ "fire_loop_2.wav": {
+  "name": "fire_loop",
+  "variant": 2,
+  "dur": 3.0,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -16.19
+ },
+ "shield_up_1.wav": {
+  "name": "shield_up",
+  "variant": 1,
+  "dur": 1.196,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.22
+ },
+ "shield_up_2.wav": {
+  "name": "shield_up",
+  "variant": 2,
+  "dur": 1.194,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.33
+ },
+ "shield_up_3.wav": {
+  "name": "shield_up",
+  "variant": 3,
+  "dur": 1.197,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.15
+ },
+ "shield_break_1.wav": {
+  "name": "shield_break",
+  "variant": 1,
+  "dur": 1.135,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.94
+ },
+ "shield_break_2.wav": {
+  "name": "shield_break",
+  "variant": 2,
+  "dur": 1.148,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.08
+ },
+ "shield_break_3.wav": {
+  "name": "shield_break",
+  "variant": 3,
+  "dur": 1.146,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.54
+ },
+ "stun_hit_1.wav": {
+  "name": "stun_hit",
+  "variant": 1,
+  "dur": 0.967,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.54
+ },
+ "stun_hit_2.wav": {
+  "name": "stun_hit",
+  "variant": 2,
+  "dur": 0.981,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.26
+ },
+ "stun_hit_3.wav": {
+  "name": "stun_hit",
+  "variant": 3,
+  "dur": 1.012,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.78
+ },
+ "buff_up_1.wav": {
+  "name": "buff_up",
+  "variant": 1,
+  "dur": 0.649,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -16.42
+ },
+ "buff_up_2.wav": {
+  "name": "buff_up",
+  "variant": 2,
+  "dur": 0.655,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.64
+ },
+ "buff_up_3.wav": {
+  "name": "buff_up",
+  "variant": 3,
+  "dur": 0.65,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -17.03
+ },
+ "debuff_down_1.wav": {
+  "name": "debuff_down",
+  "variant": 1,
+  "dur": 0.923,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -15.87
+ },
+ "debuff_down_2.wav": {
+  "name": "debuff_down",
+  "variant": 2,
+  "dur": 0.965,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -15.74
+ },
+ "debuff_down_3.wav": {
+  "name": "debuff_down",
+  "variant": 3,
+  "dur": 0.958,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -15.69
+ },
+ "summon_1.wav": {
+  "name": "summon",
+  "variant": 1,
+  "dur": 3.241,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.05
+ },
+ "summon_2.wav": {
+  "name": "summon",
+  "variant": 2,
+  "dur": 3.385,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.95
+ },
+ "summon_3.wav": {
+  "name": "summon",
+  "variant": 3,
+  "dur": 3.361,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.81
+ },
+ "teleport_blink_1.wav": {
+  "name": "teleport_blink",
+  "variant": 1,
+  "dur": 0.653,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.0
+ },
+ "teleport_blink_2.wav": {
+  "name": "teleport_blink",
+  "variant": 2,
+  "dur": 0.669,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.61
+ },
+ "teleport_blink_3.wav": {
+  "name": "teleport_blink",
+  "variant": 3,
+  "dur": 0.663,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.45
+ },
+ "projectile_whoosh_1.wav": {
+  "name": "projectile_whoosh",
+  "variant": 1,
+  "dur": 0.543,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.53
+ },
+ "projectile_whoosh_2.wav": {
+  "name": "projectile_whoosh",
+  "variant": 2,
+  "dur": 0.542,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.34
+ },
+ "projectile_whoosh_3.wav": {
+  "name": "projectile_whoosh",
+  "variant": 3,
+  "dur": 0.544,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.48
+ },
+ "projectile_whoosh_4.wav": {
+  "name": "projectile_whoosh",
+  "variant": 4,
+  "dur": 0.542,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.12
+ },
+ "trap_snap_1.wav": {
+  "name": "trap_snap",
+  "variant": 1,
+  "dur": 0.548,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -22.27
+ },
+ "trap_snap_2.wav": {
+  "name": "trap_snap",
+  "variant": 2,
+  "dur": 0.523,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.84
+ },
+ "trap_snap_3.wav": {
+  "name": "trap_snap",
+  "variant": 3,
+  "dur": 0.54,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.63
+ },
+ "bat_swarm_1.wav": {
+  "name": "bat_swarm",
+  "variant": 1,
+  "dur": 1.908,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.29
+ },
+ "bat_swarm_2.wav": {
+  "name": "bat_swarm",
+  "variant": 2,
+  "dur": 1.781,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.86
+ },
+ "bat_swarm_3.wav": {
+  "name": "bat_swarm",
+  "variant": 3,
+  "dur": 1.826,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.43
+ },
+ "chain_clink_1.wav": {
+  "name": "chain_clink",
+  "variant": 1,
+  "dur": 0.455,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -16.86
+ },
+ "chain_clink_2.wav": {
+  "name": "chain_clink",
+  "variant": 2,
+  "dur": 0.436,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.33
+ },
+ "chain_clink_3.wav": {
+  "name": "chain_clink",
+  "variant": 3,
+  "dur": 0.608,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.39
+ },
+ "bell_toll_1.wav": {
+  "name": "bell_toll",
+  "variant": 1,
+  "dur": 5.378,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -15.33
+ },
+ "bell_toll_2.wav": {
+  "name": "bell_toll",
+  "variant": 2,
+  "dur": 5.596,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.88
+ },
+ "bell_toll_3.wav": {
+  "name": "bell_toll",
+  "variant": 3,
+  "dur": 5.571,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -15.3
+ },
+ "death_light_1.wav": {
+  "name": "death_light",
+  "variant": 1,
+  "dur": 0.791,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.71
+ },
+ "death_light_2.wav": {
+  "name": "death_light",
+  "variant": 2,
+  "dur": 0.731,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.81
+ },
+ "death_light_3.wav": {
+  "name": "death_light",
+  "variant": 3,
+  "dur": 0.795,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.87
+ },
+ "death_heavy_1.wav": {
+  "name": "death_heavy",
+  "variant": 1,
+  "dur": 1.775,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.49
+ },
+ "death_heavy_2.wav": {
+  "name": "death_heavy",
+  "variant": 2,
+  "dur": 1.641,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.66
+ },
+ "death_heavy_3.wav": {
+  "name": "death_heavy",
+  "variant": 3,
+  "dur": 1.717,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.56
+ },
+ "kill_ding_1.wav": {
+  "name": "kill_ding",
+  "variant": 1,
+  "dur": 0.957,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.52
+ },
+ "kill_ding_2.wav": {
+  "name": "kill_ding",
+  "variant": 2,
+  "dur": 0.95,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.26
+ },
+ "kill_ding_3.wav": {
+  "name": "kill_ding",
+  "variant": 3,
+  "dur": 0.971,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.47
+ },
+ "gold_pickup_1.wav": {
+  "name": "gold_pickup",
+  "variant": 1,
+  "dur": 0.66,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.51
+ },
+ "gold_pickup_2.wav": {
+  "name": "gold_pickup",
+  "variant": 2,
+  "dur": 0.657,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -16.86
+ },
+ "gold_pickup_3.wav": {
+  "name": "gold_pickup",
+  "variant": 3,
+  "dur": 0.642,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -17.94
+ },
+ "gold_pickup_4.wav": {
+  "name": "gold_pickup",
+  "variant": 4,
+  "dur": 0.643,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -17.59
+ },
+ "coin_clink_1.wav": {
+  "name": "coin_clink",
+  "variant": 1,
+  "dur": 0.553,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.33
+ },
+ "coin_clink_2.wav": {
+  "name": "coin_clink",
+  "variant": 2,
+  "dur": 0.516,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.27
+ },
+ "coin_clink_3.wav": {
+  "name": "coin_clink",
+  "variant": 3,
+  "dur": 0.551,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.16
+ },
+ "coin_clink_4.wav": {
+  "name": "coin_clink",
+  "variant": 4,
+  "dur": 0.509,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.77
+ },
+ "resurrect_1.wav": {
+  "name": "resurrect",
+  "variant": 1,
+  "dur": 4.553,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.74
+ },
+ "resurrect_2.wav": {
+  "name": "resurrect",
+  "variant": 2,
+  "dur": 4.488,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.78
+ },
+ "spell_cast_generic_1.wav": {
+  "name": "spell_cast_generic",
+  "variant": 1,
+  "dur": 1.641,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.16
+ },
+ "spell_cast_generic_2.wav": {
+  "name": "spell_cast_generic",
+  "variant": 2,
+  "dur": 1.643,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.98
+ },
+ "spell_cast_generic_3.wav": {
+  "name": "spell_cast_generic",
+  "variant": 3,
+  "dur": 1.655,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.4
+ },
+ "spell_fire_1.wav": {
+  "name": "spell_fire",
+  "variant": 1,
+  "dur": 1.173,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -17.91
+ },
+ "spell_fire_2.wav": {
+  "name": "spell_fire",
+  "variant": 2,
+  "dur": 1.18,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -17.24
+ },
+ "spell_fire_3.wav": {
+  "name": "spell_fire",
+  "variant": 3,
+  "dur": 1.137,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -17.97
+ },
+ "spell_fire_impact_1.wav": {
+  "name": "spell_fire_impact",
+  "variant": 1,
+  "dur": 1.301,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.32
+ },
+ "spell_fire_impact_2.wav": {
+  "name": "spell_fire_impact",
+  "variant": 2,
+  "dur": 1.218,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.24
+ },
+ "spell_fire_impact_3.wav": {
+  "name": "spell_fire_impact",
+  "variant": 3,
+  "dur": 1.29,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.98
+ },
+ "spell_ice_impact_1.wav": {
+  "name": "spell_ice_impact",
+  "variant": 1,
+  "dur": 0.713,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.06
+ },
+ "spell_ice_impact_2.wav": {
+  "name": "spell_ice_impact",
+  "variant": 2,
+  "dur": 0.73,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.06
+ },
+ "spell_ice_impact_3.wav": {
+  "name": "spell_ice_impact",
+  "variant": 3,
+  "dur": 0.678,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.22
+ },
+ "ice_shatter_1.wav": {
+  "name": "ice_shatter",
+  "variant": 1,
+  "dur": 1.229,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.18
+ },
+ "ice_shatter_2.wav": {
+  "name": "ice_shatter",
+  "variant": 2,
+  "dur": 1.172,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.86
+ },
+ "ice_shatter_3.wav": {
+  "name": "ice_shatter",
+  "variant": 3,
+  "dur": 1.347,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.99
+ },
+ "spell_lightning_1.wav": {
+  "name": "spell_lightning",
+  "variant": 1,
+  "dur": 0.914,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.5
+ },
+ "spell_lightning_2.wav": {
+  "name": "spell_lightning",
+  "variant": 2,
+  "dur": 0.891,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -22.24
+ },
+ "spell_lightning_3.wav": {
+  "name": "spell_lightning",
+  "variant": 3,
+  "dur": 0.894,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.83
+ },
+ "thunder_crack_1.wav": {
+  "name": "thunder_crack",
+  "variant": 1,
+  "dur": 4.374,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -22.53
+ },
+ "thunder_crack_2.wav": {
+  "name": "thunder_crack",
+  "variant": 2,
+  "dur": 4.64,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -22.51
+ },
+ "thunder_crack_3.wav": {
+  "name": "thunder_crack",
+  "variant": 3,
+  "dur": 4.829,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -22.96
+ },
+ "spell_holy_1.wav": {
+  "name": "spell_holy",
+  "variant": 1,
+  "dur": 2.592,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.98
+ },
+ "spell_holy_2.wav": {
+  "name": "spell_holy",
+  "variant": 2,
+  "dur": 2.541,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.43
+ },
+ "spell_holy_3.wav": {
+  "name": "spell_holy",
+  "variant": 3,
+  "dur": 2.61,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.08
+ },
+ "spell_void_1.wav": {
+  "name": "spell_void",
+  "variant": 1,
+  "dur": 2.901,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -17.54
+ },
+ "spell_void_2.wav": {
+  "name": "spell_void",
+  "variant": 2,
+  "dur": 2.907,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -16.39
+ },
+ "spell_void_3.wav": {
+  "name": "spell_void",
+  "variant": 3,
+  "dur": 2.916,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -17.27
+ },
+ "spell_arcane_1.wav": {
+  "name": "spell_arcane",
+  "variant": 1,
+  "dur": 1.994,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.24
+ },
+ "spell_arcane_2.wav": {
+  "name": "spell_arcane",
+  "variant": 2,
+  "dur": 2.054,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.65
+ },
+ "spell_arcane_3.wav": {
+  "name": "spell_arcane",
+  "variant": 3,
+  "dur": 2.072,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.88
+ },
+ "spell_wind_1.wav": {
+  "name": "spell_wind",
+  "variant": 1,
+  "dur": 1.326,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.83
+ },
+ "spell_wind_2.wav": {
+  "name": "spell_wind",
+  "variant": 2,
+  "dur": 1.343,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.01
+ },
+ "spell_wind_3.wav": {
+  "name": "spell_wind",
+  "variant": 3,
+  "dur": 1.324,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.17
+ },
+ "spell_earth_1.wav": {
+  "name": "spell_earth",
+  "variant": 1,
+  "dur": 1.923,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -15.77
+ },
+ "spell_earth_2.wav": {
+  "name": "spell_earth",
+  "variant": 2,
+  "dur": 1.872,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -16.93
+ },
+ "spell_earth_3.wav": {
+  "name": "spell_earth",
+  "variant": 3,
+  "dur": 1.913,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -16.89
+ },
+ "spell_blood_1.wav": {
+  "name": "spell_blood",
+  "variant": 1,
+  "dur": 1.249,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.05
+ },
+ "spell_blood_2.wav": {
+  "name": "spell_blood",
+  "variant": 2,
+  "dur": 1.262,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -17.63
+ },
+ "spell_blood_3.wav": {
+  "name": "spell_blood",
+  "variant": 3,
+  "dur": 1.262,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.19
+ },
+ "heal_chime_1.wav": {
+  "name": "heal_chime",
+  "variant": 1,
+  "dur": 2.328,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.03
+ },
+ "heal_chime_2.wav": {
+  "name": "heal_chime",
+  "variant": 2,
+  "dur": 2.391,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.52
+ },
+ "heal_chime_3.wav": {
+  "name": "heal_chime",
+  "variant": 3,
+  "dur": 2.417,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.53
+ },
+ "heal_big_1.wav": {
+  "name": "heal_big",
+  "variant": 1,
+  "dur": 3.402,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.78
+ },
+ "heal_big_2.wav": {
+  "name": "heal_big",
+  "variant": 2,
+  "dur": 3.486,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.76
+ },
+ "heal_big_3.wav": {
+  "name": "heal_big",
+  "variant": 3,
+  "dur": 3.463,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.18
+ },
+ "spell_ice_1.wav": {
+  "name": "spell_ice",
+  "variant": 1,
+  "dur": 2.039,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.47
+ },
+ "spell_ice_2.wav": {
+  "name": "spell_ice",
+  "variant": 2,
+  "dur": 2.061,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.63
+ },
+ "spell_ice_3.wav": {
+  "name": "spell_ice",
+  "variant": 3,
+  "dur": 2.088,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -21.28
+ },
+ "spell_shadow_1.wav": {
+  "name": "spell_shadow",
+  "variant": 1,
+  "dur": 2.501,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.8
+ },
+ "spell_shadow_2.wav": {
+  "name": "spell_shadow",
+  "variant": 2,
+  "dur": 2.505,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -20.38
+ },
+ "spell_shadow_3.wav": {
+  "name": "spell_shadow",
+  "variant": 3,
+  "dur": 2.397,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.15
+ },
+ "spell_nature_1.wav": {
+  "name": "spell_nature",
+  "variant": 1,
+  "dur": 1.796,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.6
+ },
+ "spell_nature_2.wav": {
+  "name": "spell_nature",
+  "variant": 2,
+  "dur": 1.632,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.06
+ },
+ "spell_nature_3.wav": {
+  "name": "spell_nature",
+  "variant": 3,
+  "dur": 1.727,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -19.66
+ },
+ "round_start_horn_1.wav": {
+  "name": "round_start_horn",
+  "variant": 1,
+  "dur": 3.437,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.97
+ },
+ "round_start_horn_2.wav": {
+  "name": "round_start_horn",
+  "variant": 2,
+  "dur": 3.71,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.0
+ },
+ "countdown_beep_1.wav": {
+  "name": "countdown_beep",
+  "variant": 1,
+  "dur": 0.33,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -10.64
+ },
+ "countdown_beep_2.wav": {
+  "name": "countdown_beep",
+  "variant": 2,
+  "dur": 0.318,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -12.84
+ },
+ "countdown_go_1.wav": {
+  "name": "countdown_go",
+  "variant": 1,
+  "dur": 0.876,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -16.89
+ },
+ "countdown_go_2.wav": {
+  "name": "countdown_go",
+  "variant": 2,
+  "dur": 0.855,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -16.6
+ },
+ "timer_warning_1.wav": {
+  "name": "timer_warning",
+  "variant": 1,
+  "dur": 0.633,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -13.33
+ },
+ "timer_warning_2.wav": {
+  "name": "timer_warning",
+  "variant": 2,
+  "dur": 0.638,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -13.33
+ },
+ "announcer_whoosh_1.wav": {
+  "name": "announcer_whoosh",
+  "variant": 1,
+  "dur": 2.272,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -22.51
+ },
+ "announcer_whoosh_2.wav": {
+  "name": "announcer_whoosh",
+  "variant": 2,
+  "dur": 2.277,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -22.19
+ },
+ "announcer_whoosh_3.wav": {
+  "name": "announcer_whoosh",
+  "variant": 3,
+  "dur": 2.272,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -22.56
+ },
+ "victory_fanfare_1.wav": {
+  "name": "victory_fanfare",
+  "variant": 1,
+  "dur": 3.973,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.78
+ },
+ "victory_fanfare_2.wav": {
+  "name": "victory_fanfare",
+  "variant": 2,
+  "dur": 3.975,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -18.77
+ },
+ "defeat_sting_1.wav": {
+  "name": "defeat_sting",
+  "variant": 1,
+  "dur": 2.966,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -16.25
+ },
+ "defeat_sting_2.wav": {
+  "name": "defeat_sting",
+  "variant": 2,
+  "dur": 2.972,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -17.2
+ },
+ "voice_grunt_m_1.wav": {
+  "name": "voice_grunt_m",
+  "variant": 1,
+  "dur": 0.378,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -11.34
+ },
+ "voice_grunt_m_2.wav": {
+  "name": "voice_grunt_m",
+  "variant": 2,
+  "dur": 0.32,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -10.95
+ },
+ "voice_grunt_m_3.wav": {
+  "name": "voice_grunt_m",
+  "variant": 3,
+  "dur": 0.458,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -12.33
+ },
+ "voice_grunt_f_1.wav": {
+  "name": "voice_grunt_f",
+  "variant": 1,
+  "dur": 0.334,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -11.06
+ },
+ "voice_grunt_f_2.wav": {
+  "name": "voice_grunt_f",
+  "variant": 2,
+  "dur": 0.284,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -10.34
+ },
+ "voice_grunt_f_3.wav": {
+  "name": "voice_grunt_f",
+  "variant": 3,
+  "dur": 0.394,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -11.16
+ },
+ "voice_orc_1.wav": {
+  "name": "voice_orc",
+  "variant": 1,
+  "dur": 0.873,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -13.26
+ },
+ "voice_orc_2.wav": {
+  "name": "voice_orc",
+  "variant": 2,
+  "dur": 0.979,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -12.84
+ },
+ "voice_orc_3.wav": {
+  "name": "voice_orc",
+  "variant": 3,
+  "dur": 0.758,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -12.3
+ },
+ "voice_goblin_1.wav": {
+  "name": "voice_goblin",
+  "variant": 1,
+  "dur": 0.604,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -12.33
+ },
+ "voice_goblin_2.wav": {
+  "name": "voice_goblin",
+  "variant": 2,
+  "dur": 0.74,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -11.13
+ },
+ "voice_goblin_3.wav": {
+  "name": "voice_goblin",
+  "variant": 3,
+  "dur": 0.605,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -12.51
+ },
+ "voice_beast_1.wav": {
+  "name": "voice_beast",
+  "variant": 1,
+  "dur": 1.354,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -12.49
+ },
+ "voice_beast_2.wav": {
+  "name": "voice_beast",
+  "variant": 2,
+  "dur": 1.479,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -12.54
+ },
+ "voice_beast_3.wav": {
+  "name": "voice_beast",
+  "variant": 3,
+  "dur": 1.171,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -12.6
+ },
+ "voice_death_1.wav": {
+  "name": "voice_death",
+  "variant": 1,
+  "dur": 1.35,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -13.51
+ },
+ "voice_death_2.wav": {
+  "name": "voice_death",
+  "variant": 2,
+  "dur": 1.214,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -13.38
+ },
+ "voice_death_3.wav": {
+  "name": "voice_death",
+  "variant": 3,
+  "dur": 1.508,
+  "ch": 1,
+  "peak_db": -3.0,
+  "rms_db": -13.08
+ },
+ "crowd_ambience_loop_1.wav": {
+  "name": "crowd_ambience_loop",
+  "variant": 1,
+  "dur": 20.0,
+  "ch": 2,
+  "peak_db": -3.0,
+  "rms_db": -17.03
+ },
+ "crowd_ambience_loop_2.wav": {
+  "name": "crowd_ambience_loop",
+  "variant": 2,
+  "dur": 20.0,
+  "ch": 2,
+  "peak_db": -3.0,
+  "rms_db": -17.65
+ },
+ "crowd_cheer_1.wav": {
+  "name": "crowd_cheer",
+  "variant": 1,
+  "dur": 4.12,
+  "ch": 2,
+  "peak_db": -3.0,
+  "rms_db": -18.9
+ },
+ "crowd_cheer_2.wav": {
+  "name": "crowd_cheer",
+  "variant": 2,
+  "dur": 4.326,
+  "ch": 2,
+  "peak_db": -3.0,
+  "rms_db": -18.39
+ },
+ "crowd_cheer_3.wav": {
+  "name": "crowd_cheer",
+  "variant": 3,
+  "dur": 4.507,
+  "ch": 2,
+  "peak_db": -3.0,
+  "rms_db": -18.39
+ },
+ "crowd_gasp_1.wav": {
+  "name": "crowd_gasp",
+  "variant": 1,
+  "dur": 2.295,
+  "ch": 2,
+  "peak_db": -3.0,
+  "rms_db": -21.17
+ },
+ "crowd_gasp_2.wav": {
+  "name": "crowd_gasp",
+  "variant": 2,
+  "dur": 2.27,
+  "ch": 2,
+  "peak_db": -3.0,
+  "rms_db": -21.27
+ },
+ "crowd_gasp_3.wav": {
+  "name": "crowd_gasp",
+  "variant": 3,
+  "dur": 2.245,
+  "ch": 2,
+  "peak_db": -3.0,
+  "rms_db": -21.01
+ },
+ "crowd_boo_1.wav": {
+  "name": "crowd_boo",
+  "variant": 1,
+  "dur": 3.6,
+  "ch": 2,
+  "peak_db": -3.0,
+  "rms_db": -19.04
+ },
+ "crowd_boo_2.wav": {
+  "name": "crowd_boo",
+  "variant": 2,
+  "dur": 3.6,
+  "ch": 2,
+  "peak_db": -3.0,
+  "rms_db": -20.26
+ },
+ "crowd_boo_3.wav": {
+  "name": "crowd_boo",
+  "variant": 3,
+  "dur": 3.599,
+  "ch": 2,
+  "peak_db": -3.0,
+  "rms_db": -18.36
+ }
+}

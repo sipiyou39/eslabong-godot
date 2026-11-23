@@ -1,0 +1,563 @@
+{
+ "teams": [
+  {
+   "id": "Fullbetto",
+   "name": "Full Betto",
+   "path": "res://Data/Teams/Fullbetto.tres",
+   "named": true,
+   "lean": "tank"
+  },
+  {
+   "id": "FuryUnited",
+   "name": "Fury United",
+   "path": "res://Data/Teams/FuryUnited.tres",
+   "named": true,
+   "lean": "ranged"
+  },
+  {
+   "id": "GoldenChop",
+   "name": "Golden Chop",
+   "path": "res://Data/Teams/GoldenChop.tres",
+   "named": true,
+   "lean": "bruiser"
+  },
+  {
+   "id": "Hammerborne",
+   "name": "Hammerborne",
+   "path": "res://Data/Teams/Hammerborne.tres",
+   "named": true,
+   "lean": "balanced"
+  },
+  {
+   "id": "HyperHydras",
+   "name": "Hyper Hydras",
+   "path": "res://Data/Teams/HyperHydras.tres",
+   "named": true,
+   "lean": "tank"
+  },
+  {
+   "id": "IronvaleWardens",
+   "name": "Ironvale Wardens",
+   "path": "res://Data/Teams/IronvaleWardens.tres",
+   "named": true,
+   "lean": "mage"
+  },
+  {
+   "id": "KanishkaAcademy",
+   "name": "Kanishka Academy",
+   "path": "res://Data/Teams/KanishkaAcademy.tres",
+   "named": true,
+   "lean": "mage"
+  },
+  {
+   "id": "Oldfingers",
+   "name": "Oldfingers",
+   "path": "res://Data/Teams/Oldfingers.tres",
+   "named": true,
+   "lean": "balanced"
+  },
+  {
+   "id": "OrderInnervision",
+   "name": "Order of Innervision",
+   "path": "res://Data/Teams/OrderInnervision.tres",
+   "named": true,
+   "lean": "balanced"
+  },
+  {
+   "id": "StarFlame",
+   "name": "Star Flame",
+   "path": "res://Data/Teams/StarFlame.tres",
+   "named": true,
+   "lean": "balanced"
+  },
+  {
+   "id": "Team_Aconcagua",
+   "name": "Aconcagua",
+   "path": "res://Data/Teams/Team_Aconcagua.tres",
+   "named": true,
+   "lean": "balanced"
+  },
+  {
+   "id": "Team_BandOfTheThorn",
+   "name": "Band of the Thorn",
+   "path": "res://Data/Teams/Team_BandOfTheThorn.tres",
+   "named": true,
+   "lean": "balanced"
+  },
+  {
+   "id": "Team_BinaryOrcs",
+   "name": "Binary Orcs",
+   "path": "res://Data/Teams/Team_BinaryOrcs.tres",
+   "named": true,
+   "lean": "tank"
+  },
+  {
+   "id": "Team_BlackRavens",
+   "name": "Black Ravens",
+   "path": "res://Data/Teams/Team_BlackRavens.tres",
+   "named": true,
+   "lean": "assassin"
+  },
+  {
+   "id": "Team_DonDiamonds",
+   "name": "Don Diamonds",
+   "path": "res://Data/Teams/Team_DonDiamonds.tres",
+   "named": true,
+   "lean": "assassin"
+  },
+  {
+   "id": "Team_DunathWarriors",
+   "name": "Dunath Warriors",
+   "path": "res://Data/Teams/Team_DunathWarriors.tres",
+   "named": true,
+   "lean": "tank"
+  },
+  {
+   "id": "Team_GlitchedHand",
+   "name": "Glitched Hand",
+   "path": "res://Data/Teams/Team_GlitchedHand.tres",
+   "named": true,
+   "lean": "tank"
+  },
+  {
+   "id": "Team_ShadowSun",
+   "name": "Shadow Sun",
+   "path": "res://Data/Teams/Team_ShadowSun.tres",
+   "named": true,
+   "lean": "mage"
+  },
+  {
+   "id": "Team_TheJurists",
+   "name": "The Jurists",
+   "path": "res://Data/Teams/Team_TheJurists.tres",
+   "named": true,
+   "lean": "mage"
+  },
+  {
+   "id": "Team_ThePowerBallad",
+   "name": "The Power Ballad",
+   "path": "res://Data/Teams/Team_ThePowerBallad.tres",
+   "named": true,
+   "lean": "ranged"
+  },
+  {
+   "id": "Team_TheStaticStorm",
+   "name": "The Static Storm",
+   "path": "res://Data/Teams/Team_TheStaticStorm.tres",
+   "named": true,
+   "lean": "ranged"
+  },
+  {
+   "id": "TheCovenant",
+   "name": "The Covenant",
+   "path": "res://Data/Teams/TheCovenant.tres",
+   "named": true,
+   "lean": "ranged"
+  },
+  {
+   "id": "WildhornClan",
+   "name": "Wildhorn Clan",
+   "path": "res://Data/Teams/WildhornClan.tres",
+   "named": true,
+   "lean": "mage"
+  },
+  {
+   "id": "gen_obsidian_skulls",
+   "name": "Obsidian Skulls",
+   "named": false,
+   "lean": "tank"
+  },
+  {
+   "id": "gen_bloodthirsty_wasps",
+   "name": "Bloodthirsty Wasps",
+   "named": false,
+   "lean": "tank"
+  },
+  {
+   "id": "gen_dark_order",
+   "name": "Dark Order",
+   "named": false,
+   "lean": "bruiser"
+  },
+  {
+   "id": "gen_savage_mantis",
+   "name": "Savage Mantis",
+   "named": false,
+   "lean": "assassin"
+  },
+  {
+   "id": "gen_condemned",
+   "name": "Condemned",
+   "named": false,
+   "lean": "balanced"
+  },
+  {
+   "id": "gen_utopia_hunters",
+   "name": "Utopia Hunters",
+   "named": false,
+   "lean": "tank"
+  },
+  {
+   "id": "gen_mercenary_union",
+   "name": "Mercenary Union",
+   "named": false,
+   "lean": "bruiser"
+  },
+  {
+   "id": "gen_cinder_sentinels",
+   "name": "Cinder Sentinels",
+   "named": false,
+   "lean": "ranged"
+  },
+  {
+   "id": "gen_ghost_outlaws",
+   "name": "Ghost Outlaws",
+   "named": false,
+   "lean": "ranged"
+  },
+  {
+   "id": "gen_skvell_d",
+   "name": "Skvell D",
+   "named": false,
+   "lean": "assassin"
+  },
+  {
+   "id": "gen_iron_wolves",
+   "name": "Iron Wolves",
+   "named": false,
+   "lean": "mage"
+  },
+  {
+   "id": "gen_crimson_tide",
+   "name": "Crimson Tide",
+   "named": false,
+   "lean": "balanced"
+  },
+  {
+   "id": "gen_ashen_vanguard",
+   "name": "Ashen Vanguard",
+   "named": false,
+   "lean": "assassin"
+  },
+  {
+   "id": "gen_frostfang_pack",
+   "name": "Frostfang Pack",
+   "named": false,
+   "lean": "balanced"
+  },
+  {
+   "id": "gen_gilded_vipers",
+   "name": "Gilded Vipers",
+   "named": false,
+   "lean": "assassin"
+  },
+  {
+   "id": "gen_hollow_kings",
+   "name": "Hollow Kings",
+   "named": false,
+   "lean": "mage"
+  },
+  {
+   "id": "gen_stormbreakers",
+   "name": "Stormbreakers",
+   "named": false,
+   "lean": "tank"
+  },
+  {
+   "id": "gen_ember_court",
+   "name": "Ember Court",
+   "named": false,
+   "lean": "bruiser"
+  },
+  {
+   "id": "gen_pale_lanterns",
+   "name": "Pale Lanterns",
+   "named": false,
+   "lean": "bruiser"
+  },
+  {
+   "id": "gen_rustborn",
+   "name": "Rustborn",
+   "named": false,
+   "lean": "tank"
+  },
+  {
+   "id": "gen_gravewind",
+   "name": "Gravewind",
+   "named": false,
+   "lean": "assassin"
+  },
+  {
+   "id": "gen_thornguard",
+   "name": "Thornguard",
+   "named": false,
+   "lean": "bruiser"
+  },
+  {
+   "id": "gen_brass_phalanx",
+   "name": "Brass Phalanx",
+   "named": false,
+   "lean": "assassin"
+  },
+  {
+   "id": "gen_nightingale_guild",
+   "name": "Nightingale Guild",
+   "named": false,
+   "lean": "ranged"
+  },
+  {
+   "id": "gen_sundered_oath",
+   "name": "Sundered Oath",
+   "named": false,
+   "lean": "ranged"
+  },
+  {
+   "id": "gen_copper_crows",
+   "name": "Copper Crows",
+   "named": false,
+   "lean": "assassin"
+  },
+  {
+   "id": "gen_harrow_company",
+   "name": "Harrow Company",
+   "named": false,
+   "lean": "mage"
+  },
+  {
+   "id": "gen_vesper_legion",
+   "name": "Vesper Legion",
+   "named": false,
+   "lean": "assassin"
+  },
+  {
+   "id": "gen_ironbark_boars",
+   "name": "Ironbark Boars",
+   "named": false,
+   "lean": "assassin"
+  }
+ ],
+ "quirks": [
+  {
+   "id": "glass_jaw",
+   "name": "Mâchoire de verre",
+   "desc": "+8% dégâts infligés, +10% dégâts subis",
+   "mods": {
+    "atk_perc": 8,
+    "damage_taken_perc": 10
+   }
+  },
+  {
+   "id": "iron_will",
+   "name": "Volonté de fer",
+   "desc": "-12% durée des contrôles",
+   "mods": {
+    "cc_reduction": 12
+   }
+  },
+  {
+   "id": "showboat",
+   "name": "Frimeur",
+   "desc": "+6% vitesse en début de manche, -4% défense",
+   "mods": {
+    "start_speed_perc": 6,
+    "def_perc": -4
+   }
+  },
+  {
+   "id": "second_wind",
+   "name": "Second souffle",
+   "desc": "Récupère 15% PV à 25% PV (1x/manche)",
+   "mods": {
+    "second_wind": 15
+   }
+  },
+  {
+   "id": "lone_wolf",
+   "name": "Loup solitaire",
+   "desc": "+10% dégâts sans allié proche",
+   "mods": {
+    "lone_wolf": 10
+   }
+  },
+  {
+   "id": "team_player",
+   "name": "Esprit d'équipe",
+   "desc": "+8% soins reçus et donnés",
+   "mods": {
+    "healing_done_perc": 8,
+    "healing_received_perc": 8
+   }
+  },
+  {
+   "id": "marathoner",
+   "name": "Marathonien",
+   "desc": "+15% endurance max",
+   "mods": {
+    "sta_perc": 15
+   }
+  },
+  {
+   "id": "arcane_battery",
+   "name": "Batterie arcanique",
+   "desc": "+15% mana max",
+   "mods": {
+    "man_perc": 15
+   }
+  },
+  {
+   "id": "bloodthirsty",
+   "name": "Assoiffé de sang",
+   "desc": "Soigne 4% PV max par élimination",
+   "mods": {
+    "kill_heal": 4
+   }
+  },
+  {
+   "id": "coward",
+   "name": "Poltron",
+   "desc": "+8% vitesse, -6% dégâts",
+   "mods": {
+    "msp_perc": 8,
+    "atk_perc": -6
+   }
+  },
+  {
+   "id": "sharpshooter",
+   "name": "Tireur d'élite",
+   "desc": "Projectiles +10% dégâts à distance",
+   "mods": {
+    "distance_dmg": 10
+   }
+  },
+  {
+   "id": "stubborn",
+   "name": "Têtu",
+   "desc": "+10% défense, -5% vitesse",
+   "mods": {
+    "def_perc": 10,
+    "msp_perc": -5
+   }
+  },
+  {
+   "id": "clumsy",
+   "name": "Maladroit",
+   "desc": "-6% dégâts, +6% PV max",
+   "mods": {
+    "atk_perc": -6,
+    "hp_perc": 6
+   }
+  },
+  {
+   "id": "prodigy",
+   "name": "Prodige",
+   "desc": "Croissance +10%",
+   "mods": {
+    "growth_perc": 10
+   }
+  },
+  {
+   "id": "late_bloomer",
+   "name": "Éveil tardif",
+   "desc": "Croissance -5% jusqu'au niv. 10, +15% après",
+   "mods": {
+    "late_bloomer": 1
+   }
+  }
+ ],
+ "medals": [
+  {
+   "id": "iron_wall",
+   "name": "Mur de fer",
+   "desc": "Encaisser des dégâts en match",
+   "tiers": 3
+  },
+  {
+   "id": "wrecking_hand",
+   "name": "Main destructrice",
+   "desc": "Infliger des dégâts en match",
+   "tiers": 3
+  },
+  {
+   "id": "clutch_player",
+   "name": "Joueur décisif",
+   "desc": "Gagner un match en dernier survivant",
+   "tiers": 1
+  },
+  {
+   "id": "lifesaver",
+   "name": "Sauveur",
+   "desc": "Soigner / ressusciter des alliés",
+   "tiers": 1
+  }
+ ],
+ "staff": [
+  {
+   "id": "coach",
+   "name": "Entraîneur",
+   "desc": "Bonus d'XP des combattants du banc",
+   "stat": "barracks_bench_xp"
+  },
+  {
+   "id": "scout",
+   "name": "Recruteur",
+   "desc": "Meilleurs tirages sur le marché",
+   "stat": "scouting"
+  },
+  {
+   "id": "medic",
+   "name": "Médecin",
+   "desc": "Réduit le risque et la durée des blessures",
+   "stat": "injury"
+  },
+  {
+   "id": "shiny_catcher",
+   "name": "Chasseur de shiny",
+   "desc": "Augmente la probabilité de trouver des shiny",
+   "stat": "shiny"
+  },
+  {
+   "id": "legendary_expert",
+   "name": "Expert légendaire",
+   "desc": "Meilleure pitié des capacités légendaires",
+   "stat": "legendary"
+  },
+  {
+   "id": "tactician",
+   "name": "Tacticien",
+   "desc": "Déverrouille des ordres tactiques avancés",
+   "stat": "tactics"
+  },
+  {
+   "id": "quartermaster",
+   "name": "Intendant",
+   "desc": "Réduit les salaires et prix des reliques",
+   "stat": "economy"
+  }
+ ],
+ "facilities": [
+  {
+   "id": "club_house",
+   "name": "Maison du club",
+   "desc": "Revenus, sponsors, capacité de roster",
+   "max_level": 5
+  },
+  {
+   "id": "scouting_office",
+   "name": "Bureau des recruteurs",
+   "desc": "Qualité et nombre de recrues sur le marché",
+   "max_level": 5
+  },
+  {
+   "id": "barracks",
+   "name": "Caserne",
+   "desc": "XP du banc, entraînement, récupération",
+   "max_level": 5
+  },
+  {
+   "id": "training_grounds",
+   "name": "Terrain d'entraînement / Académie",
+   "desc": "Respec ciblé, renaissance, développement",
+   "max_level": 5
+  }
+ ]
+}

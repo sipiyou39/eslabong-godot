@@ -1,0 +1,2510 @@
+[
+ {
+  "id": "Merc_Archer_Bowman",
+  "name": "Bowman",
+  "species": "human",
+  "role": "ranged",
+  "element": "physical",
+  "weapon_main": "bow_long",
+  "weapon_off": "",
+  "head": "hat_feathered",
+  "torso": "vest_ranger",
+  "shoulder": "leather",
+  "back": "quiver",
+  "palette": [
+   "#3f6b3a",
+   "#6b4a2a",
+   "#d9b24c",
+   "#e0b48f"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "shoot",
+   "light_dash",
+   "multishot",
+   "rain_of_arrows",
+   "archer_wounding_arrow",
+   "fan_shot"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 532,
+   "mana": 110,
+   "stamina": 100,
+   "power": 40.2,
+   "defense": 10,
+   "mres": 10,
+   "speed": 5.93
+  },
+  "path": "res://Data/Mercenaries/Merc_Archer_Bowman.tres",
+  "ai": {
+   "aggression": 0.35,
+   "preferred_range": 13.0
+  }
+ },
+ {
+  "id": "Merc_Archer_Crossbowman",
+  "name": "Crossbowman",
+  "species": "human",
+  "role": "ranged",
+  "element": "physical",
+  "weapon_main": "crossbow",
+  "weapon_off": "",
+  "head": "helm_nasal",
+  "torso": "leather",
+  "shoulder": "leather",
+  "back": "quiver",
+  "palette": [
+   "#7a4b2b",
+   "#46505c",
+   "#c9a24a",
+   "#d9a982"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "heavy_shoot",
+   "medium_dash",
+   "deadeye_shot",
+   "impaler_bolt",
+   "caltrops",
+   "pewpewpew"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 559,
+   "mana": 110,
+   "stamina": 100,
+   "power": 37.6,
+   "defense": 10,
+   "mres": 10,
+   "speed": 6.17
+  },
+  "path": "res://Data/Mercenaries/Merc_Archer_Crossbowman.tres",
+  "ai": {
+   "aggression": 0.35,
+   "preferred_range": 13.0
+  }
+ },
+ {
+  "id": "Merc_Archer_Goblin",
+  "name": "Goblin Archer",
+  "species": "goblin",
+  "role": "ranged",
+  "element": "nature",
+  "weapon_main": "bow_short",
+  "weapon_off": "",
+  "head": "bandana",
+  "torso": "ragged",
+  "shoulder": "leather",
+  "back": "quiver",
+  "palette": [
+   "#6e5b2f",
+   "#3d4a2b",
+   "#c35a2a",
+   "#7fae45"
+  ],
+  "scale": 0.82,
+  "kit": [
+   "shoot",
+   "light_dash",
+   "poison_knife",
+   "slingshot",
+   "burning_arrow",
+   "entangling_shot"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 438,
+   "mana": 110,
+   "stamina": 100,
+   "power": 38.9,
+   "defense": 10,
+   "mres": 10,
+   "speed": 6.37
+  },
+  "path": "res://Data/Mercenaries/Merc_Archer_Goblin.tres",
+  "ai": {
+   "aggression": 0.35,
+   "preferred_range": 13.0
+  }
+ },
+ {
+  "id": "Merc_Archmage",
+  "name": "Archmage",
+  "species": "human",
+  "role": "mage",
+  "element": "arcane",
+  "weapon_main": "staff_crystal",
+  "weapon_off": "orb",
+  "head": "hat_wizard",
+  "torso": "robe_long",
+  "shoulder": "mantle",
+  "back": "cape_long",
+  "palette": [
+   "#4a2f8f",
+   "#d6b44a",
+   "#7ee0ff",
+   "#e4bfa0"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "magic_missile",
+   "mage_dash",
+   "archmage_element_1",
+   "archmage_element_2",
+   "archmage_element_3",
+   "archmage_invoke"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 499,
+   "mana": 180,
+   "stamina": 90,
+   "power": 46.4,
+   "defense": 8,
+   "mres": 22,
+   "speed": 5.75
+  },
+  "path": "res://Data/Mercenaries/Merc_Archmage.tres",
+  "ai": {
+   "aggression": 0.3,
+   "preferred_range": 12.0
+  }
+ },
+ {
+  "id": "Merc_Astralwing",
+  "name": "Astralwing",
+  "species": "human",
+  "role": "mage",
+  "element": "arcane",
+  "weapon_main": "staff_crystal",
+  "weapon_off": "",
+  "head": "circlet",
+  "torso": "robe",
+  "shoulder": "mantle",
+  "back": "wings_astral",
+  "palette": [
+   "#243a7a",
+   "#e8e0ff",
+   "#ffd86b",
+   "#e8d0c0"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "astral_missile",
+   "cosmic_dash",
+   "falling_star",
+   "lesser_star",
+   "comet_breath",
+   "astral_flight"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 451,
+   "mana": 180,
+   "stamina": 90,
+   "power": 45.2,
+   "defense": 8,
+   "mres": 22,
+   "speed": 5.96
+  },
+  "path": "res://Data/Mercenaries/Merc_Astralwing.tres",
+  "ai": {
+   "aggression": 0.3,
+   "preferred_range": 12.0
+  }
+ },
+ {
+  "id": "Merc_Bladedancer",
+  "name": "Bladedancer",
+  "species": "human",
+  "role": "assassin",
+  "element": "physical",
+  "weapon_main": "sword_short",
+  "weapon_off": "sword_short",
+  "head": "mask_bandit",
+  "torso": "wraps",
+  "shoulder": "none",
+  "back": "cape_short",
+  "palette": [
+   "#7a1f4a",
+   "#1d1a24",
+   "#e8e0d0",
+   "#d8b090"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "bladedancer_slash",
+   "blade_pirouette",
+   "bladedancer_razor_waltz",
+   "black_thread",
+   "midnight_draw",
+   "kiss_of_the_eclipse"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 571,
+   "mana": 90,
+   "stamina": 140,
+   "power": 37.8,
+   "defense": 14,
+   "mres": 10,
+   "speed": 7.33
+  },
+  "path": "res://Data/Mercenaries/Merc_Bladedancer.tres",
+  "ai": {
+   "aggression": 0.85,
+   "preferred_range": 2.6
+  }
+ },
+ {
+  "id": "Merc_Blood_Harvester",
+  "name": "Blood Harvester",
+  "species": "human",
+  "role": "bruiser",
+  "element": "blood",
+  "weapon_main": "scythe",
+  "weapon_off": "",
+  "head": "hood_rogue",
+  "torso": "coat",
+  "shoulder": "spiked",
+  "back": "wings_bat",
+  "palette": [
+   "#6b0f1a",
+   "#1a1015",
+   "#d6403c",
+   "#c9b0a8"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "blood_harvester_reap",
+   "bat_flight",
+   "open_vein",
+   "crimson_veil",
+   "blood_quarry",
+   "the_red_hour"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 848,
+   "mana": 80,
+   "stamina": 120,
+   "power": 34.7,
+   "defense": 26,
+   "mres": 14,
+   "speed": 5.99
+  },
+  "path": "res://Data/Mercenaries/Merc_Blood_Harvester.tres",
+  "ai": {
+   "aggression": 0.75,
+   "preferred_range": 3.0
+  }
+ },
+ {
+  "id": "Merc_Elementalist",
+  "name": "Elementalist",
+  "species": "human",
+  "role": "mage",
+  "element": "fire",
+  "weapon_main": "staff_wood",
+  "weapon_off": "",
+  "head": "hair_long",
+  "torso": "robe",
+  "shoulder": "mantle",
+  "back": "none",
+  "palette": [
+   "#b8431f",
+   "#2a6fb0",
+   "#f4d35e",
+   "#e2b898"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "elementalist_bolt",
+   "elementalist_dash",
+   "catalyst_nova",
+   "resonant_lightning",
+   "unstable_ice_bomb",
+   "fire_nova"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 507,
+   "mana": 180,
+   "stamina": 90,
+   "power": 44.6,
+   "defense": 8,
+   "mres": 22,
+   "speed": 5.96
+  },
+  "path": "res://Data/Mercenaries/Merc_Elementalist.tres",
+  "ai": {
+   "aggression": 0.3,
+   "preferred_range": 12.0
+  }
+ },
+ {
+  "id": "Merc_EmberPriest",
+  "name": "Ember Priest",
+  "species": "human",
+  "role": "healer",
+  "element": "fire",
+  "weapon_main": "censer",
+  "weapon_off": "",
+  "head": "hat_mitre",
+  "torso": "robe_long",
+  "shoulder": "mantle",
+  "back": "cape_short",
+  "palette": [
+   "#a8321c",
+   "#e8c35a",
+   "#ff9a3c",
+   "#d8b090"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "emberfall_basic_attack",
+   "light_dash",
+   "ember_sparks",
+   "emberpriest_nova",
+   "immolation_blessing",
+   "baptizedbyfire"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 533,
+   "mana": 200,
+   "stamina": 90,
+   "power": 30.6,
+   "defense": 8,
+   "mres": 26,
+   "speed": 5.94
+  },
+  "path": "res://Data/Mercenaries/Merc_EmberPriest.tres",
+  "ai": {
+   "aggression": 0.2,
+   "preferred_range": 11.0
+  }
+ },
+ {
+  "id": "Merc_Goblin_Ambusher",
+  "name": "Goblin Ambusher",
+  "species": "goblin",
+  "role": "assassin",
+  "element": "shadow",
+  "weapon_main": "dagger",
+  "weapon_off": "dagger",
+  "head": "hood_rogue",
+  "torso": "ragged",
+  "shoulder": "none",
+  "back": "none",
+  "palette": [
+   "#2c2f3a",
+   "#4b5a2a",
+   "#e0c040",
+   "#7aa844"
+  ],
+  "scale": 0.8,
+  "kit": [
+   "goblin_ambusher_shiv",
+   "rogue_dash",
+   "goblin_vanish",
+   "pocket_sand",
+   "shank_and_run",
+   "lights_out"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 509,
+   "mana": 90,
+   "stamina": 140,
+   "power": 40.5,
+   "defense": 14,
+   "mres": 10,
+   "speed": 7.82
+  },
+  "path": "res://Data/Mercenaries/Merc_Goblin_Ambusher.tres",
+  "ai": {
+   "aggression": 0.85,
+   "preferred_range": 2.6
+  }
+ },
+ {
+  "id": "Merc_Halberdier",
+  "name": "Halberdier",
+  "species": "human",
+  "role": "bruiser",
+  "element": "physical",
+  "weapon_main": "halberd",
+  "weapon_off": "",
+  "head": "helm_plume",
+  "torso": "scale",
+  "shoulder": "plate",
+  "back": "none",
+  "palette": [
+   "#8c7a52",
+   "#3a3f4a",
+   "#c0392b",
+   "#d9b08c"
+  ],
+  "scale": 1.05,
+  "kit": [
+   "halberdier_thrust",
+   "halberdier_lunging_step",
+   "halberdier_heavy_sweep",
+   "halberd_impale",
+   "halberdier_iron_carousel",
+   "halberdier_sky_splitter"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 836,
+   "mana": 80,
+   "stamina": 120,
+   "power": 36.0,
+   "defense": 26,
+   "mres": 14,
+   "speed": 5.85
+  },
+  "path": "res://Data/Mercenaries/Merc_Halberdier.tres",
+  "ai": {
+   "aggression": 0.75,
+   "preferred_range": 3.0
+  }
+ },
+ {
+  "id": "Merc_Healer_Cleric",
+  "name": "Cleric",
+  "species": "human",
+  "role": "healer",
+  "element": "holy",
+  "weapon_main": "mace",
+  "weapon_off": "shield_buckler",
+  "head": "hat_mitre",
+  "torso": "tabard",
+  "shoulder": "plate",
+  "back": "cape_short",
+  "palette": [
+   "#e8e2c8",
+   "#4a74b8",
+   "#f3d36a",
+   "#e0b898"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "divine_light",
+   "light_dash",
+   "holy_light",
+   "mass_mend",
+   "sanctuary",
+   "lay_on_hands"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 499,
+   "mana": 200,
+   "stamina": 90,
+   "power": 29.9,
+   "defense": 8,
+   "mres": 26,
+   "speed": 5.82
+  },
+  "path": "res://Data/Mercenaries/Merc_Healer_Cleric.tres",
+  "ai": {
+   "aggression": 0.2,
+   "preferred_range": 11.0
+  }
+ },
+ {
+  "id": "Merc_Healer_Priest",
+  "name": "Priest",
+  "species": "human",
+  "role": "healer",
+  "element": "holy",
+  "weapon_main": "staff_holy",
+  "weapon_off": "",
+  "head": "hood_cowl",
+  "torso": "robe_long",
+  "shoulder": "mantle",
+  "back": "none",
+  "palette": [
+   "#f0ead8",
+   "#8a6fc0",
+   "#f3d36a",
+   "#e8c8a8"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "divine_light",
+   "mage_dash",
+   "magic_heal",
+   "rejuvenation",
+   "wave_of_rejuvenation",
+   "resurrection"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 528,
+   "mana": 200,
+   "stamina": 90,
+   "power": 28.5,
+   "defense": 8,
+   "mres": 26,
+   "speed": 5.66
+  },
+  "path": "res://Data/Mercenaries/Merc_Healer_Priest.tres",
+  "ai": {
+   "aggression": 0.2,
+   "preferred_range": 11.0
+  }
+ },
+ {
+  "id": "Merc_Hellforged",
+  "name": "Hellforged",
+  "species": "demon",
+  "role": "bruiser",
+  "element": "fire",
+  "weapon_main": "axe_great",
+  "weapon_off": "",
+  "head": "helm_demon",
+  "torso": "plate",
+  "shoulder": "flame",
+  "back": "tail_demon",
+  "palette": [
+   "#3a1a14",
+   "#e0561c",
+   "#ffb347",
+   "#8a2a1c"
+  ],
+  "scale": 1.12,
+  "kit": [
+   "hellforged_cleave",
+   "hellforged_advance",
+   "branding_axe",
+   "cinder_armor",
+   "bloodfire",
+   "combustion"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 887,
+   "mana": 80,
+   "stamina": 120,
+   "power": 33.1,
+   "defense": 26,
+   "mres": 14,
+   "speed": 6.0
+  },
+  "path": "res://Data/Mercenaries/Merc_Hellforged.tres",
+  "ai": {
+   "aggression": 0.75,
+   "preferred_range": 3.0
+  }
+ },
+ {
+  "id": "Merc_Hierophant",
+  "name": "Hierophant",
+  "species": "human",
+  "role": "support",
+  "element": "holy",
+  "weapon_main": "staff_holy",
+  "weapon_off": "tome",
+  "head": "crown",
+  "torso": "robe_long",
+  "shoulder": "mantle",
+  "back": "cape_long",
+  "palette": [
+   "#f4f0e0",
+   "#c9a227",
+   "#6ad0ff",
+   "#e4c4a4"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "guided_hand",
+   "light_dash",
+   "guiding_light",
+   "holy_wrath",
+   "blessed_protection",
+   "chain_heal"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 617,
+   "mana": 150,
+   "stamina": 100,
+   "power": 28.5,
+   "defense": 14,
+   "mres": 18,
+   "speed": 6.18
+  },
+  "path": "res://Data/Mercenaries/Merc_Hierophant.tres",
+  "ai": {
+   "aggression": 0.3,
+   "preferred_range": 10.0
+  }
+ },
+ {
+  "id": "Merc_Hunter",
+  "name": "Hunter",
+  "species": "human",
+  "role": "ranged",
+  "element": "nature",
+  "weapon_main": "bow_long",
+  "weapon_off": "",
+  "head": "hood_cowl",
+  "torso": "vest_ranger",
+  "shoulder": "fur",
+  "back": "quiver",
+  "palette": [
+   "#5a6b3a",
+   "#3b2c20",
+   "#c78a3c",
+   "#d0a278"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "hunter_shoot",
+   "wind_step",
+   "hunter_mark",
+   "hunter_bleeding_trap",
+   "lay_trap",
+   "arrow_barrage"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 546,
+   "mana": 110,
+   "stamina": 100,
+   "power": 36.8,
+   "defense": 10,
+   "mres": 10,
+   "speed": 6.12
+  },
+  "path": "res://Data/Mercenaries/Merc_Hunter.tres",
+  "ai": {
+   "aggression": 0.35,
+   "preferred_range": 13.0
+  }
+ },
+ {
+  "id": "Merc_Luchador",
+  "name": "Luchador",
+  "species": "human",
+  "role": "bruiser",
+  "element": "physical",
+  "weapon_main": "fists",
+  "weapon_off": "",
+  "head": "mask_luchador",
+  "torso": "wraps",
+  "shoulder": "none",
+  "back": "cape_short",
+  "palette": [
+   "#d62f3a",
+   "#2a60c0",
+   "#f2d046",
+   "#c8946c"
+  ],
+  "scale": 1.12,
+  "kit": [
+   "luchador_chop",
+   "kick_dash",
+   "luchador_crossbody",
+   "luchador_german_suplex",
+   "luchador_powerbomb",
+   "luchador_hulk_up"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 913,
+   "mana": 80,
+   "stamina": 120,
+   "power": 33.7,
+   "defense": 26,
+   "mres": 14,
+   "speed": 5.77
+  },
+  "path": "res://Data/Mercenaries/Merc_Luchador.tres",
+  "ai": {
+   "aggression": 0.75,
+   "preferred_range": 3.0
+  }
+ },
+ {
+  "id": "Merc_Mage_Chronomaster",
+  "name": "Chronomaster",
+  "species": "human",
+  "role": "mage",
+  "element": "arcane",
+  "weapon_main": "staff_crystal",
+  "weapon_off": "",
+  "head": "hat_wizard",
+  "torso": "robe",
+  "shoulder": "mantle",
+  "back": "cape_short",
+  "palette": [
+   "#1d6b73",
+   "#c9a64a",
+   "#a8f0e8",
+   "#e0bc9c"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "chronomaster_basic",
+   "chrono_dash",
+   "rewind",
+   "freeze_time",
+   "chrono_needle_barrage",
+   "refresher"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 497,
+   "mana": 180,
+   "stamina": 90,
+   "power": 42.3,
+   "defense": 8,
+   "mres": 22,
+   "speed": 5.74
+  },
+  "path": "res://Data/Mercenaries/Merc_Mage_Chronomaster.tres",
+  "ai": {
+   "aggression": 0.3,
+   "preferred_range": 12.0
+  }
+ },
+ {
+  "id": "Merc_Mage_Conjurer",
+  "name": "Conjurer",
+  "species": "human",
+  "role": "summoner",
+  "element": "arcane",
+  "weapon_main": "wand",
+  "weapon_off": "tome",
+  "head": "hat_wizard",
+  "torso": "robe",
+  "shoulder": "mantle",
+  "back": "tome_chained",
+  "palette": [
+   "#5b2a86",
+   "#2a1a44",
+   "#f070ff",
+   "#e2c0a4"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "multiball",
+   "conjurer_dash",
+   "arcane_turret",
+   "manta_illusions",
+   "beam_turret",
+   "gravity_well"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 482,
+   "mana": 190,
+   "stamina": 90,
+   "power": 35.0,
+   "defense": 8,
+   "mres": 20,
+   "speed": 5.8
+  },
+  "path": "res://Data/Mercenaries/Merc_Mage_Conjurer.tres",
+  "ai": {
+   "aggression": 0.3,
+   "preferred_range": 11.0
+  }
+ },
+ {
+  "id": "Merc_Mage_Fire",
+  "name": "Pyromancer",
+  "species": "human",
+  "role": "mage",
+  "element": "fire",
+  "weapon_main": "staff_fire",
+  "weapon_off": "",
+  "head": "hat_wizard",
+  "torso": "robe",
+  "shoulder": "mantle",
+  "back": "cape_short",
+  "palette": [
+   "#c0391b",
+   "#3a1a1a",
+   "#ffb347",
+   "#e0b898"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "fireball",
+   "firemage_dash",
+   "fire_wave",
+   "meteor_rain",
+   "flamethrower",
+   "megameteor"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 466,
+   "mana": 180,
+   "stamina": 90,
+   "power": 46.5,
+   "defense": 8,
+   "mres": 22,
+   "speed": 5.66
+  },
+  "path": "res://Data/Mercenaries/Merc_Mage_Fire.tres",
+  "ai": {
+   "aggression": 0.3,
+   "preferred_range": 12.0
+  }
+ },
+ {
+  "id": "Merc_Mage_Ice",
+  "name": "Cryomancer",
+  "species": "human",
+  "role": "mage",
+  "element": "ice",
+  "weapon_main": "staff_ice",
+  "weapon_off": "",
+  "head": "hood_cowl",
+  "torso": "robe",
+  "shoulder": "mantle",
+  "back": "cape_short",
+  "palette": [
+   "#3a78b8",
+   "#e8f4ff",
+   "#9fe8ff",
+   "#e6ccb8"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "ice_bolt",
+   "ice_dash",
+   "ice_shards",
+   "blizzard",
+   "ice_pillar",
+   "ice_apocalypse"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 468,
+   "mana": 180,
+   "stamina": 90,
+   "power": 45.0,
+   "defense": 8,
+   "mres": 22,
+   "speed": 5.77
+  },
+  "path": "res://Data/Mercenaries/Merc_Mage_Ice.tres",
+  "ai": {
+   "aggression": 0.3,
+   "preferred_range": 12.0
+  }
+ },
+ {
+  "id": "Merc_Mage_Lightning",
+  "name": "Stormcaller",
+  "species": "human",
+  "role": "mage",
+  "element": "lightning",
+  "weapon_main": "staff_storm",
+  "weapon_off": "",
+  "head": "hair_spiky",
+  "torso": "robe",
+  "shoulder": "mantle",
+  "back": "none",
+  "palette": [
+   "#2f3f8f",
+   "#f2e14a",
+   "#8ad0ff",
+   "#dfbb9c"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "lightning_strike",
+   "thunder_dash",
+   "chain_lightning",
+   "ball_lightning",
+   "thunder_storm",
+   "storm_crown"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 463,
+   "mana": 180,
+   "stamina": 90,
+   "power": 43.8,
+   "defense": 8,
+   "mres": 22,
+   "speed": 5.63
+  },
+  "path": "res://Data/Mercenaries/Merc_Mage_Lightning.tres",
+  "ai": {
+   "aggression": 0.3,
+   "preferred_range": 12.0
+  }
+ },
+ {
+  "id": "Merc_Mage_Railcaster",
+  "name": "Railcaster",
+  "species": "human",
+  "role": "ranged",
+  "element": "lightning",
+  "weapon_main": "staff_storm",
+  "weapon_off": "",
+  "head": "goggles",
+  "torso": "coat",
+  "shoulder": "plate",
+  "back": "backpack",
+  "palette": [
+   "#3b4658",
+   "#e0a030",
+   "#6af0ff",
+   "#d4b090"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "coil_spark",
+   "thunder_dash",
+   "railmark",
+   "rail_splitter",
+   "overrail",
+   "rail_backblast"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 537,
+   "mana": 110,
+   "stamina": 100,
+   "power": 38.3,
+   "defense": 10,
+   "mres": 10,
+   "speed": 6.05
+  },
+  "path": "res://Data/Mercenaries/Merc_Mage_Railcaster.tres",
+  "ai": {
+   "aggression": 0.35,
+   "preferred_range": 13.0
+  }
+ },
+ {
+  "id": "Merc_Mage_Reaper",
+  "name": "Reaper",
+  "species": "human",
+  "role": "mage",
+  "element": "shadow",
+  "weapon_main": "scythe",
+  "weapon_off": "",
+  "head": "helm_skull",
+  "torso": "robe",
+  "shoulder": "bone",
+  "back": "cape_long",
+  "palette": [
+   "#1d1a2a",
+   "#5ad08a",
+   "#b8ffd0",
+   "#c8d4c0"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "reaper_beam",
+   "reaper_dash",
+   "reaper_salvo",
+   "reaper_turret",
+   "reaper_minefield",
+   "reap_the_void"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 459,
+   "mana": 180,
+   "stamina": 90,
+   "power": 41.6,
+   "defense": 8,
+   "mres": 22,
+   "speed": 5.76
+  },
+  "path": "res://Data/Mercenaries/Merc_Mage_Reaper.tres",
+  "ai": {
+   "aggression": 0.3,
+   "preferred_range": 12.0
+  }
+ },
+ {
+  "id": "Merc_Minotaur_Bullbreaker",
+  "name": "Bullbreaker",
+  "species": "minotaur",
+  "role": "tank",
+  "element": "earth",
+  "weapon_main": "hammer_great",
+  "weapon_off": "",
+  "head": "none",
+  "torso": "plate",
+  "shoulder": "big",
+  "back": "none",
+  "palette": [
+   "#5b4636",
+   "#9a8a6a",
+   "#d04030",
+   "#6a4a38"
+  ],
+  "scale": 1.35,
+  "kit": [
+   "slash_minotaur",
+   "bull_rush_dash",
+   "gore_charge",
+   "HornRush",
+   "horned_bulwark",
+   "headbutt_titan"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 1146,
+   "mana": 80,
+   "stamina": 130,
+   "power": 23.7,
+   "defense": 38,
+   "mres": 22,
+   "speed": 5.01
+  },
+  "path": "res://Data/Mercenaries/Merc_Minotaur_Bullbreaker.tres",
+  "ai": {
+   "aggression": 0.7,
+   "preferred_range": 2.6
+  }
+ },
+ {
+  "id": "Merc_Minotaur_Stormhorn",
+  "name": "Stormhorn",
+  "species": "minotaur",
+  "role": "bruiser",
+  "element": "lightning",
+  "weapon_main": "axe_double",
+  "weapon_off": "",
+  "head": "none",
+  "torso": "scale",
+  "shoulder": "spiked",
+  "back": "none",
+  "palette": [
+   "#2b3558",
+   "#8aa8d8",
+   "#f2e14a",
+   "#4a5a78"
+  ],
+  "scale": 1.35,
+  "kit": [
+   "slash_minotaur",
+   "bull_rush_dash",
+   "stormfang",
+   "stormhorn_sanguine_brand",
+   "storm_slam",
+   "huracan"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 954,
+   "mana": 80,
+   "stamina": 120,
+   "power": 34.5,
+   "defense": 26,
+   "mres": 14,
+   "speed": 5.49
+  },
+  "path": "res://Data/Mercenaries/Merc_Minotaur_Stormhorn.tres",
+  "ai": {
+   "aggression": 0.75,
+   "preferred_range": 3.0
+  }
+ },
+ {
+  "id": "Merc_Monk",
+  "name": "Monk",
+  "species": "human",
+  "role": "bruiser",
+  "element": "wind",
+  "weapon_main": "fists",
+  "weapon_off": "",
+  "head": "headband",
+  "torso": "wraps",
+  "shoulder": "none",
+  "back": "none",
+  "palette": [
+   "#d9822b",
+   "#7a3a1c",
+   "#f2e0b0",
+   "#d3a57c"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "slash_monk",
+   "wind_step",
+   "dragon_punch",
+   "flyingkick_monk",
+   "blows_of_furry",
+   "inner_meditation"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 878,
+   "mana": 80,
+   "stamina": 120,
+   "power": 35.0,
+   "defense": 26,
+   "mres": 14,
+   "speed": 6.05
+  },
+  "path": "res://Data/Mercenaries/Merc_Monk.tres",
+  "ai": {
+   "aggression": 0.75,
+   "preferred_range": 3.0
+  }
+ },
+ {
+  "id": "Merc_Orc_Berserker",
+  "name": "Orc Berserker",
+  "species": "orc",
+  "role": "bruiser",
+  "element": "blood",
+  "weapon_main": "axe_double",
+  "weapon_off": "",
+  "head": "none",
+  "torso": "fur",
+  "shoulder": "bone",
+  "back": "none",
+  "palette": [
+   "#6a3d2a",
+   "#a82a20",
+   "#e8d8b0",
+   "#5f8a3a"
+  ],
+  "scale": 1.18,
+  "kit": [
+   "berserker_club_smash",
+   "berserker_dash",
+   "berserker_bloodrush",
+   "berserker_reckless_swing",
+   "bloodrage_orc",
+   "berserker_crack_the_earth"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 832,
+   "mana": 80,
+   "stamina": 120,
+   "power": 33.9,
+   "defense": 26,
+   "mres": 14,
+   "speed": 5.91
+  },
+  "path": "res://Data/Mercenaries/Merc_Orc_Berserker.tres",
+  "ai": {
+   "aggression": 0.75,
+   "preferred_range": 3.0
+  }
+ },
+ {
+  "id": "Merc_Orc_Shaman",
+  "name": "Orc Shaman",
+  "species": "orc",
+  "role": "healer",
+  "element": "nature",
+  "weapon_main": "staff_totem",
+  "weapon_off": "",
+  "head": "none",
+  "torso": "fur",
+  "shoulder": "bone",
+  "back": "totem_stick",
+  "palette": [
+   "#4a6a3a",
+   "#8a5a2a",
+   "#6ae0a0",
+   "#5a8a40"
+  ],
+  "scale": 1.12,
+  "kit": [
+   "shaman_bolt",
+   "light_dash",
+   "chain_heal",
+   "orc_shaman_mortal_life",
+   "storm_totem",
+   "rejuvenation"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 510,
+   "mana": 200,
+   "stamina": 90,
+   "power": 30.6,
+   "defense": 8,
+   "mres": 26,
+   "speed": 5.66
+  },
+  "path": "res://Data/Mercenaries/Merc_Orc_Shaman.tres",
+  "ai": {
+   "aggression": 0.2,
+   "preferred_range": 11.0
+  }
+ },
+ {
+  "id": "Merc_Orc_Warrior",
+  "name": "Orc Warrior",
+  "species": "orc",
+  "role": "tank",
+  "element": "physical",
+  "weapon_main": "axe_great",
+  "weapon_off": "",
+  "head": "helm_horned",
+  "torso": "plate",
+  "shoulder": "spiked",
+  "back": "none",
+  "palette": [
+   "#4a4f58",
+   "#a03020",
+   "#d8c070",
+   "#5f8a3a"
+  ],
+  "scale": 1.2,
+  "kit": [
+   "slash_orc",
+   "heavy_dash",
+   "Rend_orc",
+   "war_cry",
+   "shield_bash",
+   "mortal_strike"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 1144,
+   "mana": 80,
+   "stamina": 130,
+   "power": 24.4,
+   "defense": 38,
+   "mres": 22,
+   "speed": 5.04
+  },
+  "path": "res://Data/Mercenaries/Merc_Orc_Warrior.tres",
+  "ai": {
+   "aggression": 0.7,
+   "preferred_range": 2.6
+  }
+ },
+ {
+  "id": "Merc_Paladin_Crusader",
+  "name": "Crusader",
+  "species": "human",
+  "role": "tank",
+  "element": "holy",
+  "weapon_main": "sword_long",
+  "weapon_off": "shield_kite",
+  "head": "helm_great",
+  "torso": "plate",
+  "shoulder": "plate",
+  "back": "cape_long",
+  "palette": [
+   "#d8d4c8",
+   "#2f5ea8",
+   "#e8c860",
+   "#dcb594"
+  ],
+  "scale": 1.05,
+  "kit": [
+   "paladin_slash",
+   "shield_charge",
+   "shield_bash",
+   "holy_protection",
+   "hammer_holy_spin",
+   "heavens_verdict"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 996,
+   "mana": 80,
+   "stamina": 130,
+   "power": 23.5,
+   "defense": 38,
+   "mres": 22,
+   "speed": 5.41
+  },
+  "path": "res://Data/Mercenaries/Merc_Paladin_Crusader.tres",
+  "ai": {
+   "aggression": 0.7,
+   "preferred_range": 2.6
+  }
+ },
+ {
+  "id": "Merc_Paladin_Matriarch",
+  "name": "Matriarch",
+  "species": "human",
+  "role": "tank",
+  "element": "holy",
+  "weapon_main": "hammer_war",
+  "weapon_off": "shield_round",
+  "head": "helm_knight",
+  "torso": "plate",
+  "shoulder": "plate",
+  "back": "cape_long",
+  "palette": [
+   "#e0dccf",
+   "#7a2a6a",
+   "#f0d070",
+   "#e6c4a4"
+  ],
+  "scale": 1.05,
+  "kit": [
+   "paladin_slash",
+   "shield_charge",
+   "hammer_holy_spin_matriarch",
+   "hammer_throw_matriarch",
+   "matriarch_bond",
+   "blessed_protection"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 1037,
+   "mana": 80,
+   "stamina": 130,
+   "power": 24.3,
+   "defense": 38,
+   "mres": 22,
+   "speed": 5.51
+  },
+  "path": "res://Data/Mercenaries/Merc_Paladin_Matriarch.tres",
+  "ai": {
+   "aggression": 0.7,
+   "preferred_range": 2.6
+  }
+ },
+ {
+  "id": "Merc_Paladin_Templar",
+  "name": "Templar",
+  "species": "human",
+  "role": "tank",
+  "element": "holy",
+  "weapon_main": "sword_great",
+  "weapon_off": "",
+  "head": "helm_great",
+  "torso": "plate",
+  "shoulder": "big",
+  "back": "cape_long",
+  "palette": [
+   "#e8e4d8",
+   "#c0392b",
+   "#f4d35e",
+   "#d8b090"
+  ],
+  "scale": 1.08,
+  "kit": [
+   "paladin_slash",
+   "shield_charge",
+   "holy_strike_templar",
+   "god_smite_templar",
+   "heavenly_jump_templar",
+   "divine_vortex_templar"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 965,
+   "mana": 80,
+   "stamina": 130,
+   "power": 23.9,
+   "defense": 38,
+   "mres": 22,
+   "speed": 5.39
+  },
+  "path": "res://Data/Mercenaries/Merc_Paladin_Templar.tres",
+  "ai": {
+   "aggression": 0.7,
+   "preferred_range": 2.6
+  }
+ },
+ {
+  "id": "Merc_Razorblade",
+  "name": "Razorblade",
+  "species": "human",
+  "role": "assassin",
+  "element": "physical",
+  "weapon_main": "katana",
+  "weapon_off": "",
+  "head": "hair_ponytail",
+  "torso": "wraps",
+  "shoulder": "none",
+  "back": "none",
+  "palette": [
+   "#2a2f44",
+   "#c8c8d8",
+   "#e0344a",
+   "#d6b090"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "slash_razor",
+   "rogue_dash",
+   "fan_of_blades",
+   "shuriken_blade",
+   "steel_wind",
+   "blade_leap"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 577,
+   "mana": 90,
+   "stamina": 140,
+   "power": 40.7,
+   "defense": 14,
+   "mres": 10,
+   "speed": 7.38
+  },
+  "path": "res://Data/Mercenaries/Merc_Razorblade.tres",
+  "ai": {
+   "aggression": 0.85,
+   "preferred_range": 2.6
+  }
+ },
+ {
+  "id": "Merc_Reaver",
+  "name": "Reaver",
+  "species": "human",
+  "role": "bruiser",
+  "element": "physical",
+  "weapon_main": "axe_hand",
+  "weapon_off": "axe_hand",
+  "head": "hair_spiky",
+  "torso": "fur",
+  "shoulder": "fur",
+  "back": "none",
+  "palette": [
+   "#8a5a2a",
+   "#3b2c20",
+   "#d09a40",
+   "#cfa07c"
+  ],
+  "scale": 1.08,
+  "kit": [
+   "reaver_throwing_axe",
+   "reaver_hop",
+   "reaver_primal_leap",
+   "reaver_axe_volley",
+   "reaver_ricochet_axe",
+   "reaver_tnt_axe"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 844,
+   "mana": 80,
+   "stamina": 120,
+   "power": 32.4,
+   "defense": 26,
+   "mres": 14,
+   "speed": 5.8
+  },
+  "path": "res://Data/Mercenaries/Merc_Reaver.tres",
+  "ai": {
+   "aggression": 0.75,
+   "preferred_range": 3.0
+  }
+ },
+ {
+  "id": "Merc_Riftwalker",
+  "name": "Riftwalker",
+  "species": "human",
+  "role": "assassin",
+  "element": "void",
+  "weapon_main": "sword_short",
+  "weapon_off": "dagger",
+  "head": "hood_rogue",
+  "torso": "coat",
+  "shoulder": "mantle",
+  "back": "cape_short",
+  "palette": [
+   "#2a1f4a",
+   "#7a4ad0",
+   "#d8a8ff",
+   "#c8b4c8"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "thrust_assassin",
+   "fold_step",
+   "rift_needle",
+   "cross_cut",
+   "phase_edge",
+   "steel_constellation"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 519,
+   "mana": 90,
+   "stamina": 140,
+   "power": 41.5,
+   "defense": 14,
+   "mres": 10,
+   "speed": 7.29
+  },
+  "path": "res://Data/Mercenaries/Merc_Riftwalker.tres",
+  "ai": {
+   "aggression": 0.85,
+   "preferred_range": 2.6
+  }
+ },
+ {
+  "id": "Merc_Rockguard",
+  "name": "Rockguard",
+  "species": "human",
+  "role": "tank",
+  "element": "earth",
+  "weapon_main": "pick",
+  "weapon_off": "shield_tower",
+  "head": "helm_great",
+  "torso": "plate",
+  "shoulder": "big",
+  "back": "none",
+  "palette": [
+   "#6b6a62",
+   "#a07a3a",
+   "#e0c070",
+   "#c8a07c"
+  ],
+  "scale": 1.15,
+  "kit": [
+   "rockguard_pick_swing",
+   "shield_charge",
+   "rockguard_shield_wall",
+   "rockguard_taunt",
+   "rockguard_tectonic_fault",
+   "rockguard_counter_avalanche"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 1130,
+   "mana": 80,
+   "stamina": 130,
+   "power": 24.8,
+   "defense": 38,
+   "mres": 22,
+   "speed": 5.27
+  },
+  "path": "res://Data/Mercenaries/Merc_Rockguard.tres",
+  "ai": {
+   "aggression": 0.7,
+   "preferred_range": 2.6
+  }
+ },
+ {
+  "id": "Merc_Rogue_Assasin",
+  "name": "Assassin",
+  "species": "human",
+  "role": "assassin",
+  "element": "shadow",
+  "weapon_main": "dagger",
+  "weapon_off": "dagger",
+  "head": "hood_rogue",
+  "torso": "leather",
+  "shoulder": "none",
+  "back": "cape_short",
+  "palette": [
+   "#26242e",
+   "#5a2a3a",
+   "#c0c0d0",
+   "#d0a888"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "rogue_assassin_slash",
+   "rogue_dash",
+   "rogue_ghost_mode",
+   "throat_cut",
+   "poison_knife",
+   "blink_strike"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 523,
+   "mana": 90,
+   "stamina": 140,
+   "power": 39.6,
+   "defense": 14,
+   "mres": 10,
+   "speed": 7.38
+  },
+  "path": "res://Data/Mercenaries/Merc_Rogue_Assasin.tres",
+  "ai": {
+   "aggression": 0.85,
+   "preferred_range": 2.6
+  }
+ },
+ {
+  "id": "Merc_Rogue_Spellblade",
+  "name": "Spellblade",
+  "species": "human",
+  "role": "assassin",
+  "element": "fire",
+  "weapon_main": "rapier",
+  "weapon_off": "",
+  "head": "hair_long",
+  "torso": "coat",
+  "shoulder": "mantle",
+  "back": "cape_short",
+  "palette": [
+   "#7a2a6a",
+   "#e0a030",
+   "#ff7a3c",
+   "#e0b898"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "slash_rogue_spellblade",
+   "blazing_dash_spellblade",
+   "ember_sparks_blessing_spellblade",
+   "demon_ascension_spellblade",
+   "blazing_blink",
+   "fire_barrier"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 556,
+   "mana": 90,
+   "stamina": 140,
+   "power": 38.0,
+   "defense": 14,
+   "mres": 10,
+   "speed": 7.05
+  },
+  "path": "res://Data/Mercenaries/Merc_Rogue_Spellblade.tres",
+  "ai": {
+   "aggression": 0.85,
+   "preferred_range": 2.6
+  }
+ },
+ {
+  "id": "Merc_Sentinel",
+  "name": "Sentinel",
+  "species": "human",
+  "role": "bruiser",
+  "element": "physical",
+  "weapon_main": "sword_long",
+  "weapon_off": "",
+  "head": "helm_nasal",
+  "torso": "scale",
+  "shoulder": "plate",
+  "back": "cape_short",
+  "palette": [
+   "#4a5a78",
+   "#c0c0cc",
+   "#e8c860",
+   "#d8b090"
+  ],
+  "scale": 1.05,
+  "kit": [
+   "sentinel_longsword_slash",
+   "sentinel_duelist_step",
+   "sentinel_cross_slash",
+   "sentinel_guard_breaker",
+   "sentinel_omnislash",
+   "sentinel_iron_resolve"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 860,
+   "mana": 80,
+   "stamina": 120,
+   "power": 33.6,
+   "defense": 26,
+   "mres": 14,
+   "speed": 6.16
+  },
+  "path": "res://Data/Mercenaries/Merc_Sentinel.tres",
+  "ai": {
+   "aggression": 0.75,
+   "preferred_range": 3.0
+  }
+ },
+ {
+  "id": "Merc_Shadow_Priest",
+  "name": "Shadow Priest",
+  "species": "human",
+  "role": "healer",
+  "element": "shadow",
+  "weapon_main": "staff_skull",
+  "weapon_off": "",
+  "head": "hood_cowl",
+  "torso": "cult_robe",
+  "shoulder": "mantle",
+  "back": "none",
+  "palette": [
+   "#2a1a3a",
+   "#8a3ac0",
+   "#d08aff",
+   "#c4b4c8"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "shadow_touch",
+   "spectral_dash",
+   "shadow_mend",
+   "vampiric_psalm",
+   "grasping_litany",
+   "black_mass"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 502,
+   "mana": 200,
+   "stamina": 90,
+   "power": 30.0,
+   "defense": 8,
+   "mres": 26,
+   "speed": 5.86
+  },
+  "path": "res://Data/Mercenaries/Merc_Shadow_Priest.tres",
+  "ai": {
+   "aggression": 0.2,
+   "preferred_range": 11.0
+  }
+ },
+ {
+  "id": "Merc_Shockmender",
+  "name": "Shockmender",
+  "species": "human",
+  "role": "healer",
+  "element": "lightning",
+  "weapon_main": "paddles",
+  "weapon_off": "",
+  "head": "goggles",
+  "torso": "coat",
+  "shoulder": "plate",
+  "back": "backpack",
+  "palette": [
+   "#e0e4ea",
+   "#d03a3a",
+   "#6af0ff",
+   "#d8b090"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "shockmender_paddle_zap",
+   "light_dash",
+   "shockmender_jumpstart",
+   "shockmender_heartbeat",
+   "shockmender_crash_cart",
+   "shockmender_flatline"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 484,
+   "mana": 200,
+   "stamina": 90,
+   "power": 30.2,
+   "defense": 8,
+   "mres": 26,
+   "speed": 5.65
+  },
+  "path": "res://Data/Mercenaries/Merc_Shockmender.tres",
+  "ai": {
+   "aggression": 0.2,
+   "preferred_range": 11.0
+  }
+ },
+ {
+  "id": "Merc_Swordmaster",
+  "name": "Swordmaster",
+  "species": "human",
+  "role": "assassin",
+  "element": "physical",
+  "weapon_main": "katana",
+  "weapon_off": "",
+  "head": "hair_ponytail",
+  "torso": "tabard",
+  "shoulder": "none",
+  "back": "cape_short",
+  "palette": [
+   "#d6d6e0",
+   "#2a3a6a",
+   "#e0b040",
+   "#dab494"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "swordmaster_slash",
+   "swordmaster_dash",
+   "swordmaster_threefold_cut",
+   "swordmaster_circle_of_steel",
+   "swordmaster_passing_lunge",
+   "swordmaster_parry"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 549,
+   "mana": 90,
+   "stamina": 140,
+   "power": 38.1,
+   "defense": 14,
+   "mres": 10,
+   "speed": 7.35
+  },
+  "path": "res://Data/Mercenaries/Merc_Swordmaster.tres",
+  "ai": {
+   "aggression": 0.85,
+   "preferred_range": 2.6
+  }
+ },
+ {
+  "id": "Merc_Thunderclaw",
+  "name": "Thunderclaw",
+  "species": "beast",
+  "role": "assassin",
+  "element": "lightning",
+  "weapon_main": "claws",
+  "weapon_off": "",
+  "head": "none",
+  "torso": "none",
+  "shoulder": "none",
+  "back": "tail_beast",
+  "palette": [
+   "#3a3a58",
+   "#f2e14a",
+   "#8ad0ff",
+   "#5a5a7a"
+  ],
+  "scale": 1.12,
+  "kit": [
+   "slash_thunderclaw",
+   "thunderclaw_dash",
+   "thunderclaw_pounce",
+   "fulminating_strike",
+   "storm_counter",
+   "total_fulmination"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 591,
+   "mana": 90,
+   "stamina": 140,
+   "power": 41.0,
+   "defense": 14,
+   "mres": 10,
+   "speed": 7.11
+  },
+  "path": "res://Data/Mercenaries/Merc_Thunderclaw.tres",
+  "ai": {
+   "aggression": 0.85,
+   "preferred_range": 2.6
+  }
+ },
+ {
+  "id": "Merc_Timesworn",
+  "name": "Timesworn",
+  "species": "human",
+  "role": "bruiser",
+  "element": "arcane",
+  "weapon_main": "sword_great",
+  "weapon_off": "",
+  "head": "helm_knight",
+  "torso": "plate",
+  "shoulder": "plate",
+  "back": "banner",
+  "palette": [
+   "#4a3f2a",
+   "#c9a64a",
+   "#7affd8",
+   "#c8b494"
+  ],
+  "scale": 1.1,
+  "kit": [
+   "timesworn_pendulum_cleave",
+   "timesworn_epoch_step",
+   "timesworn_pendulum_sweep",
+   "timesworn_afterimage_lunge",
+   "timesworn_clockbreaker",
+   "timesworn_final_hour"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 925,
+   "mana": 80,
+   "stamina": 120,
+   "power": 34.1,
+   "defense": 26,
+   "mres": 14,
+   "speed": 5.81
+  },
+  "path": "res://Data/Mercenaries/Merc_Timesworn.tres",
+  "ai": {
+   "aggression": 0.75,
+   "preferred_range": 3.0
+  }
+ },
+ {
+  "id": "Merc_Vampira",
+  "name": "Vampira",
+  "species": "human",
+  "role": "assassin",
+  "element": "blood",
+  "weapon_main": "claws",
+  "weapon_off": "",
+  "head": "hair_long",
+  "torso": "coat",
+  "shoulder": "mantle",
+  "back": "wings_bat",
+  "palette": [
+   "#4a0f2a",
+   "#1a1015",
+   "#e0344a",
+   "#e8dcd8"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "velvet_claws",
+   "wind_step",
+   "vampire_bite",
+   "claw_frenzy",
+   "cloud_of_bats",
+   "last_dance"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 592,
+   "mana": 90,
+   "stamina": 140,
+   "power": 39.6,
+   "defense": 14,
+   "mres": 10,
+   "speed": 7.32
+  },
+  "path": "res://Data/Mercenaries/Merc_Vampira.tres",
+  "ai": {
+   "aggression": 0.85,
+   "preferred_range": 2.6
+  }
+ },
+ {
+  "id": "Merc_Voidfist",
+  "name": "Voidfist",
+  "species": "human",
+  "role": "bruiser",
+  "element": "void",
+  "weapon_main": "fists",
+  "weapon_off": "",
+  "head": "headband",
+  "torso": "wraps",
+  "shoulder": "none",
+  "back": "none",
+  "palette": [
+   "#2a1a4a",
+   "#8a5ad8",
+   "#d0a8ff",
+   "#c8b4d0"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "slash_void",
+   "void_dash",
+   "void_flurry",
+   "void_wave",
+   "void_collapse",
+   "void_singularity"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 842,
+   "mana": 80,
+   "stamina": 120,
+   "power": 32.0,
+   "defense": 26,
+   "mres": 14,
+   "speed": 6.25
+  },
+  "path": "res://Data/Mercenaries/Merc_Voidfist.tres",
+  "ai": {
+   "aggression": 0.75,
+   "preferred_range": 3.0
+  }
+ },
+ {
+  "id": "Merc_Warlock",
+  "name": "Warlock",
+  "species": "demon",
+  "role": "mage",
+  "element": "shadow",
+  "weapon_main": "staff_void",
+  "weapon_off": "tome",
+  "head": "helm_demon",
+  "torso": "robe",
+  "shoulder": "bone",
+  "back": "tail_demon",
+  "palette": [
+   "#2a1030",
+   "#8a2a8a",
+   "#7aff9a",
+   "#7a3a5a"
+  ],
+  "scale": 1.05,
+  "kit": [
+   "accursed_bolt",
+   "necro_dash",
+   "corruption",
+   "withering_curse",
+   "blood_pact",
+   "doomfall"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 467,
+   "mana": 180,
+   "stamina": 90,
+   "power": 44.5,
+   "defense": 8,
+   "mres": 22,
+   "speed": 5.73
+  },
+  "path": "res://Data/Mercenaries/Merc_Warlock.tres",
+  "ai": {
+   "aggression": 0.3,
+   "preferred_range": 12.0
+  }
+ },
+ {
+  "id": "Merc_Warrior_Barbarian",
+  "name": "Barbarian",
+  "species": "human",
+  "role": "bruiser",
+  "element": "physical",
+  "weapon_main": "axe_great",
+  "weapon_off": "",
+  "head": "hair_spiky",
+  "torso": "fur",
+  "shoulder": "fur",
+  "back": "none",
+  "palette": [
+   "#8a5a3a",
+   "#5a3a2a",
+   "#d8c8a0",
+   "#cc9a74"
+  ],
+  "scale": 1.12,
+  "kit": [
+   "slash_warrior_barbarian",
+   "berserker_dash",
+   "whirlwind",
+   "leap_smash",
+   "bloodrage",
+   "execute"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 810,
+   "mana": 80,
+   "stamina": 120,
+   "power": 33.3,
+   "defense": 26,
+   "mres": 14,
+   "speed": 5.92
+  },
+  "path": "res://Data/Mercenaries/Merc_Warrior_Barbarian.tres",
+  "ai": {
+   "aggression": 0.75,
+   "preferred_range": 3.0
+  }
+ },
+ {
+  "id": "Merc_Warrior_Blackguard",
+  "name": "Blackguard",
+  "species": "human",
+  "role": "tank",
+  "element": "shadow",
+  "weapon_main": "sword_great",
+  "weapon_off": "shield_kite",
+  "head": "helm_horned",
+  "torso": "plate",
+  "shoulder": "spiked",
+  "back": "cape_long",
+  "palette": [
+   "#1c1c24",
+   "#7a1f2a",
+   "#c0c0c8",
+   "#d0aa88"
+  ],
+  "scale": 1.08,
+  "kit": [
+   "thrust",
+   "shield_charge",
+   "blackguard_shield_bash",
+   "dark_aegis",
+   "abyssal_slam",
+   "apex_cleave"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 1041,
+   "mana": 80,
+   "stamina": 130,
+   "power": 25.1,
+   "defense": 38,
+   "mres": 22,
+   "speed": 5.23
+  },
+  "path": "res://Data/Mercenaries/Merc_Warrior_Blackguard.tres",
+  "ai": {
+   "aggression": 0.7,
+   "preferred_range": 2.6
+  }
+ },
+ {
+  "id": "Merc_Warrior_Fighter",
+  "name": "Fighter",
+  "species": "human",
+  "role": "bruiser",
+  "element": "physical",
+  "weapon_main": "sword_long",
+  "weapon_off": "shield_round",
+  "head": "helm_nasal",
+  "torso": "plate",
+  "shoulder": "plate",
+  "back": "cape_short",
+  "palette": [
+   "#8a8f9c",
+   "#a83a2a",
+   "#e0c070",
+   "#dcb492"
+  ],
+  "scale": 1.02,
+  "kit": [
+   "slash_warrior_fighter",
+   "medium_dash",
+   "shield_bash",
+   "whirlwind_strike",
+   "battle_shout",
+   "sever"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 818,
+   "mana": 80,
+   "stamina": 120,
+   "power": 35.3,
+   "defense": 26,
+   "mres": 14,
+   "speed": 6.07
+  },
+  "path": "res://Data/Mercenaries/Merc_Warrior_Fighter.tres",
+  "ai": {
+   "aggression": 0.75,
+   "preferred_range": 3.0
+  }
+ },
+ {
+  "id": "Merc_Warrior_FrostKnight",
+  "name": "Frost Knight",
+  "species": "human",
+  "role": "tank",
+  "element": "ice",
+  "weapon_main": "hammer_war",
+  "weapon_off": "",
+  "head": "helm_frost",
+  "torso": "plate",
+  "shoulder": "frost",
+  "back": "cape_long",
+  "palette": [
+   "#b8d8f0",
+   "#2a5a98",
+   "#e8faff",
+   "#d8e0ec"
+  ],
+  "scale": 1.1,
+  "kit": [
+   "frost_knight_smash",
+   "frozen_wake_dash",
+   "frostbreaker_maul",
+   "glacial_bash",
+   "frost_armor",
+   "frost_whirlwind"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 1055,
+   "mana": 80,
+   "stamina": 130,
+   "power": 24.9,
+   "defense": 38,
+   "mres": 22,
+   "speed": 5.28
+  },
+  "path": "res://Data/Mercenaries/Merc_Warrior_FrostKnight.tres",
+  "ai": {
+   "aggression": 0.7,
+   "preferred_range": 2.6
+  }
+ },
+ {
+  "id": "Merc_Warrior_Lancero",
+  "name": "Lancero",
+  "species": "human",
+  "role": "bruiser",
+  "element": "physical",
+  "weapon_main": "spear",
+  "weapon_off": "",
+  "head": "helm_plume",
+  "torso": "scale",
+  "shoulder": "plate",
+  "back": "cape_short",
+  "palette": [
+   "#a8322a",
+   "#e0b040",
+   "#f4f0e0",
+   "#d8ac86"
+  ],
+  "scale": 1.05,
+  "kit": [
+   "spear_thrust",
+   "medium_dash",
+   "SpearSweep",
+   "SpearGo",
+   "spear_flurry",
+   "Skewer"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 852,
+   "mana": 80,
+   "stamina": 120,
+   "power": 33.0,
+   "defense": 26,
+   "mres": 14,
+   "speed": 5.93
+  },
+  "path": "res://Data/Mercenaries/Merc_Warrior_Lancero.tres",
+  "ai": {
+   "aggression": 0.75,
+   "preferred_range": 3.0
+  }
+ },
+ {
+  "id": "Merc_Werewolf",
+  "name": "Werewolf",
+  "species": "beast",
+  "role": "bruiser",
+  "element": "nature",
+  "weapon_main": "claws",
+  "weapon_off": "",
+  "head": "none",
+  "torso": "none",
+  "shoulder": "none",
+  "back": "tail_beast",
+  "palette": [
+   "#5a4a3a",
+   "#8a7a68",
+   "#e0d070",
+   "#6a5a48"
+  ],
+  "scale": 1.22,
+  "kit": [
+   "werewolf_claw",
+   "werewolf_charge",
+   "werewolf_pounce",
+   "werewolf_roar",
+   "werewolf_frenzy",
+   "werewolf_vampire_strike"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 924,
+   "mana": 80,
+   "stamina": 120,
+   "power": 35.4,
+   "defense": 26,
+   "mres": 14,
+   "speed": 5.81
+  },
+  "path": "res://Data/Mercenaries/Merc_Werewolf.tres",
+  "ai": {
+   "aggression": 0.75,
+   "preferred_range": 3.0
+  }
+ },
+ {
+  "id": "Merc_Wind_Twister",
+  "name": "Wind Twister",
+  "species": "human",
+  "role": "mage",
+  "element": "wind",
+  "weapon_main": "staff_wood",
+  "weapon_off": "",
+  "head": "headband",
+  "torso": "robe",
+  "shoulder": "mantle",
+  "back": "cape_short",
+  "palette": [
+   "#5ab8a0",
+   "#e8f4f0",
+   "#b8fff0",
+   "#d4b08c"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "mini_tornado",
+   "wind_step",
+   "tornado",
+   "twister_waves",
+   "wind_twister_crosswind",
+   "wind_convergence"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 437,
+   "mana": 180,
+   "stamina": 90,
+   "power": 43.3,
+   "defense": 8,
+   "mres": 22,
+   "speed": 5.9
+  },
+  "path": "res://Data/Mercenaries/Merc_Wind_Twister.tres",
+  "ai": {
+   "aggression": 0.3,
+   "preferred_range": 12.0
+  }
+ },
+ {
+  "id": "Merc_Witch_Hunter",
+  "name": "Witch Hunter",
+  "species": "human",
+  "role": "ranged",
+  "element": "holy",
+  "weapon_main": "crossbow",
+  "weapon_off": "dagger",
+  "head": "hat_witch_hunter",
+  "torso": "coat",
+  "shoulder": "leather",
+  "back": "cape_long",
+  "palette": [
+   "#3a2f2a",
+   "#a08040",
+   "#e8e0c8",
+   "#d4ac88"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "witch_hunter_crossbow_shot",
+   "witch_hunter_tactical_roll",
+   "witch_hunter_hex_bolt",
+   "witch_hunter_purifying_flame",
+   "witch_hunter_silver_chain",
+   "witch_hunter_smoke_bomb"
+  ],
+  "mods": {},
+  "note": "",
+  "base": {
+   "hp": 541,
+   "mana": 110,
+   "stamina": 100,
+   "power": 39.2,
+   "defense": 10,
+   "mres": 10,
+   "speed": 6.08
+  },
+  "path": "res://Data/Mercenaries/Merc_Witch_Hunter.tres",
+  "ai": {
+   "aggression": 0.35,
+   "preferred_range": 13.0
+  }
+ },
+ {
+  "id": "Merc_Necromancer",
+  "name": "Necromancer",
+  "species": "skeleton",
+  "role": "summoner",
+  "element": "shadow",
+  "weapon_main": "staff_skull",
+  "weapon_off": "",
+  "head": "helm_skull",
+  "torso": "cult_robe",
+  "shoulder": "bone",
+  "back": "cape_long",
+  "palette": [
+   "#1c1a28",
+   "#5a8a6a",
+   "#9affb8",
+   "#d8d4c0"
+  ],
+  "scale": 1.0,
+  "kit": [
+   "shadow_touch",
+   "necro_dash",
+   "SummonSkeleton",
+   "SummonSkeletonMage",
+   "LifeDrainChannel",
+   "SummonKnight"
+  ],
+  "mods": {},
+  "note": "res://Data/Mercenaries/Necromancer/Merc_Necromancer.tres",
+  "base": {
+   "hp": 487,
+   "mana": 190,
+   "stamina": 90,
+   "power": 36.1,
+   "defense": 8,
+   "mres": 20,
+   "speed": 5.65
+  },
+  "path": "res://Data/Mercenaries/Necromancer/Merc_Necromancer.tres",
+  "ai": {
+   "aggression": 0.3,
+   "preferred_range": 11.0
+  }
+ }
+]

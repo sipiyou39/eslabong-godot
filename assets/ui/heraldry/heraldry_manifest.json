@@ -1,0 +1,550 @@
+{
+ "size": [
+  128,
+  128
+ ],
+ "format": "blanc sur fond transparent ; le jeu teinte : champ = shield_NN (base_color), division = division_NN (field_color), meuble = charge_NNN (charge_color)",
+ "composition": "ordre : shield_NN (teinte base_color) -> division_NN masquée par shield_NN (field_color) -> charge_NNN redimensionné dans charge_box (charge_color) -> shield_NN_outline",
+ "shields": [
+  {
+   "index": 0,
+   "file": "shield_00.png",
+   "outline": "shield_00_outline.png",
+   "bbox": [
+    11,
+    6,
+    116,
+    123
+   ],
+   "charge_box": [
+    30,
+    26,
+    96,
+    92
+   ]
+  },
+  {
+   "index": 1,
+   "file": "shield_01.png",
+   "outline": "shield_01_outline.png",
+   "bbox": [
+    19,
+    7,
+    108,
+    124
+   ],
+   "charge_box": [
+    35,
+    32,
+    91,
+    88
+   ]
+  },
+  {
+   "index": 2,
+   "file": "shield_02.png",
+   "outline": "shield_02_outline.png",
+   "bbox": [
+    8,
+    8,
+    119,
+    119
+   ],
+   "charge_box": [
+    28,
+    28,
+    98,
+    98
+   ]
+  },
+  {
+   "index": 3,
+   "file": "shield_03.png",
+   "outline": "shield_03_outline.png",
+   "bbox": [
+    16,
+    9,
+    111,
+    119
+   ],
+   "charge_box": [
+    33,
+    29,
+    93,
+    89
+   ]
+  },
+  {
+   "index": 4,
+   "file": "shield_04.png",
+   "outline": "shield_04_outline.png",
+   "bbox": [
+    9,
+    1,
+    118,
+    122
+   ],
+   "charge_box": [
+    29,
+    22,
+    97,
+    90
+   ]
+  },
+  {
+   "index": 5,
+   "file": "shield_05.png",
+   "outline": "shield_05_outline.png",
+   "bbox": [
+    13,
+    6,
+    114,
+    121
+   ],
+   "charge_box": [
+    31,
+    31,
+    95,
+    95
+   ]
+  },
+  {
+   "index": 6,
+   "file": "shield_06.png",
+   "outline": "shield_06_outline.png",
+   "bbox": [
+    15,
+    7,
+    112,
+    121
+   ],
+   "charge_box": [
+    32,
+    28,
+    94,
+    90
+   ]
+  },
+  {
+   "index": 7,
+   "file": "shield_07.png",
+   "outline": "shield_07_outline.png",
+   "bbox": [
+    22,
+    5,
+    105,
+    122
+   ],
+   "charge_box": [
+    37,
+    37,
+    89,
+    89
+   ]
+  }
+ ],
+ "divisions": [
+  {
+   "index": 0,
+   "file": "division_00.png",
+   "name": "plain"
+  },
+  {
+   "index": 1,
+   "file": "division_01.png",
+   "name": "pale"
+  },
+  {
+   "index": 2,
+   "file": "division_02.png",
+   "name": "fess"
+  },
+  {
+   "index": 3,
+   "file": "division_03.png",
+   "name": "bend"
+  },
+  {
+   "index": 4,
+   "file": "division_04.png",
+   "name": "bend_sinister"
+  },
+  {
+   "index": 5,
+   "file": "division_05.png",
+   "name": "chevron"
+  },
+  {
+   "index": 6,
+   "file": "division_06.png",
+   "name": "quarterly"
+  },
+  {
+   "index": 7,
+   "file": "division_07.png",
+   "name": "saltire"
+  },
+  {
+   "index": 8,
+   "file": "division_08.png",
+   "name": "cross"
+  },
+  {
+   "index": 9,
+   "file": "division_09.png",
+   "name": "per_chevron"
+  },
+  {
+   "index": 10,
+   "file": "division_10.png",
+   "name": "chief"
+  },
+  {
+   "index": 11,
+   "file": "division_11.png",
+   "name": "bordure"
+  },
+  {
+   "index": 12,
+   "file": "division_12.png",
+   "name": "gyronny"
+  },
+  {
+   "index": 13,
+   "file": "division_13.png",
+   "name": "checky"
+  },
+  {
+   "index": 14,
+   "file": "division_14.png",
+   "name": "lozengy"
+  },
+  {
+   "index": 15,
+   "file": "division_15.png",
+   "name": "pall"
+  }
+ ],
+ "charges": [
+  {
+   "index": 0,
+   "file": "charge_000.png",
+   "name": "lion"
+  },
+  {
+   "index": 1,
+   "file": "charge_001.png",
+   "name": "eagle"
+  },
+  {
+   "index": 2,
+   "file": "charge_002.png",
+   "name": "tower"
+  },
+  {
+   "index": 3,
+   "file": "charge_003.png",
+   "name": "sword"
+  },
+  {
+   "index": 4,
+   "file": "charge_004.png",
+   "name": "crossed_swords"
+  },
+  {
+   "index": 5,
+   "file": "charge_005.png",
+   "name": "star"
+  },
+  {
+   "index": 6,
+   "file": "charge_006.png",
+   "name": "crown"
+  },
+  {
+   "index": 7,
+   "file": "charge_007.png",
+   "name": "dragon"
+  },
+  {
+   "index": 8,
+   "file": "charge_008.png",
+   "name": "wolf_head"
+  },
+  {
+   "index": 9,
+   "file": "charge_009.png",
+   "name": "skull"
+  },
+  {
+   "index": 10,
+   "file": "charge_010.png",
+   "name": "hammer"
+  },
+  {
+   "index": 11,
+   "file": "charge_011.png",
+   "name": "anvil"
+  },
+  {
+   "index": 12,
+   "file": "charge_012.png",
+   "name": "moon"
+  },
+  {
+   "index": 13,
+   "file": "charge_013.png",
+   "name": "sun"
+  },
+  {
+   "index": 14,
+   "file": "charge_014.png",
+   "name": "tree"
+  },
+  {
+   "index": 15,
+   "file": "charge_015.png",
+   "name": "anchor"
+  },
+  {
+   "index": 16,
+   "file": "charge_016.png",
+   "name": "horse"
+  },
+  {
+   "index": 17,
+   "file": "charge_017.png",
+   "name": "griffon"
+  },
+  {
+   "index": 18,
+   "file": "charge_018.png",
+   "name": "key"
+  },
+  {
+   "index": 19,
+   "file": "charge_019.png",
+   "name": "rose"
+  },
+  {
+   "index": 20,
+   "file": "charge_020.png",
+   "name": "fleur_de_lys"
+  },
+  {
+   "index": 21,
+   "file": "charge_021.png",
+   "name": "flame"
+  },
+  {
+   "index": 22,
+   "file": "charge_022.png",
+   "name": "lightning"
+  },
+  {
+   "index": 23,
+   "file": "charge_023.png",
+   "name": "shield"
+  },
+  {
+   "index": 24,
+   "file": "charge_024.png",
+   "name": "horn"
+  },
+  {
+   "index": 25,
+   "file": "charge_025.png",
+   "name": "bull_head"
+  },
+  {
+   "index": 26,
+   "file": "charge_026.png",
+   "name": "serpent"
+  },
+  {
+   "index": 27,
+   "file": "charge_027.png",
+   "name": "raven"
+  },
+  {
+   "index": 28,
+   "file": "charge_028.png",
+   "name": "bat"
+  },
+  {
+   "index": 29,
+   "file": "charge_029.png",
+   "name": "stag"
+  },
+  {
+   "index": 30,
+   "file": "charge_030.png",
+   "name": "axe"
+  },
+  {
+   "index": 31,
+   "file": "charge_031.png",
+   "name": "spear"
+  },
+  {
+   "index": 32,
+   "file": "charge_032.png",
+   "name": "chalice"
+  },
+  {
+   "index": 33,
+   "file": "charge_033.png",
+   "name": "arrow"
+  },
+  {
+   "index": 34,
+   "file": "charge_034.png",
+   "name": "bell"
+  },
+  {
+   "index": 35,
+   "file": "charge_035.png",
+   "name": "eye"
+  },
+  {
+   "index": 36,
+   "file": "charge_036.png",
+   "name": "hand"
+  },
+  {
+   "index": 37,
+   "file": "charge_037.png",
+   "name": "wheel"
+  },
+  {
+   "index": 38,
+   "file": "charge_038.png",
+   "name": "gear"
+  },
+  {
+   "index": 39,
+   "file": "charge_039.png",
+   "name": "barrel"
+  },
+  {
+   "index": 40,
+   "file": "charge_040.png",
+   "name": "book"
+  },
+  {
+   "index": 41,
+   "file": "charge_041.png",
+   "name": "flask"
+  },
+  {
+   "index": 42,
+   "file": "charge_042.png",
+   "name": "spade"
+  },
+  {
+   "index": 43,
+   "file": "charge_043.png",
+   "name": "trident"
+  },
+  {
+   "index": 44,
+   "file": "charge_044.png",
+   "name": "scepter"
+  },
+  {
+   "index": 45,
+   "file": "charge_045.png",
+   "name": "feather"
+  },
+  {
+   "index": 46,
+   "file": "charge_046.png",
+   "name": "butterfly"
+  },
+  {
+   "index": 47,
+   "file": "charge_047.png",
+   "name": "bear"
+  },
+  {
+   "index": 48,
+   "file": "charge_048.png",
+   "name": "boar"
+  },
+  {
+   "index": 49,
+   "file": "charge_049.png",
+   "name": "spider"
+  },
+  {
+   "index": 50,
+   "file": "charge_050.png",
+   "name": "scorpion"
+  },
+  {
+   "index": 51,
+   "file": "charge_051.png",
+   "name": "turtle"
+  },
+  {
+   "index": 52,
+   "file": "charge_052.png",
+   "name": "fish"
+  },
+  {
+   "index": 53,
+   "file": "charge_053.png",
+   "name": "double_axe"
+  },
+  {
+   "index": 54,
+   "file": "charge_054.png",
+   "name": "mask"
+  },
+  {
+   "index": 55,
+   "file": "charge_055.png",
+   "name": "helmet"
+  },
+  {
+   "index": 56,
+   "file": "charge_056.png",
+   "name": "gauntlet"
+  },
+  {
+   "index": 57,
+   "file": "charge_057.png",
+   "name": "banner"
+  },
+  {
+   "index": 58,
+   "file": "charge_058.png",
+   "name": "comet"
+  },
+  {
+   "index": 59,
+   "file": "charge_059.png",
+   "name": "pentagram"
+  },
+  {
+   "index": 60,
+   "file": "charge_060.png",
+   "name": "crystal"
+  },
+  {
+   "index": 61,
+   "file": "charge_061.png",
+   "name": "chest"
+  },
+  {
+   "index": 62,
+   "file": "charge_062.png",
+   "name": "coin"
+  },
+  {
+   "index": 63,
+   "file": "charge_063.png",
+   "name": "dagger"
+  }
+ ]
+}

@@ -1,0 +1,561 @@
+{
+ "version": 1,
+ "bodies": {
+  "body_human_torso": {
+   "species": "human",
+   "part": "torso",
+   "triangles": 1320,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_human_pelvis": {
+   "species": "human",
+   "part": "pelvis",
+   "triangles": 1872,
+   "pivot": [
+    0.0,
+    0.74,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_human_head": {
+   "species": "human",
+   "part": "head",
+   "triangles": 2412,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_human_arm_l": {
+   "species": "human",
+   "part": "arm_l",
+   "triangles": 2568,
+   "pivot": [
+    0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_human_arm_r": {
+   "species": "human",
+   "part": "arm_r",
+   "triangles": 2568,
+   "pivot": [
+    -0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_human_leg_l": {
+   "species": "human",
+   "part": "leg_l",
+   "triangles": 2920,
+   "pivot": [
+    0.13,
+    0.72,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_human_leg_r": {
+   "species": "human",
+   "part": "leg_r",
+   "triangles": 2920,
+   "pivot": [
+    -0.13,
+    0.72,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_orc_torso": {
+   "species": "orc",
+   "part": "torso",
+   "triangles": 1320,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_orc_pelvis": {
+   "species": "orc",
+   "part": "pelvis",
+   "triangles": 1872,
+   "pivot": [
+    0.0,
+    0.74,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_orc_head": {
+   "species": "orc",
+   "part": "head",
+   "triangles": 2944,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_orc_arm_l": {
+   "species": "orc",
+   "part": "arm_l",
+   "triangles": 2568,
+   "pivot": [
+    0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_orc_arm_r": {
+   "species": "orc",
+   "part": "arm_r",
+   "triangles": 2568,
+   "pivot": [
+    -0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_orc_leg_l": {
+   "species": "orc",
+   "part": "leg_l",
+   "triangles": 2920,
+   "pivot": [
+    0.13,
+    0.72,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_orc_leg_r": {
+   "species": "orc",
+   "part": "leg_r",
+   "triangles": 2920,
+   "pivot": [
+    -0.13,
+    0.72,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_goblin_torso": {
+   "species": "goblin",
+   "part": "torso",
+   "triangles": 1320,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_goblin_pelvis": {
+   "species": "goblin",
+   "part": "pelvis",
+   "triangles": 1872,
+   "pivot": [
+    0.0,
+    0.74,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_goblin_head": {
+   "species": "goblin",
+   "part": "head",
+   "triangles": 2724,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_goblin_arm_l": {
+   "species": "goblin",
+   "part": "arm_l",
+   "triangles": 2568,
+   "pivot": [
+    0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_goblin_arm_r": {
+   "species": "goblin",
+   "part": "arm_r",
+   "triangles": 2568,
+   "pivot": [
+    -0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_goblin_leg_l": {
+   "species": "goblin",
+   "part": "leg_l",
+   "triangles": 2920,
+   "pivot": [
+    0.13,
+    0.72,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_goblin_leg_r": {
+   "species": "goblin",
+   "part": "leg_r",
+   "triangles": 2920,
+   "pivot": [
+    -0.13,
+    0.72,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_minotaur_torso": {
+   "species": "minotaur",
+   "part": "torso",
+   "triangles": 1848,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_minotaur_pelvis": {
+   "species": "minotaur",
+   "part": "pelvis",
+   "triangles": 1872,
+   "pivot": [
+    0.0,
+    0.74,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_minotaur_head": {
+   "species": "minotaur",
+   "part": "head",
+   "triangles": 2984,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_minotaur_arm_l": {
+   "species": "minotaur",
+   "part": "arm_l",
+   "triangles": 2700,
+   "pivot": [
+    0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_minotaur_arm_r": {
+   "species": "minotaur",
+   "part": "arm_r",
+   "triangles": 2700,
+   "pivot": [
+    -0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_minotaur_leg_l": {
+   "species": "minotaur",
+   "part": "leg_l",
+   "triangles": 1856,
+   "pivot": [
+    0.13,
+    0.72,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_minotaur_leg_r": {
+   "species": "minotaur",
+   "part": "leg_r",
+   "triangles": 1856,
+   "pivot": [
+    -0.13,
+    0.72,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_skeleton_torso": {
+   "species": "skeleton",
+   "part": "torso",
+   "triangles": 2672,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_skeleton_pelvis": {
+   "species": "skeleton",
+   "part": "pelvis",
+   "triangles": 1264,
+   "pivot": [
+    0.0,
+    0.74,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_skeleton_head": {
+   "species": "skeleton",
+   "part": "head",
+   "triangles": 2360,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_skeleton_arm_l": {
+   "species": "skeleton",
+   "part": "arm_l",
+   "triangles": 1492,
+   "pivot": [
+    0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_skeleton_arm_r": {
+   "species": "skeleton",
+   "part": "arm_r",
+   "triangles": 1492,
+   "pivot": [
+    -0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_skeleton_leg_l": {
+   "species": "skeleton",
+   "part": "leg_l",
+   "triangles": 1684,
+   "pivot": [
+    0.13,
+    0.72,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_skeleton_leg_r": {
+   "species": "skeleton",
+   "part": "leg_r",
+   "triangles": 1684,
+   "pivot": [
+    -0.13,
+    0.72,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_beast_torso": {
+   "species": "beast",
+   "part": "torso",
+   "triangles": 1848,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_beast_pelvis": {
+   "species": "beast",
+   "part": "pelvis",
+   "triangles": 1872,
+   "pivot": [
+    0.0,
+    0.74,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_beast_head": {
+   "species": "beast",
+   "part": "head",
+   "triangles": 2822,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_beast_arm_l": {
+   "species": "beast",
+   "part": "arm_l",
+   "triangles": 2632,
+   "pivot": [
+    0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_beast_arm_r": {
+   "species": "beast",
+   "part": "arm_r",
+   "triangles": 2632,
+   "pivot": [
+    -0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_beast_leg_l": {
+   "species": "beast",
+   "part": "leg_l",
+   "triangles": 1350,
+   "pivot": [
+    0.13,
+    0.72,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_beast_leg_r": {
+   "species": "beast",
+   "part": "leg_r",
+   "triangles": 1350,
+   "pivot": [
+    -0.13,
+    0.72,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_demon_torso": {
+   "species": "demon",
+   "part": "torso",
+   "triangles": 1320,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_demon_pelvis": {
+   "species": "demon",
+   "part": "pelvis",
+   "triangles": 1872,
+   "pivot": [
+    0.0,
+    0.74,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_demon_head": {
+   "species": "demon",
+   "part": "head",
+   "triangles": 2800,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_demon_arm_l": {
+   "species": "demon",
+   "part": "arm_l",
+   "triangles": 2500,
+   "pivot": [
+    0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_demon_arm_r": {
+   "species": "demon",
+   "part": "arm_r",
+   "triangles": 2500,
+   "pivot": [
+    -0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_demon_leg_l": {
+   "species": "demon",
+   "part": "leg_l",
+   "triangles": 792,
+   "pivot": [
+    0.13,
+    0.72,
+    0.0
+   ],
+   "note": ""
+  },
+  "body_demon_leg_r": {
+   "species": "demon",
+   "part": "leg_r",
+   "triangles": 792,
+   "pivot": [
+    -0.13,
+    0.72,
+    0.0
+   ],
+   "note": ""
+  }
+ },
+ "conventions": {
+  "mask": "COLOR_0 RGBA : R primaire, G secondaire, B accent, reste = peau ; A = AO cuite (0.28..1)",
+  "human_default_outfit": "pantalon = R, bottes/ceinture/bracelets = G, boucles = B, torse/bras/visage = peau",
+  "pivots": "origine de chaque noeud = pivot du contrat, g\u00e9om\u00e9trie en pose de repos autour du pivot",
+  "species_scale_in_game": {
+   "goblin": 0.8,
+   "minotaur": 1.35
+  },
+  "notes": {
+   "orc": "carrure x1.14 (torse), bras x1.22, d\u00e9fenses/oreilles en peau",
+   "goblin": "cr\u00e2ne x1.25, oreilles ~0.3 m, membres fins ; chapeaux \u00e0 scaler ~1.22 autour du pivot t\u00eate",
+   "minotaur": "cornes + anneau de nez en B (accent) ; sabots fendus, poils en peau",
+   "skeleton": "tout en peau (os) ; orbites = B (accent, AO=1)",
+   "beast": "loup-garou : jambes digitigrades \u00e0 griffes, fraise de poils ; pupilles B",
+   "demon": "cornes, yeux B, jambes digitigrades \u00e0 sabots, pagne R"
+  }
+ }
+}

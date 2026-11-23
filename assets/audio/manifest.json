@@ -1,0 +1,7921 @@
+{
+ "version": 1,
+ "sample_rate": 44100,
+ "root": "res://assets/audio/",
+ "generator": "tools/audio (numpy/scipy, 100% procedural) : python build_sfx.py ; python build_music.py ; python build_manifest.py",
+ "notes": [
+  "files[] : un élément par fichier. 'family' = nom de base ; choisir une variante au hasard parmi families[family].files.",
+  "SFX : wav 44,1 kHz 16 bit, mono (ambiances/foule en stéréo), pic normalisé à -3 dBFS, début/fin sans clic.",
+  "gain_db : volume conseillé (dB) pour égaliser la sonie perçue (mesure sur la fenêtre de 300 ms la plus forte) ; à régler avec volume_db du lecteur.",
+  "loop=true : boucle sans couture. Les WAV en boucle contiennent un chunk 'smpl' (Godot : loop_mode 'Detect From WAV'). Les OGG musique : mettre stream.loop = true (ou loop=true à l'import).",
+  "Musiques : ogg vorbis stéréo (q6), la fin raccorde le début (rendu circulaire, queue de réverbération repliée sur l'intro) ; loop_start=0, loop_end=durée.",
+  "recommended_loop=false (music_victory, music_defeat) : jingles de 30 s à jouer une fois ; ils restent bouclables sans clic."
+ ],
+ "counts": {
+  "sfx_files": 282,
+  "sfx_families": 92,
+  "music": 11
+ },
+ "files": [
+  {
+   "name": "ui_click_1",
+   "family": "ui_click",
+   "variant": 1,
+   "file": "sfx/ui_click_1.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.093,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "click",
+    "button"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -17.6,
+   "gain_db": 1.0
+  },
+  {
+   "name": "ui_click_2",
+   "family": "ui_click",
+   "variant": 2,
+   "file": "sfx/ui_click_2.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.093,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "click",
+    "button"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -17.8,
+   "gain_db": 1.0
+  },
+  {
+   "name": "ui_click_3",
+   "family": "ui_click",
+   "variant": 3,
+   "file": "sfx/ui_click_3.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.093,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "click",
+    "button"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -17.9,
+   "gain_db": 1.0
+  },
+  {
+   "name": "ui_hover_1",
+   "family": "ui_hover",
+   "variant": 1,
+   "file": "sfx/ui_hover_1.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.086,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "hover",
+    "soft"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -15.7,
+   "gain_db": -7.3
+  },
+  {
+   "name": "ui_hover_2",
+   "family": "ui_hover",
+   "variant": 2,
+   "file": "sfx/ui_hover_2.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.086,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "hover",
+    "soft"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -15.9,
+   "gain_db": -7.1
+  },
+  {
+   "name": "ui_hover_3",
+   "family": "ui_hover",
+   "variant": 3,
+   "file": "sfx/ui_hover_3.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.086,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "hover",
+    "soft"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -15.7,
+   "gain_db": -7.3
+  },
+  {
+   "name": "ui_confirm_1",
+   "family": "ui_confirm",
+   "variant": 1,
+   "file": "sfx/ui_confirm_1.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.857,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "confirm",
+    "ok"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -16.9,
+   "gain_db": -3.4
+  },
+  {
+   "name": "ui_confirm_2",
+   "family": "ui_confirm",
+   "variant": 2,
+   "file": "sfx/ui_confirm_2.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.8,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "confirm",
+    "ok"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -16.5,
+   "gain_db": -3.4
+  },
+  {
+   "name": "ui_confirm_3",
+   "family": "ui_confirm",
+   "variant": 3,
+   "file": "sfx/ui_confirm_3.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.81,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "confirm",
+    "ok"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -16.1,
+   "gain_db": -3.9
+  },
+  {
+   "name": "ui_back_1",
+   "family": "ui_back",
+   "variant": 1,
+   "file": "sfx/ui_back_1.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.554,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "back",
+    "cancel"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -15.3,
+   "gain_db": -4.3
+  },
+  {
+   "name": "ui_back_2",
+   "family": "ui_back",
+   "variant": 2,
+   "file": "sfx/ui_back_2.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.573,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "back",
+    "cancel"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -16.4,
+   "gain_db": -3.3
+  },
+  {
+   "name": "ui_back_3",
+   "family": "ui_back",
+   "variant": 3,
+   "file": "sfx/ui_back_3.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.551,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "back",
+    "cancel"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -16.6,
+   "gain_db": -3.0
+  },
+  {
+   "name": "ui_error_1",
+   "family": "ui_error",
+   "variant": 1,
+   "file": "sfx/ui_error_1.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.256,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "error",
+    "deny"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -14.2,
+   "gain_db": -2.8
+  },
+  {
+   "name": "ui_error_2",
+   "family": "ui_error",
+   "variant": 2,
+   "file": "sfx/ui_error_2.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.256,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "error",
+    "deny"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -14.2,
+   "gain_db": -2.8
+  },
+  {
+   "name": "ui_error_3",
+   "family": "ui_error",
+   "variant": 3,
+   "file": "sfx/ui_error_3.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.255,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "error",
+    "deny"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -14.3,
+   "gain_db": -2.7
+  },
+  {
+   "name": "ui_tab_1",
+   "family": "ui_tab",
+   "variant": 1,
+   "file": "sfx/ui_tab_1.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.08,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "tab",
+    "tick"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.9,
+   "gain_db": -1.0
+  },
+  {
+   "name": "ui_tab_2",
+   "family": "ui_tab",
+   "variant": 2,
+   "file": "sfx/ui_tab_2.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.08,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "tab",
+    "tick"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.0,
+   "gain_db": -1.0
+  },
+  {
+   "name": "ui_tab_3",
+   "family": "ui_tab",
+   "variant": 3,
+   "file": "sfx/ui_tab_3.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.08,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "tab",
+    "tick"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.4,
+   "gain_db": -1.0
+  },
+  {
+   "name": "ui_coin_1",
+   "family": "ui_coin",
+   "variant": 1,
+   "file": "sfx/ui_coin_1.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.729,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "coin",
+    "gold",
+    "reward"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -17.5,
+   "gain_db": -2.7
+  },
+  {
+   "name": "ui_coin_2",
+   "family": "ui_coin",
+   "variant": 2,
+   "file": "sfx/ui_coin_2.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.747,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "coin",
+    "gold",
+    "reward"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -16.9,
+   "gain_db": -3.3
+  },
+  {
+   "name": "ui_coin_3",
+   "family": "ui_coin",
+   "variant": 3,
+   "file": "sfx/ui_coin_3.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.757,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "coin",
+    "gold",
+    "reward"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -17.7,
+   "gain_db": -2.6
+  },
+  {
+   "name": "ui_levelup_1",
+   "family": "ui_levelup",
+   "variant": 1,
+   "file": "sfx/ui_levelup_1.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 2.551,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "levelup",
+    "reward",
+    "jingle"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.5,
+   "gain_db": -0.5
+  },
+  {
+   "name": "ui_levelup_2",
+   "family": "ui_levelup",
+   "variant": 2,
+   "file": "sfx/ui_levelup_2.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 2.616,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "levelup",
+    "reward",
+    "jingle"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.1,
+   "gain_db": -1.6
+  },
+  {
+   "name": "ui_levelup_3",
+   "family": "ui_levelup",
+   "variant": 3,
+   "file": "sfx/ui_levelup_3.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 2.6,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "levelup",
+    "reward",
+    "jingle"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.5,
+   "gain_db": -1.7
+  },
+  {
+   "name": "ui_unlock_1",
+   "family": "ui_unlock",
+   "variant": 1,
+   "file": "sfx/ui_unlock_1.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 1.418,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "unlock",
+    "lock",
+    "reward"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.6,
+   "gain_db": -0.3
+  },
+  {
+   "name": "ui_unlock_2",
+   "family": "ui_unlock",
+   "variant": 2,
+   "file": "sfx/ui_unlock_2.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 1.427,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "unlock",
+    "lock",
+    "reward"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.5,
+   "gain_db": -0.6
+  },
+  {
+   "name": "ui_unlock_3",
+   "family": "ui_unlock",
+   "variant": 3,
+   "file": "sfx/ui_unlock_3.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 1.41,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "unlock",
+    "lock",
+    "reward"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.5,
+   "gain_db": -0.3
+  },
+  {
+   "name": "ui_open_panel_1",
+   "family": "ui_open_panel",
+   "variant": 1,
+   "file": "sfx/ui_open_panel_1.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.295,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "panel",
+    "open",
+    "whoosh"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -16.4,
+   "gain_db": -1.6
+  },
+  {
+   "name": "ui_open_panel_2",
+   "family": "ui_open_panel",
+   "variant": 2,
+   "file": "sfx/ui_open_panel_2.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.297,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "panel",
+    "open",
+    "whoosh"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -16.0,
+   "gain_db": -2.0
+  },
+  {
+   "name": "ui_open_panel_3",
+   "family": "ui_open_panel",
+   "variant": 3,
+   "file": "sfx/ui_open_panel_3.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.297,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "panel",
+    "open",
+    "whoosh"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -17.9,
+   "gain_db": -1.0
+  },
+  {
+   "name": "ui_close_panel_1",
+   "family": "ui_close_panel",
+   "variant": 1,
+   "file": "sfx/ui_close_panel_1.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.252,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "panel",
+    "close",
+    "whoosh"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -15.1,
+   "gain_db": -2.9
+  },
+  {
+   "name": "ui_close_panel_2",
+   "family": "ui_close_panel",
+   "variant": 2,
+   "file": "sfx/ui_close_panel_2.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.252,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "panel",
+    "close",
+    "whoosh"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -17.0,
+   "gain_db": -1.0
+  },
+  {
+   "name": "ui_close_panel_3",
+   "family": "ui_close_panel",
+   "variant": 3,
+   "file": "sfx/ui_close_panel_3.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.251,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "panel",
+    "close",
+    "whoosh"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -16.4,
+   "gain_db": -1.6
+  },
+  {
+   "name": "ui_chest_open_1",
+   "family": "ui_chest_open",
+   "variant": 1,
+   "file": "sfx/ui_chest_open_1.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 3.416,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "chest",
+    "open",
+    "reward"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.4,
+   "gain_db": -1.0
+  },
+  {
+   "name": "ui_chest_open_2",
+   "family": "ui_chest_open",
+   "variant": 2,
+   "file": "sfx/ui_chest_open_2.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 3.184,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "chest",
+    "open",
+    "reward"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.1,
+   "gain_db": -0.3
+  },
+  {
+   "name": "ui_chest_open_3",
+   "family": "ui_chest_open",
+   "variant": 3,
+   "file": "sfx/ui_chest_open_3.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 3.269,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "chest",
+    "open",
+    "reward"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.4,
+   "gain_db": -1.2
+  },
+  {
+   "name": "ui_chest_rare_1",
+   "family": "ui_chest_rare",
+   "variant": 1,
+   "file": "sfx/ui_chest_rare_1.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 3.807,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "chest",
+    "rare",
+    "epic",
+    "reward"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.0,
+   "gain_db": 0.4
+  },
+  {
+   "name": "ui_chest_rare_2",
+   "family": "ui_chest_rare",
+   "variant": 2,
+   "file": "sfx/ui_chest_rare_2.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 3.858,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "chest",
+    "rare",
+    "epic",
+    "reward"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.9,
+   "gain_db": -0.3
+  },
+  {
+   "name": "ui_chest_rare_3",
+   "family": "ui_chest_rare",
+   "variant": 3,
+   "file": "sfx/ui_chest_rare_3.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 3.894,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "chest",
+    "rare",
+    "epic",
+    "reward"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.9,
+   "gain_db": -0.1
+  },
+  {
+   "name": "ui_buy_1",
+   "family": "ui_buy",
+   "variant": 1,
+   "file": "sfx/ui_buy_1.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 1.057,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "buy",
+    "purchase",
+    "coin"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.1,
+   "gain_db": -1.5
+  },
+  {
+   "name": "ui_buy_2",
+   "family": "ui_buy",
+   "variant": 2,
+   "file": "sfx/ui_buy_2.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 1.058,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "buy",
+    "purchase",
+    "coin"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.6,
+   "gain_db": -0.9
+  },
+  {
+   "name": "ui_buy_3",
+   "family": "ui_buy",
+   "variant": 3,
+   "file": "sfx/ui_buy_3.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 1.019,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "buy",
+    "purchase",
+    "coin"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.3,
+   "gain_db": -1.0
+  },
+  {
+   "name": "ui_sell_1",
+   "family": "ui_sell",
+   "variant": 1,
+   "file": "sfx/ui_sell_1.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 1.019,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "sell",
+    "coin"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.6,
+   "gain_db": -1.2
+  },
+  {
+   "name": "ui_sell_2",
+   "family": "ui_sell",
+   "variant": 2,
+   "file": "sfx/ui_sell_2.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 1.038,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "sell",
+    "coin"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.6,
+   "gain_db": -0.4
+  },
+  {
+   "name": "ui_sell_3",
+   "family": "ui_sell",
+   "variant": 3,
+   "file": "sfx/ui_sell_3.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 1.067,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "sell",
+    "coin"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.1,
+   "gain_db": -1.2
+  },
+  {
+   "name": "ui_achievement_1",
+   "family": "ui_achievement",
+   "variant": 1,
+   "file": "sfx/ui_achievement_1.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 3.218,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "achievement",
+    "trophy",
+    "jingle"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.4,
+   "gain_db": 0.3
+  },
+  {
+   "name": "ui_achievement_2",
+   "family": "ui_achievement",
+   "variant": 2,
+   "file": "sfx/ui_achievement_2.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 3.21,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "achievement",
+    "trophy",
+    "jingle"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.0,
+   "gain_db": 0.5
+  },
+  {
+   "name": "ui_achievement_3",
+   "family": "ui_achievement",
+   "variant": 3,
+   "file": "sfx/ui_achievement_3.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 3.096,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "achievement",
+    "trophy",
+    "jingle"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.1,
+   "gain_db": 0.2
+  },
+  {
+   "name": "ui_notification_1",
+   "family": "ui_notification",
+   "variant": 1,
+   "file": "sfx/ui_notification_1.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.806,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "notification",
+    "ding"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -16.2,
+   "gain_db": -4.0
+  },
+  {
+   "name": "ui_notification_2",
+   "family": "ui_notification",
+   "variant": 2,
+   "file": "sfx/ui_notification_2.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.785,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "notification",
+    "ding"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -15.6,
+   "gain_db": -4.5
+  },
+  {
+   "name": "ui_notification_3",
+   "family": "ui_notification",
+   "variant": 3,
+   "file": "sfx/ui_notification_3.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.859,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "notification",
+    "ding"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -15.9,
+   "gain_db": -4.6
+  },
+  {
+   "name": "ui_page_1",
+   "family": "ui_page",
+   "variant": 1,
+   "file": "sfx/ui_page_1.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.315,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "page",
+    "paper",
+    "turn"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.4,
+   "gain_db": -1.0
+  },
+  {
+   "name": "ui_page_2",
+   "family": "ui_page",
+   "variant": 2,
+   "file": "sfx/ui_page_2.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.316,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "page",
+    "paper",
+    "turn"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.4,
+   "gain_db": -1.0
+  },
+  {
+   "name": "ui_page_3",
+   "family": "ui_page",
+   "variant": 3,
+   "file": "sfx/ui_page_3.wav",
+   "category": "ui",
+   "group": "ui",
+   "bus": "ui",
+   "duration": 0.317,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ui",
+    "page",
+    "paper",
+    "turn"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -17.8,
+   "gain_db": -1.0
+  },
+  {
+   "name": "swing_light_1",
+   "family": "swing_light",
+   "variant": 1,
+   "file": "sfx/swing_light_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.247,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "swing",
+    "melee",
+    "light",
+    "whoosh"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.4,
+   "gain_db": 0.0
+  },
+  {
+   "name": "swing_light_2",
+   "family": "swing_light",
+   "variant": 2,
+   "file": "sfx/swing_light_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.226,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "swing",
+    "melee",
+    "light",
+    "whoosh"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.3,
+   "gain_db": 0.0
+  },
+  {
+   "name": "swing_light_3",
+   "family": "swing_light",
+   "variant": 3,
+   "file": "sfx/swing_light_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.262,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "swing",
+    "melee",
+    "light",
+    "whoosh"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.2,
+   "gain_db": 0.0
+  },
+  {
+   "name": "swing_light_4",
+   "family": "swing_light",
+   "variant": 4,
+   "file": "sfx/swing_light_4.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.254,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "swing",
+    "melee",
+    "light",
+    "whoosh"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.3,
+   "gain_db": 0.0
+  },
+  {
+   "name": "swing_heavy_1",
+   "family": "swing_heavy",
+   "variant": 1,
+   "file": "sfx/swing_heavy_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.433,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "swing",
+    "melee",
+    "heavy",
+    "whoosh"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -17.5,
+   "gain_db": 1.0
+  },
+  {
+   "name": "swing_heavy_2",
+   "family": "swing_heavy",
+   "variant": 2,
+   "file": "sfx/swing_heavy_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.402,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "swing",
+    "melee",
+    "heavy",
+    "whoosh"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -17.9,
+   "gain_db": 1.7
+  },
+  {
+   "name": "swing_heavy_3",
+   "family": "swing_heavy",
+   "variant": 3,
+   "file": "sfx/swing_heavy_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.465,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "swing",
+    "melee",
+    "heavy",
+    "whoosh"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -17.5,
+   "gain_db": 0.7
+  },
+  {
+   "name": "swing_heavy_4",
+   "family": "swing_heavy",
+   "variant": 4,
+   "file": "sfx/swing_heavy_4.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.448,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "swing",
+    "melee",
+    "heavy",
+    "whoosh"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -17.4,
+   "gain_db": 0.7
+  },
+  {
+   "name": "hit_slash_1",
+   "family": "hit_slash",
+   "variant": 1,
+   "file": "sfx/hit_slash_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.34,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "slash",
+    "blade",
+    "melee"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -22.5,
+   "gain_db": 2.0
+  },
+  {
+   "name": "hit_slash_2",
+   "family": "hit_slash",
+   "variant": 2,
+   "file": "sfx/hit_slash_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.379,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "slash",
+    "blade",
+    "melee"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -23.2,
+   "gain_db": 2.0
+  },
+  {
+   "name": "hit_slash_3",
+   "family": "hit_slash",
+   "variant": 3,
+   "file": "sfx/hit_slash_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.346,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "slash",
+    "blade",
+    "melee"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -22.0,
+   "gain_db": 2.0
+  },
+  {
+   "name": "hit_slash_4",
+   "family": "hit_slash",
+   "variant": 4,
+   "file": "sfx/hit_slash_4.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.386,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "slash",
+    "blade",
+    "melee"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -23.0,
+   "gain_db": 2.0
+  },
+  {
+   "name": "hit_blunt_1",
+   "family": "hit_blunt",
+   "variant": 1,
+   "file": "sfx/hit_blunt_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.519,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "blunt",
+    "mace",
+    "melee"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -16.4,
+   "gain_db": 0.0
+  },
+  {
+   "name": "hit_blunt_2",
+   "family": "hit_blunt",
+   "variant": 2,
+   "file": "sfx/hit_blunt_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.515,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "blunt",
+    "mace",
+    "melee"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -16.4,
+   "gain_db": 0.0
+  },
+  {
+   "name": "hit_blunt_3",
+   "family": "hit_blunt",
+   "variant": 3,
+   "file": "sfx/hit_blunt_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.506,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "blunt",
+    "mace",
+    "melee"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -17.0,
+   "gain_db": 0.8
+  },
+  {
+   "name": "hit_blunt_4",
+   "family": "hit_blunt",
+   "variant": 4,
+   "file": "sfx/hit_blunt_4.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.515,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "blunt",
+    "mace",
+    "melee"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -16.6,
+   "gain_db": 0.3
+  },
+  {
+   "name": "hit_pierce_1",
+   "family": "hit_pierce",
+   "variant": 1,
+   "file": "sfx/hit_pierce_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.252,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "pierce",
+    "stab",
+    "melee"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -22.7,
+   "gain_db": 2.0
+  },
+  {
+   "name": "hit_pierce_2",
+   "family": "hit_pierce",
+   "variant": 2,
+   "file": "sfx/hit_pierce_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.26,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "pierce",
+    "stab",
+    "melee"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -22.7,
+   "gain_db": 2.0
+  },
+  {
+   "name": "hit_pierce_3",
+   "family": "hit_pierce",
+   "variant": 3,
+   "file": "sfx/hit_pierce_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.262,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "pierce",
+    "stab",
+    "melee"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -22.5,
+   "gain_db": 2.0
+  },
+  {
+   "name": "hit_pierce_4",
+   "family": "hit_pierce",
+   "variant": 4,
+   "file": "sfx/hit_pierce_4.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.256,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "pierce",
+    "stab",
+    "melee"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -23.3,
+   "gain_db": 2.0
+  },
+  {
+   "name": "hit_magic_1",
+   "family": "hit_magic",
+   "variant": 1,
+   "file": "sfx/hit_magic_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.624,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "magic",
+    "impact"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.6,
+   "gain_db": 1.0
+  },
+  {
+   "name": "hit_magic_2",
+   "family": "hit_magic",
+   "variant": 2,
+   "file": "sfx/hit_magic_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.636,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "magic",
+    "impact"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.3,
+   "gain_db": 1.0
+  },
+  {
+   "name": "hit_magic_3",
+   "family": "hit_magic",
+   "variant": 3,
+   "file": "sfx/hit_magic_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.695,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "magic",
+    "impact"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.3,
+   "gain_db": 1.0
+  },
+  {
+   "name": "hit_magic_4",
+   "family": "hit_magic",
+   "variant": 4,
+   "file": "sfx/hit_magic_4.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.694,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "magic",
+    "impact"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.7,
+   "gain_db": 1.0
+  },
+  {
+   "name": "hit_crit_1",
+   "family": "hit_crit",
+   "variant": 1,
+   "file": "sfx/hit_crit_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 1.242,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "critical",
+    "impact",
+    "heavy"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.0,
+   "gain_db": 0.3
+  },
+  {
+   "name": "hit_crit_2",
+   "family": "hit_crit",
+   "variant": 2,
+   "file": "sfx/hit_crit_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 1.26,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "critical",
+    "impact",
+    "heavy"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.3,
+   "gain_db": -0.5
+  },
+  {
+   "name": "hit_crit_3",
+   "family": "hit_crit",
+   "variant": 3,
+   "file": "sfx/hit_crit_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 1.259,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "critical",
+    "impact",
+    "heavy"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.8,
+   "gain_db": -0.0
+  },
+  {
+   "name": "hit_shield_block_1",
+   "family": "hit_shield_block",
+   "variant": 1,
+   "file": "sfx/hit_shield_block_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.889,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "shield",
+    "block",
+    "metal"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.8,
+   "gain_db": -0.3
+  },
+  {
+   "name": "hit_shield_block_2",
+   "family": "hit_shield_block",
+   "variant": 2,
+   "file": "sfx/hit_shield_block_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.847,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "shield",
+    "block",
+    "metal"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.9,
+   "gain_db": 0.8
+  },
+  {
+   "name": "hit_shield_block_3",
+   "family": "hit_shield_block",
+   "variant": 3,
+   "file": "sfx/hit_shield_block_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.877,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "shield",
+    "block",
+    "metal"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.4,
+   "gain_db": -0.9
+  },
+  {
+   "name": "hit_shield_block_4",
+   "family": "hit_shield_block",
+   "variant": 4,
+   "file": "sfx/hit_shield_block_4.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.891,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "shield",
+    "block",
+    "metal"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.4,
+   "gain_db": 0.2
+  },
+  {
+   "name": "hit_player_hurt_1",
+   "family": "hit_player_hurt",
+   "variant": 1,
+   "file": "sfx/hit_player_hurt_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.417,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "hurt",
+    "damage",
+    "player"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.1,
+   "gain_db": 1.6
+  },
+  {
+   "name": "hit_player_hurt_2",
+   "family": "hit_player_hurt",
+   "variant": 2,
+   "file": "sfx/hit_player_hurt_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.432,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "hurt",
+    "damage",
+    "player"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.7,
+   "gain_db": 2.0
+  },
+  {
+   "name": "hit_player_hurt_3",
+   "family": "hit_player_hurt",
+   "variant": 3,
+   "file": "sfx/hit_player_hurt_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.405,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "hurt",
+    "damage",
+    "player"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.0,
+   "gain_db": 2.0
+  },
+  {
+   "name": "hit_player_hurt_4",
+   "family": "hit_player_hurt",
+   "variant": 4,
+   "file": "sfx/hit_player_hurt_4.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.402,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "hit",
+    "hurt",
+    "damage",
+    "player"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.4,
+   "gain_db": 2.0
+  },
+  {
+   "name": "arrow_shoot_1",
+   "family": "arrow_shoot",
+   "variant": 1,
+   "file": "sfx/arrow_shoot_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.227,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "arrow",
+    "bow",
+    "shoot",
+    "ranged"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.4,
+   "gain_db": 0.0
+  },
+  {
+   "name": "arrow_shoot_2",
+   "family": "arrow_shoot",
+   "variant": 2,
+   "file": "sfx/arrow_shoot_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.227,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "arrow",
+    "bow",
+    "shoot",
+    "ranged"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.5,
+   "gain_db": 0.0
+  },
+  {
+   "name": "arrow_shoot_3",
+   "family": "arrow_shoot",
+   "variant": 3,
+   "file": "sfx/arrow_shoot_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.228,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "arrow",
+    "bow",
+    "shoot",
+    "ranged"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.4,
+   "gain_db": 0.0
+  },
+  {
+   "name": "arrow_shoot_4",
+   "family": "arrow_shoot",
+   "variant": 4,
+   "file": "sfx/arrow_shoot_4.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.221,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "arrow",
+    "bow",
+    "shoot",
+    "ranged"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.6,
+   "gain_db": 0.0
+  },
+  {
+   "name": "arrow_hit_1",
+   "family": "arrow_hit",
+   "variant": 1,
+   "file": "sfx/arrow_hit_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.343,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "arrow",
+    "hit",
+    "thunk",
+    "ranged"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.6,
+   "gain_db": 1.0
+  },
+  {
+   "name": "arrow_hit_2",
+   "family": "arrow_hit",
+   "variant": 2,
+   "file": "sfx/arrow_hit_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.347,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "arrow",
+    "hit",
+    "thunk",
+    "ranged"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -22.7,
+   "gain_db": 1.0
+  },
+  {
+   "name": "arrow_hit_3",
+   "family": "arrow_hit",
+   "variant": 3,
+   "file": "sfx/arrow_hit_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.335,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "arrow",
+    "hit",
+    "thunk",
+    "ranged"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -22.0,
+   "gain_db": 1.0
+  },
+  {
+   "name": "arrow_hit_4",
+   "family": "arrow_hit",
+   "variant": 4,
+   "file": "sfx/arrow_hit_4.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.329,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "arrow",
+    "hit",
+    "thunk",
+    "ranged"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -23.4,
+   "gain_db": 1.0
+  },
+  {
+   "name": "crossbow_shoot_1",
+   "family": "crossbow_shoot",
+   "variant": 1,
+   "file": "sfx/crossbow_shoot_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.298,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "crossbow",
+    "shoot",
+    "ranged",
+    "mechanical"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.3,
+   "gain_db": 1.0
+  },
+  {
+   "name": "crossbow_shoot_2",
+   "family": "crossbow_shoot",
+   "variant": 2,
+   "file": "sfx/crossbow_shoot_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.319,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "crossbow",
+    "shoot",
+    "ranged",
+    "mechanical"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.7,
+   "gain_db": 1.0
+  },
+  {
+   "name": "crossbow_shoot_3",
+   "family": "crossbow_shoot",
+   "variant": 3,
+   "file": "sfx/crossbow_shoot_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.301,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "crossbow",
+    "shoot",
+    "ranged",
+    "mechanical"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.2,
+   "gain_db": 1.0
+  },
+  {
+   "name": "bow_draw_1",
+   "family": "bow_draw",
+   "variant": 1,
+   "file": "sfx/bow_draw_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.918,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "bow",
+    "draw",
+    "creak",
+    "ranged"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.6,
+   "gain_db": -2.8
+  },
+  {
+   "name": "bow_draw_2",
+   "family": "bow_draw",
+   "variant": 2,
+   "file": "sfx/bow_draw_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.918,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "bow",
+    "draw",
+    "creak",
+    "ranged"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.6,
+   "gain_db": -2.8
+  },
+  {
+   "name": "bow_draw_3",
+   "family": "bow_draw",
+   "variant": 3,
+   "file": "sfx/bow_draw_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.919,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "bow",
+    "draw",
+    "creak",
+    "ranged"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.4,
+   "gain_db": -3.0
+  },
+  {
+   "name": "dash_whoosh_1",
+   "family": "dash_whoosh",
+   "variant": 1,
+   "file": "sfx/dash_whoosh_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.298,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "dash",
+    "whoosh",
+    "movement"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.6,
+   "gain_db": 0.0
+  },
+  {
+   "name": "dash_whoosh_2",
+   "family": "dash_whoosh",
+   "variant": 2,
+   "file": "sfx/dash_whoosh_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.298,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "dash",
+    "whoosh",
+    "movement"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.0,
+   "gain_db": 0.0
+  },
+  {
+   "name": "dash_whoosh_3",
+   "family": "dash_whoosh",
+   "variant": 3,
+   "file": "sfx/dash_whoosh_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.298,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "dash",
+    "whoosh",
+    "movement"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.2,
+   "gain_db": 0.0
+  },
+  {
+   "name": "dash_whoosh_4",
+   "family": "dash_whoosh",
+   "variant": 4,
+   "file": "sfx/dash_whoosh_4.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.298,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "dash",
+    "whoosh",
+    "movement"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.6,
+   "gain_db": 0.0
+  },
+  {
+   "name": "leap_land_1",
+   "family": "leap_land",
+   "variant": 1,
+   "file": "sfx/leap_land_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.994,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "leap",
+    "land",
+    "impact",
+    "movement"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.1,
+   "gain_db": 2.2
+  },
+  {
+   "name": "leap_land_2",
+   "family": "leap_land",
+   "variant": 2,
+   "file": "sfx/leap_land_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.993,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "leap",
+    "land",
+    "impact",
+    "movement"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.5,
+   "gain_db": 2.3
+  },
+  {
+   "name": "leap_land_3",
+   "family": "leap_land",
+   "variant": 3,
+   "file": "sfx/leap_land_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.992,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "leap",
+    "land",
+    "impact",
+    "movement"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.7,
+   "gain_db": 2.6
+  },
+  {
+   "name": "footstep_sand_1",
+   "family": "footstep_sand",
+   "variant": 1,
+   "file": "sfx/footstep_sand_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.24,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "footstep",
+    "sand",
+    "step"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.2,
+   "gain_db": -6.0
+  },
+  {
+   "name": "footstep_sand_2",
+   "family": "footstep_sand",
+   "variant": 2,
+   "file": "sfx/footstep_sand_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.24,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "footstep",
+    "sand",
+    "step"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.3,
+   "gain_db": -6.0
+  },
+  {
+   "name": "footstep_sand_3",
+   "family": "footstep_sand",
+   "variant": 3,
+   "file": "sfx/footstep_sand_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.24,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "footstep",
+    "sand",
+    "step"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.8,
+   "gain_db": -6.0
+  },
+  {
+   "name": "footstep_sand_4",
+   "family": "footstep_sand",
+   "variant": 4,
+   "file": "sfx/footstep_sand_4.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.24,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "footstep",
+    "sand",
+    "step"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.2,
+   "gain_db": -6.0
+  },
+  {
+   "name": "footstep_stone_1",
+   "family": "footstep_stone",
+   "variant": 1,
+   "file": "sfx/footstep_stone_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.232,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "footstep",
+    "stone",
+    "step"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -23.4,
+   "gain_db": -5.0
+  },
+  {
+   "name": "footstep_stone_2",
+   "family": "footstep_stone",
+   "variant": 2,
+   "file": "sfx/footstep_stone_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.229,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "footstep",
+    "stone",
+    "step"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -23.1,
+   "gain_db": -5.0
+  },
+  {
+   "name": "footstep_stone_3",
+   "family": "footstep_stone",
+   "variant": 3,
+   "file": "sfx/footstep_stone_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.238,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "footstep",
+    "stone",
+    "step"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -23.2,
+   "gain_db": -5.0
+  },
+  {
+   "name": "footstep_stone_4",
+   "family": "footstep_stone",
+   "variant": 4,
+   "file": "sfx/footstep_stone_4.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.234,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "footstep",
+    "stone",
+    "step"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -23.9,
+   "gain_db": -5.0
+  },
+  {
+   "name": "explosion_small_1",
+   "family": "explosion_small",
+   "variant": 1,
+   "file": "sfx/explosion_small_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 1.306,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "explosion",
+    "boom",
+    "small"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.9,
+   "gain_db": 0.0
+  },
+  {
+   "name": "explosion_small_2",
+   "family": "explosion_small",
+   "variant": 2,
+   "file": "sfx/explosion_small_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 1.296,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "explosion",
+    "boom",
+    "small"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.0,
+   "gain_db": 1.1
+  },
+  {
+   "name": "explosion_small_3",
+   "family": "explosion_small",
+   "variant": 3,
+   "file": "sfx/explosion_small_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 1.297,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "explosion",
+    "boom",
+    "small"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.4,
+   "gain_db": 0.5
+  },
+  {
+   "name": "explosion_big_1",
+   "family": "explosion_big",
+   "variant": 1,
+   "file": "sfx/explosion_big_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 3.991,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "explosion",
+    "boom",
+    "big",
+    "heavy"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.4,
+   "gain_db": 0.3
+  },
+  {
+   "name": "explosion_big_2",
+   "family": "explosion_big",
+   "variant": 2,
+   "file": "sfx/explosion_big_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 4.017,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "explosion",
+    "boom",
+    "big",
+    "heavy"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.7,
+   "gain_db": 0.4
+  },
+  {
+   "name": "explosion_big_3",
+   "family": "explosion_big",
+   "variant": 3,
+   "file": "sfx/explosion_big_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 3.927,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "explosion",
+    "boom",
+    "big",
+    "heavy"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.4,
+   "gain_db": 0.2
+  },
+  {
+   "name": "beam_loop_1",
+   "family": "beam_loop",
+   "variant": 1,
+   "file": "sfx/beam_loop_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 2.0,
+   "loop": true,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "loop",
+    "beam",
+    "energy",
+    "hum"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -11.3,
+   "gain_db": -10.4
+  },
+  {
+   "name": "beam_loop_2",
+   "family": "beam_loop",
+   "variant": 2,
+   "file": "sfx/beam_loop_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 2.0,
+   "loop": true,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "loop",
+    "beam",
+    "energy",
+    "hum"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -11.1,
+   "gain_db": -10.5
+  },
+  {
+   "name": "fire_loop_1",
+   "family": "fire_loop",
+   "variant": 1,
+   "file": "sfx/fire_loop_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 3.0,
+   "loop": true,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "loop",
+    "fire",
+    "flame",
+    "burn"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -15.5,
+   "gain_db": -8.0
+  },
+  {
+   "name": "fire_loop_2",
+   "family": "fire_loop",
+   "variant": 2,
+   "file": "sfx/fire_loop_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 3.0,
+   "loop": true,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "loop",
+    "fire",
+    "flame",
+    "burn"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -16.2,
+   "gain_db": -7.4
+  },
+  {
+   "name": "shield_up_1",
+   "family": "shield_up",
+   "variant": 1,
+   "file": "sfx/shield_up_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 1.196,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "shield",
+    "buff",
+    "defense",
+    "magic"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.2,
+   "gain_db": -2.4
+  },
+  {
+   "name": "shield_up_2",
+   "family": "shield_up",
+   "variant": 2,
+   "file": "sfx/shield_up_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 1.194,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "shield",
+    "buff",
+    "defense",
+    "magic"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.3,
+   "gain_db": -1.6
+  },
+  {
+   "name": "shield_up_3",
+   "family": "shield_up",
+   "variant": 3,
+   "file": "sfx/shield_up_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 1.197,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "shield",
+    "buff",
+    "defense",
+    "magic"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.2,
+   "gain_db": -2.0
+  },
+  {
+   "name": "shield_break_1",
+   "family": "shield_break",
+   "variant": 1,
+   "file": "sfx/shield_break_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 1.135,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "shield",
+    "break",
+    "shatter",
+    "glass"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.9,
+   "gain_db": 0.6
+  },
+  {
+   "name": "shield_break_2",
+   "family": "shield_break",
+   "variant": 2,
+   "file": "sfx/shield_break_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 1.148,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "shield",
+    "break",
+    "shatter",
+    "glass"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.1,
+   "gain_db": -0.1
+  },
+  {
+   "name": "shield_break_3",
+   "family": "shield_break",
+   "variant": 3,
+   "file": "sfx/shield_break_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 1.146,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "shield",
+    "break",
+    "shatter",
+    "glass"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.5,
+   "gain_db": 0.4
+  },
+  {
+   "name": "stun_hit_1",
+   "family": "stun_hit",
+   "variant": 1,
+   "file": "sfx/stun_hit_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.967,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "stun",
+    "status",
+    "impact",
+    "dizzy"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.5,
+   "gain_db": 0.8
+  },
+  {
+   "name": "stun_hit_2",
+   "family": "stun_hit",
+   "variant": 2,
+   "file": "sfx/stun_hit_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.981,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "stun",
+    "status",
+    "impact",
+    "dizzy"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.3,
+   "gain_db": 0.4
+  },
+  {
+   "name": "stun_hit_3",
+   "family": "stun_hit",
+   "variant": 3,
+   "file": "sfx/stun_hit_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 1.012,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "stun",
+    "status",
+    "impact",
+    "dizzy"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.8,
+   "gain_db": 0.9
+  },
+  {
+   "name": "buff_up_1",
+   "family": "buff_up",
+   "variant": 1,
+   "file": "sfx/buff_up_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.649,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "buff",
+    "status",
+    "rise",
+    "magic"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -16.4,
+   "gain_db": -3.8
+  },
+  {
+   "name": "buff_up_2",
+   "family": "buff_up",
+   "variant": 2,
+   "file": "sfx/buff_up_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.655,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "buff",
+    "status",
+    "rise",
+    "magic"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.6,
+   "gain_db": -1.7
+  },
+  {
+   "name": "buff_up_3",
+   "family": "buff_up",
+   "variant": 3,
+   "file": "sfx/buff_up_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.65,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "buff",
+    "status",
+    "rise",
+    "magic"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -17.0,
+   "gain_db": -3.2
+  },
+  {
+   "name": "debuff_down_1",
+   "family": "debuff_down",
+   "variant": 1,
+   "file": "sfx/debuff_down_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.923,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "debuff",
+    "status",
+    "fall",
+    "curse"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -15.9,
+   "gain_db": -4.6
+  },
+  {
+   "name": "debuff_down_2",
+   "family": "debuff_down",
+   "variant": 2,
+   "file": "sfx/debuff_down_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.965,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "debuff",
+    "status",
+    "fall",
+    "curse"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -15.7,
+   "gain_db": -4.2
+  },
+  {
+   "name": "debuff_down_3",
+   "family": "debuff_down",
+   "variant": 3,
+   "file": "sfx/debuff_down_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.958,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "debuff",
+    "status",
+    "fall",
+    "curse"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -15.7,
+   "gain_db": -5.4
+  },
+  {
+   "name": "summon_1",
+   "family": "summon",
+   "variant": 1,
+   "file": "sfx/summon_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 3.241,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "summon",
+    "magic",
+    "spawn"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.1,
+   "gain_db": -0.8
+  },
+  {
+   "name": "summon_2",
+   "family": "summon",
+   "variant": 2,
+   "file": "sfx/summon_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 3.385,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "summon",
+    "magic",
+    "spawn"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.9,
+   "gain_db": -1.0
+  },
+  {
+   "name": "summon_3",
+   "family": "summon",
+   "variant": 3,
+   "file": "sfx/summon_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 3.361,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "summon",
+    "magic",
+    "spawn"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.8,
+   "gain_db": -1.1
+  },
+  {
+   "name": "teleport_blink_1",
+   "family": "teleport_blink",
+   "variant": 1,
+   "file": "sfx/teleport_blink_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.653,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "teleport",
+    "blink",
+    "magic",
+    "movement"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.0,
+   "gain_db": 1.0
+  },
+  {
+   "name": "teleport_blink_2",
+   "family": "teleport_blink",
+   "variant": 2,
+   "file": "sfx/teleport_blink_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.669,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "teleport",
+    "blink",
+    "magic",
+    "movement"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.6,
+   "gain_db": 1.0
+  },
+  {
+   "name": "teleport_blink_3",
+   "family": "teleport_blink",
+   "variant": 3,
+   "file": "sfx/teleport_blink_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.663,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "teleport",
+    "blink",
+    "magic",
+    "movement"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.5,
+   "gain_db": 1.0
+  },
+  {
+   "name": "projectile_whoosh_1",
+   "family": "projectile_whoosh",
+   "variant": 1,
+   "file": "sfx/projectile_whoosh_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.543,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "projectile",
+    "whoosh",
+    "passby"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.5,
+   "gain_db": -1.9
+  },
+  {
+   "name": "projectile_whoosh_2",
+   "family": "projectile_whoosh",
+   "variant": 2,
+   "file": "sfx/projectile_whoosh_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.542,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "projectile",
+    "whoosh",
+    "passby"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.3,
+   "gain_db": -2.0
+  },
+  {
+   "name": "projectile_whoosh_3",
+   "family": "projectile_whoosh",
+   "variant": 3,
+   "file": "sfx/projectile_whoosh_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.544,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "projectile",
+    "whoosh",
+    "passby"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.5,
+   "gain_db": -1.9
+  },
+  {
+   "name": "projectile_whoosh_4",
+   "family": "projectile_whoosh",
+   "variant": 4,
+   "file": "sfx/projectile_whoosh_4.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.542,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "projectile",
+    "whoosh",
+    "passby"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.1,
+   "gain_db": -1.2
+  },
+  {
+   "name": "trap_snap_1",
+   "family": "trap_snap",
+   "variant": 1,
+   "file": "sfx/trap_snap_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.548,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "trap",
+    "snap",
+    "metal",
+    "spring"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -22.3,
+   "gain_db": 2.0
+  },
+  {
+   "name": "trap_snap_2",
+   "family": "trap_snap",
+   "variant": 2,
+   "file": "sfx/trap_snap_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.523,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "trap",
+    "snap",
+    "metal",
+    "spring"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.8,
+   "gain_db": 2.0
+  },
+  {
+   "name": "trap_snap_3",
+   "family": "trap_snap",
+   "variant": 3,
+   "file": "sfx/trap_snap_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.54,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "trap",
+    "snap",
+    "metal",
+    "spring"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.6,
+   "gain_db": 2.0
+  },
+  {
+   "name": "bat_swarm_1",
+   "family": "bat_swarm",
+   "variant": 1,
+   "file": "sfx/bat_swarm_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 1.908,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "bat",
+    "swarm",
+    "flutter",
+    "creature"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.3,
+   "gain_db": -1.1
+  },
+  {
+   "name": "bat_swarm_2",
+   "family": "bat_swarm",
+   "variant": 2,
+   "file": "sfx/bat_swarm_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 1.781,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "bat",
+    "swarm",
+    "flutter",
+    "creature"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.9,
+   "gain_db": -1.1
+  },
+  {
+   "name": "bat_swarm_3",
+   "family": "bat_swarm",
+   "variant": 3,
+   "file": "sfx/bat_swarm_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 1.826,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "bat",
+    "swarm",
+    "flutter",
+    "creature"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.4,
+   "gain_db": -1.6
+  },
+  {
+   "name": "chain_clink_1",
+   "family": "chain_clink",
+   "variant": 1,
+   "file": "sfx/chain_clink_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.455,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "chain",
+    "clink",
+    "metal"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -16.9,
+   "gain_db": -1.9
+  },
+  {
+   "name": "chain_clink_2",
+   "family": "chain_clink",
+   "variant": 2,
+   "file": "sfx/chain_clink_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.436,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "chain",
+    "clink",
+    "metal"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.3,
+   "gain_db": 0.0
+  },
+  {
+   "name": "chain_clink_3",
+   "family": "chain_clink",
+   "variant": 3,
+   "file": "sfx/chain_clink_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.608,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "chain",
+    "clink",
+    "metal"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.4,
+   "gain_db": -1.0
+  },
+  {
+   "name": "bell_toll_1",
+   "family": "bell_toll",
+   "variant": 1,
+   "file": "sfx/bell_toll_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 5.378,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "bell",
+    "toll",
+    "ambient",
+    "ominous"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -15.3,
+   "gain_db": -3.6
+  },
+  {
+   "name": "bell_toll_2",
+   "family": "bell_toll",
+   "variant": 2,
+   "file": "sfx/bell_toll_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 5.596,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "bell",
+    "toll",
+    "ambient",
+    "ominous"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.9,
+   "gain_db": -2.5
+  },
+  {
+   "name": "bell_toll_3",
+   "family": "bell_toll",
+   "variant": 3,
+   "file": "sfx/bell_toll_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 5.571,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "bell",
+    "toll",
+    "ambient",
+    "ominous"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -15.3,
+   "gain_db": -5.4
+  },
+  {
+   "name": "death_light_1",
+   "family": "death_light",
+   "variant": 1,
+   "file": "sfx/death_light_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.791,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "death",
+    "light",
+    "fall"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.7,
+   "gain_db": 0.6
+  },
+  {
+   "name": "death_light_2",
+   "family": "death_light",
+   "variant": 2,
+   "file": "sfx/death_light_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.731,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "death",
+    "light",
+    "fall"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.8,
+   "gain_db": 1.1
+  },
+  {
+   "name": "death_light_3",
+   "family": "death_light",
+   "variant": 3,
+   "file": "sfx/death_light_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.795,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "death",
+    "light",
+    "fall"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.9,
+   "gain_db": -0.2
+  },
+  {
+   "name": "death_heavy_1",
+   "family": "death_heavy",
+   "variant": 1,
+   "file": "sfx/death_heavy_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 1.775,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "death",
+    "heavy",
+    "fall",
+    "boom"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.5,
+   "gain_db": -1.8
+  },
+  {
+   "name": "death_heavy_2",
+   "family": "death_heavy",
+   "variant": 2,
+   "file": "sfx/death_heavy_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 1.641,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "death",
+    "heavy",
+    "fall",
+    "boom"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.7,
+   "gain_db": -0.7
+  },
+  {
+   "name": "death_heavy_3",
+   "family": "death_heavy",
+   "variant": 3,
+   "file": "sfx/death_heavy_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 1.717,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "death",
+    "heavy",
+    "fall",
+    "boom"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.6,
+   "gain_db": -1.7
+  },
+  {
+   "name": "kill_ding_1",
+   "family": "kill_ding",
+   "variant": 1,
+   "file": "sfx/kill_ding_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.957,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "kill",
+    "ding",
+    "reward",
+    "ui"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.5,
+   "gain_db": -0.9
+  },
+  {
+   "name": "kill_ding_2",
+   "family": "kill_ding",
+   "variant": 2,
+   "file": "sfx/kill_ding_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.95,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "kill",
+    "ding",
+    "reward",
+    "ui"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.3,
+   "gain_db": -2.0
+  },
+  {
+   "name": "kill_ding_3",
+   "family": "kill_ding",
+   "variant": 3,
+   "file": "sfx/kill_ding_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.971,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "kill",
+    "ding",
+    "reward",
+    "ui"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.5,
+   "gain_db": -0.1
+  },
+  {
+   "name": "gold_pickup_1",
+   "family": "gold_pickup",
+   "variant": 1,
+   "file": "sfx/gold_pickup_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.66,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "gold",
+    "pickup",
+    "coin",
+    "reward"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.5,
+   "gain_db": -1.6
+  },
+  {
+   "name": "gold_pickup_2",
+   "family": "gold_pickup",
+   "variant": 2,
+   "file": "sfx/gold_pickup_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.657,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "gold",
+    "pickup",
+    "coin",
+    "reward"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -16.9,
+   "gain_db": -3.2
+  },
+  {
+   "name": "gold_pickup_3",
+   "family": "gold_pickup",
+   "variant": 3,
+   "file": "sfx/gold_pickup_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.642,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "gold",
+    "pickup",
+    "coin",
+    "reward"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -17.9,
+   "gain_db": -2.1
+  },
+  {
+   "name": "gold_pickup_4",
+   "family": "gold_pickup",
+   "variant": 4,
+   "file": "sfx/gold_pickup_4.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.643,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "gold",
+    "pickup",
+    "coin",
+    "reward"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -17.6,
+   "gain_db": -2.4
+  },
+  {
+   "name": "coin_clink_1",
+   "family": "coin_clink",
+   "variant": 1,
+   "file": "sfx/coin_clink_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.553,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "coin",
+    "clink",
+    "metal"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.3,
+   "gain_db": -0.3
+  },
+  {
+   "name": "coin_clink_2",
+   "family": "coin_clink",
+   "variant": 2,
+   "file": "sfx/coin_clink_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.516,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "coin",
+    "clink",
+    "metal"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.3,
+   "gain_db": 0.0
+  },
+  {
+   "name": "coin_clink_3",
+   "family": "coin_clink",
+   "variant": 3,
+   "file": "sfx/coin_clink_3.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.551,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "coin",
+    "clink",
+    "metal"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.2,
+   "gain_db": -0.4
+  },
+  {
+   "name": "coin_clink_4",
+   "family": "coin_clink",
+   "variant": 4,
+   "file": "sfx/coin_clink_4.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 0.509,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "coin",
+    "clink",
+    "metal"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.8,
+   "gain_db": 0.0
+  },
+  {
+   "name": "resurrect_1",
+   "family": "resurrect",
+   "variant": 1,
+   "file": "sfx/resurrect_1.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 4.553,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "resurrect",
+    "revive",
+    "holy",
+    "magic"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.7,
+   "gain_db": 0.5
+  },
+  {
+   "name": "resurrect_2",
+   "family": "resurrect",
+   "variant": 2,
+   "file": "sfx/resurrect_2.wav",
+   "category": "combat",
+   "group": "combat",
+   "bus": "sfx",
+   "duration": 4.488,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "resurrect",
+    "revive",
+    "holy",
+    "magic"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.8,
+   "gain_db": 1.0
+  },
+  {
+   "name": "spell_cast_generic_1",
+   "family": "spell_cast_generic",
+   "variant": 1,
+   "file": "sfx/spell_cast_generic_1.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.641,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "cast",
+    "magic",
+    "generic"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.2,
+   "gain_db": -2.1
+  },
+  {
+   "name": "spell_cast_generic_2",
+   "family": "spell_cast_generic",
+   "variant": 2,
+   "file": "sfx/spell_cast_generic_2.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.643,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "cast",
+    "magic",
+    "generic"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.0,
+   "gain_db": -2.0
+  },
+  {
+   "name": "spell_cast_generic_3",
+   "family": "spell_cast_generic",
+   "variant": 3,
+   "file": "sfx/spell_cast_generic_3.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.655,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "cast",
+    "magic",
+    "generic"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.4,
+   "gain_db": -2.4
+  },
+  {
+   "name": "spell_fire_1",
+   "family": "spell_fire",
+   "variant": 1,
+   "file": "sfx/spell_fire_1.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.173,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "fire",
+    "flame",
+    "cast"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -17.9,
+   "gain_db": -0.9
+  },
+  {
+   "name": "spell_fire_2",
+   "family": "spell_fire",
+   "variant": 2,
+   "file": "sfx/spell_fire_2.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.18,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "fire",
+    "flame",
+    "cast"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -17.2,
+   "gain_db": -1.9
+  },
+  {
+   "name": "spell_fire_3",
+   "family": "spell_fire",
+   "variant": 3,
+   "file": "sfx/spell_fire_3.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.137,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "fire",
+    "flame",
+    "cast"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.0,
+   "gain_db": -0.7
+  },
+  {
+   "name": "spell_fire_impact_1",
+   "family": "spell_fire_impact",
+   "variant": 1,
+   "file": "sfx/spell_fire_impact_1.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.301,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "fire",
+    "impact",
+    "explosion"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.3,
+   "gain_db": 0.3
+  },
+  {
+   "name": "spell_fire_impact_2",
+   "family": "spell_fire_impact",
+   "variant": 2,
+   "file": "sfx/spell_fire_impact_2.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.218,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "fire",
+    "impact",
+    "explosion"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.2,
+   "gain_db": 1.6
+  },
+  {
+   "name": "spell_fire_impact_3",
+   "family": "spell_fire_impact",
+   "variant": 3,
+   "file": "sfx/spell_fire_impact_3.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.29,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "fire",
+    "impact",
+    "explosion"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.0,
+   "gain_db": -0.0
+  },
+  {
+   "name": "spell_ice_1",
+   "family": "spell_ice",
+   "variant": 1,
+   "file": "sfx/spell_ice_1.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 2.039,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "ice",
+    "frost",
+    "cast"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.5,
+   "gain_db": -0.3
+  },
+  {
+   "name": "spell_ice_2",
+   "family": "spell_ice",
+   "variant": 2,
+   "file": "sfx/spell_ice_2.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 2.061,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "ice",
+    "frost",
+    "cast"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.6,
+   "gain_db": -1.4
+  },
+  {
+   "name": "spell_ice_3",
+   "family": "spell_ice",
+   "variant": 3,
+   "file": "sfx/spell_ice_3.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 2.088,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "ice",
+    "frost",
+    "cast"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.3,
+   "gain_db": -1.0
+  },
+  {
+   "name": "spell_ice_impact_1",
+   "family": "spell_ice_impact",
+   "variant": 1,
+   "file": "sfx/spell_ice_impact_1.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 0.713,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "ice",
+    "impact",
+    "crack"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.1,
+   "gain_db": 1.6
+  },
+  {
+   "name": "spell_ice_impact_2",
+   "family": "spell_ice_impact",
+   "variant": 2,
+   "file": "sfx/spell_ice_impact_2.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 0.73,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "ice",
+    "impact",
+    "crack"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.1,
+   "gain_db": 2.0
+  },
+  {
+   "name": "spell_ice_impact_3",
+   "family": "spell_ice_impact",
+   "variant": 3,
+   "file": "sfx/spell_ice_impact_3.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 0.678,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "ice",
+    "impact",
+    "crack"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.2,
+   "gain_db": 2.0
+  },
+  {
+   "name": "ice_shatter_1",
+   "family": "ice_shatter",
+   "variant": 1,
+   "file": "sfx/ice_shatter_1.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.229,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ice",
+    "shatter",
+    "glass",
+    "break"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.2,
+   "gain_db": -0.3
+  },
+  {
+   "name": "ice_shatter_2",
+   "family": "ice_shatter",
+   "variant": 2,
+   "file": "sfx/ice_shatter_2.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.172,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ice",
+    "shatter",
+    "glass",
+    "break"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.9,
+   "gain_db": 0.9
+  },
+  {
+   "name": "ice_shatter_3",
+   "family": "ice_shatter",
+   "variant": 3,
+   "file": "sfx/ice_shatter_3.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.347,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "ice",
+    "shatter",
+    "glass",
+    "break"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.0,
+   "gain_db": 0.5
+  },
+  {
+   "name": "spell_lightning_1",
+   "family": "spell_lightning",
+   "variant": 1,
+   "file": "sfx/spell_lightning_1.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 0.914,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "lightning",
+    "electric",
+    "zap"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.5,
+   "gain_db": 2.0
+  },
+  {
+   "name": "spell_lightning_2",
+   "family": "spell_lightning",
+   "variant": 2,
+   "file": "sfx/spell_lightning_2.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 0.891,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "lightning",
+    "electric",
+    "zap"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -22.2,
+   "gain_db": 2.0
+  },
+  {
+   "name": "spell_lightning_3",
+   "family": "spell_lightning",
+   "variant": 3,
+   "file": "sfx/spell_lightning_3.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 0.894,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "lightning",
+    "electric",
+    "zap"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.8,
+   "gain_db": 2.0
+  },
+  {
+   "name": "thunder_crack_1",
+   "family": "thunder_crack",
+   "variant": 1,
+   "file": "sfx/thunder_crack_1.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 4.374,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "thunder",
+    "crack",
+    "storm",
+    "ambient"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -22.5,
+   "gain_db": 1.5
+  },
+  {
+   "name": "thunder_crack_2",
+   "family": "thunder_crack",
+   "variant": 2,
+   "file": "sfx/thunder_crack_2.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 4.64,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "thunder",
+    "crack",
+    "storm",
+    "ambient"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -22.5,
+   "gain_db": 2.4
+  },
+  {
+   "name": "thunder_crack_3",
+   "family": "thunder_crack",
+   "variant": 3,
+   "file": "sfx/thunder_crack_3.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 4.829,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "thunder",
+    "crack",
+    "storm",
+    "ambient"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -23.0,
+   "gain_db": 1.9
+  },
+  {
+   "name": "spell_holy_1",
+   "family": "spell_holy",
+   "variant": 1,
+   "file": "sfx/spell_holy_1.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 2.592,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "holy",
+    "light",
+    "divine"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.0,
+   "gain_db": -1.0
+  },
+  {
+   "name": "spell_holy_2",
+   "family": "spell_holy",
+   "variant": 2,
+   "file": "sfx/spell_holy_2.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 2.541,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "holy",
+    "light",
+    "divine"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.4,
+   "gain_db": -1.3
+  },
+  {
+   "name": "spell_holy_3",
+   "family": "spell_holy",
+   "variant": 3,
+   "file": "sfx/spell_holy_3.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 2.61,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "holy",
+    "light",
+    "divine"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.1,
+   "gain_db": -0.8
+  },
+  {
+   "name": "spell_shadow_1",
+   "family": "spell_shadow",
+   "variant": 1,
+   "file": "sfx/spell_shadow_1.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 2.501,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "shadow",
+    "dark",
+    "curse"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.8,
+   "gain_db": -2.5
+  },
+  {
+   "name": "spell_shadow_2",
+   "family": "spell_shadow",
+   "variant": 2,
+   "file": "sfx/spell_shadow_2.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 2.505,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "shadow",
+    "dark",
+    "curse"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.4,
+   "gain_db": -1.9
+  },
+  {
+   "name": "spell_shadow_3",
+   "family": "spell_shadow",
+   "variant": 3,
+   "file": "sfx/spell_shadow_3.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 2.397,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "shadow",
+    "dark",
+    "curse"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.1,
+   "gain_db": -3.0
+  },
+  {
+   "name": "spell_void_1",
+   "family": "spell_void",
+   "variant": 1,
+   "file": "sfx/spell_void_1.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 2.901,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "void",
+    "dark",
+    "gravity"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -17.5,
+   "gain_db": -2.8
+  },
+  {
+   "name": "spell_void_2",
+   "family": "spell_void",
+   "variant": 2,
+   "file": "sfx/spell_void_2.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 2.907,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "void",
+    "dark",
+    "gravity"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -16.4,
+   "gain_db": -3.8
+  },
+  {
+   "name": "spell_void_3",
+   "family": "spell_void",
+   "variant": 3,
+   "file": "sfx/spell_void_3.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 2.916,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "void",
+    "dark",
+    "gravity"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -17.3,
+   "gain_db": -2.9
+  },
+  {
+   "name": "spell_arcane_1",
+   "family": "spell_arcane",
+   "variant": 1,
+   "file": "sfx/spell_arcane_1.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.994,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "arcane",
+    "magic",
+    "sparkle"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.2,
+   "gain_db": -2.3
+  },
+  {
+   "name": "spell_arcane_2",
+   "family": "spell_arcane",
+   "variant": 2,
+   "file": "sfx/spell_arcane_2.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 2.054,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "arcane",
+    "magic",
+    "sparkle"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.7,
+   "gain_db": -2.0
+  },
+  {
+   "name": "spell_arcane_3",
+   "family": "spell_arcane",
+   "variant": 3,
+   "file": "sfx/spell_arcane_3.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 2.072,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "arcane",
+    "magic",
+    "sparkle"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.9,
+   "gain_db": -2.7
+  },
+  {
+   "name": "spell_nature_1",
+   "family": "spell_nature",
+   "variant": 1,
+   "file": "sfx/spell_nature_1.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.796,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "nature",
+    "leaf",
+    "heal"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.6,
+   "gain_db": -1.9
+  },
+  {
+   "name": "spell_nature_2",
+   "family": "spell_nature",
+   "variant": 2,
+   "file": "sfx/spell_nature_2.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.632,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "nature",
+    "leaf",
+    "heal"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.1,
+   "gain_db": -2.2
+  },
+  {
+   "name": "spell_nature_3",
+   "family": "spell_nature",
+   "variant": 3,
+   "file": "sfx/spell_nature_3.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.727,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "nature",
+    "leaf",
+    "heal"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.7,
+   "gain_db": -1.0
+  },
+  {
+   "name": "spell_wind_1",
+   "family": "spell_wind",
+   "variant": 1,
+   "file": "sfx/spell_wind_1.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.326,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "wind",
+    "air",
+    "gust"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.8,
+   "gain_db": -0.9
+  },
+  {
+   "name": "spell_wind_2",
+   "family": "spell_wind",
+   "variant": 2,
+   "file": "sfx/spell_wind_2.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.343,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "wind",
+    "air",
+    "gust"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.0,
+   "gain_db": -1.5
+  },
+  {
+   "name": "spell_wind_3",
+   "family": "spell_wind",
+   "variant": 3,
+   "file": "sfx/spell_wind_3.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.324,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "wind",
+    "air",
+    "gust"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.2,
+   "gain_db": -1.1
+  },
+  {
+   "name": "spell_earth_1",
+   "family": "spell_earth",
+   "variant": 1,
+   "file": "sfx/spell_earth_1.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.923,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "earth",
+    "rock",
+    "rumble"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -15.8,
+   "gain_db": -3.0
+  },
+  {
+   "name": "spell_earth_2",
+   "family": "spell_earth",
+   "variant": 2,
+   "file": "sfx/spell_earth_2.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.872,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "earth",
+    "rock",
+    "rumble"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -16.9,
+   "gain_db": -1.9
+  },
+  {
+   "name": "spell_earth_3",
+   "family": "spell_earth",
+   "variant": 3,
+   "file": "sfx/spell_earth_3.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.913,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "earth",
+    "rock",
+    "rumble"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -16.9,
+   "gain_db": -1.1
+  },
+  {
+   "name": "spell_blood_1",
+   "family": "spell_blood",
+   "variant": 1,
+   "file": "sfx/spell_blood_1.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.249,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "blood",
+    "dark",
+    "wet"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.0,
+   "gain_db": -0.1
+  },
+  {
+   "name": "spell_blood_2",
+   "family": "spell_blood",
+   "variant": 2,
+   "file": "sfx/spell_blood_2.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.262,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "blood",
+    "dark",
+    "wet"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -17.6,
+   "gain_db": -1.3
+  },
+  {
+   "name": "spell_blood_3",
+   "family": "spell_blood",
+   "variant": 3,
+   "file": "sfx/spell_blood_3.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 1.262,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "spell",
+    "blood",
+    "dark",
+    "wet"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.2,
+   "gain_db": -0.5
+  },
+  {
+   "name": "heal_chime_1",
+   "family": "heal_chime",
+   "variant": 1,
+   "file": "sfx/heal_chime_1.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 2.328,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "heal",
+    "chime",
+    "positive",
+    "magic"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.0,
+   "gain_db": -1.8
+  },
+  {
+   "name": "heal_chime_2",
+   "family": "heal_chime",
+   "variant": 2,
+   "file": "sfx/heal_chime_2.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 2.391,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "heal",
+    "chime",
+    "positive",
+    "magic"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.5,
+   "gain_db": -1.7
+  },
+  {
+   "name": "heal_chime_3",
+   "family": "heal_chime",
+   "variant": 3,
+   "file": "sfx/heal_chime_3.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 2.417,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "heal",
+    "chime",
+    "positive",
+    "magic"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.5,
+   "gain_db": -1.2
+  },
+  {
+   "name": "heal_big_1",
+   "family": "heal_big",
+   "variant": 1,
+   "file": "sfx/heal_big_1.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 3.402,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "heal",
+    "big",
+    "holy",
+    "magic"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.8,
+   "gain_db": -0.2
+  },
+  {
+   "name": "heal_big_2",
+   "family": "heal_big",
+   "variant": 2,
+   "file": "sfx/heal_big_2.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 3.486,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "heal",
+    "big",
+    "holy",
+    "magic"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.8,
+   "gain_db": 0.8
+  },
+  {
+   "name": "heal_big_3",
+   "family": "heal_big",
+   "variant": 3,
+   "file": "sfx/heal_big_3.wav",
+   "category": "combat",
+   "group": "spell",
+   "bus": "sfx",
+   "duration": 3.463,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "heal",
+    "big",
+    "holy",
+    "magic"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.2,
+   "gain_db": -1.0
+  },
+  {
+   "name": "round_start_horn_1",
+   "family": "round_start_horn",
+   "variant": 1,
+   "file": "sfx/round_start_horn_1.wav",
+   "category": "match",
+   "group": "match",
+   "bus": "sfx",
+   "duration": 3.437,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "match",
+    "horn",
+    "start",
+    "round"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -19.0,
+   "gain_db": 0.5
+  },
+  {
+   "name": "round_start_horn_2",
+   "family": "round_start_horn",
+   "variant": 2,
+   "file": "sfx/round_start_horn_2.wav",
+   "category": "match",
+   "group": "match",
+   "bus": "sfx",
+   "duration": 3.71,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "match",
+    "horn",
+    "start",
+    "round"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.0,
+   "gain_db": -0.8
+  },
+  {
+   "name": "countdown_beep_1",
+   "family": "countdown_beep",
+   "variant": 1,
+   "file": "sfx/countdown_beep_1.wav",
+   "category": "match",
+   "group": "match",
+   "bus": "sfx",
+   "duration": 0.33,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "match",
+    "countdown",
+    "beep",
+    "tick"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -10.6,
+   "gain_db": -5.8
+  },
+  {
+   "name": "countdown_beep_2",
+   "family": "countdown_beep",
+   "variant": 2,
+   "file": "sfx/countdown_beep_2.wav",
+   "category": "match",
+   "group": "match",
+   "bus": "sfx",
+   "duration": 0.318,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "match",
+    "countdown",
+    "beep",
+    "tick"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -12.8,
+   "gain_db": -3.4
+  },
+  {
+   "name": "countdown_go_1",
+   "family": "countdown_go",
+   "variant": 1,
+   "file": "sfx/countdown_go_1.wav",
+   "category": "match",
+   "group": "match",
+   "bus": "sfx",
+   "duration": 0.876,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "match",
+    "countdown",
+    "go",
+    "start"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -16.9,
+   "gain_db": -1.0
+  },
+  {
+   "name": "countdown_go_2",
+   "family": "countdown_go",
+   "variant": 2,
+   "file": "sfx/countdown_go_2.wav",
+   "category": "match",
+   "group": "match",
+   "bus": "sfx",
+   "duration": 0.855,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "match",
+    "countdown",
+    "go",
+    "start"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -16.6,
+   "gain_db": -1.1
+  },
+  {
+   "name": "timer_warning_1",
+   "family": "timer_warning",
+   "variant": 1,
+   "file": "sfx/timer_warning_1.wav",
+   "category": "match",
+   "group": "match",
+   "bus": "sfx",
+   "duration": 0.633,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "match",
+    "timer",
+    "warning",
+    "beep"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -13.3,
+   "gain_db": -4.6
+  },
+  {
+   "name": "timer_warning_2",
+   "family": "timer_warning",
+   "variant": 2,
+   "file": "sfx/timer_warning_2.wav",
+   "category": "match",
+   "group": "match",
+   "bus": "sfx",
+   "duration": 0.638,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "match",
+    "timer",
+    "warning",
+    "beep"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -13.3,
+   "gain_db": -4.6
+  },
+  {
+   "name": "announcer_whoosh_1",
+   "family": "announcer_whoosh",
+   "variant": 1,
+   "file": "sfx/announcer_whoosh_1.wav",
+   "category": "match",
+   "group": "match",
+   "bus": "sfx",
+   "duration": 2.272,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "match",
+    "announcer",
+    "whoosh",
+    "transition"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -22.5,
+   "gain_db": -1.2
+  },
+  {
+   "name": "announcer_whoosh_2",
+   "family": "announcer_whoosh",
+   "variant": 2,
+   "file": "sfx/announcer_whoosh_2.wav",
+   "category": "match",
+   "group": "match",
+   "bus": "sfx",
+   "duration": 2.277,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "match",
+    "announcer",
+    "whoosh",
+    "transition"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -22.2,
+   "gain_db": -1.5
+  },
+  {
+   "name": "announcer_whoosh_3",
+   "family": "announcer_whoosh",
+   "variant": 3,
+   "file": "sfx/announcer_whoosh_3.wav",
+   "category": "match",
+   "group": "match",
+   "bus": "sfx",
+   "duration": 2.272,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "match",
+    "announcer",
+    "whoosh",
+    "transition"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -22.6,
+   "gain_db": -1.1
+  },
+  {
+   "name": "victory_fanfare_1",
+   "family": "victory_fanfare",
+   "variant": 1,
+   "file": "sfx/victory_fanfare_1.wav",
+   "category": "match",
+   "group": "match",
+   "bus": "sfx",
+   "duration": 3.973,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "match",
+    "victory",
+    "fanfare",
+    "stinger"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.8,
+   "gain_db": 0.7
+  },
+  {
+   "name": "victory_fanfare_2",
+   "family": "victory_fanfare",
+   "variant": 2,
+   "file": "sfx/victory_fanfare_2.wav",
+   "category": "match",
+   "group": "match",
+   "bus": "sfx",
+   "duration": 3.975,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "match",
+    "victory",
+    "fanfare",
+    "stinger"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -18.8,
+   "gain_db": 0.6
+  },
+  {
+   "name": "defeat_sting_1",
+   "family": "defeat_sting",
+   "variant": 1,
+   "file": "sfx/defeat_sting_1.wav",
+   "category": "match",
+   "group": "match",
+   "bus": "sfx",
+   "duration": 2.966,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "match",
+    "defeat",
+    "sting",
+    "stinger",
+    "sad"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -16.2,
+   "gain_db": -1.7
+  },
+  {
+   "name": "defeat_sting_2",
+   "family": "defeat_sting",
+   "variant": 2,
+   "file": "sfx/defeat_sting_2.wav",
+   "category": "match",
+   "group": "match",
+   "bus": "sfx",
+   "duration": 2.972,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "match",
+    "defeat",
+    "sting",
+    "stinger",
+    "sad"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -17.2,
+   "gain_db": -0.0
+  },
+  {
+   "name": "voice_grunt_m_1",
+   "family": "voice_grunt_m",
+   "variant": 1,
+   "file": "sfx/voice_grunt_m_1.wav",
+   "category": "voice",
+   "group": "voice",
+   "bus": "voice",
+   "duration": 0.378,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "voice",
+    "grunt",
+    "male",
+    "effort"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -11.3,
+   "gain_db": -6.7
+  },
+  {
+   "name": "voice_grunt_m_2",
+   "family": "voice_grunt_m",
+   "variant": 2,
+   "file": "sfx/voice_grunt_m_2.wav",
+   "category": "voice",
+   "group": "voice",
+   "bus": "voice",
+   "duration": 0.32,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "voice",
+    "grunt",
+    "male",
+    "effort"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -10.9,
+   "gain_db": -6.3
+  },
+  {
+   "name": "voice_grunt_m_3",
+   "family": "voice_grunt_m",
+   "variant": 3,
+   "file": "sfx/voice_grunt_m_3.wav",
+   "category": "voice",
+   "group": "voice",
+   "bus": "voice",
+   "duration": 0.458,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "voice",
+    "grunt",
+    "male",
+    "effort"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -12.3,
+   "gain_db": -6.4
+  },
+  {
+   "name": "voice_grunt_f_1",
+   "family": "voice_grunt_f",
+   "variant": 1,
+   "file": "sfx/voice_grunt_f_1.wav",
+   "category": "voice",
+   "group": "voice",
+   "bus": "voice",
+   "duration": 0.334,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "voice",
+    "grunt",
+    "female",
+    "effort"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -11.1,
+   "gain_db": -6.4
+  },
+  {
+   "name": "voice_grunt_f_2",
+   "family": "voice_grunt_f",
+   "variant": 2,
+   "file": "sfx/voice_grunt_f_2.wav",
+   "category": "voice",
+   "group": "voice",
+   "bus": "voice",
+   "duration": 0.284,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "voice",
+    "grunt",
+    "female",
+    "effort"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -10.3,
+   "gain_db": -6.7
+  },
+  {
+   "name": "voice_grunt_f_3",
+   "family": "voice_grunt_f",
+   "variant": 3,
+   "file": "sfx/voice_grunt_f_3.wav",
+   "category": "voice",
+   "group": "voice",
+   "bus": "voice",
+   "duration": 0.394,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "voice",
+    "grunt",
+    "female",
+    "effort"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -11.2,
+   "gain_db": -7.0
+  },
+  {
+   "name": "voice_orc_1",
+   "family": "voice_orc",
+   "variant": 1,
+   "file": "sfx/voice_orc_1.wav",
+   "category": "voice",
+   "group": "voice",
+   "bus": "voice",
+   "duration": 0.873,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "voice",
+    "orc",
+    "growl",
+    "monster"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -13.3,
+   "gain_db": -5.5
+  },
+  {
+   "name": "voice_orc_2",
+   "family": "voice_orc",
+   "variant": 2,
+   "file": "sfx/voice_orc_2.wav",
+   "category": "voice",
+   "group": "voice",
+   "bus": "voice",
+   "duration": 0.979,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "voice",
+    "orc",
+    "growl",
+    "monster"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -12.8,
+   "gain_db": -5.9
+  },
+  {
+   "name": "voice_orc_3",
+   "family": "voice_orc",
+   "variant": 3,
+   "file": "sfx/voice_orc_3.wav",
+   "category": "voice",
+   "group": "voice",
+   "bus": "voice",
+   "duration": 0.758,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "voice",
+    "orc",
+    "growl",
+    "monster"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -12.3,
+   "gain_db": -6.5
+  },
+  {
+   "name": "voice_goblin_1",
+   "family": "voice_goblin",
+   "variant": 1,
+   "file": "sfx/voice_goblin_1.wav",
+   "category": "voice",
+   "group": "voice",
+   "bus": "voice",
+   "duration": 0.604,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "voice",
+    "goblin",
+    "laugh",
+    "creature"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -12.3,
+   "gain_db": -6.2
+  },
+  {
+   "name": "voice_goblin_2",
+   "family": "voice_goblin",
+   "variant": 2,
+   "file": "sfx/voice_goblin_2.wav",
+   "category": "voice",
+   "group": "voice",
+   "bus": "voice",
+   "duration": 0.74,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "voice",
+    "goblin",
+    "laugh",
+    "creature"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -11.1,
+   "gain_db": -7.5
+  },
+  {
+   "name": "voice_goblin_3",
+   "family": "voice_goblin",
+   "variant": 3,
+   "file": "sfx/voice_goblin_3.wav",
+   "category": "voice",
+   "group": "voice",
+   "bus": "voice",
+   "duration": 0.605,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "voice",
+    "goblin",
+    "laugh",
+    "creature"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -12.5,
+   "gain_db": -6.2
+  },
+  {
+   "name": "voice_beast_1",
+   "family": "voice_beast",
+   "variant": 1,
+   "file": "sfx/voice_beast_1.wav",
+   "category": "voice",
+   "group": "voice",
+   "bus": "voice",
+   "duration": 1.354,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "voice",
+    "beast",
+    "roar",
+    "monster"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -12.5,
+   "gain_db": -6.6
+  },
+  {
+   "name": "voice_beast_2",
+   "family": "voice_beast",
+   "variant": 2,
+   "file": "sfx/voice_beast_2.wav",
+   "category": "voice",
+   "group": "voice",
+   "bus": "voice",
+   "duration": 1.479,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "voice",
+    "beast",
+    "roar",
+    "monster"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -12.5,
+   "gain_db": -6.3
+  },
+  {
+   "name": "voice_beast_3",
+   "family": "voice_beast",
+   "variant": 3,
+   "file": "sfx/voice_beast_3.wav",
+   "category": "voice",
+   "group": "voice",
+   "bus": "voice",
+   "duration": 1.171,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "voice",
+    "beast",
+    "roar",
+    "monster"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -12.6,
+   "gain_db": -6.6
+  },
+  {
+   "name": "voice_death_1",
+   "family": "voice_death",
+   "variant": 1,
+   "file": "sfx/voice_death_1.wav",
+   "category": "voice",
+   "group": "voice",
+   "bus": "voice",
+   "duration": 1.35,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "voice",
+    "death",
+    "scream",
+    "dying"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -13.5,
+   "gain_db": -6.4
+  },
+  {
+   "name": "voice_death_2",
+   "family": "voice_death",
+   "variant": 2,
+   "file": "sfx/voice_death_2.wav",
+   "category": "voice",
+   "group": "voice",
+   "bus": "voice",
+   "duration": 1.214,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "voice",
+    "death",
+    "scream",
+    "dying"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -13.4,
+   "gain_db": -6.3
+  },
+  {
+   "name": "voice_death_3",
+   "family": "voice_death",
+   "variant": 3,
+   "file": "sfx/voice_death_3.wav",
+   "category": "voice",
+   "group": "voice",
+   "bus": "voice",
+   "duration": 1.508,
+   "loop": false,
+   "channels": 1,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "voice",
+    "death",
+    "scream",
+    "dying"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -13.1,
+   "gain_db": -6.4
+  },
+  {
+   "name": "crowd_ambience_loop_1",
+   "family": "crowd_ambience_loop",
+   "variant": 1,
+   "file": "sfx/crowd_ambience_loop_1.wav",
+   "category": "match",
+   "group": "ambience",
+   "bus": "ambience",
+   "duration": 20.0,
+   "loop": true,
+   "channels": 2,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "crowd",
+    "ambience",
+    "loop",
+    "arena",
+    "murmur"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.0,
+   "gain_db": -8.0
+  },
+  {
+   "name": "crowd_ambience_loop_2",
+   "family": "crowd_ambience_loop",
+   "variant": 2,
+   "file": "sfx/crowd_ambience_loop_2.wav",
+   "category": "match",
+   "group": "ambience",
+   "bus": "ambience",
+   "duration": 20.0,
+   "loop": true,
+   "channels": 2,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "crowd",
+    "ambience",
+    "loop",
+    "arena",
+    "murmur"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.7,
+   "gain_db": -8.0
+  },
+  {
+   "name": "crowd_cheer_1",
+   "family": "crowd_cheer",
+   "variant": 1,
+   "file": "sfx/crowd_cheer_1.wav",
+   "category": "match",
+   "group": "ambience",
+   "bus": "sfx",
+   "duration": 4.12,
+   "loop": false,
+   "channels": 2,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "crowd",
+    "cheer",
+    "applause",
+    "victory"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.3,
+   "gain_db": 1.0
+  },
+  {
+   "name": "crowd_cheer_2",
+   "family": "crowd_cheer",
+   "variant": 2,
+   "file": "sfx/crowd_cheer_2.wav",
+   "category": "match",
+   "group": "ambience",
+   "bus": "sfx",
+   "duration": 4.326,
+   "loop": false,
+   "channels": 2,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "crowd",
+    "cheer",
+    "applause",
+    "victory"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.8,
+   "gain_db": 1.0
+  },
+  {
+   "name": "crowd_cheer_3",
+   "family": "crowd_cheer",
+   "variant": 3,
+   "file": "sfx/crowd_cheer_3.wav",
+   "category": "match",
+   "group": "ambience",
+   "bus": "sfx",
+   "duration": 4.507,
+   "loop": false,
+   "channels": 2,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "crowd",
+    "cheer",
+    "applause",
+    "victory"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.7,
+   "gain_db": 1.0
+  },
+  {
+   "name": "crowd_gasp_1",
+   "family": "crowd_gasp",
+   "variant": 1,
+   "file": "sfx/crowd_gasp_1.wav",
+   "category": "match",
+   "group": "ambience",
+   "bus": "sfx",
+   "duration": 2.295,
+   "loop": false,
+   "channels": 2,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "crowd",
+    "gasp",
+    "surprise",
+    "reaction"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -22.7,
+   "gain_db": 0.0
+  },
+  {
+   "name": "crowd_gasp_2",
+   "family": "crowd_gasp",
+   "variant": 2,
+   "file": "sfx/crowd_gasp_2.wav",
+   "category": "match",
+   "group": "ambience",
+   "bus": "sfx",
+   "duration": 2.27,
+   "loop": false,
+   "channels": 2,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "crowd",
+    "gasp",
+    "surprise",
+    "reaction"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -22.8,
+   "gain_db": 0.0
+  },
+  {
+   "name": "crowd_gasp_3",
+   "family": "crowd_gasp",
+   "variant": 3,
+   "file": "sfx/crowd_gasp_3.wav",
+   "category": "match",
+   "group": "ambience",
+   "bus": "sfx",
+   "duration": 2.245,
+   "loop": false,
+   "channels": 2,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "crowd",
+    "gasp",
+    "surprise",
+    "reaction"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -22.7,
+   "gain_db": 0.0
+  },
+  {
+   "name": "crowd_boo_1",
+   "family": "crowd_boo",
+   "variant": 1,
+   "file": "sfx/crowd_boo_1.wav",
+   "category": "match",
+   "group": "ambience",
+   "bus": "sfx",
+   "duration": 3.6,
+   "loop": false,
+   "channels": 2,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "crowd",
+    "boo",
+    "disapproval",
+    "reaction"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -21.4,
+   "gain_db": 0.0
+  },
+  {
+   "name": "crowd_boo_2",
+   "family": "crowd_boo",
+   "variant": 2,
+   "file": "sfx/crowd_boo_2.wav",
+   "category": "match",
+   "group": "ambience",
+   "bus": "sfx",
+   "duration": 3.6,
+   "loop": false,
+   "channels": 2,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "crowd",
+    "boo",
+    "disapproval",
+    "reaction"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -22.7,
+   "gain_db": 0.0
+  },
+  {
+   "name": "crowd_boo_3",
+   "family": "crowd_boo",
+   "variant": 3,
+   "file": "sfx/crowd_boo_3.wav",
+   "category": "match",
+   "group": "ambience",
+   "bus": "sfx",
+   "duration": 3.599,
+   "loop": false,
+   "channels": 2,
+   "sample_rate": 44100,
+   "format": "wav/pcm16",
+   "tags": [
+    "crowd",
+    "boo",
+    "disapproval",
+    "reaction"
+   ],
+   "peak_db": -3.0,
+   "rms_db": -20.7,
+   "gain_db": 0.0
+  },
+  {
+   "name": "music_menu",
+   "family": "music_menu",
+   "variant": 1,
+   "file": "music/music_menu.ogg",
+   "category": "music",
+   "group": "music",
+   "bus": "music",
+   "duration": 100.0,
+   "loop": true,
+   "recommended_loop": true,
+   "loop_start": 0.0,
+   "loop_end": 100.0,
+   "channels": 2,
+   "sample_rate": 44100,
+   "format": "ogg/vorbis q6",
+   "bpm": 72,
+   "bars": 30,
+   "key": "D minor",
+   "tags": [
+    "menu",
+    "epic",
+    "dark",
+    "medieval",
+    "slow",
+    "choir",
+    "strings",
+    "horns"
+   ],
+   "description": "Menu principal : cordes, cors, choeur synthétique, timbales, thème lent en ré mineur",
+   "peak_db": -0.7,
+   "rms_db": -14.8,
+   "gain_db": -7.2
+  },
+  {
+   "name": "music_club",
+   "family": "music_club",
+   "variant": 1,
+   "file": "music/music_club.ogg",
+   "category": "music",
+   "group": "music",
+   "bus": "music",
+   "duration": 86.4,
+   "loop": true,
+   "recommended_loop": true,
+   "loop_start": 0.0,
+   "loop_end": 86.4,
+   "channels": 2,
+   "sample_rate": 44100,
+   "format": "ogg/vorbis q6",
+   "bpm": 100,
+   "bars": 36,
+   "key": "G major",
+   "tags": [
+    "club",
+    "warm",
+    "folk",
+    "lute",
+    "flute",
+    "tavern"
+   ],
+   "description": "Club / gestion : luth, flûte, percussions douces, sol majeur",
+   "peak_db": -0.4,
+   "rms_db": -14.7,
+   "gain_db": -7.3
+  },
+  {
+   "name": "music_battle_1",
+   "family": "music_battle_1",
+   "variant": 1,
+   "file": "music/music_battle_1.ogg",
+   "category": "music",
+   "group": "music",
+   "bus": "music",
+   "duration": 82.286,
+   "loop": true,
+   "recommended_loop": true,
+   "loop_start": 0.0,
+   "loop_end": 82.286,
+   "channels": 2,
+   "sample_rate": 44100,
+   "format": "ogg/vorbis q6",
+   "bpm": 140,
+   "bars": 48,
+   "key": "E minor",
+   "tags": [
+    "battle",
+    "tense",
+    "taiko",
+    "brass",
+    "tribal"
+   ],
+   "description": "Combat 1 : taiko, ostinato de cordes graves, cuivres, mi mineur",
+   "peak_db": -0.6,
+   "rms_db": -14.6,
+   "gain_db": -7.4
+  },
+  {
+   "name": "music_battle_2",
+   "family": "music_battle_2",
+   "variant": 1,
+   "file": "music/music_battle_2.ogg",
+   "category": "music",
+   "group": "music",
+   "bus": "music",
+   "duration": 88.421,
+   "loop": true,
+   "recommended_loop": true,
+   "loop_start": 0.0,
+   "loop_end": 88.421,
+   "channels": 2,
+   "sample_rate": 44100,
+   "format": "ogg/vorbis q6",
+   "bpm": 152,
+   "bars": 56,
+   "key": "A phrygian dominant",
+   "tags": [
+    "battle",
+    "tense",
+    "tribal",
+    "toms",
+    "oud",
+    "exotic"
+   ],
+   "description": "Combat 2 : toms tribaux, oud, cuivres, mode phrygien dominant sur la",
+   "peak_db": -0.8,
+   "rms_db": -14.6,
+   "gain_db": -7.4
+  },
+  {
+   "name": "music_battle_boss",
+   "family": "music_battle_boss",
+   "variant": 1,
+   "file": "music/music_battle_boss.ogg",
+   "category": "music",
+   "group": "music",
+   "bus": "music",
+   "duration": 90.0,
+   "loop": true,
+   "recommended_loop": true,
+   "loop_start": 0.0,
+   "loop_end": 90.0,
+   "channels": 2,
+   "sample_rate": 44100,
+   "format": "ogg/vorbis q6",
+   "bpm": 96,
+   "bars": 36,
+   "key": "C minor",
+   "tags": [
+    "battle",
+    "boss",
+    "heavy",
+    "dramatic",
+    "choir",
+    "low brass"
+   ],
+   "description": "Boss : cuivres graves, choeur, timbales massives, do mineur",
+   "peak_db": -0.5,
+   "rms_db": -14.7,
+   "gain_db": -7.3
+  },
+  {
+   "name": "music_cup",
+   "family": "music_cup",
+   "variant": 1,
+   "file": "music/music_cup.ogg",
+   "category": "music",
+   "group": "music",
+   "bus": "music",
+   "duration": 88.889,
+   "loop": true,
+   "recommended_loop": true,
+   "loop_start": 0.0,
+   "loop_end": 88.889,
+   "channels": 2,
+   "sample_rate": 44100,
+   "format": "ogg/vorbis q6",
+   "bpm": 108,
+   "bars": 40,
+   "key": "D major",
+   "tags": [
+    "cup",
+    "triumphant",
+    "fanfare",
+    "brass",
+    "orchestral"
+   ],
+   "description": "Coupe : fanfares de cuivres, cordes, timbales, ré majeur",
+   "peak_db": -0.5,
+   "rms_db": -14.7,
+   "gain_db": -7.3
+  },
+  {
+   "name": "music_chaos_thunder",
+   "family": "music_chaos_thunder",
+   "variant": 1,
+   "file": "music/music_chaos_thunder.ogg",
+   "category": "music",
+   "group": "music",
+   "bus": "music",
+   "duration": 87.273,
+   "loop": true,
+   "recommended_loop": true,
+   "loop_start": 0.0,
+   "loop_end": 87.273,
+   "channels": 2,
+   "sample_rate": 44100,
+   "format": "ogg/vorbis q6",
+   "bpm": 132,
+   "bars": 48,
+   "key": "F minor",
+   "tags": [
+    "chaos",
+    "electric",
+    "storm",
+    "thunder",
+    "synth"
+   ],
+   "description": "Chaos / orage : arpèges synthé, basse saturée, batterie, tonnerre, fa mineur",
+   "peak_db": -0.3,
+   "rms_db": -14.8,
+   "gain_db": -7.2
+  },
+  {
+   "name": "music_draft",
+   "family": "music_draft",
+   "variant": 1,
+   "file": "music/music_draft.ogg",
+   "category": "music",
+   "group": "music",
+   "bus": "music",
+   "duration": 80.0,
+   "loop": true,
+   "recommended_loop": true,
+   "loop_start": 0.0,
+   "loop_end": 80.0,
+   "channels": 2,
+   "sample_rate": 44100,
+   "format": "ogg/vorbis q6",
+   "bpm": 84,
+   "bars": 28,
+   "key": "G dorian",
+   "tags": [
+    "draft",
+    "suspense",
+    "light",
+    "pizzicato",
+    "celesta"
+   ],
+   "description": "Draft : pizzicati, célesta, flûte, suspense léger, sol dorien",
+   "peak_db": -0.4,
+   "rms_db": -15.0,
+   "gain_db": -7.0
+  },
+  {
+   "name": "music_chest",
+   "family": "music_chest",
+   "variant": 1,
+   "file": "music/music_chest.ogg",
+   "category": "music",
+   "group": "music",
+   "bus": "music",
+   "duration": 20.0,
+   "loop": true,
+   "recommended_loop": true,
+   "loop_start": 0.0,
+   "loop_end": 20.0,
+   "channels": 2,
+   "sample_rate": 44100,
+   "format": "ogg/vorbis q6",
+   "bpm": 96,
+   "bars": 8,
+   "key": "C major",
+   "tags": [
+    "chest",
+    "magic",
+    "short",
+    "harp",
+    "bells",
+    "sparkle"
+   ],
+   "description": "Ouverture de coffre : harpe, cloches, choeur, 20 s",
+   "peak_db": -0.6,
+   "rms_db": -14.8,
+   "gain_db": -7.2
+  },
+  {
+   "name": "music_victory",
+   "family": "music_victory",
+   "variant": 1,
+   "file": "music/music_victory.ogg",
+   "category": "music",
+   "group": "music",
+   "bus": "music",
+   "duration": 30.0,
+   "loop": true,
+   "recommended_loop": false,
+   "loop_start": 0.0,
+   "loop_end": 30.0,
+   "channels": 2,
+   "sample_rate": 44100,
+   "format": "ogg/vorbis q6",
+   "bpm": 120,
+   "bars": 15,
+   "key": "F major",
+   "tags": [
+    "victory",
+    "fanfare",
+    "jingle",
+    "brass",
+    "orchestral"
+   ],
+   "description": "Victoire : fanfare et thème triomphal, 30 s",
+   "peak_db": -0.5,
+   "rms_db": -14.7,
+   "gain_db": -7.3
+  },
+  {
+   "name": "music_defeat",
+   "family": "music_defeat",
+   "variant": 1,
+   "file": "music/music_defeat.ogg",
+   "category": "music",
+   "group": "music",
+   "bus": "music",
+   "duration": 30.0,
+   "loop": true,
+   "recommended_loop": false,
+   "loop_start": 0.0,
+   "loop_end": 30.0,
+   "channels": 2,
+   "sample_rate": 44100,
+   "format": "ogg/vorbis q6",
+   "bpm": 64,
+   "bars": 8,
+   "key": "B minor",
+   "tags": [
+    "defeat",
+    "sad",
+    "dark",
+    "cello",
+    "slow"
+   ],
+   "description": "Défaite : violoncelle et cors, si mineur sombre, 30 s",
+   "peak_db": -0.8,
+   "rms_db": -14.0,
+   "gain_db": -8.0
+  }
+ ],
+ "families": {
+  "ui_click": {
+   "variants": 3,
+   "category": "ui",
+   "group": "ui",
+   "loop": false,
+   "files": [
+    "sfx/ui_click_1.wav",
+    "sfx/ui_click_2.wav",
+    "sfx/ui_click_3.wav"
+   ]
+  },
+  "ui_hover": {
+   "variants": 3,
+   "category": "ui",
+   "group": "ui",
+   "loop": false,
+   "files": [
+    "sfx/ui_hover_1.wav",
+    "sfx/ui_hover_2.wav",
+    "sfx/ui_hover_3.wav"
+   ]
+  },
+  "ui_confirm": {
+   "variants": 3,
+   "category": "ui",
+   "group": "ui",
+   "loop": false,
+   "files": [
+    "sfx/ui_confirm_1.wav",
+    "sfx/ui_confirm_2.wav",
+    "sfx/ui_confirm_3.wav"
+   ]
+  },
+  "ui_back": {
+   "variants": 3,
+   "category": "ui",
+   "group": "ui",
+   "loop": false,
+   "files": [
+    "sfx/ui_back_1.wav",
+    "sfx/ui_back_2.wav",
+    "sfx/ui_back_3.wav"
+   ]
+  },
+  "ui_error": {
+   "variants": 3,
+   "category": "ui",
+   "group": "ui",
+   "loop": false,
+   "files": [
+    "sfx/ui_error_1.wav",
+    "sfx/ui_error_2.wav",
+    "sfx/ui_error_3.wav"
+   ]
+  },
+  "ui_tab": {
+   "variants": 3,
+   "category": "ui",
+   "group": "ui",
+   "loop": false,
+   "files": [
+    "sfx/ui_tab_1.wav",
+    "sfx/ui_tab_2.wav",
+    "sfx/ui_tab_3.wav"
+   ]
+  },
+  "ui_coin": {
+   "variants": 3,
+   "category": "ui",
+   "group": "ui",
+   "loop": false,
+   "files": [
+    "sfx/ui_coin_1.wav",
+    "sfx/ui_coin_2.wav",
+    "sfx/ui_coin_3.wav"
+   ]
+  },
+  "ui_levelup": {
+   "variants": 3,
+   "category": "ui",
+   "group": "ui",
+   "loop": false,
+   "files": [
+    "sfx/ui_levelup_1.wav",
+    "sfx/ui_levelup_2.wav",
+    "sfx/ui_levelup_3.wav"
+   ]
+  },
+  "ui_unlock": {
+   "variants": 3,
+   "category": "ui",
+   "group": "ui",
+   "loop": false,
+   "files": [
+    "sfx/ui_unlock_1.wav",
+    "sfx/ui_unlock_2.wav",
+    "sfx/ui_unlock_3.wav"
+   ]
+  },
+  "ui_open_panel": {
+   "variants": 3,
+   "category": "ui",
+   "group": "ui",
+   "loop": false,
+   "files": [
+    "sfx/ui_open_panel_1.wav",
+    "sfx/ui_open_panel_2.wav",
+    "sfx/ui_open_panel_3.wav"
+   ]
+  },
+  "ui_close_panel": {
+   "variants": 3,
+   "category": "ui",
+   "group": "ui",
+   "loop": false,
+   "files": [
+    "sfx/ui_close_panel_1.wav",
+    "sfx/ui_close_panel_2.wav",
+    "sfx/ui_close_panel_3.wav"
+   ]
+  },
+  "ui_chest_open": {
+   "variants": 3,
+   "category": "ui",
+   "group": "ui",
+   "loop": false,
+   "files": [
+    "sfx/ui_chest_open_1.wav",
+    "sfx/ui_chest_open_2.wav",
+    "sfx/ui_chest_open_3.wav"
+   ]
+  },
+  "ui_chest_rare": {
+   "variants": 3,
+   "category": "ui",
+   "group": "ui",
+   "loop": false,
+   "files": [
+    "sfx/ui_chest_rare_1.wav",
+    "sfx/ui_chest_rare_2.wav",
+    "sfx/ui_chest_rare_3.wav"
+   ]
+  },
+  "ui_buy": {
+   "variants": 3,
+   "category": "ui",
+   "group": "ui",
+   "loop": false,
+   "files": [
+    "sfx/ui_buy_1.wav",
+    "sfx/ui_buy_2.wav",
+    "sfx/ui_buy_3.wav"
+   ]
+  },
+  "ui_sell": {
+   "variants": 3,
+   "category": "ui",
+   "group": "ui",
+   "loop": false,
+   "files": [
+    "sfx/ui_sell_1.wav",
+    "sfx/ui_sell_2.wav",
+    "sfx/ui_sell_3.wav"
+   ]
+  },
+  "ui_achievement": {
+   "variants": 3,
+   "category": "ui",
+   "group": "ui",
+   "loop": false,
+   "files": [
+    "sfx/ui_achievement_1.wav",
+    "sfx/ui_achievement_2.wav",
+    "sfx/ui_achievement_3.wav"
+   ]
+  },
+  "ui_notification": {
+   "variants": 3,
+   "category": "ui",
+   "group": "ui",
+   "loop": false,
+   "files": [
+    "sfx/ui_notification_1.wav",
+    "sfx/ui_notification_2.wav",
+    "sfx/ui_notification_3.wav"
+   ]
+  },
+  "ui_page": {
+   "variants": 3,
+   "category": "ui",
+   "group": "ui",
+   "loop": false,
+   "files": [
+    "sfx/ui_page_1.wav",
+    "sfx/ui_page_2.wav",
+    "sfx/ui_page_3.wav"
+   ]
+  },
+  "swing_light": {
+   "variants": 4,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/swing_light_1.wav",
+    "sfx/swing_light_2.wav",
+    "sfx/swing_light_3.wav",
+    "sfx/swing_light_4.wav"
+   ]
+  },
+  "swing_heavy": {
+   "variants": 4,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/swing_heavy_1.wav",
+    "sfx/swing_heavy_2.wav",
+    "sfx/swing_heavy_3.wav",
+    "sfx/swing_heavy_4.wav"
+   ]
+  },
+  "hit_slash": {
+   "variants": 4,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/hit_slash_1.wav",
+    "sfx/hit_slash_2.wav",
+    "sfx/hit_slash_3.wav",
+    "sfx/hit_slash_4.wav"
+   ]
+  },
+  "hit_blunt": {
+   "variants": 4,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/hit_blunt_1.wav",
+    "sfx/hit_blunt_2.wav",
+    "sfx/hit_blunt_3.wav",
+    "sfx/hit_blunt_4.wav"
+   ]
+  },
+  "hit_pierce": {
+   "variants": 4,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/hit_pierce_1.wav",
+    "sfx/hit_pierce_2.wav",
+    "sfx/hit_pierce_3.wav",
+    "sfx/hit_pierce_4.wav"
+   ]
+  },
+  "hit_magic": {
+   "variants": 4,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/hit_magic_1.wav",
+    "sfx/hit_magic_2.wav",
+    "sfx/hit_magic_3.wav",
+    "sfx/hit_magic_4.wav"
+   ]
+  },
+  "hit_crit": {
+   "variants": 3,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/hit_crit_1.wav",
+    "sfx/hit_crit_2.wav",
+    "sfx/hit_crit_3.wav"
+   ]
+  },
+  "hit_shield_block": {
+   "variants": 4,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/hit_shield_block_1.wav",
+    "sfx/hit_shield_block_2.wav",
+    "sfx/hit_shield_block_3.wav",
+    "sfx/hit_shield_block_4.wav"
+   ]
+  },
+  "hit_player_hurt": {
+   "variants": 4,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/hit_player_hurt_1.wav",
+    "sfx/hit_player_hurt_2.wav",
+    "sfx/hit_player_hurt_3.wav",
+    "sfx/hit_player_hurt_4.wav"
+   ]
+  },
+  "arrow_shoot": {
+   "variants": 4,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/arrow_shoot_1.wav",
+    "sfx/arrow_shoot_2.wav",
+    "sfx/arrow_shoot_3.wav",
+    "sfx/arrow_shoot_4.wav"
+   ]
+  },
+  "arrow_hit": {
+   "variants": 4,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/arrow_hit_1.wav",
+    "sfx/arrow_hit_2.wav",
+    "sfx/arrow_hit_3.wav",
+    "sfx/arrow_hit_4.wav"
+   ]
+  },
+  "crossbow_shoot": {
+   "variants": 3,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/crossbow_shoot_1.wav",
+    "sfx/crossbow_shoot_2.wav",
+    "sfx/crossbow_shoot_3.wav"
+   ]
+  },
+  "bow_draw": {
+   "variants": 3,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/bow_draw_1.wav",
+    "sfx/bow_draw_2.wav",
+    "sfx/bow_draw_3.wav"
+   ]
+  },
+  "dash_whoosh": {
+   "variants": 4,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/dash_whoosh_1.wav",
+    "sfx/dash_whoosh_2.wav",
+    "sfx/dash_whoosh_3.wav",
+    "sfx/dash_whoosh_4.wav"
+   ]
+  },
+  "leap_land": {
+   "variants": 3,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/leap_land_1.wav",
+    "sfx/leap_land_2.wav",
+    "sfx/leap_land_3.wav"
+   ]
+  },
+  "footstep_sand": {
+   "variants": 4,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/footstep_sand_1.wav",
+    "sfx/footstep_sand_2.wav",
+    "sfx/footstep_sand_3.wav",
+    "sfx/footstep_sand_4.wav"
+   ]
+  },
+  "footstep_stone": {
+   "variants": 4,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/footstep_stone_1.wav",
+    "sfx/footstep_stone_2.wav",
+    "sfx/footstep_stone_3.wav",
+    "sfx/footstep_stone_4.wav"
+   ]
+  },
+  "explosion_small": {
+   "variants": 3,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/explosion_small_1.wav",
+    "sfx/explosion_small_2.wav",
+    "sfx/explosion_small_3.wav"
+   ]
+  },
+  "explosion_big": {
+   "variants": 3,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/explosion_big_1.wav",
+    "sfx/explosion_big_2.wav",
+    "sfx/explosion_big_3.wav"
+   ]
+  },
+  "beam_loop": {
+   "variants": 2,
+   "category": "combat",
+   "group": "combat",
+   "loop": true,
+   "files": [
+    "sfx/beam_loop_1.wav",
+    "sfx/beam_loop_2.wav"
+   ]
+  },
+  "fire_loop": {
+   "variants": 2,
+   "category": "combat",
+   "group": "combat",
+   "loop": true,
+   "files": [
+    "sfx/fire_loop_1.wav",
+    "sfx/fire_loop_2.wav"
+   ]
+  },
+  "shield_up": {
+   "variants": 3,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/shield_up_1.wav",
+    "sfx/shield_up_2.wav",
+    "sfx/shield_up_3.wav"
+   ]
+  },
+  "shield_break": {
+   "variants": 3,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/shield_break_1.wav",
+    "sfx/shield_break_2.wav",
+    "sfx/shield_break_3.wav"
+   ]
+  },
+  "stun_hit": {
+   "variants": 3,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/stun_hit_1.wav",
+    "sfx/stun_hit_2.wav",
+    "sfx/stun_hit_3.wav"
+   ]
+  },
+  "buff_up": {
+   "variants": 3,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/buff_up_1.wav",
+    "sfx/buff_up_2.wav",
+    "sfx/buff_up_3.wav"
+   ]
+  },
+  "debuff_down": {
+   "variants": 3,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/debuff_down_1.wav",
+    "sfx/debuff_down_2.wav",
+    "sfx/debuff_down_3.wav"
+   ]
+  },
+  "summon": {
+   "variants": 3,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/summon_1.wav",
+    "sfx/summon_2.wav",
+    "sfx/summon_3.wav"
+   ]
+  },
+  "teleport_blink": {
+   "variants": 3,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/teleport_blink_1.wav",
+    "sfx/teleport_blink_2.wav",
+    "sfx/teleport_blink_3.wav"
+   ]
+  },
+  "projectile_whoosh": {
+   "variants": 4,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/projectile_whoosh_1.wav",
+    "sfx/projectile_whoosh_2.wav",
+    "sfx/projectile_whoosh_3.wav",
+    "sfx/projectile_whoosh_4.wav"
+   ]
+  },
+  "trap_snap": {
+   "variants": 3,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/trap_snap_1.wav",
+    "sfx/trap_snap_2.wav",
+    "sfx/trap_snap_3.wav"
+   ]
+  },
+  "bat_swarm": {
+   "variants": 3,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/bat_swarm_1.wav",
+    "sfx/bat_swarm_2.wav",
+    "sfx/bat_swarm_3.wav"
+   ]
+  },
+  "chain_clink": {
+   "variants": 3,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/chain_clink_1.wav",
+    "sfx/chain_clink_2.wav",
+    "sfx/chain_clink_3.wav"
+   ]
+  },
+  "bell_toll": {
+   "variants": 3,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/bell_toll_1.wav",
+    "sfx/bell_toll_2.wav",
+    "sfx/bell_toll_3.wav"
+   ]
+  },
+  "death_light": {
+   "variants": 3,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/death_light_1.wav",
+    "sfx/death_light_2.wav",
+    "sfx/death_light_3.wav"
+   ]
+  },
+  "death_heavy": {
+   "variants": 3,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/death_heavy_1.wav",
+    "sfx/death_heavy_2.wav",
+    "sfx/death_heavy_3.wav"
+   ]
+  },
+  "kill_ding": {
+   "variants": 3,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/kill_ding_1.wav",
+    "sfx/kill_ding_2.wav",
+    "sfx/kill_ding_3.wav"
+   ]
+  },
+  "gold_pickup": {
+   "variants": 4,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/gold_pickup_1.wav",
+    "sfx/gold_pickup_2.wav",
+    "sfx/gold_pickup_3.wav",
+    "sfx/gold_pickup_4.wav"
+   ]
+  },
+  "coin_clink": {
+   "variants": 4,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/coin_clink_1.wav",
+    "sfx/coin_clink_2.wav",
+    "sfx/coin_clink_3.wav",
+    "sfx/coin_clink_4.wav"
+   ]
+  },
+  "resurrect": {
+   "variants": 2,
+   "category": "combat",
+   "group": "combat",
+   "loop": false,
+   "files": [
+    "sfx/resurrect_1.wav",
+    "sfx/resurrect_2.wav"
+   ]
+  },
+  "spell_cast_generic": {
+   "variants": 3,
+   "category": "combat",
+   "group": "spell",
+   "loop": false,
+   "files": [
+    "sfx/spell_cast_generic_1.wav",
+    "sfx/spell_cast_generic_2.wav",
+    "sfx/spell_cast_generic_3.wav"
+   ]
+  },
+  "spell_fire": {
+   "variants": 3,
+   "category": "combat",
+   "group": "spell",
+   "loop": false,
+   "files": [
+    "sfx/spell_fire_1.wav",
+    "sfx/spell_fire_2.wav",
+    "sfx/spell_fire_3.wav"
+   ]
+  },
+  "spell_fire_impact": {
+   "variants": 3,
+   "category": "combat",
+   "group": "spell",
+   "loop": false,
+   "files": [
+    "sfx/spell_fire_impact_1.wav",
+    "sfx/spell_fire_impact_2.wav",
+    "sfx/spell_fire_impact_3.wav"
+   ]
+  },
+  "spell_ice": {
+   "variants": 3,
+   "category": "combat",
+   "group": "spell",
+   "loop": false,
+   "files": [
+    "sfx/spell_ice_1.wav",
+    "sfx/spell_ice_2.wav",
+    "sfx/spell_ice_3.wav"
+   ]
+  },
+  "spell_ice_impact": {
+   "variants": 3,
+   "category": "combat",
+   "group": "spell",
+   "loop": false,
+   "files": [
+    "sfx/spell_ice_impact_1.wav",
+    "sfx/spell_ice_impact_2.wav",
+    "sfx/spell_ice_impact_3.wav"
+   ]
+  },
+  "ice_shatter": {
+   "variants": 3,
+   "category": "combat",
+   "group": "spell",
+   "loop": false,
+   "files": [
+    "sfx/ice_shatter_1.wav",
+    "sfx/ice_shatter_2.wav",
+    "sfx/ice_shatter_3.wav"
+   ]
+  },
+  "spell_lightning": {
+   "variants": 3,
+   "category": "combat",
+   "group": "spell",
+   "loop": false,
+   "files": [
+    "sfx/spell_lightning_1.wav",
+    "sfx/spell_lightning_2.wav",
+    "sfx/spell_lightning_3.wav"
+   ]
+  },
+  "thunder_crack": {
+   "variants": 3,
+   "category": "combat",
+   "group": "spell",
+   "loop": false,
+   "files": [
+    "sfx/thunder_crack_1.wav",
+    "sfx/thunder_crack_2.wav",
+    "sfx/thunder_crack_3.wav"
+   ]
+  },
+  "spell_holy": {
+   "variants": 3,
+   "category": "combat",
+   "group": "spell",
+   "loop": false,
+   "files": [
+    "sfx/spell_holy_1.wav",
+    "sfx/spell_holy_2.wav",
+    "sfx/spell_holy_3.wav"
+   ]
+  },
+  "spell_shadow": {
+   "variants": 3,
+   "category": "combat",
+   "group": "spell",
+   "loop": false,
+   "files": [
+    "sfx/spell_shadow_1.wav",
+    "sfx/spell_shadow_2.wav",
+    "sfx/spell_shadow_3.wav"
+   ]
+  },
+  "spell_void": {
+   "variants": 3,
+   "category": "combat",
+   "group": "spell",
+   "loop": false,
+   "files": [
+    "sfx/spell_void_1.wav",
+    "sfx/spell_void_2.wav",
+    "sfx/spell_void_3.wav"
+   ]
+  },
+  "spell_arcane": {
+   "variants": 3,
+   "category": "combat",
+   "group": "spell",
+   "loop": false,
+   "files": [
+    "sfx/spell_arcane_1.wav",
+    "sfx/spell_arcane_2.wav",
+    "sfx/spell_arcane_3.wav"
+   ]
+  },
+  "spell_nature": {
+   "variants": 3,
+   "category": "combat",
+   "group": "spell",
+   "loop": false,
+   "files": [
+    "sfx/spell_nature_1.wav",
+    "sfx/spell_nature_2.wav",
+    "sfx/spell_nature_3.wav"
+   ]
+  },
+  "spell_wind": {
+   "variants": 3,
+   "category": "combat",
+   "group": "spell",
+   "loop": false,
+   "files": [
+    "sfx/spell_wind_1.wav",
+    "sfx/spell_wind_2.wav",
+    "sfx/spell_wind_3.wav"
+   ]
+  },
+  "spell_earth": {
+   "variants": 3,
+   "category": "combat",
+   "group": "spell",
+   "loop": false,
+   "files": [
+    "sfx/spell_earth_1.wav",
+    "sfx/spell_earth_2.wav",
+    "sfx/spell_earth_3.wav"
+   ]
+  },
+  "spell_blood": {
+   "variants": 3,
+   "category": "combat",
+   "group": "spell",
+   "loop": false,
+   "files": [
+    "sfx/spell_blood_1.wav",
+    "sfx/spell_blood_2.wav",
+    "sfx/spell_blood_3.wav"
+   ]
+  },
+  "heal_chime": {
+   "variants": 3,
+   "category": "combat",
+   "group": "spell",
+   "loop": false,
+   "files": [
+    "sfx/heal_chime_1.wav",
+    "sfx/heal_chime_2.wav",
+    "sfx/heal_chime_3.wav"
+   ]
+  },
+  "heal_big": {
+   "variants": 3,
+   "category": "combat",
+   "group": "spell",
+   "loop": false,
+   "files": [
+    "sfx/heal_big_1.wav",
+    "sfx/heal_big_2.wav",
+    "sfx/heal_big_3.wav"
+   ]
+  },
+  "round_start_horn": {
+   "variants": 2,
+   "category": "match",
+   "group": "match",
+   "loop": false,
+   "files": [
+    "sfx/round_start_horn_1.wav",
+    "sfx/round_start_horn_2.wav"
+   ]
+  },
+  "countdown_beep": {
+   "variants": 2,
+   "category": "match",
+   "group": "match",
+   "loop": false,
+   "files": [
+    "sfx/countdown_beep_1.wav",
+    "sfx/countdown_beep_2.wav"
+   ]
+  },
+  "countdown_go": {
+   "variants": 2,
+   "category": "match",
+   "group": "match",
+   "loop": false,
+   "files": [
+    "sfx/countdown_go_1.wav",
+    "sfx/countdown_go_2.wav"
+   ]
+  },
+  "timer_warning": {
+   "variants": 2,
+   "category": "match",
+   "group": "match",
+   "loop": false,
+   "files": [
+    "sfx/timer_warning_1.wav",
+    "sfx/timer_warning_2.wav"
+   ]
+  },
+  "announcer_whoosh": {
+   "variants": 3,
+   "category": "match",
+   "group": "match",
+   "loop": false,
+   "files": [
+    "sfx/announcer_whoosh_1.wav",
+    "sfx/announcer_whoosh_2.wav",
+    "sfx/announcer_whoosh_3.wav"
+   ]
+  },
+  "victory_fanfare": {
+   "variants": 2,
+   "category": "match",
+   "group": "match",
+   "loop": false,
+   "files": [
+    "sfx/victory_fanfare_1.wav",
+    "sfx/victory_fanfare_2.wav"
+   ]
+  },
+  "defeat_sting": {
+   "variants": 2,
+   "category": "match",
+   "group": "match",
+   "loop": false,
+   "files": [
+    "sfx/defeat_sting_1.wav",
+    "sfx/defeat_sting_2.wav"
+   ]
+  },
+  "voice_grunt_m": {
+   "variants": 3,
+   "category": "voice",
+   "group": "voice",
+   "loop": false,
+   "files": [
+    "sfx/voice_grunt_m_1.wav",
+    "sfx/voice_grunt_m_2.wav",
+    "sfx/voice_grunt_m_3.wav"
+   ]
+  },
+  "voice_grunt_f": {
+   "variants": 3,
+   "category": "voice",
+   "group": "voice",
+   "loop": false,
+   "files": [
+    "sfx/voice_grunt_f_1.wav",
+    "sfx/voice_grunt_f_2.wav",
+    "sfx/voice_grunt_f_3.wav"
+   ]
+  },
+  "voice_orc": {
+   "variants": 3,
+   "category": "voice",
+   "group": "voice",
+   "loop": false,
+   "files": [
+    "sfx/voice_orc_1.wav",
+    "sfx/voice_orc_2.wav",
+    "sfx/voice_orc_3.wav"
+   ]
+  },
+  "voice_goblin": {
+   "variants": 3,
+   "category": "voice",
+   "group": "voice",
+   "loop": false,
+   "files": [
+    "sfx/voice_goblin_1.wav",
+    "sfx/voice_goblin_2.wav",
+    "sfx/voice_goblin_3.wav"
+   ]
+  },
+  "voice_beast": {
+   "variants": 3,
+   "category": "voice",
+   "group": "voice",
+   "loop": false,
+   "files": [
+    "sfx/voice_beast_1.wav",
+    "sfx/voice_beast_2.wav",
+    "sfx/voice_beast_3.wav"
+   ]
+  },
+  "voice_death": {
+   "variants": 3,
+   "category": "voice",
+   "group": "voice",
+   "loop": false,
+   "files": [
+    "sfx/voice_death_1.wav",
+    "sfx/voice_death_2.wav",
+    "sfx/voice_death_3.wav"
+   ]
+  },
+  "crowd_ambience_loop": {
+   "variants": 2,
+   "category": "match",
+   "group": "ambience",
+   "loop": true,
+   "files": [
+    "sfx/crowd_ambience_loop_1.wav",
+    "sfx/crowd_ambience_loop_2.wav"
+   ]
+  },
+  "crowd_cheer": {
+   "variants": 3,
+   "category": "match",
+   "group": "ambience",
+   "loop": false,
+   "files": [
+    "sfx/crowd_cheer_1.wav",
+    "sfx/crowd_cheer_2.wav",
+    "sfx/crowd_cheer_3.wav"
+   ]
+  },
+  "crowd_gasp": {
+   "variants": 3,
+   "category": "match",
+   "group": "ambience",
+   "loop": false,
+   "files": [
+    "sfx/crowd_gasp_1.wav",
+    "sfx/crowd_gasp_2.wav",
+    "sfx/crowd_gasp_3.wav"
+   ]
+  },
+  "crowd_boo": {
+   "variants": 3,
+   "category": "match",
+   "group": "ambience",
+   "loop": false,
+   "files": [
+    "sfx/crowd_boo_1.wav",
+    "sfx/crowd_boo_2.wav",
+    "sfx/crowd_boo_3.wav"
+   ]
+  },
+  "music_menu": {
+   "variants": 1,
+   "category": "music",
+   "group": "music",
+   "loop": true,
+   "files": [
+    "music/music_menu.ogg"
+   ]
+  },
+  "music_club": {
+   "variants": 1,
+   "category": "music",
+   "group": "music",
+   "loop": true,
+   "files": [
+    "music/music_club.ogg"
+   ]
+  },
+  "music_battle_1": {
+   "variants": 1,
+   "category": "music",
+   "group": "music",
+   "loop": true,
+   "files": [
+    "music/music_battle_1.ogg"
+   ]
+  },
+  "music_battle_2": {
+   "variants": 1,
+   "category": "music",
+   "group": "music",
+   "loop": true,
+   "files": [
+    "music/music_battle_2.ogg"
+   ]
+  },
+  "music_battle_boss": {
+   "variants": 1,
+   "category": "music",
+   "group": "music",
+   "loop": true,
+   "files": [
+    "music/music_battle_boss.ogg"
+   ]
+  },
+  "music_cup": {
+   "variants": 1,
+   "category": "music",
+   "group": "music",
+   "loop": true,
+   "files": [
+    "music/music_cup.ogg"
+   ]
+  },
+  "music_chaos_thunder": {
+   "variants": 1,
+   "category": "music",
+   "group": "music",
+   "loop": true,
+   "files": [
+    "music/music_chaos_thunder.ogg"
+   ]
+  },
+  "music_draft": {
+   "variants": 1,
+   "category": "music",
+   "group": "music",
+   "loop": true,
+   "files": [
+    "music/music_draft.ogg"
+   ]
+  },
+  "music_chest": {
+   "variants": 1,
+   "category": "music",
+   "group": "music",
+   "loop": true,
+   "files": [
+    "music/music_chest.ogg"
+   ]
+  },
+  "music_victory": {
+   "variants": 1,
+   "category": "music",
+   "group": "music",
+   "loop": true,
+   "files": [
+    "music/music_victory.ogg"
+   ]
+  },
+  "music_defeat": {
+   "variants": 1,
+   "category": "music",
+   "group": "music",
+   "loop": true,
+   "files": [
+    "music/music_defeat.ogg"
+   ]
+  }
+ }
+}

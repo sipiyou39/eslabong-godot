@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "coordinate_system": "glTF/Godot : +Y haut, +Z = avant du personnage, gauche du personnage = +X, droite = -X. Dans Blender (Z haut) le personnage regarde vers -Y (vue de face numpad 1) et sa gauche est +X. Exporter avec export_yup=True.",
+  "units": "mètres, pieds à y=0",
+  "pivots": {
+    "pelvis":     [0.0, 0.74, 0.0],
+    "torso":      [0.0, 0.78, 0.0],
+    "head":       [0.0, 1.20, 0.0],
+    "shoulder_l": [0.30, 1.10, 0.0],
+    "shoulder_r": [-0.30, 1.10, 0.0],
+    "hip_l":      [0.13, 0.72, 0.0],
+    "hip_r":      [-0.13, 0.72, 0.0],
+    "hand_l":     [0.34, 0.62, 0.02],
+    "hand_r":     [-0.34, 0.62, 0.02]
+  },
+  "hierarchy": "pelvis -> (torso -> (head, arm_l, arm_r)), leg_l, leg_r. Chaque pièce a son origine EXACTEMENT sur son pivot (donc positionnée aux coordonnées du tableau 'pivots' dans le monde) et sa géométrie est modélisée en pose de repos assemblée autour de ce pivot.",
+  "part_to_pivot": {
+    "torso": "torso", "pelvis": "pelvis", "head": "head", "arm_l": "shoulder_l", "arm_r": "shoulder_r", "leg_l": "hip_l", "leg_r": "hip_r",
+    "hat_*": "head", "armor_*": "torso", "armor_*_skirt": "pelvis", "shoulder_*_l": "shoulder_l", "shoulder_*_r": "shoulder_r", "back_*": "torso", "wpn_*": "hand grip (origin = grip)"
+  },
+  "vertex_color_mask": "COLOR_0 : R = couleur primaire (tissu/armure principale), G = couleur secondaire (bordures/cuir/second tissu), B = couleur d'accent (métal/or/gemmes/lueur). Le reste (1 - R - G - B, clampé) = 'peau/base'. A = occlusion ambiante cuite (1 = ouvert, 0.3 = creux). Les valeurs de masque doivent être nettes (0 ou 1) avec léger dégradé aux bords. Exporter avec les attributs de couleur.",
+  "species": ["human", "orc", "goblin", "minotaur", "skeleton", "beast", "demon"],
+  "body_parts_per_species": ["torso", "pelvis", "head", "arm_l", "arm_r", "leg_l", "leg_r"],
+  "body_part_names": "body_<species>_<part>  ex: body_human_torso, body_orc_arm_l",
+  "hats": ["hat_none","helm_knight","helm_great","helm_horned","helm_nasal","helm_plume","helm_frost","helm_flame","helm_skull","helm_demon","hood_rogue","hood_cowl","hat_wizard","hat_witch_hunter","hat_mitre","crown","circlet","mask_bandit","mask_luchador","hair_long","hair_short","hair_spiky","hair_ponytail","bandana","headband","goggles","hat_feathered"],
+  "torso_gear": ["armor_plate","armor_leather","armor_robe","armor_robe_long","armor_tabard","armor_scale","armor_wraps","armor_coat","armor_fur","armor_vest_ranger","armor_ragged","armor_cult_robe"],
+  "torso_gear_skirts": ["armor_robe_skirt","armor_robe_long_skirt","armor_tabard_skirt","armor_coat_skirt","armor_cult_robe_skirt","armor_plate_skirt","armor_scale_skirt","armor_ragged_skirt","armor_fur_skirt"],
+  "shoulders": ["plate","spiked","fur","mantle","big","bone","flame","frost","leather"],
+  "shoulder_naming": "shoulder_<name>_l / shoulder_<name>_r",
+  "backs": ["back_cape_short","back_cape_long","back_quiver","back_wings_bat","back_wings_angel","back_wings_astral","back_tail_beast","back_tail_demon","back_backpack","back_banner","back_totem_stick","back_tome_chained"],
+  "weapons": ["wpn_sword_short","wpn_sword_long","wpn_sword_great","wpn_rapier","wpn_katana","wpn_dagger","wpn_axe_hand","wpn_axe_great","wpn_axe_double","wpn_hammer_war","wpn_hammer_great","wpn_mace","wpn_club_spiked","wpn_spear","wpn_halberd","wpn_scythe","wpn_staff_wood","wpn_staff_crystal","wpn_staff_fire","wpn_staff_ice","wpn_staff_storm","wpn_staff_void","wpn_staff_holy","wpn_staff_skull","wpn_staff_totem","wpn_wand","wpn_bow_short","wpn_bow_long","wpn_crossbow","wpn_crossbow_heavy","wpn_tome","wpn_orb","wpn_shield_round","wpn_shield_kite","wpn_shield_tower","wpn_shield_buckler","wpn_whip","wpn_claws","wpn_fists","wpn_paddles","wpn_pick","wpn_censer","wpn_flail","wpn_cleaver","wpn_lantern"],
+  "weapon_orientation": "Origine = point de prise en main. Armes de mêlée : axe principal le long de +Y (pointe/tête vers +Y), tranchant/avant vers +Z, plat de la lame vers ±X. Arc : branches le long de Y, ventre de l'arc vers +Z, corde côté -Z. Arbalète : canon le long de +Z (pointant devant), crosse vers -Z. Bouclier : face visible vers +Z, centré sur l'origine, plan XY, pointe des écus vers -Y. Griffes/poings (claws, fists, paddles) : une paire est fournie en 2 pièces wpn_<name>_l et wpn_<name>_r. Tomes/orbes (off-hand) : centrés sur l'origine, dos vers -Z.",
+  "summons_props": ["summon_boar","summon_wolf","summon_bat","summon_turret_arcane","summon_turret_rail","summon_totem_storm","summon_totem_stone","summon_wisp","summon_illusion_mannequin","prop_trap_bear","prop_mine","prop_tombstone","prop_chest_closed","prop_chest_lid","prop_trophy_cup","prop_coin_stack","prop_banner_stand","prop_training_dummy","prop_weapon_rack","prop_crystal_blue","prop_crystal_red","prop_brazier","prop_barrel","prop_crate"]
+}

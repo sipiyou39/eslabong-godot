@@ -1,0 +1,662 @@
+{
+ "file": "kit_props.glb",
+ "count": 25,
+ "meta": {
+  "coordinate_system": "glTF/Godot : +Y haut, +Z avant. Chaque pièce est un noeud racine à la transformation identité ; la géométrie est autour de l'origine (prise en main pour les armes, sol y=0 pour les props).",
+  "vertex_color": "COLOR_0 (RGBA) : R = matériau principal (bois/cuir/tissu/pelage), G = secondaire (métal sombre/bordures/pierre), B = accent (lame brillante/or/gemme/cristal/flamme, zones émissives), 0,0,0 = base (os, paille, pages...). A = occlusion ambiante cuite (0,28..1).",
+  "material": "M_Kit unique (Principled lisant l'attribut couleur). 'accent' d'une pièce = teinte suggérée pour B (aperçu seulement)."
+ },
+ "pieces": [
+  {
+   "triangles": 1134,
+   "bbox_min": [
+    -0.225,
+    0.0,
+    -0.496
+   ],
+   "bbox_max": [
+    0.225,
+    0.799,
+    0.725
+   ],
+   "size": [
+    0.45,
+    0.799,
+    1.22
+   ],
+   "length": 1.22,
+   "name": "summon_boar",
+   "notes": "sanglier 0,95 m (long) x 0,62 (haut), regarde +Z",
+   "accent": [
+    1.0,
+    0.35,
+    0.2
+   ],
+   "views": "tq,side"
+  },
+  {
+   "triangles": 1352,
+   "bbox_min": [
+    -0.27,
+    -0.003,
+    -0.654
+   ],
+   "bbox_max": [
+    0.283,
+    1.03,
+    0.79
+   ],
+   "size": [
+    0.553,
+    1.033,
+    1.443
+   ],
+   "length": 1.443,
+   "name": "summon_wolf",
+   "notes": "loup 1,0 m (long) x 0,85 (haut), regarde +Z",
+   "accent": [
+    0.5,
+    0.9,
+    1.0
+   ],
+   "views": "tq,side"
+  },
+  {
+   "triangles": 612,
+   "bbox_min": [
+    -0.72,
+    0.562,
+    -0.201
+   ],
+   "bbox_max": [
+    0.72,
+    0.936,
+    0.215
+   ],
+   "size": [
+    1.439,
+    0.374,
+    0.416
+   ],
+   "length": 1.439,
+   "name": "summon_bat",
+   "notes": "chauve-souris, envergure 1,0 m, plane (corps centré à y=0,65)",
+   "accent": [
+    0.8,
+    0.3,
+    1.0
+   ],
+   "views": "tq,side"
+  },
+  {
+   "triangles": 464,
+   "bbox_min": [
+    -0.173,
+    0.098,
+    -0.232
+   ],
+   "bbox_max": [
+    0.238,
+    0.95,
+    0.202
+   ],
+   "size": [
+    0.411,
+    0.852,
+    0.434
+   ],
+   "length": 0.852,
+   "name": "summon_wisp",
+   "notes": "feu follet, flotte (centre à y=0,6), tout en accent B",
+   "accent": [
+    0.45,
+    1.0,
+    0.85
+   ],
+   "views": "tq,side"
+  },
+  {
+   "triangles": 1508,
+   "bbox_min": [
+    -0.38,
+    0.0,
+    -0.195
+   ],
+   "bbox_max": [
+    0.38,
+    1.485,
+    0.195
+   ],
+   "size": [
+    0.76,
+    1.485,
+    0.39
+   ],
+   "length": 1.485,
+   "name": "summon_illusion_mannequin",
+   "notes": "mannequin d'illusion 1,5 m, pose neutre, joints en accent B",
+   "accent": [
+    0.6,
+    0.7,
+    1.0
+   ],
+   "views": "tq,side"
+  },
+  {
+   "triangles": 1888,
+   "bbox_min": [
+    -0.315,
+    0.0,
+    -0.315
+   ],
+   "bbox_max": [
+    0.315,
+    1.26,
+    0.315
+   ],
+   "size": [
+    0.63,
+    1.26,
+    0.63
+   ],
+   "length": 1.26,
+   "name": "summon_turret_arcane",
+   "notes": "tourelle arcanique 1,25 m : piédestal runique, cristal flottant, anneaux",
+   "accent": [
+    0.45,
+    0.7,
+    1.0
+   ],
+   "views": "tq,side"
+  },
+  {
+   "triangles": 1698,
+   "bbox_min": [
+    -0.395,
+    -0.015,
+    -0.32
+   ],
+   "bbox_max": [
+    0.395,
+    0.845,
+    0.94
+   ],
+   "size": [
+    0.79,
+    0.86,
+    1.26
+   ],
+   "length": 1.26,
+   "name": "summon_turret_rail",
+   "notes": "tourelle à rail 1,0 m, canon vers +Z",
+   "accent": [
+    1.0,
+    0.7,
+    0.3
+   ],
+   "views": "tq,side"
+  },
+  {
+   "triangles": 1814,
+   "bbox_min": [
+    -0.518,
+    0.0,
+    -0.278
+   ],
+   "bbox_max": [
+    0.518,
+    1.842,
+    0.278
+   ],
+   "size": [
+    1.036,
+    1.842,
+    0.556
+   ],
+   "length": 1.842,
+   "name": "summon_totem_storm",
+   "notes": "totem de tempête 1,6 m : poteau sculpté, ailes, cristaux d'éclair",
+   "accent": [
+    0.6,
+    0.85,
+    1.0
+   ],
+   "views": "tq,side"
+  },
+  {
+   "triangles": 812,
+   "bbox_min": [
+    -0.35,
+    -0.0,
+    -0.31
+   ],
+   "bbox_max": [
+    0.35,
+    1.36,
+    0.311
+   ],
+   "size": [
+    0.7,
+    1.36,
+    0.621
+   ],
+   "length": 1.36,
+   "name": "summon_totem_stone",
+   "notes": "totem de pierre 1,35 m : blocs empilés, visage et runes lumineux",
+   "accent": [
+    0.9,
+    0.5,
+    0.2
+   ],
+   "views": "tq,side"
+  },
+  {
+   "triangles": 1302,
+   "bbox_min": [
+    -0.31,
+    -0.0,
+    -0.187
+   ],
+   "bbox_max": [
+    0.65,
+    0.306,
+    0.25
+   ],
+   "size": [
+    0.96,
+    0.306,
+    0.437
+   ],
+   "length": 0.96,
+   "name": "prop_trap_bear",
+   "notes": "piège à loup ouvert 0,6 m, mâchoires dressées",
+   "accent": null,
+   "views": "tq,side"
+  },
+  {
+   "triangles": 556,
+   "bbox_min": [
+    -0.214,
+    0.0,
+    -0.214
+   ],
+   "bbox_max": [
+    0.214,
+    0.155,
+    0.214
+   ],
+   "size": [
+    0.429,
+    0.155,
+    0.429
+   ],
+   "length": 0.429,
+   "name": "prop_mine",
+   "notes": "mine 0,4 m, voyant rouge",
+   "accent": [
+    1.0,
+    0.25,
+    0.15
+   ],
+   "views": "tq,side"
+  },
+  {
+   "triangles": 452,
+   "bbox_min": [
+    -0.38,
+    0.0,
+    -0.119
+   ],
+   "bbox_max": [
+    0.38,
+    0.998,
+    0.798
+   ],
+   "size": [
+    0.76,
+    0.998,
+    0.918
+   ],
+   "length": 0.998,
+   "name": "prop_tombstone",
+   "notes": "pierre tombale 1,0 m, tertre, croix incrustée (B), mousse (R)",
+   "accent": null,
+   "views": "tq,side"
+  },
+  {
+   "triangles": 1372,
+   "bbox_min": [
+    -0.435,
+    -0.006,
+    -0.285
+   ],
+   "bbox_max": [
+    0.435,
+    0.612,
+    0.285
+   ],
+   "size": [
+    0.87,
+    0.618,
+    0.57
+   ],
+   "length": 0.87,
+   "name": "prop_chest_closed",
+   "notes": "coffre fermé 0,8x0,6x0,5 (corps + couvercle assemblés). Charnière = (0,0.34,-0.25)",
+   "accent": [
+    1.0,
+    0.8,
+    0.3
+   ],
+   "views": "tq,side"
+  },
+  {
+   "triangles": 852,
+   "bbox_min": [
+    -0.4,
+    -0.023,
+    -0.028
+   ],
+   "bbox_max": [
+    0.4,
+    0.272,
+    0.535
+   ],
+   "size": [
+    0.8,
+    0.295,
+    0.563
+   ],
+   "length": 0.8,
+   "name": "prop_chest_lid",
+   "notes": "couvercle seul ; ORIGINE = charnière ; pour fermer, le placer en (0,0.34,-0.25) ; ouvrir = rotation autour de X négative",
+   "accent": [
+    1.0,
+    0.8,
+    0.3
+   ],
+   "views": "tq,side"
+  },
+  {
+   "triangles": 980,
+   "bbox_min": [
+    -0.435,
+    -0.006,
+    -0.285
+   ],
+   "bbox_max": [
+    0.435,
+    0.48,
+    0.285
+   ],
+   "size": [
+    0.87,
+    0.486,
+    0.57
+   ],
+   "length": 0.87,
+   "name": "prop_chest_body_open",
+   "notes": "EXTRA (hors contrat) : corps du coffre sans couvercle, avec butin visible ; à utiliser avec prop_chest_lid ouvert",
+   "accent": [
+    1.0,
+    0.8,
+    0.3
+   ],
+   "views": "tq,side"
+  },
+  {
+   "triangles": 1040,
+   "bbox_min": [
+    -0.246,
+    -0.0,
+    -0.17
+   ],
+   "bbox_max": [
+    0.246,
+    0.74,
+    0.185
+   ],
+   "size": [
+    0.492,
+    0.74,
+    0.355
+   ],
+   "length": 0.74,
+   "name": "prop_trophy_cup",
+   "notes": "coupe trophée 0,75 m sur socle bois",
+   "accent": [
+    1.0,
+    0.8,
+    0.25
+   ],
+   "views": "tq,side"
+  },
+  {
+   "triangles": 932,
+   "bbox_min": [
+    -0.348,
+    -0.073,
+    -0.28
+   ],
+   "bbox_max": [
+    0.343,
+    0.16,
+    0.334
+   ],
+   "size": [
+    0.692,
+    0.233,
+    0.614
+   ],
+   "length": 0.692,
+   "name": "prop_coin_stack",
+   "notes": "tas de pièces d'or : 3 piles + pièces éparses, 0,3 m",
+   "accent": [
+    1.0,
+    0.82,
+    0.3
+   ],
+   "views": "tq,side"
+  },
+  {
+   "triangles": 890,
+   "bbox_min": [
+    -0.345,
+    0.0,
+    -0.25
+   ],
+   "bbox_max": [
+    0.345,
+    2.07,
+    0.25
+   ],
+   "size": [
+    0.69,
+    2.07,
+    0.5
+   ],
+   "length": 2.07,
+   "name": "prop_banner_stand",
+   "notes": "support de bannière 2,0 m avec bannière rouge (R) et emblème (B)",
+   "accent": [
+    0.9,
+    0.2,
+    0.2
+   ],
+   "views": "tq,side"
+  },
+  {
+   "triangles": 1174,
+   "bbox_min": [
+    -0.48,
+    -0.0,
+    -0.31
+   ],
+   "bbox_max": [
+    0.487,
+    1.643,
+    0.31
+   ],
+   "size": [
+    0.967,
+    1.643,
+    0.62
+   ],
+   "length": 1.643,
+   "name": "prop_training_dummy",
+   "notes": "mannequin d'entraînement 1,7 m, bois et paille",
+   "accent": null,
+   "views": "tq,side"
+  },
+  {
+   "triangles": 2760,
+   "bbox_min": [
+    -1.19,
+    -0.0,
+    -0.25
+   ],
+   "bbox_max": [
+    0.83,
+    1.64,
+    0.3
+   ],
+   "size": [
+    2.02,
+    1.64,
+    0.55
+   ],
+   "length": 2.02,
+   "name": "prop_weapon_rack",
+   "notes": "râtelier d'armes 1,6 m de large (épées, hache, bouclier)",
+   "accent": null,
+   "views": "tq,side"
+  },
+  {
+   "triangles": 266,
+   "bbox_min": [
+    -0.349,
+    0.0,
+    -0.31
+   ],
+   "bbox_max": [
+    0.358,
+    1.0,
+    0.337
+   ],
+   "size": [
+    0.707,
+    1.0,
+    0.646
+   ],
+   "length": 1.0,
+   "name": "prop_crystal_blue",
+   "notes": "amas de cristaux bleus 1,0 m, base rocheuse",
+   "accent": [
+    0.3,
+    0.6,
+    1.0
+   ],
+   "views": "tq,side"
+  },
+  {
+   "triangles": 290,
+   "bbox_min": [
+    -0.307,
+    0.0,
+    -0.297
+   ],
+   "bbox_max": [
+    0.291,
+    0.92,
+    0.271
+   ],
+   "size": [
+    0.597,
+    0.92,
+    0.567
+   ],
+   "length": 0.92,
+   "name": "prop_crystal_red",
+   "notes": "amas de cristaux rouges 0,95 m, base rocheuse",
+   "accent": [
+    1.0,
+    0.2,
+    0.25
+   ],
+   "views": "tq,side"
+  },
+  {
+   "triangles": 712,
+   "bbox_min": [
+    -0.34,
+    -0.006,
+    -0.339
+   ],
+   "bbox_max": [
+    0.34,
+    1.4,
+    0.31
+   ],
+   "size": [
+    0.68,
+    1.406,
+    0.649
+   ],
+   "length": 1.406,
+   "name": "prop_brazier",
+   "notes": "brasero 1,05 m, flammes en accent B",
+   "accent": [
+    1.0,
+    0.55,
+    0.15
+   ],
+   "views": "tq,side"
+  },
+  {
+   "triangles": 1140,
+   "bbox_min": [
+    -0.38,
+    0.0,
+    -0.38
+   ],
+   "bbox_max": [
+    0.38,
+    0.961,
+    0.443
+   ],
+   "size": [
+    0.76,
+    0.961,
+    0.823
+   ],
+   "length": 0.961,
+   "name": "prop_barrel",
+   "notes": "tonneau 0,95 m, cerclages métal (G)",
+   "accent": null,
+   "views": "tq,side"
+  },
+  {
+   "triangles": 1100,
+   "bbox_min": [
+    -0.38,
+    -0.01,
+    -0.38
+   ],
+   "bbox_max": [
+    0.38,
+    0.71,
+    0.38
+   ],
+   "size": [
+    0.76,
+    0.72,
+    0.76
+   ],
+   "length": 0.76,
+   "name": "prop_crate",
+   "notes": "caisse en bois 0,7 m, renforts métal",
+   "accent": null,
+   "views": "tq,side"
+  }
+ ]
+}

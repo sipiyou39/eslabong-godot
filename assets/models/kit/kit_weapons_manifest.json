@@ -1,0 +1,1203 @@
+{
+ "file": "kit_weapons.glb",
+ "count": 48,
+ "meta": {
+  "coordinate_system": "glTF/Godot : +Y haut, +Z avant. Chaque pièce est un noeud racine à la transformation identité ; la géométrie est autour de l'origine (prise en main pour les armes, sol y=0 pour les props).",
+  "vertex_color": "COLOR_0 (RGBA) : R = matériau principal (bois/cuir/tissu/pelage), G = secondaire (métal sombre/bordures/pierre), B = accent (lame brillante/or/gemme/cristal/flamme, zones émissives), 0,0,0 = base (os, paille, pages...). A = occlusion ambiante cuite (0,28..1).",
+  "material": "M_Kit unique (Principled lisant l'attribut couleur). 'accent' d'une pièce = teinte suggérée pour B (aperçu seulement)."
+ },
+ "pieces": [
+  {
+   "triangles": 1080,
+   "bbox_min": [
+    -0.167,
+    -0.134,
+    -0.042
+   ],
+   "bbox_max": [
+    0.167,
+    0.955,
+    0.042
+   ],
+   "size": [
+    0.334,
+    1.089,
+    0.084
+   ],
+   "length": 1.089,
+   "name": "wpn_sword_long",
+   "notes": "épée longue 1,05 m, lame à gorge, garde courbée",
+   "accent": null,
+   "views": "side,tq"
+  },
+  {
+   "triangles": 686,
+   "bbox_min": [
+    -0.098,
+    -0.113,
+    -0.05
+   ],
+   "bbox_max": [
+    0.098,
+    0.69,
+    0.05
+   ],
+   "size": [
+    0.195,
+    0.803,
+    0.1
+   ],
+   "length": 0.803,
+   "name": "wpn_sword_short",
+   "notes": "épée courte / glaive 0,8 m",
+   "accent": null,
+   "views": "side,tq"
+  },
+  {
+   "triangles": 1240,
+   "bbox_min": [
+    -0.221,
+    -0.188,
+    -0.066
+   ],
+   "bbox_max": [
+    0.221,
+    1.29,
+    0.066
+   ],
+   "size": [
+    0.442,
+    1.478,
+    0.132
+   ],
+   "length": 1.478,
+   "name": "wpn_sword_great",
+   "notes": "grande épée à deux mains 1,35 m",
+   "accent": null,
+   "views": "side,tq@bot"
+  },
+  {
+   "triangles": 1014,
+   "bbox_min": [
+    -0.184,
+    -0.114,
+    -0.074
+   ],
+   "bbox_max": [
+    0.184,
+    1.04,
+    0.096
+   ],
+   "size": [
+    0.368,
+    1.154,
+    0.17
+   ],
+   "length": 1.154,
+   "name": "wpn_rapier",
+   "notes": "rapière 1,1 m, garde à coquille",
+   "accent": null,
+   "views": "side,tq"
+  },
+  {
+   "triangles": 1228,
+   "bbox_min": [
+    -0.056,
+    -0.135,
+    -0.074
+   ],
+   "bbox_max": [
+    0.056,
+    0.878,
+    0.051
+   ],
+   "size": [
+    0.113,
+    1.013,
+    0.124
+   ],
+   "length": 1.013,
+   "name": "wpn_katana",
+   "notes": "katana 1,05 m, lame courbée vers -Z (dos)",
+   "accent": null,
+   "views": "side,tq"
+  },
+  {
+   "triangles": 446,
+   "bbox_min": [
+    -0.048,
+    -0.09,
+    -0.023
+   ],
+   "bbox_max": [
+    0.048,
+    0.385,
+    0.023
+   ],
+   "size": [
+    0.096,
+    0.475,
+    0.047
+   ],
+   "length": 0.475,
+   "name": "wpn_dagger",
+   "notes": "dague 0,45 m",
+   "accent": null,
+   "views": "side,tq"
+  },
+  {
+   "triangles": 600,
+   "bbox_min": [
+    -0.031,
+    -0.231,
+    -0.07
+   ],
+   "bbox_max": [
+    0.031,
+    0.52,
+    0.198
+   ],
+   "size": [
+    0.062,
+    0.751,
+    0.268
+   ],
+   "length": 0.751,
+   "name": "wpn_axe_hand",
+   "notes": "hache à une main 0,72 m, taillant à +Z",
+   "accent": null,
+   "views": "side,tq"
+  },
+  {
+   "triangles": 1068,
+   "bbox_min": [
+    -0.04,
+    -0.492,
+    -0.201
+   ],
+   "bbox_max": [
+    0.04,
+    1.04,
+    0.335
+   ],
+   "size": [
+    0.08,
+    1.532,
+    0.536
+   ],
+   "length": 1.532,
+   "name": "wpn_axe_great",
+   "notes": "grande hache à deux mains 1,3 m, pointe dorsale et sommitale",
+   "accent": null,
+   "views": "side,tq@top"
+  },
+  {
+   "triangles": 922,
+   "bbox_min": [
+    -0.035,
+    -0.38,
+    -0.225
+   ],
+   "bbox_max": [
+    0.035,
+    0.73,
+    0.225
+   ],
+   "size": [
+    0.07,
+    1.11,
+    0.45
+   ],
+   "length": 1.11,
+   "name": "wpn_axe_double",
+   "notes": "hache double (2 taillants, ±Z) 1,0 m",
+   "accent": null,
+   "views": "side,tq"
+  },
+  {
+   "triangles": 886,
+   "bbox_min": [
+    -0.052,
+    -0.282,
+    -0.171
+   ],
+   "bbox_max": [
+    0.052,
+    0.575,
+    0.08
+   ],
+   "size": [
+    0.105,
+    0.857,
+    0.251
+   ],
+   "length": 0.857,
+   "name": "wpn_hammer_war",
+   "notes": "marteau de guerre 0,9 m, face carrée +Z et bec -Z",
+   "accent": null,
+   "views": "side,tq"
+  },
+  {
+   "triangles": 1082,
+   "bbox_min": [
+    -0.103,
+    -0.494,
+    -0.145
+   ],
+   "bbox_max": [
+    0.105,
+    1.025,
+    0.145
+   ],
+   "size": [
+    0.209,
+    1.519,
+    0.29
+   ],
+   "length": 1.519,
+   "name": "wpn_hammer_great",
+   "notes": "maillet à deux mains 1,3 m",
+   "accent": null,
+   "views": "side,tq@top"
+  },
+  {
+   "triangles": 1056,
+   "bbox_min": [
+    -0.097,
+    -0.252,
+    -0.105
+   ],
+   "bbox_max": [
+    0.108,
+    0.65,
+    0.105
+   ],
+   "size": [
+    0.205,
+    0.902,
+    0.211
+   ],
+   "length": 0.902,
+   "name": "wpn_mace",
+   "notes": "masse à ailettes 0,85 m",
+   "accent": null,
+   "views": "side,tq"
+  },
+  {
+   "triangles": 1010,
+   "bbox_min": [
+    -0.119,
+    -0.28,
+    -0.116
+   ],
+   "bbox_max": [
+    0.118,
+    0.655,
+    0.115
+   ],
+   "size": [
+    0.236,
+    0.935,
+    0.231
+   ],
+   "length": 0.935,
+   "name": "wpn_club_spiked",
+   "notes": "gourdin clouté 0,95 m",
+   "accent": null,
+   "views": "side,tq"
+  },
+  {
+   "triangles": 836,
+   "bbox_min": [
+    -0.041,
+    -0.272,
+    -0.274
+   ],
+   "bbox_max": [
+    0.041,
+    0.527,
+    0.274
+   ],
+   "size": [
+    0.083,
+    0.799,
+    0.547
+   ],
+   "length": 0.799,
+   "name": "wpn_pick",
+   "notes": "pioche de guerre 0,9 m",
+   "accent": null,
+   "views": "side,tq"
+  },
+  {
+   "triangles": 570,
+   "bbox_min": [
+    -0.03,
+    -0.146,
+    -0.055
+   ],
+   "bbox_max": [
+    0.03,
+    0.405,
+    0.205
+   ],
+   "size": [
+    0.06,
+    0.551,
+    0.26
+   ],
+   "length": 0.551,
+   "name": "wpn_cleaver",
+   "notes": "gros couperet 0,55 m",
+   "accent": null,
+   "views": "side,tq"
+  },
+  {
+   "triangles": 984,
+   "bbox_min": [
+    -0.074,
+    -0.7,
+    -0.068
+   ],
+   "bbox_max": [
+    0.074,
+    1.27,
+    0.068
+   ],
+   "size": [
+    0.147,
+    1.97,
+    0.136
+   ],
+   "length": 1.97,
+   "name": "wpn_spear",
+   "notes": "lance 1,95 m, fer en feuille, gland rouge",
+   "accent": null,
+   "views": "side,tq@top"
+  },
+  {
+   "triangles": 1176,
+   "bbox_min": [
+    -0.027,
+    -0.74,
+    -0.215
+   ],
+   "bbox_max": [
+    0.027,
+    1.35,
+    0.31
+   ],
+   "size": [
+    0.054,
+    2.09,
+    0.525
+   ],
+   "length": 2.09,
+   "name": "wpn_halberd",
+   "notes": "hallebarde 2,1 m : hache, pointe et crochet",
+   "accent": null,
+   "views": "side,tq@top"
+  },
+  {
+   "triangles": 1258,
+   "bbox_min": [
+    -0.027,
+    -0.74,
+    -0.15
+   ],
+   "bbox_max": [
+    0.17,
+    1.1,
+    0.606
+   ],
+   "size": [
+    0.197,
+    1.84,
+    0.756
+   ],
+   "length": 1.84,
+   "name": "wpn_scythe",
+   "notes": "faux de guerre 1,7 m, lame vers +Z, tranchant intérieur",
+   "accent": null,
+   "views": "side,tq@top"
+  },
+  {
+   "triangles": 1332,
+   "bbox_min": [
+    -0.034,
+    -0.773,
+    -0.235
+   ],
+   "bbox_max": [
+    0.034,
+    0.773,
+    0.025
+   ],
+   "size": [
+    0.069,
+    1.546,
+    0.26
+   ],
+   "length": 1.546,
+   "name": "wpn_bow_long",
+   "notes": "arc long 1,5 m ; branches le long de Y, ventre +Z, corde -Z",
+   "accent": null,
+   "views": "side,front"
+  },
+  {
+   "triangles": 1020,
+   "bbox_min": [
+    -0.036,
+    -0.523,
+    -0.238
+   ],
+   "bbox_max": [
+    0.036,
+    0.523,
+    0.025
+   ],
+   "size": [
+    0.071,
+    1.046,
+    0.263
+   ],
+   "length": 1.046,
+   "name": "wpn_bow_short",
+   "notes": "arc court recourbé 1,0 m",
+   "accent": null,
+   "views": "side,tq"
+  },
+  {
+   "triangles": 914,
+   "bbox_min": [
+    -0.415,
+    -0.093,
+    -0.32
+   ],
+   "bbox_max": [
+    0.415,
+    0.16,
+    0.54
+   ],
+   "size": [
+    0.83,
+    0.253,
+    0.86
+   ],
+   "length": 0.86,
+   "name": "wpn_crossbow",
+   "notes": "arbalète 0,8 m ; canon +Z, crosse -Z, carreau chargé",
+   "accent": null,
+   "views": "top,tq"
+  },
+  {
+   "triangles": 1782,
+   "bbox_min": [
+    -0.57,
+    -0.112,
+    -0.384
+   ],
+   "bbox_max": [
+    0.57,
+    0.192,
+    0.672
+   ],
+   "size": [
+    1.14,
+    0.304,
+    1.056
+   ],
+   "length": 1.14,
+   "name": "wpn_crossbow_heavy",
+   "notes": "arbalète lourde 1,0 m, arc d'acier et moulinet",
+   "accent": null,
+   "views": "top,tq"
+  },
+  {
+   "triangles": 1374,
+   "bbox_min": [
+    -0.136,
+    -0.486,
+    -0.087
+   ],
+   "bbox_max": [
+    0.136,
+    1.121,
+    0.155
+   ],
+   "size": [
+    0.272,
+    1.608,
+    0.242
+   ],
+   "length": 1.608,
+   "name": "wpn_staff_wood",
+   "notes": "bâton noueux de druide 1,9 m, fourche et gemme",
+   "accent": [
+    0.45,
+    0.85,
+    0.35
+   ],
+   "views": "side,tq@top"
+  },
+  {
+   "triangles": 1614,
+   "bbox_min": [
+    -0.206,
+    -0.486,
+    -0.11
+   ],
+   "bbox_max": [
+    0.207,
+    1.364,
+    0.108
+   ],
+   "size": [
+    0.413,
+    1.85,
+    0.219
+   ],
+   "length": 1.85,
+   "name": "wpn_staff_crystal",
+   "notes": "bâton de mage à grand cristal 1,9 m",
+   "accent": [
+    0.35,
+    0.65,
+    1.0
+   ],
+   "views": "side,tq@top"
+  },
+  {
+   "triangles": 1214,
+   "bbox_min": [
+    -0.159,
+    -0.486,
+    -0.185
+   ],
+   "bbox_max": [
+    0.182,
+    1.366,
+    0.173
+   ],
+   "size": [
+    0.341,
+    1.852,
+    0.358
+   ],
+   "length": 1.852,
+   "name": "wpn_staff_fire",
+   "notes": "bâton de feu 1,8 m, coupe et flamme",
+   "accent": [
+    1.0,
+    0.5,
+    0.12
+   ],
+   "views": "side,tq@top"
+  },
+  {
+   "triangles": 1178,
+   "bbox_min": [
+    -0.216,
+    -0.486,
+    -0.227
+   ],
+   "bbox_max": [
+    0.265,
+    1.446,
+    0.175
+   ],
+   "size": [
+    0.482,
+    1.933,
+    0.402
+   ],
+   "length": 1.933,
+   "name": "wpn_staff_ice",
+   "notes": "bâton de givre 1,85 m, grappe de cristaux",
+   "accent": [
+    0.55,
+    0.9,
+    1.0
+   ],
+   "views": "side,tq@top"
+  },
+  {
+   "triangles": 1530,
+   "bbox_min": [
+    -0.226,
+    -0.486,
+    -0.066
+   ],
+   "bbox_max": [
+    0.226,
+    1.289,
+    0.066
+   ],
+   "size": [
+    0.452,
+    1.775,
+    0.131
+   ],
+   "length": 1.775,
+   "name": "wpn_staff_storm",
+   "notes": "bâton de tempête 1,85 m, deux cornes et éclair",
+   "accent": [
+    0.6,
+    0.85,
+    1.0
+   ],
+   "views": "side,tq@top"
+  },
+  {
+   "triangles": 1788,
+   "bbox_min": [
+    -0.231,
+    -0.486,
+    -0.287
+   ],
+   "bbox_max": [
+    0.275,
+    1.334,
+    0.197
+   ],
+   "size": [
+    0.505,
+    1.821,
+    0.484
+   ],
+   "length": 1.821,
+   "name": "wpn_staff_void",
+   "notes": "bâton du néant 1,85 m, orbe et anneaux flottants",
+   "accent": [
+    0.7,
+    0.25,
+    1.0
+   ],
+   "views": "side,tq@top"
+  },
+  {
+   "triangles": 1650,
+   "bbox_min": [
+    -0.255,
+    -0.486,
+    -0.067
+   ],
+   "bbox_max": [
+    0.255,
+    1.277,
+    0.067
+   ],
+   "size": [
+    0.509,
+    1.764,
+    0.134
+   ],
+   "length": 1.764,
+   "name": "wpn_staff_holy",
+   "notes": "bâton sacré 1,85 m, soleil à rayons, face +Z",
+   "accent": [
+    1.0,
+    0.85,
+    0.35
+   ],
+   "views": "side,tq@top"
+  },
+  {
+   "triangles": 1778,
+   "bbox_min": [
+    -0.273,
+    -0.486,
+    -0.144
+   ],
+   "bbox_max": [
+    0.273,
+    1.239,
+    0.22
+   ],
+   "size": [
+    0.546,
+    1.726,
+    0.365
+   ],
+   "length": 1.726,
+   "name": "wpn_staff_skull",
+   "notes": "bâton au crâne 1,8 m ; os = couleur base (K), yeux B",
+   "accent": [
+    0.5,
+    1.0,
+    0.4
+   ],
+   "views": "side,tq@top"
+  },
+  {
+   "triangles": 1622,
+   "bbox_min": [
+    -0.43,
+    -0.486,
+    -0.097
+   ],
+   "bbox_max": [
+    0.43,
+    1.31,
+    0.206
+   ],
+   "size": [
+    0.86,
+    1.797,
+    0.303
+   ],
+   "length": 1.797,
+   "name": "wpn_staff_totem",
+   "notes": "bâton-totem 1,8 m : tête sculptée à 3 étages, ailes, plumes, perles",
+   "accent": [
+    0.95,
+    0.75,
+    0.2
+   ],
+   "views": "side,tq@top"
+  },
+  {
+   "triangles": 796,
+   "bbox_min": [
+    -0.024,
+    -0.127,
+    -0.037
+   ],
+   "bbox_max": [
+    0.042,
+    0.39,
+    0.037
+   ],
+   "size": [
+    0.066,
+    0.517,
+    0.074
+   ],
+   "length": 0.517,
+   "name": "wpn_wand",
+   "notes": "baguette 0,42 m, pointe cristal",
+   "accent": [
+    0.9,
+    0.5,
+    1.0
+   ],
+   "views": "side,tq"
+  },
+  {
+   "triangles": 1572,
+   "bbox_min": [
+    -0.362,
+    -0.362,
+    -0.087
+   ],
+   "bbox_max": [
+    0.362,
+    0.362,
+    0.22
+   ],
+   "size": [
+    0.725,
+    0.725,
+    0.307
+   ],
+   "length": 0.725,
+   "name": "wpn_shield_round",
+   "notes": "bouclier rond 0,72 m, face +Z, boss central",
+   "accent": null,
+   "views": "front,tq"
+  },
+  {
+   "triangles": 876,
+   "bbox_min": [
+    -0.282,
+    -0.577,
+    -0.087
+   ],
+   "bbox_max": [
+    0.282,
+    0.422,
+    0.11
+   ],
+   "size": [
+    0.564,
+    0.999,
+    0.197
+   ],
+   "length": 0.999,
+   "name": "wpn_shield_kite",
+   "notes": "écu 0,95 m, pointe vers -Y, face +Z",
+   "accent": null,
+   "views": "front,tq"
+  },
+  {
+   "triangles": 1052,
+   "bbox_min": [
+    -0.33,
+    -0.6,
+    -0.106
+   ],
+   "bbox_max": [
+    0.33,
+    0.6,
+    0.103
+   ],
+   "size": [
+    0.66,
+    1.2,
+    0.209
+   ],
+   "length": 1.2,
+   "name": "wpn_shield_tower",
+   "notes": "pavois 1,2 m, face +Z, bombé",
+   "accent": null,
+   "views": "front,tq"
+  },
+  {
+   "triangles": 838,
+   "bbox_min": [
+    -0.181,
+    -0.181,
+    -0.043
+   ],
+   "bbox_max": [
+    0.181,
+    0.181,
+    0.18
+   ],
+   "size": [
+    0.363,
+    0.363,
+    0.223
+   ],
+   "length": 0.363,
+   "name": "wpn_shield_buckler",
+   "notes": "rondache 0,36 m, grand boss pointu",
+   "accent": null,
+   "views": "front,tq"
+  },
+  {
+   "triangles": 956,
+   "bbox_min": [
+    -0.113,
+    -0.155,
+    -0.045
+   ],
+   "bbox_max": [
+    0.12,
+    0.155,
+    0.056
+   ],
+   "size": [
+    0.233,
+    0.31,
+    0.101
+   ],
+   "length": 0.31,
+   "name": "wpn_tome",
+   "notes": "grimoire 0,3 m, dos vers -Z, face +Z, dos du livre côté -X",
+   "accent": [
+    0.6,
+    0.7,
+    1.0
+   ],
+   "views": "front,tq"
+  },
+  {
+   "triangles": 1308,
+   "bbox_min": [
+    -0.113,
+    -0.17,
+    -0.15
+   ],
+   "bbox_max": [
+    0.113,
+    0.125,
+    0.117
+   ],
+   "size": [
+    0.226,
+    0.295,
+    0.267
+   ],
+   "length": 0.295,
+   "name": "wpn_orb",
+   "notes": "orbe 0,24 m dans un support à griffes, dos vers -Z",
+   "accent": [
+    0.7,
+    0.4,
+    1.0
+   ],
+   "views": "front,tq"
+  },
+  {
+   "triangles": 884,
+   "bbox_min": [
+    -0.025,
+    -0.151,
+    -0.025
+   ],
+   "bbox_max": [
+    0.21,
+    0.663,
+    0.807
+   ],
+   "size": [
+    0.234,
+    0.814,
+    0.832
+   ],
+   "length": 0.832,
+   "name": "wpn_whip",
+   "notes": "fouet 1,5 m : poignée + lanière en S, pointe vers +Y puis +Z",
+   "accent": [
+    1.0,
+    0.7,
+    0.3
+   ],
+   "views": "side,tq@top"
+  },
+  {
+   "triangles": 966,
+   "bbox_min": [
+    -0.062,
+    -0.17,
+    -0.059
+   ],
+   "bbox_max": [
+    0.062,
+    0.535,
+    0.191
+   ],
+   "size": [
+    0.124,
+    0.705,
+    0.25
+   ],
+   "length": 0.705,
+   "name": "wpn_claws_l",
+   "notes": "gants à griffes (gauche = +X ; droite = miroir) : 3 lames vers +Y",
+   "accent": [
+    0.9,
+    0.95,
+    1.0
+   ],
+   "views": "side,tq"
+  },
+  {
+   "triangles": 966,
+   "bbox_min": [
+    -0.062,
+    -0.17,
+    -0.059
+   ],
+   "bbox_max": [
+    0.062,
+    0.535,
+    0.191
+   ],
+   "size": [
+    0.124,
+    0.705,
+    0.25
+   ],
+   "length": 0.705,
+   "name": "wpn_claws_r",
+   "notes": "gants à griffes (gauche = +X ; droite = miroir) : 3 lames vers +Y",
+   "accent": [
+    0.9,
+    0.95,
+    1.0
+   ],
+   "views": "side,tq"
+  },
+  {
+   "triangles": 752,
+   "bbox_min": [
+    -0.062,
+    -0.17,
+    -0.059
+   ],
+   "bbox_max": [
+    0.062,
+    0.158,
+    0.07
+   ],
+   "size": [
+    0.124,
+    0.328,
+    0.129
+   ],
+   "length": 0.328,
+   "name": "wpn_fists_l",
+   "notes": "gantelets de lutteur (gauche = +X ; droite = miroir), poing vers +Y",
+   "accent": [
+    1.0,
+    0.85,
+    0.4
+   ],
+   "views": "side,tq"
+  },
+  {
+   "triangles": 752,
+   "bbox_min": [
+    -0.062,
+    -0.17,
+    -0.059
+   ],
+   "bbox_max": [
+    0.062,
+    0.158,
+    0.07
+   ],
+   "size": [
+    0.124,
+    0.328,
+    0.129
+   ],
+   "length": 0.328,
+   "name": "wpn_fists_r",
+   "notes": "gantelets de lutteur (gauche = +X ; droite = miroir), poing vers +Y",
+   "accent": [
+    1.0,
+    0.85,
+    0.4
+   ],
+   "views": "side,tq"
+  },
+  {
+   "triangles": 940,
+   "bbox_min": [
+    -0.104,
+    -0.302,
+    -0.027
+   ],
+   "bbox_max": [
+    0.104,
+    0.284,
+    0.096
+   ],
+   "size": [
+    0.208,
+    0.586,
+    0.123
+   ],
+   "length": 0.586,
+   "name": "wpn_paddles_l",
+   "notes": "palette de défibrillateur (gauche = +X ; droite = miroir), face +Z",
+   "accent": [
+    0.55,
+    0.9,
+    1.0
+   ],
+   "views": "side,tq"
+  },
+  {
+   "triangles": 940,
+   "bbox_min": [
+    -0.104,
+    -0.302,
+    -0.027
+   ],
+   "bbox_max": [
+    0.104,
+    0.284,
+    0.096
+   ],
+   "size": [
+    0.208,
+    0.586,
+    0.123
+   ],
+   "length": 0.586,
+   "name": "wpn_paddles_r",
+   "notes": "palette de défibrillateur (gauche = +X ; droite = miroir), face +Z",
+   "accent": [
+    0.55,
+    0.9,
+    1.0
+   ],
+   "views": "side,tq"
+  },
+  {
+   "triangles": 1630,
+   "bbox_min": [
+    -0.087,
+    -0.331,
+    -0.025
+   ],
+   "bbox_max": [
+    0.087,
+    0.576,
+    0.307
+   ],
+   "size": [
+    0.175,
+    0.907,
+    0.332
+   ],
+   "length": 0.907,
+   "name": "wpn_censer",
+   "notes": "encensoir sur chaîne, perche 0,85 m",
+   "accent": [
+    1.0,
+    0.55,
+    0.2
+   ],
+   "views": "side,tq"
+  },
+  {
+   "triangles": 1700,
+   "bbox_min": [
+    -0.125,
+    -0.272,
+    -0.026
+   ],
+   "bbox_max": [
+    0.125,
+    0.432,
+    0.628
+   ],
+   "size": [
+    0.25,
+    0.704,
+    0.654
+   ],
+   "length": 0.704,
+   "name": "wpn_flail",
+   "notes": "fléau d'armes 0,75 m, boule hérissée au bout d'une chaîne",
+   "accent": [
+    1.0,
+    0.8,
+    0.5
+   ],
+   "views": "side,tq"
+  },
+  {
+   "triangles": 868,
+   "bbox_min": [
+    -0.108,
+    -0.425,
+    -0.122
+   ],
+   "bbox_max": [
+    0.108,
+    0.043,
+    0.122
+   ],
+   "size": [
+    0.216,
+    0.468,
+    0.244
+   ],
+   "length": 0.468,
+   "name": "wpn_lantern",
+   "notes": "lanterne 0,45 m portée par l'anse (origine = anse, lanterne sous Y=0)",
+   "accent": [
+    1.0,
+    0.75,
+    0.3
+   ],
+   "views": "side,tq"
+  }
+ ]
+}

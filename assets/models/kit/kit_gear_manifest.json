@@ -1,0 +1,812 @@
+{
+ "version": 1,
+ "gear": {
+  "hat_none": {
+   "group": "hats",
+   "triangles": 1,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": "pi\u00e8ce vide (triangle de 1 mm)"
+  },
+  "helm_knight": {
+   "group": "hats",
+   "triangles": 2242,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "helm_great": {
+   "group": "hats",
+   "triangles": 2404,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "helm_horned": {
+   "group": "hats",
+   "triangles": 2138,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "helm_nasal": {
+   "group": "hats",
+   "triangles": 1312,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "helm_plume": {
+   "group": "hats",
+   "triangles": 1844,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "helm_frost": {
+   "group": "hats",
+   "triangles": 1398,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "helm_flame": {
+   "group": "hats",
+   "triangles": 1702,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "helm_skull": {
+   "group": "hats",
+   "triangles": 2252,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "helm_demon": {
+   "group": "hats",
+   "triangles": 2098,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "hood_rogue": {
+   "group": "hats",
+   "triangles": 1326,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "hood_cowl": {
+   "group": "hats",
+   "triangles": 1626,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "hat_wizard": {
+   "group": "hats",
+   "triangles": 1700,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "hat_witch_hunter": {
+   "group": "hats",
+   "triangles": 1612,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "hat_mitre": {
+   "group": "hats",
+   "triangles": 2376,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "crown": {
+   "group": "hats",
+   "triangles": 904,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "circlet": {
+   "group": "hats",
+   "triangles": 310,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "mask_bandit": {
+   "group": "hats",
+   "triangles": 1000,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "mask_luchador": {
+   "group": "hats",
+   "triangles": 2370,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "hair_long": {
+   "group": "hats",
+   "triangles": 1996,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "hair_short": {
+   "group": "hats",
+   "triangles": 1194,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "hair_spiky": {
+   "group": "hats",
+   "triangles": 796,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "hair_ponytail": {
+   "group": "hats",
+   "triangles": 1252,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "bandana": {
+   "group": "hats",
+   "triangles": 1074,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "headband": {
+   "group": "hats",
+   "triangles": 660,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "goggles": {
+   "group": "hats",
+   "triangles": 1192,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "hat_feathered": {
+   "group": "hats",
+   "triangles": 1580,
+   "pivot": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "note": ""
+  },
+  "armor_plate": {
+   "group": "torso",
+   "triangles": 2188,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "armor_leather": {
+   "group": "torso",
+   "triangles": 1964,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "armor_robe": {
+   "group": "torso",
+   "triangles": 1440,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "armor_robe_long": {
+   "group": "torso",
+   "triangles": 1788,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "armor_tabard": {
+   "group": "torso",
+   "triangles": 1972,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "armor_scale": {
+   "group": "torso",
+   "triangles": 2360,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "armor_wraps": {
+   "group": "torso",
+   "triangles": 1932,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "armor_coat": {
+   "group": "torso",
+   "triangles": 2084,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "armor_fur": {
+   "group": "torso",
+   "triangles": 2216,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "armor_vest_ranger": {
+   "group": "torso",
+   "triangles": 2076,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "armor_ragged": {
+   "group": "torso",
+   "triangles": 1312,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "armor_cult_robe": {
+   "group": "torso",
+   "triangles": 1728,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "armor_robe_skirt": {
+   "group": "skirts",
+   "triangles": 592,
+   "pivot": [
+    0.0,
+    0.74,
+    0.0
+   ],
+   "note": ""
+  },
+  "armor_robe_long_skirt": {
+   "group": "skirts",
+   "triangles": 760,
+   "pivot": [
+    0.0,
+    0.74,
+    0.0
+   ],
+   "note": ""
+  },
+  "armor_tabard_skirt": {
+   "group": "skirts",
+   "triangles": 688,
+   "pivot": [
+    0.0,
+    0.74,
+    0.0
+   ],
+   "note": ""
+  },
+  "armor_coat_skirt": {
+   "group": "skirts",
+   "triangles": 800,
+   "pivot": [
+    0.0,
+    0.74,
+    0.0
+   ],
+   "note": ""
+  },
+  "armor_cult_robe_skirt": {
+   "group": "skirts",
+   "triangles": 672,
+   "pivot": [
+    0.0,
+    0.74,
+    0.0
+   ],
+   "note": ""
+  },
+  "armor_plate_skirt": {
+   "group": "skirts",
+   "triangles": 1288,
+   "pivot": [
+    0.0,
+    0.74,
+    0.0
+   ],
+   "note": ""
+  },
+  "armor_scale_skirt": {
+   "group": "skirts",
+   "triangles": 1436,
+   "pivot": [
+    0.0,
+    0.74,
+    0.0
+   ],
+   "note": ""
+  },
+  "armor_ragged_skirt": {
+   "group": "skirts",
+   "triangles": 1016,
+   "pivot": [
+    0.0,
+    0.74,
+    0.0
+   ],
+   "note": ""
+  },
+  "armor_fur_skirt": {
+   "group": "skirts",
+   "triangles": 2092,
+   "pivot": [
+    0.0,
+    0.74,
+    0.0
+   ],
+   "note": ""
+  },
+  "shoulder_plate_l": {
+   "group": "shoulders",
+   "triangles": 1606,
+   "pivot": [
+    0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "shoulder_plate_r": {
+   "group": "shoulders",
+   "triangles": 1606,
+   "pivot": [
+    -0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "shoulder_spiked_l": {
+   "group": "shoulders",
+   "triangles": 622,
+   "pivot": [
+    0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "shoulder_spiked_r": {
+   "group": "shoulders",
+   "triangles": 622,
+   "pivot": [
+    -0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "shoulder_fur_l": {
+   "group": "shoulders",
+   "triangles": 1400,
+   "pivot": [
+    0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "shoulder_fur_r": {
+   "group": "shoulders",
+   "triangles": 1400,
+   "pivot": [
+    -0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "shoulder_mantle_l": {
+   "group": "shoulders",
+   "triangles": 490,
+   "pivot": [
+    0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "shoulder_mantle_r": {
+   "group": "shoulders",
+   "triangles": 490,
+   "pivot": [
+    -0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "shoulder_big_l": {
+   "group": "shoulders",
+   "triangles": 1212,
+   "pivot": [
+    0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "shoulder_big_r": {
+   "group": "shoulders",
+   "triangles": 1212,
+   "pivot": [
+    -0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "shoulder_bone_l": {
+   "group": "shoulders",
+   "triangles": 730,
+   "pivot": [
+    0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "shoulder_bone_r": {
+   "group": "shoulders",
+   "triangles": 730,
+   "pivot": [
+    -0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "shoulder_flame_l": {
+   "group": "shoulders",
+   "triangles": 830,
+   "pivot": [
+    0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "shoulder_flame_r": {
+   "group": "shoulders",
+   "triangles": 830,
+   "pivot": [
+    -0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "shoulder_frost_l": {
+   "group": "shoulders",
+   "triangles": 592,
+   "pivot": [
+    0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "shoulder_frost_r": {
+   "group": "shoulders",
+   "triangles": 592,
+   "pivot": [
+    -0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "shoulder_leather_l": {
+   "group": "shoulders",
+   "triangles": 1186,
+   "pivot": [
+    0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "shoulder_leather_r": {
+   "group": "shoulders",
+   "triangles": 1186,
+   "pivot": [
+    -0.3,
+    1.1,
+    0.0
+   ],
+   "note": ""
+  },
+  "back_cape_short": {
+   "group": "backs",
+   "triangles": 952,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "back_cape_long": {
+   "group": "backs",
+   "triangles": 952,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "back_quiver": {
+   "group": "backs",
+   "triangles": 1092,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "back_wings_bat": {
+   "group": "backs",
+   "triangles": 1060,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "back_wings_angel": {
+   "group": "backs",
+   "triangles": 2324,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "back_wings_astral": {
+   "group": "backs",
+   "triangles": 1928,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "back_tail_beast": {
+   "group": "backs",
+   "triangles": 524,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "back_tail_demon": {
+   "group": "backs",
+   "triangles": 344,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "back_backpack": {
+   "group": "backs",
+   "triangles": 2236,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "back_banner": {
+   "group": "backs",
+   "triangles": 1390,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "back_totem_stick": {
+   "group": "backs",
+   "triangles": 1114,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  },
+  "back_tome_chained": {
+   "group": "backs",
+   "triangles": 2340,
+   "pivot": [
+    0.0,
+    0.78,
+    0.0
+   ],
+   "note": ""
+  }
+ },
+ "fit_hints": {
+  "base": "toutes les pi\u00e8ces sont mod\u00e9lis\u00e9es sur la silhouette human (t\u00eate : HUMAN, torse : human) avec ~0.05 m de marge",
+  "orc": {
+   "torso_gear": "tel quel (carrure x1.14, marge incluse)",
+   "hats": "tel quel",
+   "shoulders": "tel quel"
+  },
+  "goblin": {
+   "hats": "scale ~1.22 autour du pivot t\u00eate (cr\u00e2ne x1.25)",
+   "torso_gear": "tel quel (torse x0.82, flotte l\u00e9g\u00e8rement)"
+  },
+  "minotaur": {
+   "hats": "chapeaux ferm\u00e9s d\u00e9conseill\u00e9s (cornes) ; capuches/cheveux sans objet",
+   "torso_gear": "tel quel (x1.15)"
+  },
+  "skeleton": {
+   "all": "tel quel (os fins sous les v\u00eatements)"
+  },
+  "beast": {
+   "hats": "oreilles hautes : pr\u00e9f\u00e9rer hat_none/bandana",
+   "torso_gear": "tel quel"
+  },
+  "demon": {
+   "hats": "cornes : pr\u00e9f\u00e9rer hat_none/circlet/crown",
+   "torso_gear": "tel quel"
+  }
+ }
+}

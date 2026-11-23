@@ -1,0 +1,90 @@
+{
+ "music_menu": {
+  "dur": 100.0,
+  "bpm": 72,
+  "bars": 30,
+  "peak_db": -1.0,
+  "rms_db": -14.51,
+  "size_kb": 2015
+ },
+ "music_club": {
+  "dur": 86.4,
+  "bpm": 100,
+  "bars": 36,
+  "peak_db": -1.0,
+  "rms_db": -14.65,
+  "size_kb": 1831
+ },
+ "music_draft": {
+  "dur": 80.0,
+  "bpm": 84,
+  "bars": 28,
+  "peak_db": -1.0,
+  "rms_db": -14.88,
+  "size_kb": 1950
+ },
+ "music_chest": {
+  "dur": 20.0,
+  "bpm": 96,
+  "bars": 8,
+  "peak_db": -1.0,
+  "rms_db": -14.51,
+  "size_kb": 452
+ },
+ "music_battle_1": {
+  "dur": 82.286,
+  "bpm": 140,
+  "bars": 48,
+  "peak_db": -1.0,
+  "rms_db": -14.51,
+  "size_kb": 1675
+ },
+ "music_battle_2": {
+  "dur": 88.421,
+  "bpm": 152,
+  "bars": 56,
+  "peak_db": -1.0,
+  "rms_db": -14.54,
+  "size_kb": 1914
+ },
+ "music_battle_boss": {
+  "dur": 90.0,
+  "bpm": 96,
+  "bars": 36,
+  "peak_db": -1.0,
+  "rms_db": -14.51,
+  "size_kb": 1654
+ },
+ "music_chaos_thunder": {
+  "dur": 87.273,
+  "bpm": 132,
+  "bars": 48,
+  "peak_db": -1.0,
+  "rms_db": -14.66,
+  "size_kb": 1983
+ },
+ "music_cup": {
+  "dur": 88.889,
+  "bpm": 108,
+  "bars": 40,
+  "peak_db": -1.0,
+  "rms_db": -14.52,
+  "size_kb": 1887
+ },
+ "music_victory": {
+  "dur": 30.0,
+  "bpm": 120,
+  "bars": 15,
+  "peak_db": -1.0,
+  "rms_db": -14.51,
+  "size_kb": 628
+ },
+ "music_defeat": {
+  "dur": 30.0,
+  "bpm": 64,
+  "bars": 8,
+  "peak_db": -1.0,
+  "rms_db": -13.57,
+  "size_kb": 557
+ }
+}
