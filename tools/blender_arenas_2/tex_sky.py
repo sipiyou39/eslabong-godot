@@ -169,7 +169,7 @@ def tiles():
     tile_ashlar('sky_stone', 512, palette=('#e4d6b8', '#d8c8a6', '#ede0c4', '#cdbb98'), joint='#8a7a5c', rows=6, block_w=(1.0, 1.9),
                 seed=401, wear=0.4, shade=0.1)
     tile_marble('sky_marble', 512, '#f2ead6', '#ddd0b2', '#b8a888', seed=402, strata=0.0, vein_amt=0.45, grain=0.03)
-    tile_rock('sky_rock', 512, '#5a3f34', '#9a7050', '#d2a878', seed=403, strata=0.9, crack=0.5)
+    tile_rock('sky_rock', 512, '#5a3f34', '#9a7050', '#d2a878', seed=403, strata=0.9, crack=0.2)
     tile_noise('sky_grass', 512, base='#74923a', var=0.25, seed=404, scale=1.5, grain=0.1, tint2='#b4b04a')
     tile_wood('sky_wood', 512, '#4a3320', '#9a6e40', seed=405)
     tile_noise('sky_rope', 512, base='#b49a68', var=0.25, seed=406, scale=2.0, grain=0.12, tint2='#7a6644')

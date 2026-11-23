@@ -249,12 +249,10 @@ def tiles():
     tile_rock('volcano_basalt', 512, '#1b1717', '#2d2725', '#4a3f39', seed=185, crack=0.8)
     tile_rock('volcano_rock', 512, '#2c1914', '#6a3a28', '#a86a44', seed=186, strata=0.7, crack=0.6)
     tile_rock('volcano_cliff', 512, '#221615', '#4e2d24', '#7b4a36', seed=187, strata=1.2, crack=0.9)
-    tile_noise('volcano_ash', 512, base='#46403d', var=0.22, seed=188, scale=1.25, grain=0.09, tint2='#2a2523')
     tile_ashlar('volcano_stone', 512, palette=('#4d4540', '#40393a', '#585049', '#383232'), joint='#14100f', rows=6, block_w=(1.0, 1.9),
                 seed=189, wear=0.5, shade=0.12)
     tile_metal('volcano_iron', 512, base='#6c6a6e', seed=190, rust=0.4, rust_col='#5a2a12', scale_m=2.0, plates=2, rivets=False)
     tile_marble('volcano_obsidian', 512, '#1d1819', '#100d0e', '#4a3a40', seed=191, strata=0.0, vein_amt=0.3, grain=0.02)
-    tile_noise('volcano_cloth', 512, base='#6a3322', var=0.2, seed=192, scale=1.5, grain=0.08, tint2='#3a2218')
     tile_lava('volcano_lava', 512, seed=193)
 
 

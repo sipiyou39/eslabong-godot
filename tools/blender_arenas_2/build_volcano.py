@@ -27,7 +27,6 @@ defmat('M_lava', tex=T('volcano_lava.png'), norm=T('volcano_lava_n.png'), emit_t
 defmat('M_flame', emit='#ff7a1c', emit_str=2.6, vcol=False, color='#ff7a1c')
 defmat('M_glow', emit='#ff6a1a', emit_str=1.3, vcol=False, color='#ff6a1a')
 defmat('M_smoke', rough=1.0, spec=0.1)
-defmat('M_cloth', tex=T('volcano_cloth.png'), rough=0.95, uv=2.0, double=True)
 defmat('M_gold', rough=0.35, metal=0.9)
 defmat('M_dark', rough=0.5, metal=0.6)
 
